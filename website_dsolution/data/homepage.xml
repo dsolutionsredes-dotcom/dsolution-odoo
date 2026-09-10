@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="homepage_dsolution" name="D-Solution Homepage" inherit_id="website.homepage">
-        <xpath expr="//t[@t-call='website.layout']" position="inside">
-            <t t-set="no_header" t-value="True"/>
-            <t t-set="no_footer" t-value="True"/>
-        </xpath>
-        <xpath expr="//div[@id='wrap']" position="replace">
+<xpath expr="//div[@id='wrap']" position="replace">
             <div id="wrap" class="oe_structure dsolution-page">
                 <t t-call="website_dsolution.header"/>
 

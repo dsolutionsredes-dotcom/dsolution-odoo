@@ -78,3 +78,9 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Corrige definición de paleta SCSS para Odoo master.
 - Corrige expresiones CSS `min()` incompatibles con libsass.
 - Elimina referencias a `website.default_website` de páginas personalizadas.
+
+
+## v0.3
+- El estilo visual principal pasa de SCSS a CSS puro para evitar que libsass intente interpretar funciones CSS modernas (`min()`, `clamp()`, variables CSS).
+- La paleta SCSS personalizada queda temporalmente fuera del bundle; el diseño sigue usando sus variables CSS propias.
+- Corrige la ubicación de `no_header` y `no_footer` para evitar duplicar la cabecera y pie de Odoo en las páginas D-Solution.

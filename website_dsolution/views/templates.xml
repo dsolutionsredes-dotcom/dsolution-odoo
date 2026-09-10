@@ -176,9 +176,9 @@
     </template>
 
     <template id="service_page_shell" name="D-Solution Service Page Shell">
+        <t t-set="no_header" t-value="True"/>
+        <t t-set="no_footer" t-value="True"/>
         <t t-call="website.layout">
-            <t t-set="no_header" t-value="True"/>
-            <t t-set="no_footer" t-value="True"/>
             <div id="wrap" class="oe_structure dsolution-page dsolution-service-page">
                 <t t-call="website_dsolution.header"/>
                 <section class="ds-service-hero">
