@@ -84,3 +84,7 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - El estilo visual principal pasa de SCSS a CSS puro para evitar que libsass intente interpretar funciones CSS modernas (`min()`, `clamp()`, variables CSS).
 - La paleta SCSS personalizada queda temporalmente fuera del bundle; el diseño sigue usando sus variables CSS propias.
 - Corrige la ubicación de `no_header` y `no_footer` para evitar duplicar la cabecera y pie de Odoo en las páginas D-Solution.
+
+
+## v0.4
+- Corrige la Home para ocultar correctamente la cabecera y pie estándar de Odoo antes de llamar a `website.layout`.
