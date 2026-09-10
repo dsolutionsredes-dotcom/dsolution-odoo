@@ -72,3 +72,9 @@ Esto evita cambiar innecesariamente URLs ya existentes.
 ## Nota de desarrollo
 
 Esta versión fue construida contra la estructura documentada oficialmente para temas de Odoo `master`: módulo con `__manifest__.py`, QWeb/XML, SCSS y JavaScript dentro de `web.assets_frontend`.
+
+
+## v0.2
+- Corrige definición de paleta SCSS para Odoo master.
+- Corrige expresiones CSS `min()` incompatibles con libsass.
+- Elimina referencias a `website.default_website` de páginas personalizadas.

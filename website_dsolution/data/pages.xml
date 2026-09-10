@@ -6,7 +6,6 @@
         <field name="is_published" eval="True"/>
         <field name="key">website_dsolution.page_services</field>
         <field name="url">/servicios</field>
-        
         <field name="type">qweb</field>
         <field name="arch" type="xml">
             <t t-name="website_dsolution.page_services">

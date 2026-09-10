@@ -349,12 +349,12 @@ html { scroll-behavior: smooth; }
 }
 
 @media (max-width: 760px) {
-    .ds-container, .ds-nav, .ds-contact, .ds-service-hero-inner { width: min(100% - 30px, 1160px); }
+    .ds-container, .ds-nav, .ds-contact, .ds-service-hero-inner { width: min(calc(100% - 30px), 1160px); }
     .ds-section { padding: 56px 0; }
     .ds-brand-copy { display: none; }
     .ds-brand-logo { width: 48px; height: 48px; }
     .ds-nav { min-height: 70px; }
-    .ds-hero-content { width: min(100% - 30px, 1050px); padding-top: 120px; }
+    .ds-hero-content { width: min(calc(100% - 30px), 1050px); padding-top: 120px; }
     .ds-hero h1 { font-size: clamp(2.5rem, 11vw, 4.2rem); }
     .ds-services-grid { grid-template-columns: 1fr; }
     .ds-service-card { min-height: 220px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.10) !important; }
