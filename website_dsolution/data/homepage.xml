@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="homepage_dsolution" name="D-Solution Homepage" inherit_id="website.homepage">
+        <xpath expr="//t[@t-call='website.layout']" position="inside">
+            <t t-set="no_header" t-value="True"/>
+            <t t-set="no_footer" t-value="True"/>
+        </xpath>
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="oe_structure dsolution-page">
+                <t t-call="website_dsolution.header"/>
+
+                <section id="inicio" class="ds-hero">
+                    <video class="ds-hero-media" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" poster="https://d-solution.org/seo-image.jpg">
+                        <source src="https://d-solution.org/hero-dsolution-loop.mp4" type="video/mp4"/>
+                    </video>
+                    <div class="ds-hero-overlay"/>
+                    <div class="ds-hero-content ds-reveal">
+                        <h1><strong>Transformamos ideas</strong><span>en experiencias digitales</span></h1>
+                        <p class="ds-hero-kicker">Estrategia, creatividad, tecnología y ejecución conectadas para hacer crecer marcas y negocios.</p>
+                        <div class="ds-hero-actions">
+                            <a class="ds-btn ds-btn--gold" href="#contacto">Hablemos de tu proyecto</a>
+                            <a class="ds-btn ds-btn--outline" href="#servicios">Explorar servicios</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="servicios" class="ds-section ds-section--compact">
+                    <div class="ds-container">
+                        <div class="ds-reveal">
+                            <p class="ds-eyebrow">Servicios</p>
+                            <h2 class="ds-title">Soluciones creativas para impulsar tu negocio</h2>
+                            <p class="ds-subtitle">Servicios independientes o integrados en una estrategia completa para tu marca.</p>
+                            <span class="ds-divider"/>
+                        </div>
+                        <t t-call="website_dsolution.services_grid"/>
+                    </div>
+                </section>
+
+                <section id="proceso" class="ds-section ds-section--blue">
+                    <div class="ds-container ds-process-layout">
+                        <div class="ds-reveal">
+                            <p class="ds-eyebrow">Proceso</p>
+                            <h2 class="ds-title">Cómo trabajamos contigo</h2>
+                            <p class="ds-subtitle">Un proceso ágil y colaborativo para convertir ideas en resultados reales.</p>
+                            <span class="ds-divider"/>
+                            <a class="ds-btn ds-btn--outline" style="margin-top:26px;border-color:#D4AF37;color:#D4AF37" href="#contacto">Hablemos de tu proyecto →</a>
+                        </div>
+                        <div class="ds-process-cards">
+                            <article class="ds-process-card ds-reveal">
+                                <img src="https://d-solution.org/service-branding.jpg" alt="Entendemos"/>
+                                <div class="ds-process-content"><strong>01</strong><h3>Entendemos</h3><p>Escuchamos tu idea, analizamos tu negocio y definimos objetivos claros.</p></div>
+                            </article>
+                            <article class="ds-process-card ds-reveal">
+                                <img src="https://d-solution.org/service-marketing.jpg" alt="Estrategia"/>
+                                <div class="ds-process-content"><strong>02</strong><h3>Estrategia</h3><p>Diseñamos un plan digital con canales, contenido y acciones clave.</p></div>
+                            </article>
+                            <article class="ds-process-card ds-reveal">
+                                <img src="https://d-solution.org/service-audiovisual.jpg" alt="Creamos y ejecutamos"/>
+                                <div class="ds-process-content"><strong>03</strong><h3>Creamos y ejecutamos</h3><p>Producimos contenido, lanzamos campañas, webs o automatizaciones.</p></div>
+                            </article>
+                            <article class="ds-process-card ds-reveal">
+                                <img src="https://d-solution.org/service-web.jpg" alt="Medimos y optimizamos"/>
+                                <div class="ds-process-content"><strong>04</strong><h3>Medimos y optimizamos</h3><p>Analizamos resultados y ajustamos para mejorar el impacto.</p></div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ds-section ds-section--compact">
+                    <div class="ds-container">
+                        <div class="ds-reveal">
+                            <p class="ds-eyebrow">¿Por qué elegirnos?</p>
+                            <h2 class="ds-title">Resultados que hablan por nosotros</h2>
+                            <span class="ds-divider"/>
+                        </div>
+                        <div class="ds-stats-grid ds-reveal">
+                            <div class="ds-stat"><strong>+10</strong><span>años de experiencia</span></div>
+                            <div class="ds-stat"><strong>+50</strong><span>proyectos gestionados</span></div>
+                            <div class="ds-stat"><strong>6</strong><span>tipos de servicios que dominamos</span></div>
+                            <div class="ds-stat"><strong>+10</strong><span>plataformas utilizadas a nivel avanzado</span></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ds-section ds-section--navy">
+                    <div class="ds-container ds-reveal">
+                        <p class="ds-eyebrow">Ecosistema</p>
+                        <h2 class="ds-title">Herramientas que usamos para crear, medir y optimizar proyectos.</h2>
+                        <span class="ds-divider"/>
+                    </div>
+                    <div class="ds-marquee">
+                        <div class="ds-marquee-track">
+                            <span class="ds-tool"><b class="ds-tool-mark">C</b>Canva</span><span class="ds-tool"><b class="ds-tool-mark">Meta</b>Facebook Ads</span><span class="ds-tool"><b class="ds-tool-mark">Ads</b>Google Ads</span><span class="ds-tool"><b class="ds-tool-mark">GA</b>Google Analytics</span><span class="ds-tool"><b class="ds-tool-mark">GTM</b>Google Tag Manager</span><span class="ds-tool"><b class="ds-tool-mark">Ps</b>Photoshop</span><span class="ds-tool"><b class="ds-tool-mark">◎</b>Codex</span><span class="ds-tool"><b class="ds-tool-mark">AI</b>Claude Code</span><span class="ds-tool"><b class="ds-tool-mark">n8n</b>n8n</span>
+                            <span class="ds-tool"><b class="ds-tool-mark">C</b>Canva</span><span class="ds-tool"><b class="ds-tool-mark">Meta</b>Facebook Ads</span><span class="ds-tool"><b class="ds-tool-mark">Ads</b>Google Ads</span><span class="ds-tool"><b class="ds-tool-mark">GA</b>Google Analytics</span><span class="ds-tool"><b class="ds-tool-mark">GTM</b>Google Tag Manager</span><span class="ds-tool"><b class="ds-tool-mark">Ps</b>Photoshop</span><span class="ds-tool"><b class="ds-tool-mark">◎</b>Codex</span><span class="ds-tool"><b class="ds-tool-mark">AI</b>Claude Code</span><span class="ds-tool"><b class="ds-tool-mark">n8n</b>n8n</span>
+                            <span class="ds-tool"><b class="ds-tool-mark">C</b>Canva</span><span class="ds-tool"><b class="ds-tool-mark">Meta</b>Facebook Ads</span><span class="ds-tool"><b class="ds-tool-mark">Ads</b>Google Ads</span><span class="ds-tool"><b class="ds-tool-mark">GA</b>Google Analytics</span><span class="ds-tool"><b class="ds-tool-mark">GTM</b>Google Tag Manager</span><span class="ds-tool"><b class="ds-tool-mark">Ps</b>Photoshop</span><span class="ds-tool"><b class="ds-tool-mark">◎</b>Codex</span><span class="ds-tool"><b class="ds-tool-mark">AI</b>Claude Code</span><span class="ds-tool"><b class="ds-tool-mark">n8n</b>n8n</span>
+                        </div>
+                    </div>
+                    <div class="ds-marquee ds-marquee--reverse">
+                        <div class="ds-marquee-track">
+                            <span class="ds-tool"><b class="ds-tool-mark">W</b>WordPress</span><span class="ds-tool"><b class="ds-tool-mark">N</b>Next.js</span><span class="ds-tool"><b class="ds-tool-mark">Wix</b>Wix</span><span class="ds-tool"><b class="ds-tool-mark">vM</b>vMix</span><span class="ds-tool"><b class="ds-tool-mark">▶</b>Mimolive</span><span class="ds-tool"><b class="ds-tool-mark">BM</b>ATEM Blackmagic</span><span class="ds-tool"><b class="ds-tool-mark">◉</b>OBS</span><span class="ds-tool"><b class="ds-tool-mark">♪</b>TikTok Ads</span><span class="ds-tool"><b class="ds-tool-mark">AI</b>Automatización IA</span>
+                            <span class="ds-tool"><b class="ds-tool-mark">W</b>WordPress</span><span class="ds-tool"><b class="ds-tool-mark">N</b>Next.js</span><span class="ds-tool"><b class="ds-tool-mark">Wix</b>Wix</span><span class="ds-tool"><b class="ds-tool-mark">vM</b>vMix</span><span class="ds-tool"><b class="ds-tool-mark">▶</b>Mimolive</span><span class="ds-tool"><b class="ds-tool-mark">BM</b>ATEM Blackmagic</span><span class="ds-tool"><b class="ds-tool-mark">◉</b>OBS</span><span class="ds-tool"><b class="ds-tool-mark">♪</b>TikTok Ads</span><span class="ds-tool"><b class="ds-tool-mark">AI</b>Automatización IA</span>
+                            <span class="ds-tool"><b class="ds-tool-mark">W</b>WordPress</span><span class="ds-tool"><b class="ds-tool-mark">N</b>Next.js</span><span class="ds-tool"><b class="ds-tool-mark">Wix</b>Wix</span><span class="ds-tool"><b class="ds-tool-mark">vM</b>vMix</span><span class="ds-tool"><b class="ds-tool-mark">▶</b>Mimolive</span><span class="ds-tool"><b class="ds-tool-mark">BM</b>ATEM Blackmagic</span><span class="ds-tool"><b class="ds-tool-mark">◉</b>OBS</span><span class="ds-tool"><b class="ds-tool-mark">♪</b>TikTok Ads</span><span class="ds-tool"><b class="ds-tool-mark">AI</b>Automatización IA</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="portafolio" class="ds-section ds-section--white">
+                    <div class="ds-container">
+                        <div class="ds-reveal">
+                            <p class="ds-eyebrow">Portafolio</p>
+                            <h2 class="ds-title">Proyectos que inspiran nuevas ideas</h2>
+                            <p class="ds-subtitle">Una selección inicial de trabajos que combinan estrategia, creatividad y tecnología. Esta sección se conectará después con datos de Odoo.</p>
+                            <span class="ds-divider"/>
+                        </div>
+                        <div class="ds-portfolio-grid">
+                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="https://d-solution.org/service-audiovisual.jpg" alt="Producción audiovisual"/></div><div class="ds-project-body"><p class="ds-project-category">Audiovisual</p><h3>Producción audiovisual</h3><p>Contenido visual y soporte técnico para comunicar con más impacto.</p><a href="#contacto">Ver proyecto →</a></div></article>
+                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="https://d-solution.org/service-marketing.jpg" alt="Campaña digital"/></div><div class="ds-project-body"><p class="ds-project-category">Marketing</p><h3>Campaña digital</h3><p>Estrategia, medición y optimización para generar oportunidades reales.</p><a href="#contacto">Ver proyecto →</a></div></article>
+                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="https://d-solution.org/service-web.jpg" alt="Sitio web corporativo"/></div><div class="ds-project-body"><p class="ds-project-category">Web</p><h3>Sitio web corporativo</h3><p>Diseño y estructura para una presencia digital clara, rápida y premium.</p><a href="#contacto">Ver proyecto →</a></div></article>
+                        </div>
+                    </div>
+                </section>
+
+                <t t-call="website_dsolution.contact"/>
+                <t t-call="website_dsolution.footer"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="header" name="D-Solution Header">
+        <header class="ds-header">
+            <nav class="ds-nav" aria-label="Navegación principal">
+                <a class="ds-brand" href="/" aria-label="D-Solution Inicio">
+                    <img class="ds-brand-logo ds-brand-logo--light" src="https://d-solution.org/ds-logo-mark-light.png" alt="D-Solution"/>
+                    <img class="ds-brand-logo ds-brand-logo--dark" src="https://d-solution.org/ds-logo-mark-dark.png" alt="D-Solution"/>
+                    <span class="ds-brand-copy">
+                        <span class="ds-brand-name">D-Solution</span>
+                        <span class="ds-brand-tagline">Audiovisual · Marketing Digital · Desarrollo Web</span>
+                    </span>
+                </a>
+
+                <div class="ds-nav-links">
+                    <a href="/#inicio">Inicio</a>
+                    <div class="ds-services-wrap">
+                        <a href="/servicios">Servicios</a>
+                        <button class="ds-services-toggle js_ds_services_toggle" type="button" aria-label="Abrir servicios" aria-expanded="false">⌄</button>
+                        <div class="ds-services-menu">
+                            <a href="/servicios/tecnologia-audiovisual">Audiovisual</a>
+                            <a href="/servicios/marketing-digital">Marketing Digital</a>
+                            <a href="/servicios/desarrollo-web">Desarrollo Web</a>
+                            <a href="/servicios/automatizacion-ia">IA y Automatización</a>
+                            <a href="/servicios/branding-diseno">Branding y Diseño</a>
+                            <a href="/servicios/fotografia-profesional">Fotografía Profesional</a>
+                        </div>
+                    </div>
+                    <a href="/#portafolio">Portafolio</a>
+                    <a href="/#proceso">Proceso</a>
+                    <a href="/#contacto">Contacto</a>
+                </div>
+
+                <div class="ds-nav-actions">
+                    <div class="ds-language" title="La traducción nativa de Odoo se activará en la siguiente fase">
+                        <span class="is-active">ES</span><span>EN</span>
+                    </div>
+                    <a class="ds-cta" href="/#contacto">Hablemos de tu proyecto</a>
+                </div>
+
+                <button class="ds-mobile-toggle js_ds_mobile_toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+            </nav>
+
+            <div class="ds-mobile-menu">
+                <a href="/#inicio">Inicio</a>
+                <a href="/servicios">Servicios</a>
+                <div class="ds-mobile-submenu">
+                    <a href="/servicios/tecnologia-audiovisual">Audiovisual</a>
+                    <a href="/servicios/marketing-digital">Marketing Digital</a>
+                    <a href="/servicios/desarrollo-web">Desarrollo Web</a>
+                    <a href="/servicios/automatizacion-ia">IA y Automatización</a>
+                    <a href="/servicios/branding-diseno">Branding y Diseño</a>
+                    <a href="/servicios/fotografia-profesional">Fotografía Profesional</a>
+                </div>
+                <a href="/#portafolio">Portafolio</a>
+                <a href="/#proceso">Proceso</a>
+                <a href="/#contacto">Contacto</a>
+                <a class="ds-btn ds-btn--gold" href="/#contacto">Hablemos de tu proyecto</a>
+            </div>
+        </header>
+    </template>
+
+    <template id="services_grid" name="D-Solution Services Grid">
+        <div class="ds-services-grid ds-reveal">
+            <a class="ds-service-card" href="/servicios/tecnologia-audiovisual">
+                <img src="https://d-solution.org/service-audiovisual.jpg" alt="Audiovisual"/>
+                <div class="ds-service-content"><span class="ds-service-number">01</span><h3>Audiovisual</h3><span class="ds-service-link">Explorar servicio →</span></div>
+            </a>
+            <a class="ds-service-card" href="/servicios/marketing-digital">
+                <img src="https://d-solution.org/service-marketing.jpg" alt="Marketing Digital"/>
+                <div class="ds-service-content"><span class="ds-service-number">02</span><h3>Marketing Digital</h3><span class="ds-service-link">Explorar servicio →</span></div>
+            </a>
+            <a class="ds-service-card" href="/servicios/desarrollo-web">
+                <img src="https://d-solution.org/service-web.jpg" alt="Desarrollo Web"/>
+                <div class="ds-service-content"><span class="ds-service-number">03</span><h3>Desarrollo Web</h3><span class="ds-service-link">Explorar servicio →</span></div>
+            </a>
+            <a class="ds-service-card" href="/servicios/automatizacion-ia">
+                <img src="https://d-solution.org/service-automation.jpg" alt="IA y Automatización"/>
+                <div class="ds-service-content"><span class="ds-service-number">04</span><h3>IA y Automatización</h3><span class="ds-service-link">Explorar servicio →</span></div>
+            </a>
+            <a class="ds-service-card" href="/servicios/branding-diseno">
+                <img src="https://d-solution.org/service-branding.jpg" alt="Branding y Diseño"/>
+                <div class="ds-service-content"><span class="ds-service-number">05</span><h3>Branding y Diseño</h3><span class="ds-service-link">Explorar servicio →</span></div>
+            </a>
+            <a class="ds-service-card" href="/servicios/fotografia-profesional">
+                <img src="https://d-solution.org/service-photography.jpg" alt="Fotografía Profesional"/>
+                <div class="ds-service-content"><span class="ds-service-number">06</span><h3>Fotografía Profesional</h3><span class="ds-service-link">Explorar servicio →</span></div>
+            </a>
+        </div>
+    </template>
+
+    <template id="contact" name="D-Solution Contact CRM Form">
+        <section id="contacto" class="ds-contact-wrap">
+            <div class="ds-contact ds-reveal">
+                <div>
+                    <p class="ds-eyebrow">Contacto</p>
+                    <h2 class="ds-title">Hablemos de tu próximo proyecto</h2>
+                    <span class="ds-divider"/>
+                    <div class="ds-contact-info">
+                        <a href="mailto:dsolutions.redes@gmail.com">✉ dsolutions.redes@gmail.com</a>
+                        <a href="https://wa.me/34624571859" target="_blank" rel="noopener">◉ +34 624 57 18 59</a>
+                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener">⌖ Barcelona, España</a>
+                    </div>
+                </div>
+
+                <section class="s_website_form ds-contact-form" data-vcss="001" data-snippet="s_website_form">
+                    <form action="/website/form/" method="post" enctype="multipart/form-data"
+                          class="o_mark_required" data-mark="*" data-model_name="crm.lead"
+                          data-success-mode="redirect" data-success-page="/gracias" data-pre-fill="true">
+                        <input type="hidden" name="name" value="Solicitud desde d-solution.org"/>
+                        <div class="s_website_form_rows row s_col_no_bgcolor">
+                            <div class="ds-field col-lg-6 s_website_form_field s_website_form_required" data-type="char" data-name="Nombre">
+                                <label for="ds_contact_name">Nombre completo *</label>
+                                <input id="ds_contact_name" class="form-control s_website_form_input" type="text" name="contact_name" required="1"/>
+                            </div>
+                            <div class="ds-field col-lg-6 s_website_form_field s_website_form_required" data-type="email" data-name="Email">
+                                <label for="ds_email">Email *</label>
+                                <input id="ds_email" class="form-control s_website_form_input" type="email" name="email_from" required="1"/>
+                            </div>
+                            <div class="ds-field col-lg-6 s_website_form_field" data-type="tel" data-name="Teléfono">
+                                <label for="ds_phone">Teléfono / WhatsApp</label>
+                                <input id="ds_phone" class="form-control s_website_form_input" type="tel" name="phone"/>
+                            </div>
+                            <div class="ds-field col-lg-6 s_website_form_field" data-type="char" data-name="Empresa">
+                                <label for="ds_company">Empresa / Proyecto</label>
+                                <input id="ds_company" class="form-control s_website_form_input" type="text" name="partner_name"/>
+                            </div>
+                            <div class="ds-field col-12 s_website_form_field s_website_form_required" data-type="text" data-name="Mensaje">
+                                <label for="ds_description">Cuéntanos sobre tu proyecto *</label>
+                                <textarea id="ds_description" class="form-control s_website_form_input" name="description" required="1"/>
+                            </div>
+                            <div class="ds-submit col-12 s_website_form_submit">
+                                <a href="#" role="button" class="btn s_website_form_send">Enviar mensaje</a>
+                                <span id="s_website_form_result"/>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </template>
+
+    <template id="footer" name="D-Solution Footer">
+        <footer class="ds-footer">
+            <div class="ds-container">
+                <div class="ds-footer-grid">
+                    <div>
+                        <a class="ds-footer-brand" href="/">
+                            <img src="https://d-solution.org/ds-logo-mark-light.png" alt="D-Solution"/>
+                            <strong>D-Solution</strong>
+                        </a>
+                        <p>Tecnología audiovisual, marketing digital, desarrollo web, automatización y creatividad para negocios que quieren crecer con una ejecución clara y profesional.</p>
+                    </div>
+                    <div>
+                        <h4>Navegación</h4>
+                        <div class="ds-footer-links">
+                            <a href="/">Inicio</a><a href="/servicios">Servicios</a><a href="/#portafolio">Portafolio</a><a href="/#proceso">Proceso</a><a href="/#contacto">Contacto</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Servicios</h4>
+                        <div class="ds-footer-links">
+                            <a href="/servicios/tecnologia-audiovisual">Audiovisual</a>
+                            <a href="/servicios/marketing-digital">Marketing Digital</a>
+                            <a href="/servicios/desarrollo-web">Desarrollo Web</a>
+                            <a href="/servicios/automatizacion-ia">IA y Automatización</a>
+                            <a href="/servicios/branding-diseno">Branding y Diseño</a>
+                            <a href="/servicios/fotografia-profesional">Fotografía Profesional</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ds-footer-bottom">© 2026 D-Solution. Todos los derechos reservados.</div>
+            </div>
+        </footer>
+    </template>
+
+    <template id="service_page_shell" name="D-Solution Service Page Shell">
+        <t t-call="website.layout">
+            <t t-set="no_header" t-value="True"/>
+            <t t-set="no_footer" t-value="True"/>
+            <div id="wrap" class="oe_structure dsolution-page dsolution-service-page">
+                <t t-call="website_dsolution.header"/>
+                <section class="ds-service-hero">
+                    <img t-att-src="service_image" t-att-alt="service_title"/>
+                    <div class="ds-service-hero-inner ds-reveal">
+                        <span class="ds-service-hero-number"><t t-out="service_number"/></span>
+                        <h1><t t-out="service_title"/></h1>
+                        <p><t t-out="service_intro"/></p>
+                        <div class="ds-hero-actions" style="justify-content:flex-start">
+                            <a class="ds-btn ds-btn--gold" href="#contacto">Hablemos de tu proyecto</a>
+                            <a class="ds-btn ds-btn--outline" href="/servicios">Todos los servicios</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="ds-section">
+                    <div class="ds-container ds-service-content-grid">
+                        <div class="ds-reveal">
+                            <p class="ds-eyebrow">Qué hacemos</p>
+                            <h2 class="ds-title"><t t-out="service_heading"/></h2>
+                            <span class="ds-divider"/>
+                            <p class="ds-subtitle"><t t-out="service_body"/></p>
+                        </div>
+                        <div class="ds-service-points ds-reveal">
+                            <t t-foreach="service_points" t-as="point">
+                                <div class="ds-service-point"><strong><t t-out="point[0]"/></strong><span><t t-out="point[1]"/></span></div>
+                            </t>
+                        </div>
+                    </div>
+                </section>
+                <t t-call="website_dsolution.contact"/>
+                <t t-call="website_dsolution.footer"/>
+            </div>
+        </t>
+    </template>
+
+</odoo>
