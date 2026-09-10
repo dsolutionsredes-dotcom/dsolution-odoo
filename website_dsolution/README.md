@@ -88,3 +88,10 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 
 ## v0.4
 - Corrige la Home para ocultar correctamente la cabecera y pie estándar de Odoo antes de llamar a `website.layout`.
+
+
+## v0.5
+- Todos los recursos visuales del frontend apuntan ahora a rutas locales del módulo Odoo.
+- Añade script de sincronización para copiar una sola vez los recursos actuales desde el repo `dsolution-web` al módulo Odoo.
+- Ajustes visuales y responsive para desktop, tablet y móvil.
+- El Hero mantiene el vídeo actual, pero con tratamiento visual más oscuro para disimular artefactos de compresión. La calidad máxima sigue limitada por el archivo de vídeo original.

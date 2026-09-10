@@ -5,8 +5,8 @@
         <header class="ds-header">
             <nav class="ds-nav" aria-label="Navegación principal">
                 <a class="ds-brand" href="/" aria-label="D-Solution Inicio">
-                    <img class="ds-brand-logo ds-brand-logo--light" src="https://d-solution.org/ds-logo-mark-light.png" alt="D-Solution"/>
-                    <img class="ds-brand-logo ds-brand-logo--dark" src="https://d-solution.org/ds-logo-mark-dark.png" alt="D-Solution"/>
+                    <img class="ds-brand-logo ds-brand-logo--light" src="/website_dsolution/static/src/img/content/ds-logo-mark-light.png" alt="D-Solution"/>
+                    <img class="ds-brand-logo ds-brand-logo--dark" src="/website_dsolution/static/src/img/content/ds-logo-mark-dark.png" alt="D-Solution"/>
                     <span class="ds-brand-copy">
                         <span class="ds-brand-name">D-Solution</span>
                         <span class="ds-brand-tagline">Audiovisual · Marketing Digital · Desarrollo Web</span>
@@ -64,27 +64,27 @@
     <template id="services_grid" name="D-Solution Services Grid">
         <div class="ds-services-grid ds-reveal">
             <a class="ds-service-card" href="/servicios/tecnologia-audiovisual">
-                <img src="https://d-solution.org/service-audiovisual.jpg" alt="Audiovisual"/>
+                <img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Audiovisual"/>
                 <div class="ds-service-content"><span class="ds-service-number">01</span><h3>Audiovisual</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/marketing-digital">
-                <img src="https://d-solution.org/service-marketing.jpg" alt="Marketing Digital"/>
+                <img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Marketing Digital"/>
                 <div class="ds-service-content"><span class="ds-service-number">02</span><h3>Marketing Digital</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/desarrollo-web">
-                <img src="https://d-solution.org/service-web.jpg" alt="Desarrollo Web"/>
+                <img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Desarrollo Web"/>
                 <div class="ds-service-content"><span class="ds-service-number">03</span><h3>Desarrollo Web</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/automatizacion-ia">
-                <img src="https://d-solution.org/service-automation.jpg" alt="IA y Automatización"/>
+                <img src="/website_dsolution/static/src/img/content/service-automation.jpg" alt="IA y Automatización"/>
                 <div class="ds-service-content"><span class="ds-service-number">04</span><h3>IA y Automatización</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/branding-diseno">
-                <img src="https://d-solution.org/service-branding.jpg" alt="Branding y Diseño"/>
+                <img src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Branding y Diseño"/>
                 <div class="ds-service-content"><span class="ds-service-number">05</span><h3>Branding y Diseño</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/fotografia-profesional">
-                <img src="https://d-solution.org/service-photography.jpg" alt="Fotografía Profesional"/>
+                <img src="/website_dsolution/static/src/img/content/service-photography.jpg" alt="Fotografía Profesional"/>
                 <div class="ds-service-content"><span class="ds-service-number">06</span><h3>Fotografía Profesional</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
         </div>
@@ -147,7 +147,7 @@
                 <div class="ds-footer-grid">
                     <div>
                         <a class="ds-footer-brand" href="/">
-                            <img src="https://d-solution.org/ds-logo-mark-light.png" alt="D-Solution"/>
+                            <img src="/website_dsolution/static/src/img/content/ds-logo-mark-light.png" alt="D-Solution"/>
                             <strong>D-Solution</strong>
                         </a>
                         <p>Tecnología audiovisual, marketing digital, desarrollo web, automatización y creatividad para negocios que quieren crecer con una ejecución clara y profesional.</p>
