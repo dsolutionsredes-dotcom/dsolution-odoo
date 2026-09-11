@@ -67,27 +67,27 @@
     <template id="services_grid" name="D-Solution Services Grid">
         <div class="ds-services-grid ds-reveal">
             <a class="ds-service-card" href="/servicios/tecnologia-audiovisual">
-                <img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Audiovisual"/>
+                <img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Audiovisual" class="img img-fluid o_we_custom_image"/>
                 <div class="ds-service-content"><span class="ds-service-number">01</span><h3>Audiovisual</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/marketing-digital">
-                <img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Marketing Digital"/>
+                <img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Marketing Digital" class="img img-fluid o_we_custom_image"/>
                 <div class="ds-service-content"><span class="ds-service-number">02</span><h3>Marketing Digital</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/desarrollo-web">
-                <img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Desarrollo Web"/>
+                <img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Desarrollo Web" class="img img-fluid o_we_custom_image"/>
                 <div class="ds-service-content"><span class="ds-service-number">03</span><h3>Desarrollo Web</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/automatizacion-ia">
-                <img src="/website_dsolution/static/src/img/content/service-automation.jpg" alt="IA y Automatización"/>
+                <img src="/website_dsolution/static/src/img/content/service-automation.jpg" alt="IA y Automatización" class="img img-fluid o_we_custom_image"/>
                 <div class="ds-service-content"><span class="ds-service-number">04</span><h3>IA y Automatización</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/branding-diseno">
-                <img src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Branding y Diseño"/>
+                <img src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Branding y Diseño" class="img img-fluid o_we_custom_image"/>
                 <div class="ds-service-content"><span class="ds-service-number">05</span><h3>Branding y Diseño</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/fotografia-profesional">
-                <img src="/website_dsolution/static/src/img/content/service-photography.jpg" alt="Fotografía Profesional"/>
+                <img src="/website_dsolution/static/src/img/content/service-photography.jpg" alt="Fotografía Profesional" class="img img-fluid o_we_custom_image"/>
                 <div class="ds-service-content"><span class="ds-service-number">06</span><h3>Fotografía Profesional</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
         </div>

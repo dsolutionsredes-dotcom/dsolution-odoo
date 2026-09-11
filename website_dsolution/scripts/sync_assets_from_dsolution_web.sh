@@ -27,4 +27,31 @@ do
 done
 
 
+
+# Fotografías reales usadas actualmente en la sección Proceso de d-solution.org.
+# Primero dejamos fallback local para que nunca queden imágenes rotas.
+cp "$IMG/service-branding.jpg" "$IMG/process-01-entendemos.jpg"
+cp "$IMG/service-marketing.jpg" "$IMG/process-02-estrategia.jpg"
+cp "$IMG/service-audiovisual.jpg" "$IMG/process-03-creamos.jpg"
+cp "$IMG/service-web.jpg" "$IMG/process-04-medimos.jpg"
+
+fetch_process_image() {
+  URL="$1"
+  DEST="$2"
+  TMPFILE="${DEST}.tmp"
+  if curl -fsSL "$URL" -o "$TMPFILE"; then
+    mv "$TMPFILE" "$DEST"
+  else
+    rm -f "$TMPFILE"
+    echo "AVISO: no se pudo actualizar $(basename "$DEST"); se mantiene el fallback local."
+  fi
+}
+
+fetch_process_image "https://admin.d-solution.org/assets/a630fed2-0406-428d-8e7d-447b229b96c1" "$IMG/process-01-entendemos.jpg"
+fetch_process_image "https://admin.d-solution.org/assets/67eb4c18-1300-421f-a98b-80cafbe95ea5" "$IMG/process-02-estrategia.jpg"
+fetch_process_image "https://admin.d-solution.org/assets/8c0f6570-c512-43ca-a32c-f84400fe4231" "$IMG/process-03-creamos.jpg"
+fetch_process_image "https://admin.d-solution.org/assets/99126a16-4d41-443d-9ed4-12b0b8687813" "$IMG/process-04-medimos.jpg"
+
+echo "FOTOS REALES DE PROCESO PREPARADAS"
+
 echo "IMAGENES D-SOLUTION COPIADAS EN ODOO"

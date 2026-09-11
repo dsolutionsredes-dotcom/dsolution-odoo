@@ -120,3 +120,11 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Mantiene el Hero como bloque Odoo real, ya que ese bloque sí funciona correctamente.
 - Mantiene el formulario nativo `s_website_form` sin cambios.
 - No cambia el diseño visual de la web: esta versión es principalmente de estabilidad del editor.
+
+## v0.9
+- Sustituye las cuatro imágenes provisionales de **Proceso** por las fotografías reales usadas actualmente en `d-solution.org`.
+- Las cuatro fotografías se copian al propio Odoo durante la sincronización; si Directus no responde, se mantiene un fallback local y la web no queda rota.
+- Añade `o_we_custom_image` a imágenes de Proceso, Portfolio, Servicios y al bloque D-Solution Imagen para que el selector de medios de Odoo pueda reemplazarlas.
+- Añade **D-Solution Video** en `Sitio web > Editar > Bloques > D-Solution`, reutilizando el bloque de vídeo nativo de Odoo.
+- El vídeo no se inserta automáticamente en la Home porque la Home pública actual no contiene un segundo vídeo separado del Hero; el bloque queda disponible para añadirlo donde quieras.
+- Cuando sustituyes una imagen desde el editor, Odoo puede guardar la nueva imagen en su sistema de medios/adjuntos.

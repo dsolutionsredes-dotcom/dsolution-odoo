@@ -684,3 +684,23 @@ html { scroll-behavior: smooth; }
 .o_editable .dsolution-page .ds-contact-wrap {
     visibility: visible;
 }
+
+
+/* v0.9 - Editable media */
+.ds-process-card > img.o_we_custom_image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.ds-project-media > img.o_we_custom_image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.o_editable img.o_we_custom_image {
+    cursor: pointer;
+}

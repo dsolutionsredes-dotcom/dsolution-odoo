@@ -42,7 +42,7 @@
                     <figure class="ds-builder-media-frame">
                         <img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg"
                              alt="Contenido D-Solution"
-                             class="img img-fluid"/>
+                             class="img img-fluid o_we_custom_image"/>
                     </figure>
                 </div>
             </div>
@@ -87,6 +87,12 @@
                group="dsolution"
                t-thumbnail="/website/static/src/img/snippets_thumbs/s_text_image.svg">
                 <keywords>imagen, foto, media, d-solution</keywords>
+            </t>
+            <t t-snippet="website.s_video"
+               string="D-Solution Video"
+               group="dsolution"
+               t-thumbnail="/website/static/src/img/snippets_thumbs/s_video.svg">
+                <keywords>video, multimedia, youtube, vimeo, d-solution</keywords>
             </t>
             <t t-snippet="website_dsolution.s_ds_cta"
                string="D-Solution CTA"

@@ -76,19 +76,19 @@
                         </div>
                         <div class="ds-process-cards">
                             <article class="ds-process-card ds-reveal">
-                                <img src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Entendemos"/>
+                                <img src="/website_dsolution/static/src/img/content/process-01-entendemos.jpg" alt="Entendemos" class="img img-fluid o_we_custom_image"/>
                                 <div class="ds-process-content"><strong>01</strong><h3>Entendemos</h3><p>Escuchamos tu idea, analizamos tu negocio y definimos objetivos claros.</p></div>
                             </article>
                             <article class="ds-process-card ds-reveal">
-                                <img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Estrategia"/>
+                                <img src="/website_dsolution/static/src/img/content/process-02-estrategia.jpg" alt="Estrategia" class="img img-fluid o_we_custom_image"/>
                                 <div class="ds-process-content"><strong>02</strong><h3>Estrategia</h3><p>Diseñamos un plan digital con canales, contenido y acciones clave.</p></div>
                             </article>
                             <article class="ds-process-card ds-reveal">
-                                <img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Creamos y ejecutamos"/>
+                                <img src="/website_dsolution/static/src/img/content/process-03-creamos.jpg" alt="Creamos y ejecutamos" class="img img-fluid o_we_custom_image"/>
                                 <div class="ds-process-content"><strong>03</strong><h3>Creamos y ejecutamos</h3><p>Producimos contenido, lanzamos campañas, webs o automatizaciones.</p></div>
                             </article>
                             <article class="ds-process-card ds-reveal">
-                                <img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Medimos y optimizamos"/>
+                                <img src="/website_dsolution/static/src/img/content/process-04-medimos.jpg" alt="Medimos y optimizamos" class="img img-fluid o_we_custom_image"/>
                                 <div class="ds-process-content"><strong>04</strong><h3>Medimos y optimizamos</h3><p>Analizamos resultados y ajustamos para mejorar el impacto.</p></div>
                             </article>
                         </div>
@@ -142,9 +142,9 @@
                             <span class="ds-divider"/>
                         </div>
                         <div class="ds-portfolio-grid">
-                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Producción audiovisual"/></div><div class="ds-project-body"><p class="ds-project-category">Audiovisual</p><h3>Producción audiovisual</h3><p>Contenido visual y soporte técnico para comunicar con más impacto.</p><a href="#contacto">Ver proyecto →</a></div></article>
-                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Campaña digital"/></div><div class="ds-project-body"><p class="ds-project-category">Marketing</p><h3>Campaña digital</h3><p>Estrategia, medición y optimización para generar oportunidades reales.</p><a href="#contacto">Ver proyecto →</a></div></article>
-                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Sitio web corporativo"/></div><div class="ds-project-body"><p class="ds-project-category">Web</p><h3>Sitio web corporativo</h3><p>Diseño y estructura para una presencia digital clara, rápida y premium.</p><a href="#contacto">Ver proyecto →</a></div></article>
+                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Producción audiovisual" class="img img-fluid o_we_custom_image"/></div><div class="ds-project-body"><p class="ds-project-category">Audiovisual</p><h3>Producción audiovisual</h3><p>Contenido visual y soporte técnico para comunicar con más impacto.</p><a href="#contacto">Ver proyecto →</a></div></article>
+                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Campaña digital" class="img img-fluid o_we_custom_image"/></div><div class="ds-project-body"><p class="ds-project-category">Marketing</p><h3>Campaña digital</h3><p>Estrategia, medición y optimización para generar oportunidades reales.</p><a href="#contacto">Ver proyecto →</a></div></article>
+                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Sitio web corporativo" class="img img-fluid o_we_custom_image"/></div><div class="ds-project-body"><p class="ds-project-category">Web</p><h3>Sitio web corporativo</h3><p>Diseño y estructura para una presencia digital clara, rápida y premium.</p><a href="#contacto">Ver proyecto →</a></div></article>
                         </div>
                     </div>
                 </section>
