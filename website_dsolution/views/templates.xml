@@ -94,7 +94,7 @@
     </template>
 
     <template id="contact" name="D-Solution Contact CRM Form">
-        <section id="contacto" class="ds-contact-wrap" data-name="D-Solution Contacto" data-snippet="s_ds_contact">
+        <section id="contacto" class="ds-contact-wrap" data-name="D-Solution Contacto">
             <div class="ds-contact ds-reveal">
                 <div>
                     <p class="ds-eyebrow">Contacto</p>

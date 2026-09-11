@@ -53,7 +53,7 @@
                     </a>
                 </section>
 
-                <section id="servicios" class="ds-section ds-section--compact" data-name="D-Solution Servicios" data-snippet="s_ds_services">
+                <section id="servicios" class="ds-section ds-section--compact" data-name="D-Solution Servicios">
                     <div class="ds-container">
                         <div class="ds-reveal">
                             <p class="ds-eyebrow">Servicios</p>
@@ -65,7 +65,7 @@
                     </div>
                 </section>
 
-                <section id="proceso" class="ds-section ds-section--blue" data-name="D-Solution Proceso" data-snippet="s_ds_process">
+                <section id="proceso" class="ds-section ds-section--blue" data-name="D-Solution Proceso">
                     <div class="ds-container ds-process-layout">
                         <div class="ds-reveal">
                             <p class="ds-eyebrow">Proceso</p>
@@ -111,7 +111,7 @@
                     </div>
                 </section>
 
-                <section class="ds-section ds-section--navy" data-name="D-Solution Ecosistema" data-snippet="s_ds_ecosystem">
+                <section class="ds-section ds-section--navy" data-name="D-Solution Ecosistema">
                     <div class="ds-container ds-reveal">
                         <p class="ds-eyebrow">Ecosistema</p>
                         <h2 class="ds-title">Herramientas que usamos para crear, medir y optimizar proyectos.</h2>

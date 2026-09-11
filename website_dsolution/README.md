@@ -113,3 +113,10 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Las imágenes de bloques estándar pueden seleccionarse y reemplazarse desde el editor de Odoo.
 - El fondo vectorial animado del Hero sigue controlado por código; el texto y los bloques de contenido pasan a ser más editables.
 - Header, navegación, destinos de servicios y lógica avanzada siguen controlados por el módulo para evitar romper el diseño.
+
+## v0.8
+- Corrige el problema visual de Deshacer/Rehacer en el editor de Odoo.
+- Elimina identificadores `data-snippet` de secciones que no tenían una plantilla completa asociada.
+- Mantiene el Hero como bloque Odoo real, ya que ese bloque sí funciona correctamente.
+- Mantiene el formulario nativo `s_website_form` sin cambios.
+- No cambia el diseño visual de la web: esta versión es principalmente de estabilidad del editor.

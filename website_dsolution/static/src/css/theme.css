@@ -677,3 +677,10 @@ html { scroll-behavior: smooth; }
     .ds-whatsapp-float { right: 14px; bottom: 16px; width: 56px; height: 56px; }
     .ds-whatsapp-icon { width: 56px; height: 56px; }
 }
+
+
+/* v0.8 - Website Builder stability */
+.o_editable .dsolution-page > section,
+.o_editable .dsolution-page .ds-contact-wrap {
+    visibility: visible;
+}

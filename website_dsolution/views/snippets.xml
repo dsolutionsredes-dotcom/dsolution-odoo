@@ -61,14 +61,6 @@
         </section>
     </template>
 
-    <!-- IDs usados por las secciones preconstruidas de la Home -->
-    <template id="s_ds_services" name="D-Solution Servicios"/>
-    <template id="s_ds_process" name="D-Solution Proceso"/>
-    <template id="s_ds_stats" name="D-Solution Resultados"/>
-    <template id="s_ds_ecosystem" name="D-Solution Ecosistema"/>
-    <template id="s_ds_portfolio" name="D-Solution Portafolio"/>
-    <template id="s_ds_contact" name="D-Solution Contacto"/>
-
     <template id="snippets" inherit_id="website.snippets" name="D-Solution Snippets">
         <xpath expr="//snippets[@id='snippet_groups']/t[@id='installed_snippets_hook']" position="before">
             <t snippet-group="dsolution"
