@@ -53,7 +53,7 @@
                     </a>
                 </section>
 
-                <section id="servicios" class="ds-section ds-section--compact" data-name="D-Solution Servicios">
+                <section id="servicios" class="ds-section ds-section--compact" data-name="D-Solution Servicios" data-snippet="s_ds_services_full">
                     <div class="ds-container">
                         <div class="ds-reveal">
                             <p class="ds-eyebrow">Servicios</p>
@@ -65,7 +65,7 @@
                     </div>
                 </section>
 
-                <section id="proceso" class="ds-section ds-section--blue" data-name="D-Solution Proceso">
+                <section id="proceso" class="ds-section ds-section--blue" data-name="D-Solution Proceso" data-snippet="s_ds_process_full">
                     <div class="ds-container ds-process-layout">
                         <div class="ds-reveal">
                             <p class="ds-eyebrow">Proceso</p>

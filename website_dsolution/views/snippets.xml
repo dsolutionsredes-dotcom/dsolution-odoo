@@ -61,6 +61,103 @@
         </section>
     </template>
 
+
+    <!-- v0.10: plantillas completas de los bloques existentes.
+         Evita plantillas vacías y permite al editor trabajar con su contenido interno. -->
+    <template id="s_ds_services_full" name="D-Solution Servicios">
+<section id="servicios" class="ds-section ds-section--compact" data-name="D-Solution Servicios" data-snippet="s_ds_services_full">
+                    <div class="ds-container">
+                        <div class="ds-reveal">
+                            <p class="ds-eyebrow">Servicios</p>
+                            <h2 class="ds-title">Soluciones creativas para impulsar tu negocio</h2>
+                            <p class="ds-subtitle">Servicios independientes o integrados en una estrategia completa para tu marca.</p>
+                            <span class="ds-divider"/>
+                        </div>
+                        <t t-call="website_dsolution.services_grid"/>
+                    </div>
+                </section>
+    </template>
+
+    <template id="s_ds_process_full" name="D-Solution Proceso">
+<section id="proceso" class="ds-section ds-section--blue" data-name="D-Solution Proceso" data-snippet="s_ds_process_full">
+                    <div class="ds-container ds-process-layout">
+                        <div class="ds-reveal">
+                            <p class="ds-eyebrow">Proceso</p>
+                            <h2 class="ds-title">Cómo trabajamos contigo</h2>
+                            <p class="ds-subtitle">Un proceso ágil y colaborativo para convertir ideas en resultados reales.</p>
+                            <span class="ds-divider"/>
+                            <a class="ds-btn ds-btn--outline" style="margin-top:26px;border-color:#D4AF37;color:#D4AF37" href="#contacto">Hablemos de tu proyecto →</a>
+                        </div>
+                        <div class="ds-process-cards">
+                            <article class="ds-process-card ds-reveal">
+                                <img src="/website_dsolution/static/src/img/content/process-01-entendemos.jpg" alt="Entendemos" class="img img-fluid o_we_custom_image"/>
+                                <div class="ds-process-content"><strong>01</strong><h3>Entendemos</h3><p>Escuchamos tu idea, analizamos tu negocio y definimos objetivos claros.</p></div>
+                            </article>
+                            <article class="ds-process-card ds-reveal">
+                                <img src="/website_dsolution/static/src/img/content/process-02-estrategia.jpg" alt="Estrategia" class="img img-fluid o_we_custom_image"/>
+                                <div class="ds-process-content"><strong>02</strong><h3>Estrategia</h3><p>Diseñamos un plan digital con canales, contenido y acciones clave.</p></div>
+                            </article>
+                            <article class="ds-process-card ds-reveal">
+                                <img src="/website_dsolution/static/src/img/content/process-03-creamos.jpg" alt="Creamos y ejecutamos" class="img img-fluid o_we_custom_image"/>
+                                <div class="ds-process-content"><strong>03</strong><h3>Creamos y ejecutamos</h3><p>Producimos contenido, lanzamos campañas, webs o automatizaciones.</p></div>
+                            </article>
+                            <article class="ds-process-card ds-reveal">
+                                <img src="/website_dsolution/static/src/img/content/process-04-medimos.jpg" alt="Medimos y optimizamos" class="img img-fluid o_we_custom_image"/>
+                                <div class="ds-process-content"><strong>04</strong><h3>Medimos y optimizamos</h3><p>Analizamos resultados y ajustamos para mejorar el impacto.</p></div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+    </template>
+
+    <template id="s_ds_portfolio_full" name="D-Solution Portafolio">
+<section id="portafolio" class="ds-section ds-section--white">
+                    <div class="ds-container">
+                        <div class="ds-reveal">
+                            <p class="ds-eyebrow">Portafolio</p>
+                            <h2 class="ds-title">Proyectos que inspiran nuevas ideas</h2>
+                            <p class="ds-subtitle">Una selección inicial de trabajos que combinan estrategia, creatividad y tecnología. Esta sección se conectará después con datos de Odoo.</p>
+                            <span class="ds-divider"/>
+                        </div>
+                        <div class="ds-portfolio-grid">
+                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Producción audiovisual" class="img img-fluid o_we_custom_image"/></div><div class="ds-project-body"><p class="ds-project-category">Audiovisual</p><h3>Producción audiovisual</h3><p>Contenido visual y soporte técnico para comunicar con más impacto.</p><a href="#contacto">Ver proyecto →</a></div></article>
+                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Campaña digital" class="img img-fluid o_we_custom_image"/></div><div class="ds-project-body"><p class="ds-project-category">Marketing</p><h3>Campaña digital</h3><p>Estrategia, medición y optimización para generar oportunidades reales.</p><a href="#contacto">Ver proyecto →</a></div></article>
+                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Sitio web corporativo" class="img img-fluid o_we_custom_image"/></div><div class="ds-project-body"><p class="ds-project-category">Web</p><h3>Sitio web corporativo</h3><p>Diseño y estructura para una presencia digital clara, rápida y premium.</p><a href="#contacto">Ver proyecto →</a></div></article>
+                        </div>
+                    </div>
+                </section>
+    </template>
+
+    <template id="s_ds_gallery" name="D-Solution Galería">
+        <section class="ds-section ds-gallery-section" data-name="D-Solution Galería" data-snippet="s_ds_gallery">
+            <div class="ds-container">
+                <div class="ds-gallery-heading">
+                    <p class="ds-eyebrow">Galería</p>
+                    <h2 class="ds-title">Contenido visual de tu proyecto</h2>
+                    <p class="ds-subtitle">Haz clic en cada imagen desde el editor de Odoo para sustituirla.</p>
+                    <span class="ds-divider"/>
+                </div>
+                <div class="ds-gallery-grid">
+                    <figure class="ds-gallery-item">
+                        <img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg"
+                             alt="Galería D-Solution 1"
+                             class="img img-fluid o_we_custom_image"/>
+                    </figure>
+                    <figure class="ds-gallery-item">
+                        <img src="/website_dsolution/static/src/img/content/service-marketing.jpg"
+                             alt="Galería D-Solution 2"
+                             class="img img-fluid o_we_custom_image"/>
+                    </figure>
+                    <figure class="ds-gallery-item">
+                        <img src="/website_dsolution/static/src/img/content/service-photography.jpg"
+                             alt="Galería D-Solution 3"
+                             class="img img-fluid o_we_custom_image"/>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </template>
+
     <template id="snippets" inherit_id="website.snippets" name="D-Solution Snippets">
         <xpath expr="//snippets[@id='snippet_groups']/t[@id='installed_snippets_hook']" position="before">
             <t snippet-group="dsolution"
@@ -93,6 +190,12 @@
                group="dsolution"
                t-thumbnail="/website/static/src/img/snippets_thumbs/s_video.svg">
                 <keywords>video, multimedia, youtube, vimeo, d-solution</keywords>
+            </t>
+            <t t-snippet="website_dsolution.s_ds_gallery"
+               string="D-Solution Galería"
+               group="dsolution"
+               t-thumbnail="/website/static/src/img/snippets_thumbs/s_picture.svg">
+                <keywords>galería, imagen, fotos, portfolio, d-solution</keywords>
             </t>
             <t t-snippet="website_dsolution.s_ds_cta"
                string="D-Solution CTA"

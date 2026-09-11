@@ -104,4 +104,13 @@
     } else {
         initDsolutionTheme();
     }
+
+  // v0.10: en modo edición dejamos que Odoo seleccione imágenes dentro de tarjetas
+  // sin navegar accidentalmente a otra página.
+  document.addEventListener('click', function (event) {
+    if (!document.body.classList.contains('editor_enable')) return;
+    var link = event.target.closest('.ds-service-card, .ds-project a');
+    if (link) event.preventDefault();
+  }, true);
+
 })();

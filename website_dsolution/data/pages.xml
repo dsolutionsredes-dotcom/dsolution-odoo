@@ -15,7 +15,7 @@
                     <div id="wrap" class="oe_structure dsolution-page dsolution-service-page">
                         <t t-call="website_dsolution.header"/>
                         <section class="ds-service-hero">
-                            <img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Servicios D-Solution"/>
+                            <img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Servicios D-Solution" class="img img-fluid o_we_custom_image"/>
                             <div class="ds-service-hero-inner ds-reveal">
                                 <span class="ds-service-hero-number">SERVICIOS</span>
                                 <h1>Soluciones conectadas para hacer crecer tu negocio</h1>
@@ -72,7 +72,7 @@
     <record id="page_thanks" model="website.page">
         <field name="name">Gracias</field><field name="is_published" eval="True"/><field name="key">website_dsolution.page_thanks</field><field name="url">/gracias</field><field name="type">qweb</field>
         <field name="arch" type="xml">
-            <t t-name="website_dsolution.page_thanks"><t t-set="no_header" t-value="True"/><t t-set="no_footer" t-value="True"/><t t-call="website.layout"><div id="wrap" class="oe_structure dsolution-page dsolution-service-page"><t t-call="website_dsolution.header"/><section class="ds-service-hero" style="min-height:70vh"><img src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Gracias"/><div class="ds-service-hero-inner"><span class="ds-service-hero-number">MENSAJE RECIBIDO</span><h1>Gracias por escribirnos</h1><p>Tu solicitud ha entrado en D-Solution. Revisaremos el proyecto y nos pondremos en contacto contigo.</p><div class="ds-hero-actions" style="justify-content:flex-start"><a class="ds-btn ds-btn--gold" href="/">Volver al inicio</a></div></div></section><t t-call="website_dsolution.footer"/></div></t></t>
+            <t t-name="website_dsolution.page_thanks"><t t-set="no_header" t-value="True"/><t t-set="no_footer" t-value="True"/><t t-call="website.layout"><div id="wrap" class="oe_structure dsolution-page dsolution-service-page"><t t-call="website_dsolution.header"/><section class="ds-service-hero" style="min-height:70vh"><img src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Gracias" class="img img-fluid o_we_custom_image"/><div class="ds-service-hero-inner"><span class="ds-service-hero-number">MENSAJE RECIBIDO</span><h1>Gracias por escribirnos</h1><p>Tu solicitud ha entrado en D-Solution. Revisaremos el proyecto y nos pondremos en contacto contigo.</p><div class="ds-hero-actions" style="justify-content:flex-start"><a class="ds-btn ds-btn--gold" href="/">Volver al inicio</a></div></div></section><t t-call="website_dsolution.footer"/></div></t></t>
         </field>
     </record>
 

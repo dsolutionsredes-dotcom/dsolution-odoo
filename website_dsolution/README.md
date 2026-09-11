@@ -128,3 +128,13 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Añade **D-Solution Video** en `Sitio web > Editar > Bloques > D-Solution`, reutilizando el bloque de vídeo nativo de Odoo.
 - El vídeo no se inserta automáticamente en la Home porque la Home pública actual no contiene un segundo vídeo separado del Hero; el bloque queda disponible para añadirlo donde quieras.
 - Cuando sustituyes una imagen desde el editor, Odoo puede guardar la nueva imagen en su sistema de medios/adjuntos.
+
+## v0.10
+- Convierte **Servicios**, **Proceso** y **Portafolio** de la Home en snippets completos de Odoo (no plantillas vacías).
+- En modo edición, las imágenes de Proceso y Servicios se muestran temporalmente separadas del texto/overlay para poder seleccionarlas fácilmente.
+- Añade etiquetas visuales `Imagen editable` solo mientras editas.
+- Evita que las tarjetas de servicios/portfolio naveguen al hacer clic durante la edición.
+- Mantiene el diseño original cuando sales del editor.
+- Añade un nuevo bloque **D-Solution Galería** con 3 imágenes reemplazables desde Odoo.
+- El bloque **D-Solution Video** de v0.9 sigue disponible.
+- La imagen principal de la página general `/servicios` también queda preparada para el selector de medios.
