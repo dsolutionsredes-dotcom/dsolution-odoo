@@ -7,13 +7,14 @@ Rebuilds the current D-Solution visual identity inside Odoo Website and
 connects the contact form directly to CRM opportunities.
 """,
     "category": "Website/Theme",
-    "version": "19.5.1.0.5",
+    "version": "19.5.1.0.6",
     "author": "D-Solution",
     "website": "https://d-solution.org",
     "license": "LGPL-3",
     "depends": ["website", "website_crm"],
     "data": [
         "views/templates.xml",
+        "views/snippets.xml",
         "data/homepage.xml",
         "data/pages.xml",
     ],

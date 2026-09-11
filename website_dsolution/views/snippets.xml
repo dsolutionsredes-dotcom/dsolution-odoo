@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Bloques D-Solution disponibles en el Website Builder -->
+    <template id="s_ds_hero" name="D-Solution Hero">
+        <section class="ds-hero ds-hero--builder" data-name="D-Solution Hero" data-snippet="s_ds_hero">
+            <div class="ds-hero-grid" aria-hidden="true"/>
+            <div class="ds-hero-glow ds-hero-glow--one" aria-hidden="true"/>
+            <div class="ds-hero-glow ds-hero-glow--two" aria-hidden="true"/>
+            <div class="ds-hero-content">
+                <p class="ds-hero-eyebrow">D‑Solution · Barcelona</p>
+                <h1><strong>Transformamos ideas</strong><span>en experiencias digitales</span></h1>
+                <p class="ds-hero-kicker">Estrategia, creatividad, tecnología y ejecución conectadas para hacer crecer marcas y negocios.</p>
+                <div class="ds-hero-actions">
+                    <a class="ds-btn ds-btn--gold" href="#contacto">Hablemos de tu proyecto →</a>
+                    <a class="ds-btn ds-btn--outline" href="#servicios">Explorar servicios ↓</a>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_ds_content" name="D-Solution Contenido">
+        <section class="ds-section" data-name="D-Solution Contenido" data-snippet="s_ds_content">
+            <div class="ds-container">
+                <p class="ds-eyebrow">D-Solution</p>
+                <h2 class="ds-title">Título editable desde Odoo</h2>
+                <p class="ds-subtitle">Puedes cambiar este texto directamente desde el editor del sitio web.</p>
+                <span class="ds-divider"/>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_ds_media" name="D-Solution Imagen">
+        <section class="ds-section ds-builder-media" data-name="D-Solution Imagen" data-snippet="s_ds_media">
+            <div class="ds-container">
+                <div class="ds-builder-media-grid">
+                    <div>
+                        <p class="ds-eyebrow">Contenido visual</p>
+                        <h2 class="ds-title">Imagen editable</h2>
+                        <p class="ds-subtitle">Selecciona la imagen en el editor de Odoo para sustituirla por fotografía propia.</p>
+                    </div>
+                    <figure class="ds-builder-media-frame">
+                        <img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg"
+                             alt="Contenido D-Solution"
+                             class="img img-fluid"/>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_ds_cta" name="D-Solution CTA">
+        <section class="ds-section ds-section--blue" data-name="D-Solution CTA" data-snippet="s_ds_cta">
+            <div class="ds-container ds-builder-cta">
+                <div>
+                    <p class="ds-eyebrow">¿Empezamos?</p>
+                    <h2 class="ds-title">Hablemos de tu próximo proyecto</h2>
+                </div>
+                <a class="ds-btn ds-btn--gold" href="#contacto">Contactar →</a>
+            </div>
+        </section>
+    </template>
+
+    <!-- IDs usados por las secciones preconstruidas de la Home -->
+    <template id="s_ds_services" name="D-Solution Servicios"/>
+    <template id="s_ds_process" name="D-Solution Proceso"/>
+    <template id="s_ds_stats" name="D-Solution Resultados"/>
+    <template id="s_ds_ecosystem" name="D-Solution Ecosistema"/>
+    <template id="s_ds_portfolio" name="D-Solution Portafolio"/>
+    <template id="s_ds_contact" name="D-Solution Contacto"/>
+
+    <template id="snippets" inherit_id="website.snippets" name="D-Solution Snippets">
+        <xpath expr="//snippets[@id='snippet_groups']/t[@id='installed_snippets_hook']" position="before">
+            <t snippet-group="dsolution"
+               t-snippet="website.s_snippet_group"
+               string="D-Solution"
+               t-thumbnail="/website/static/src/img/snippets_thumbs/s_cover.svg"/>
+        </xpath>
+
+        <xpath expr="//snippets[@id='snippet_structure']/*[1]" position="before">
+            <t t-snippet="website_dsolution.s_ds_hero"
+               string="D-Solution Hero"
+               group="dsolution"
+               t-thumbnail="/website/static/src/img/snippets_thumbs/s_cover.svg">
+                <keywords>hero, portada, banner, d-solution</keywords>
+            </t>
+            <t t-snippet="website_dsolution.s_ds_content"
+               string="D-Solution Contenido"
+               group="dsolution"
+               t-thumbnail="/website/static/src/img/snippets_thumbs/s_text_block.svg">
+                <keywords>texto, contenido, título, d-solution</keywords>
+            </t>
+            <t t-snippet="website_dsolution.s_ds_media"
+               string="D-Solution Imagen"
+               group="dsolution"
+               t-thumbnail="/website/static/src/img/snippets_thumbs/s_text_image.svg">
+                <keywords>imagen, foto, media, d-solution</keywords>
+            </t>
+            <t t-snippet="website_dsolution.s_ds_cta"
+               string="D-Solution CTA"
+               group="dsolution"
+               t-thumbnail="/website/static/src/img/snippets_thumbs/s_call_to_action.svg">
+                <keywords>cta, contacto, llamada, acción, d-solution</keywords>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

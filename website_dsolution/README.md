@@ -104,3 +104,12 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Mejora el header en móvil: cambia correctamente a fondo claro al abrir el menú, cierra con Escape y se reajusta al cambiar el tamaño.
 - Mejora CTA, microinteracciones, indicador de scroll y responsive del Hero.
 - El selector ES/EN sigue siendo visual por ahora; la siguiente fase debe conectarse a traducciones nativas de Odoo.
+
+## v0.7
+- Reemplaza el WhatsApp dibujado por el icono original de la web D-Solution.
+- Añade un grupo **D-Solution** dentro de `Sitio web > Editar > Bloques`.
+- Añade bloques reutilizables para Hero, contenido, imagen y CTA.
+- Marca las secciones principales de la Home con `data-name` y `data-snippet` para mejorar compatibilidad con Website Builder.
+- Las imágenes de bloques estándar pueden seleccionarse y reemplazarse desde el editor de Odoo.
+- El fondo vectorial animado del Hero sigue controlado por código; el texto y los bloques de contenido pasan a ser más editables.
+- Header, navegación, destinos de servicios y lógica avanzada siguen controlados por el módulo para evitar romper el diseño.

@@ -20,7 +20,8 @@ for f in \
   service-web.jpg \
   service-automation.jpg \
   service-branding.jpg \
-  service-photography.jpg
+  service-photography.jpg \
+  whatsapp-icon.png
 do
   cp "$TMP/public/$f" "$IMG/$f"
 done

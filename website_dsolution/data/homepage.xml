@@ -9,7 +9,7 @@
             <div id="wrap" class="oe_structure dsolution-page">
                 <t t-call="website_dsolution.header"/>
 
-                <section id="inicio" class="ds-hero">
+                <section id="inicio" class="ds-hero" data-name="D-Solution Hero" data-snippet="s_ds_hero">
                     <div class="ds-hero-grid" aria-hidden="true"/>
                     <div class="ds-hero-glow ds-hero-glow--one" aria-hidden="true"/>
                     <div class="ds-hero-glow ds-hero-glow--two" aria-hidden="true"/>
@@ -53,7 +53,7 @@
                     </a>
                 </section>
 
-                <section id="servicios" class="ds-section ds-section--compact">
+                <section id="servicios" class="ds-section ds-section--compact" data-name="D-Solution Servicios" data-snippet="s_ds_services">
                     <div class="ds-container">
                         <div class="ds-reveal">
                             <p class="ds-eyebrow">Servicios</p>
@@ -65,7 +65,7 @@
                     </div>
                 </section>
 
-                <section id="proceso" class="ds-section ds-section--blue">
+                <section id="proceso" class="ds-section ds-section--blue" data-name="D-Solution Proceso" data-snippet="s_ds_process">
                     <div class="ds-container ds-process-layout">
                         <div class="ds-reveal">
                             <p class="ds-eyebrow">Proceso</p>
@@ -111,7 +111,7 @@
                     </div>
                 </section>
 
-                <section class="ds-section ds-section--navy">
+                <section class="ds-section ds-section--navy" data-name="D-Solution Ecosistema" data-snippet="s_ds_ecosystem">
                     <div class="ds-container ds-reveal">
                         <p class="ds-eyebrow">Ecosistema</p>
                         <h2 class="ds-title">Herramientas que usamos para crear, medir y optimizar proyectos.</h2>
