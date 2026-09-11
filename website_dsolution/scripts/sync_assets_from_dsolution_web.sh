@@ -4,10 +4,9 @@ set -eu
 TMP="/tmp/dsolution-web-assets"
 MOD="/mnt/extra-addons/website_dsolution"
 IMG="$MOD/static/src/img/content"
-MEDIA="$MOD/static/src/media"
 
 rm -rf "$TMP"
-mkdir -p "$TMP" "$IMG" "$MEDIA"
+mkdir -p "$TMP" "$IMG"
 
 curl -fsSL https://github.com/dsolutionsredes-dotcom/dsolution-web/archive/refs/heads/main.tar.gz \
   | tar -xz -C "$TMP" --strip-components=1
@@ -26,6 +25,5 @@ do
   cp "$TMP/public/$f" "$IMG/$f"
 done
 
-cp "$TMP/public/hero-dsolution-loop.mp4" "$MEDIA/hero-dsolution-loop.mp4"
 
-echo "ASSETS D-SOLUTION COPIADOS EN ODOO"
+echo "IMAGENES D-SOLUTION COPIADAS EN ODOO"

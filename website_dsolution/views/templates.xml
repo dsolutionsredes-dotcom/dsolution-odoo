@@ -17,7 +17,7 @@
                     <a href="/#inicio">Inicio</a>
                     <div class="ds-services-wrap">
                         <a href="/servicios">Servicios</a>
-                        <button class="ds-services-toggle js_ds_services_toggle" type="button" aria-label="Abrir servicios" aria-expanded="false">⌄</button>
+                        <button class="ds-services-toggle js_ds_services_toggle" type="button" aria-label="Abrir servicios" aria-expanded="false"><span aria-hidden="true">⌄</span></button>
                         <div class="ds-services-menu">
                             <a href="/servicios/tecnologia-audiovisual">Audiovisual</a>
                             <a href="/servicios/marketing-digital">Marketing Digital</a>
@@ -56,7 +56,10 @@
                 <a href="/#portafolio">Portafolio</a>
                 <a href="/#proceso">Proceso</a>
                 <a href="/#contacto">Contacto</a>
-                <a class="ds-btn ds-btn--gold" href="/#contacto">Hablemos de tu proyecto</a>
+                <div class="ds-mobile-language" aria-label="Idiomas">
+                    <span class="is-active">ES</span><span>EN</span>
+                </div>
+                <a class="ds-btn ds-btn--gold" href="/#contacto">Hablemos de tu proyecto <span aria-hidden="true">→</span></a>
             </div>
         </header>
     </template>
@@ -173,6 +176,16 @@
                 <div class="ds-footer-bottom">© 2026 D-Solution. Todos los derechos reservados.</div>
             </div>
         </footer>
+        <a class="ds-whatsapp-float"
+           href="https://wa.me/34624571859?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios."
+           target="_blank" rel="noopener"
+           aria-label="Abrir WhatsApp">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+                <circle cx="32" cy="32" r="31"/>
+                <path d="M20.5 47.5l2.5-8.2a18 18 0 1 1 6.6 6.2l-9.1 2z" class="ds-wa-bubble"/>
+                <path d="M26.1 22.6c.5-1.1 1-1.1 1.7-1.1h1.3c.4 0 .9.1 1.1.9l1.6 4.1c.2.6.1 1.1-.2 1.5l-1.2 1.6c-.4.5-.7.8-.3 1.5 1.7 3 4 5.2 7 6.8.6.3 1 .3 1.4-.2l1.9-2.3c.4-.5.9-.6 1.5-.4l4 1.9c.7.3.9.7.9 1.1 0 .5-.4 3.1-1.9 4.4-1.4 1.3-3.4 2-5.5 1.5-2.8-.7-6.4-2-10.2-5.3-4.8-4.2-7.7-9.4-8.6-12.3-.6-1.9.2-3.7.5-4.2z" class="ds-wa-phone"/>
+            </svg>
+        </a>
     </template>
 
     <template id="service_page_shell" name="D-Solution Service Page Shell">

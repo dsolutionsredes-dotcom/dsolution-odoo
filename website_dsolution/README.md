@@ -95,3 +95,12 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Añade script de sincronización para copiar una sola vez los recursos actuales desde el repo `dsolution-web` al módulo Odoo.
 - Ajustes visuales y responsive para desktop, tablet y móvil.
 - El Hero mantiene el vídeo actual, pero con tratamiento visual más oscuro para disimular artefactos de compresión. La calidad máxima sigue limitada por el archivo de vídeo original.
+
+
+## v0.6
+- El Hero ya no usa vídeo: se recrea con SVG + CSS animado, por lo que no se pixela y escala con nitidez en móvil, tablet, 1080p y 4K.
+- Mantiene las imágenes reales de servicios como archivos locales del módulo Odoo mediante el sincronizador.
+- Añade botón flotante de WhatsApp.
+- Mejora el header en móvil: cambia correctamente a fondo claro al abrir el menú, cierra con Escape y se reajusta al cambiar el tamaño.
+- Mejora CTA, microinteracciones, indicador de scroll y responsive del Hero.
+- El selector ES/EN sigue siendo visual por ahora; la siguiente fase debe conectarse a traducciones nativas de Odoo.

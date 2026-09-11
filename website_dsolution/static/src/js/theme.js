@@ -26,6 +26,8 @@
             mobileToggle.addEventListener("click", () => {
                 const open = mobileMenu.classList.toggle("is-open");
                 mobileToggle.setAttribute("aria-expanded", String(open));
+                header?.classList.toggle("is-menu-open", open);
+                mobileToggle.textContent = open ? "×" : "☰";
             });
         }
 
@@ -44,8 +46,39 @@
         }
 
         page.querySelectorAll(".ds-mobile-menu a").forEach((link) => {
-            link.addEventListener("click", () => mobileMenu?.classList.remove("is-open"));
+            link.addEventListener("click", () => {
+                mobileMenu?.classList.remove("is-open");
+                header?.classList.remove("is-menu-open");
+                if (mobileToggle) {
+                    mobileToggle.setAttribute("aria-expanded", "false");
+                    mobileToggle.textContent = "☰";
+                }
+            });
         });
+
+        document.addEventListener("keydown", (ev) => {
+            if (ev.key === "Escape") {
+                servicesMenu?.classList.remove("is-open");
+                servicesToggle?.setAttribute("aria-expanded", "false");
+                mobileMenu?.classList.remove("is-open");
+                header?.classList.remove("is-menu-open");
+                if (mobileToggle) {
+                    mobileToggle.setAttribute("aria-expanded", "false");
+                    mobileToggle.textContent = "☰";
+                }
+            }
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 1000) {
+                mobileMenu?.classList.remove("is-open");
+                header?.classList.remove("is-menu-open");
+                if (mobileToggle) {
+                    mobileToggle.setAttribute("aria-expanded", "false");
+                    mobileToggle.textContent = "☰";
+                }
+            }
+        }, { passive: true });
 
         const revealItems = page.querySelectorAll(".ds-reveal");
         if ("IntersectionObserver" in window) {
