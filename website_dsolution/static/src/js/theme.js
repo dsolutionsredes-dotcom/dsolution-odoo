@@ -113,4 +113,23 @@
     if (link) event.preventDefault();
   }, true);
 
+
+  // v0.15 — Intro Loader original: una vez por sesión del navegador.
+  (function initDsolutionIntroLoader() {
+    var loader = document.querySelector('.ds-intro-loader');
+    if (!loader) return;
+    var key = 'dsolution-intro-seen';
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    try {
+      if (window.sessionStorage.getItem(key)) { loader.remove(); return; }
+      window.sessionStorage.setItem(key, '1');
+    } catch (e) {}
+    loader.classList.add('is-visible');
+    var visibleFor = reduceMotion ? 350 : 1650;
+    window.setTimeout(function () {
+      loader.classList.add('is-leaving');
+      window.setTimeout(function () { loader.remove(); }, reduceMotion ? 80 : 500);
+    }, visibleFor);
+  })();
+
 })();

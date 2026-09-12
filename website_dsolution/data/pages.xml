@@ -64,26 +64,68 @@
     </record>
 
     <record id="page_service_marketing" model="website.page">
-        <field name="name">Marketing Digital</field><field name="is_published" eval="True"/><field name="key">website_dsolution.page_service_marketing</field><field name="url">/servicios/marketing-digital</field><field name="type">qweb</field>
-        <field name="arch" type="xml"><t t-name="website_dsolution.page_service_marketing"><t t-set="no_header" t-value="True"/><t t-set="no_footer" t-value="True"/>
-            <t t-call="website.layout" additional_title.translate="Marketing Digital y Google Ads | D-Solution" meta_description.translate="Google Ads, analítica, Tag Manager y campañas digitales orientadas a generar oportunidades reales.">
-                <div id="wrap" class="oe_structure dsolution-page dsolution-service-page">
-                    <t t-call="website_dsolution.header"/>
-                    <section class="ds-service-hero ds-service-hero--editable" data-name="Marketing Digital Hero">
-                        <img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Marketing Digital" class="img img-fluid o_we_custom_image"/>
-                        <div class="ds-service-hero-inner ds-reveal"><span class="ds-service-hero-number">02 · MARKETING DIGITAL</span><h1>Marketing orientado a resultados medibles</h1><p>Google Ads, medición, analítica y campañas digitales enfocadas en generar oportunidades reales para tu negocio.</p><div class="ds-hero-actions" style="justify-content:flex-start"><a class="ds-btn ds-btn--gold" href="#contacto">Hablemos de tu proyecto</a><a class="ds-btn ds-btn--outline" href="/servicios">Todos los servicios</a></div></div>
-                    </section>
-                    <section class="ds-section" data-name="Marketing Digital Contenido"><div class="ds-container ds-service-content-grid"><div class="ds-reveal"><p class="ds-eyebrow">Qué hacemos</p><h2 class="ds-title">Estrategia, campañas y medición en un mismo flujo</h2><span class="ds-divider"/><p class="ds-subtitle">Conectamos adquisición, analítica y optimización para tomar decisiones con datos y evitar campañas desconectadas de los objetivos comerciales.</p></div><div class="ds-service-points ds-reveal"><div class="ds-service-point"><strong>Google Ads</strong><span>Estructura, lanzamiento y optimización de campañas.</span></div>
-<div class="ds-service-point"><strong>Analítica</strong><span>Google Analytics y medición orientada a negocio.</span></div>
-<div class="ds-service-point"><strong>Tag Manager</strong><span>Implementación y control de eventos y conversiones.</span></div>
-<div class="ds-service-point"><strong>Optimización</strong><span>Revisión continua de resultados, coste y calidad de leads.</span></div></div></div></section>
-                    <section class="ds-section ds-service-gallery-section" data-name="Marketing Digital Galería"><div class="ds-container"><div class="ds-service-gallery-heading"><p class="ds-eyebrow">Galería</p><h2 class="ds-title">Imágenes del servicio</h2><p class="ds-subtitle">Puedes sustituir estas imágenes directamente desde el editor de Odoo.</p><span class="ds-divider"/></div><div class="ds-service-gallery-grid"><figure class="ds-service-gallery-item"><img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Marketing Digital" class="img img-fluid o_we_custom_image"/></figure>
-<figure class="ds-service-gallery-item"><img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Marketing Digital" class="img img-fluid o_we_custom_image"/></figure>
-<figure class="ds-service-gallery-item"><img src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Marketing Digital" class="img img-fluid o_we_custom_image"/></figure></div></div></section>
-                    <t t-call="website_dsolution.contact"/><t t-call="website_dsolution.footer"/>
-                </div>
+        <field name="name">Marketing Digital</field>
+        <field name="is_published" eval="True"/>
+        <field name="key">website_dsolution.page_service_marketing</field>
+        <field name="url">/servicios/marketing-digital</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <t t-name="website_dsolution.page_service_marketing">
+                <t t-set="no_header" t-value="True"/>
+                <t t-set="no_footer" t-value="True"/>
+                <t t-call="website.layout" additional_title.translate="Marketing Digital y Google Ads | D-Solution" meta_description.translate="Google Ads, Meta Ads, Analytics y Tag Manager con medición y optimización orientadas a resultados.">
+                    <div id="wrap" class="oe_structure dsolution-page dsolution-marketing-page">
+                        <t t-call="website_dsolution.header"/>
+                        <section class="ds-md-hero" data-name="Marketing Digital Hero">
+                            <img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Marketing digital" class="img img-fluid o_we_custom_image ds-md-hero-image"/>
+                            <div class="ds-md-hero-shade" aria-hidden="true"/>
+                            <div class="ds-container ds-md-hero-content">
+                                <div class="ds-md-hero-copy ds-reveal">
+                                    <p class="ds-eyebrow">Servicio</p>
+                                    <h1>Marketing <span>digital</span></h1>
+                                    <i class="ds-md-gold-line" aria-hidden="true"/>
+                                    <p class="ds-md-lead">Creamos campañas digitales claras, bien segmentadas y medibles para atraer a las personas correctas hacia tu negocio.</p>
+                                    <a href="#contacto" class="ds-md-hero-cta">Quiero impulsar mi negocio <span aria-hidden="true">→</span></a>
+                                </div>
+                            </div>
+                            <div class="ds-container ds-md-services-panel ds-reveal">
+                                <div class="ds-md-panel-title"><span>Servicios que ofrecemos</span><i/></div>
+                                <div class="ds-md-services-grid">
+                                    <article class="ds-md-service-item"><div class="ds-md-service-icon ds-md-service-icon--ads">◐</div><div><h3>Google Ads</h3><p>Aparece justo cuando tus clientes buscan lo que ofreces, con campañas precisas que atraen contactos de calidad.</p></div></article>
+                                    <article class="ds-md-service-item"><div class="ds-md-service-icon ds-md-service-icon--meta">∞</div><div><h3>Meta Ads</h3><p>Creamos anuncios para Facebook e Instagram que captan atención y conectan con tu audiencia.</p></div></article>
+                                    <article class="ds-md-service-item"><div class="ds-md-service-icon ds-md-service-icon--analytics">▥</div><div><h3>Google Analytics</h3><p>Configuramos métricas, eventos y conversiones para saber qué funciona y qué mejorar.</p></div></article>
+                                    <article class="ds-md-service-item"><div class="ds-md-service-icon ds-md-service-icon--gtm">GTM</div><div><h3>Google Tag Manager</h3><p>Instalamos etiquetas y tracking ordenado para tener datos claros desde el inicio.</p></div></article>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="ds-md-includes" data-name="Qué incluye Marketing Digital">
+                            <div class="ds-container">
+                                <div class="ds-md-section-heading"><h2>Qué incluye nuestro servicio</h2><i/></div>
+                                <div class="ds-md-includes-shell"><div class="ds-md-includes-grid">
+                                    <article class="ds-md-include-card"><div class="ds-md-include-top"><span class="ds-md-mini-icon">◎</span><b>01</b></div><h3>Configuración de campañas</h3><p>Estructuramos campañas desde el inicio para atraer a tu cliente ideal.</p></article>
+                                    <article class="ds-md-include-card"><div class="ds-md-include-top"><span class="ds-md-mini-icon">⌁</span><b>02</b></div><h3>Creación de anuncios</h3><p>Diseñamos anuncios con mensajes claros que captan atención rápido.</p></article>
+                                    <article class="ds-md-include-card"><div class="ds-md-include-top"><span class="ds-md-mini-icon">⌁</span><b>03</b></div><h3>Tracking y conversiones</h3><p>Medimos lo importante para saber qué funciona y qué no.</p></article>
+                                    <article class="ds-md-include-card"><div class="ds-md-include-top"><span class="ds-md-mini-icon">⌘</span><b>04</b></div><h3>Optimización continua</h3><p>Probamos, analizamos y ajustamos para mejorar cada campaña.</p></article>
+                                    <article class="ds-md-include-card"><div class="ds-md-include-top"><span class="ds-md-mini-icon">▤</span><b>05</b></div><h3>Reporte claro</h3><p>Te entregamos datos simples, insights y próximos pasos.</p></article>
+                                </div></div>
+                            </div>
+                        </section>
+                        <section class="ds-md-audience" data-name="Para quién es Marketing Digital">
+                            <div class="ds-container">
+                                <div class="ds-md-section-heading ds-md-section-heading--dark"><h2>¿Para quién es?</h2><i/></div>
+                                <div class="ds-md-audience-grid">
+                                    <article class="ds-md-audience-card"><img src="/website_dsolution/static/src/img/content/service-photography.jpg" alt="Negocios locales" class="img img-fluid o_we_custom_image"/><div class="ds-md-audience-overlay"/><div class="ds-md-audience-copy"><span class="ds-md-audience-icon">⌂</span><h3>Negocios locales</h3><i/><p>Para negocios que quieren aparecer frente a personas cercanas y listas para contactarlos.</p><b>01</b></div></article>
+                                    <article class="ds-md-audience-card"><img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Empresas en crecimiento" class="img img-fluid o_we_custom_image"/><div class="ds-md-audience-overlay"/><div class="ds-md-audience-copy"><span class="ds-md-audience-icon">▣</span><h3>Empresas en crecimiento</h3><i/><p>Para marcas que necesitan ordenar su marketing y dejar de improvisar.</p><b>02</b></div></article>
+                                    <article class="ds-md-audience-card"><img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="E-commerce" class="img img-fluid o_we_custom_image"/><div class="ds-md-audience-overlay"/><div class="ds-md-audience-copy"><span class="ds-md-audience-icon">⌑</span><h3>E-commerce</h3><i/><p>Para tiendas online que quieren campañas más claras, medibles y mejor dirigidas.</p><b>03</b></div></article>
+                                </div>
+                            </div>
+                        </section>
+                        <t t-call="website_dsolution.contact"/>
+                        <t t-call="website_dsolution.footer"/>
+                    </div>
+                </t>
             </t>
-        </t></field>
+        </field>
     </record>
 
     <record id="page_service_web" model="website.page">

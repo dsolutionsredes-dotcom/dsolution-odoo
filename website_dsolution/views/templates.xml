@@ -2,6 +2,13 @@
 <odoo>
 
     <template id="header" name="D-Solution Header">
+        <div class="ds-intro-loader" aria-hidden="true">
+            <div class="ds-intro-loader-inner">
+                <img src="/website_dsolution/static/src/img/content/ds-logo-mark-dark.png" alt="D-Solution" class="ds-intro-loader-logo"/>
+                <div class="ds-intro-loader-line"><span/></div>
+                <p>Audiovisual · Marketing Digital · Desarrollo Web</p>
+            </div>
+        </div>
         <header class="ds-header">
             <nav class="ds-nav" aria-label="Navegación principal">
                 <a class="ds-brand" href="/" aria-label="D-Solution Inicio">

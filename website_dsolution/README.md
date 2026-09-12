@@ -182,3 +182,13 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Ajusta tamaños del logo, menú móvil y WhatsApp en pantallas estrechas.
 - Mantiene el sistema de vídeo Hero gestionado por Odoo y el selector ES/EN funcional.
 - No añade traducciones inglesas todavía; se harán cuando el diseño quede estable.
+
+## v0.15
+- Replica la intro de carga del sitio original: logo D-Solution, línea dorada animada y tagline.
+- La intro se muestra una sola vez por sesión del navegador, igual que el código original (`sessionStorage`, 1650 ms).
+- Rediseña únicamente `/servicios/marketing-digital` siguiendo la captura y el código original.
+- Hero oscuro con imagen grande, CTA y panel de 4 servicios.
+- Añade “Qué incluye nuestro servicio” y “¿Para quién es?”.
+- La imagen Hero y las 3 fotos de “¿Para quién es?” son reemplazables desde Website Builder.
+- Responsive específico para Marketing en tablet y móvil.
+- No añade campos Python ni modifica la base de datos: actualización normal.
