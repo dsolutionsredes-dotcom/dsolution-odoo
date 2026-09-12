@@ -34,13 +34,19 @@
 
                 <div class="ds-nav-actions">
                     <div class="ds-language-wrap" aria-label="Idiomas">
-                        <t t-call="website.language_selector_inline">
-                            <t t-set="_div_classes" t-value="'ds-language-native'"/>
-                            <t t-set="_btn_class" t-value="'ds-language-native-btn'"/>
+                        <t t-if="len(frontend_languages) &gt; 1">
+                            <t t-set="ds_active_lang" t-value="frontend_languages.get(lang)"/>
+                            <div class="ds-language-native js_language_selector">
+                                <a t-foreach="frontend_languages.values()"
+                                   t-as="lg"
+                                   t-att-href="url_localized(lang_code=lg.code, prefetch_langs=True, force_default_lang=True)"
+                                   t-attf-class="js_change_lang #{'is-active' if ds_active_lang == lg else ''}"
+                                   t-att-data-url_code="lg.url_code"
+                                   t-att-title="lg.name">
+                                    <t t-out="lg.url_code.upper()"/>
+                                </a>
+                            </div>
                         </t>
-                        <div class="ds-language-fallback" title="Activa English en Idiomas del sitio web para habilitar el selector">
-                            <span class="is-active">ES</span><span>EN</span>
-                        </div>
                     </div>
                     <a class="ds-cta" href="/#contacto">Hablemos de tu proyecto</a>
                 </div>
@@ -63,13 +69,19 @@
                 <a href="/#proceso">Proceso</a>
                 <a href="/#contacto">Contacto</a>
                 <div class="ds-mobile-language-wrap" aria-label="Idiomas">
-                    <t t-call="website.language_selector_inline">
-                        <t t-set="_div_classes" t-value="'ds-language-native ds-language-native--mobile'"/>
-                        <t t-set="_btn_class" t-value="'ds-language-native-btn'"/>
+                    <t t-if="len(frontend_languages) &gt; 1">
+                        <t t-set="ds_active_lang_mobile" t-value="frontend_languages.get(lang)"/>
+                        <div class="ds-language-native ds-language-native--mobile js_language_selector">
+                            <a t-foreach="frontend_languages.values()"
+                               t-as="lg"
+                               t-att-href="url_localized(lang_code=lg.code, prefetch_langs=True, force_default_lang=True)"
+                               t-attf-class="js_change_lang #{'is-active' if ds_active_lang_mobile == lg else ''}"
+                               t-att-data-url_code="lg.url_code"
+                               t-att-title="lg.name">
+                                <t t-out="lg.url_code.upper()"/>
+                            </a>
+                        </div>
                     </t>
-                    <div class="ds-mobile-language ds-language-fallback">
-                        <span class="is-active">ES</span><span>EN</span>
-                    </div>
                 </div>
                 <a class="ds-btn ds-btn--gold" href="/#contacto">Hablemos de tu proyecto <span aria-hidden="true">→</span></a>
             </div>

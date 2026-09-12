@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_dsolution" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.dsolution</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="website.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='website_info_settings']" position="after">
+                <block title="D-Solution" id="dsolution_website_settings">
+                    <setting id="dsolution_hero_video_setting"
+                             string="Hero video"
+                             help="MP4 mostrado como fondo en la portada de D-Solution.">
+                        <div class="content-group">
+                            <field name="dsolution_hero_video_filename" invisible="1"/>
+                            <field name="dsolution_hero_video"
+                                   filename="dsolution_hero_video_filename"
+                                   widget="binary"
+                                   options="{'accepted_file_extensions': '.mp4'}"/>
+                            <div class="text-muted mt-2">
+                                Recomendado: MP4 H.264, 1920x1080, 24-30 fps, sin audio y optimizado para web.
+                            </div>
+                        </div>
+                    </setting>
+                    <setting id="dsolution_hero_image_setting"
+                             string="Hero image / poster"
+                             help="Imagen de respaldo mientras carga el vídeo o si el navegador no puede reproducirlo.">
+                        <field name="dsolution_hero_image"
+                               widget="image"
+                               class="w-50 mt-2"
+                               options="{'accepted_file_extensions': '.png,.jpg,.jpeg,.webp'}"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

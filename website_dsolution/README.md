@@ -163,3 +163,13 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - El selector ES/EN nativo sigue funcionando si English está activado en el sitio.
 - Las traducciones se gestionarán mediante el sistema nativo de Odoo y después se podrá exportar un PO válido.
 - No cambia el Hero de vídeo ni el diseño de la Home.
+
+## v0.13
+- El Hero deja de depender del MP4 de respaldo del repositorio original.
+- Añade en **Sitio web > Configuración > Ajustes > D-Solution** un campo normal de Odoo para subir/reemplazar el MP4 del Hero.
+- El archivo se guarda mediante un campo `Binary(attachment=True)` de Odoo, es decir, en su sistema de archivos/adjuntos persistente.
+- Añade también una imagen Hero/poster editable desde Ajustes.
+- Orden de prioridad: vídeo MP4 subido > imagen Hero > animación vectorial de respaldo.
+- Las demás imágenes del sitio siguen siendo reemplazables desde Website Builder.
+- El selector ES/EN deja de ser decorativo: usa `frontend_languages` + `url_localized`, el mismo mecanismo de URL de idioma que usa el selector oficial de Odoo.
+- No incluye un `.po` manual. Las traducciones se harán con el flujo nativo de traducción de Odoo.

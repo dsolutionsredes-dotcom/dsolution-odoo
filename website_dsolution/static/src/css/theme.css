@@ -1017,3 +1017,66 @@ body.editor_enable .ds-hero--video {
         line-height: 1.04;
     }
 }
+
+
+/* ==========================================================
+   v0.13 — Hero media gestionado por Odoo
+   ========================================================== */
+
+/* La capa de video/imagen queda debajo del contenido. */
+.ds-hero--video .ds-hero-video,
+.ds-hero--image .ds-hero-video {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.ds-hero--video .ds-hero-video-overlay,
+.ds-hero--image .ds-hero-video-overlay {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        linear-gradient(180deg, rgba(0,0,0,.56), rgba(0,0,0,.34) 45%, rgba(0,0,0,.57)),
+        linear-gradient(90deg, rgba(0,33,71,.28), rgba(0,33,71,.08), rgba(0,33,71,.28));
+    pointer-events: none;
+}
+.ds-hero--vector-mode .ds-hero-video-overlay {
+    display: none;
+}
+.ds-hero--video .ds-hero-content,
+.ds-hero--image .ds-hero-content,
+.ds-hero--vector-mode .ds-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Selector ES/EN real de Odoo */
+.ds-language-native a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 34px;
+    min-height: 32px;
+    padding: 6px 9px;
+    border-radius: 999px;
+    color: inherit;
+    text-decoration: none !important;
+    font-size: .75rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.ds-language-native a.is-active {
+    background: #fff;
+    color: #002147 !important;
+}
+.ds-header.is-scrolled .ds-language-native a.is-active,
+.dsolution-service-page .ds-language-native a.is-active,
+.ds-language-native--mobile a.is-active {
+    background: #002147;
+    color: #fff !important;
+}

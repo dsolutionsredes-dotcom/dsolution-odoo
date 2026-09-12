@@ -27,10 +27,6 @@ do
   cp "$TMP/public/$f" "$IMG/$f"
 done
 
-# Vídeo Hero original del repositorio público de d-solution.org.
-# Se sirve localmente desde Odoo; la web Odoo no depende del dominio público en tiempo de ejecución.
-cp "$TMP/public/hero-dsolution-loop.mp4" "$VID/hero-dsolution-loop.mp4"
-echo "VIDEO HERO ORIGINAL COPIADO EN ODOO"
 
 
 
