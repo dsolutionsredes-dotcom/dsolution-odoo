@@ -4,56 +4,56 @@ import { BaseOptionComponent } from "@html_builder/core/utils";
 import { Plugin } from "@html_editor/plugin";
 import { registry } from "@web/core/registry";
 
-export class DsolutionTextAdvancedOption extends BaseOptionComponent {
-    static template = "website_dsolution.DsolutionTextAdvancedOption";
-    static selector = [
-        ".dsolution-page h1",
-        ".dsolution-page h2",
-        ".dsolution-page h3",
-        ".dsolution-page h4",
-        ".dsolution-page p",
-        ".dsolution-page .ds-eyebrow",
-        ".dsolution-page .ds-service-link",
-        ".dsolution-page .ds-brand-tagline",
-    ].join(", ");
+export class DsolutionMarketingHeroTitleOption extends BaseOptionComponent {
+    static template = "website_dsolution.DsolutionMarketingHeroTitleOption";
+    static selector = ".ds-md-hero";
+    static applyTo = ".ds-md-hero-copy h1";
 }
-
-export class DsolutionBoxAdvancedOption extends BaseOptionComponent {
-    static template = "website_dsolution.DsolutionBoxAdvancedOption";
-    static selector = [
-        ".dsolution-page .ds-btn",
-        ".dsolution-page .ds-cta",
-        ".dsolution-page .ds-md-hero-cta",
-        ".dsolution-page .ds-service-card",
-        ".dsolution-page .ds-md-include-card",
-        ".dsolution-page .ds-md-audience-card",
-        ".dsolution-page .ds-contact",
-        ".dsolution-page .ds-md-services-panel",
-    ].join(", ");
+export class DsolutionMarketingHeroLeadOption extends BaseOptionComponent {
+    static template = "website_dsolution.DsolutionMarketingHeroLeadOption";
+    static selector = ".ds-md-hero";
+    static applyTo = ".ds-md-lead";
 }
-
-export class DsolutionImageAdvancedOption extends BaseOptionComponent {
+export class DsolutionMarketingHeroButtonOption extends BaseOptionComponent {
+    static template = "website_dsolution.DsolutionMarketingHeroButtonOption";
+    static selector = ".ds-md-hero";
+    static applyTo = ".ds-md-hero-cta";
+}
+export class DsolutionMarketingIncludesTitleOption extends BaseOptionComponent {
+    static template = "website_dsolution.DsolutionSectionTitleOption";
+    static selector = ".ds-md-includes";
+    static applyTo = ".ds-md-section-heading h2";
+}
+export class DsolutionMarketingAudienceTitleOption extends BaseOptionComponent {
+    static template = "website_dsolution.DsolutionSectionTitleOption";
+    static selector = ".ds-md-audience";
+    static applyTo = ".ds-md-section-heading h2";
+}
+export class DsolutionContactTitleOption extends BaseOptionComponent {
+    static template = "website_dsolution.DsolutionSectionTitleOption";
+    static selector = ".ds-contact-wrap";
+    static applyTo = ".ds-contact .ds-title";
+}
+export class DsolutionMarketingHeroImageOption extends BaseOptionComponent {
     static template = "website_dsolution.DsolutionImageAdvancedOption";
-    static selector = ".dsolution-page img.o_we_custom_image";
-}
-
-export class DsolutionBrandLogoOption extends BaseOptionComponent {
-    static template = "website_dsolution.DsolutionBrandLogoOption";
-    static selector = ".dsolution-page .ds-md-service-logo img.o_we_custom_image";
+    static selector = ".ds-md-hero";
+    static applyTo = ".ds-md-hero-image";
 }
 
 export class DsolutionAdvancedOptionsPlugin extends Plugin {
     static id = "dsolutionAdvancedOptions";
     resources = {
         builder_options: [
-            DsolutionTextAdvancedOption,
-            DsolutionBoxAdvancedOption,
-            DsolutionImageAdvancedOption,
-            DsolutionBrandLogoOption,
+            DsolutionMarketingHeroTitleOption,
+            DsolutionMarketingHeroLeadOption,
+            DsolutionMarketingHeroButtonOption,
+            DsolutionMarketingIncludesTitleOption,
+            DsolutionMarketingAudienceTitleOption,
+            DsolutionContactTitleOption,
+            DsolutionMarketingHeroImageOption,
         ],
     };
 }
-
 registry.category("website-plugins").add(
     DsolutionAdvancedOptionsPlugin.id,
     DsolutionAdvancedOptionsPlugin

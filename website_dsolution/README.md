@@ -231,3 +231,9 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Para logos de Marketing:
   - tamaño 40 / 48 / 56 / 64 px
 - Es una actualización **normal**: no añade campos Python ni modifica la base de datos.
+
+## v0.17.1 — corrección del editor avanzado
+- Corrige el enlace de las opciones con el comportamiento real del Website Builder de Odoo 19.
+- Usa el patrón oficial `selector` + `applyTo`.
+- Cuando la sección `Marketing Digital Hero` está seleccionada, el panel Estilo debe mostrar controles para el título, descripción, botón e imagen.
+- No modifica Python ni base de datos.
