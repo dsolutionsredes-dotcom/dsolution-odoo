@@ -77,7 +77,7 @@
                     <div id="wrap" class="oe_structure dsolution-page dsolution-marketing-page">
                         <t t-call="website_dsolution.header"/>
                         <section class="ds-md-hero" data-name="Marketing Digital Hero">
-                            <img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Marketing digital" class="img img-fluid o_we_custom_image ds-md-hero-image"/>
+                            <img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Marketing digital" class="img img-fluid o_we_custom_image ds-md-hero-image"/>
                             <div class="ds-md-hero-shade" aria-hidden="true"/>
                             <div class="ds-container ds-md-hero-content">
                                 <div class="ds-md-hero-copy ds-reveal">
@@ -91,10 +91,10 @@
                             <div class="ds-container ds-md-services-panel ds-reveal">
                                 <div class="ds-md-panel-title"><span>Servicios que ofrecemos</span><i/></div>
                                 <div class="ds-md-services-grid">
-                                    <article class="ds-md-service-item"><div class="ds-md-service-icon ds-md-service-icon--ads">◐</div><div><h3>Google Ads</h3><p>Aparece justo cuando tus clientes buscan lo que ofreces, con campañas precisas que atraen contactos de calidad.</p></div></article>
-                                    <article class="ds-md-service-item"><div class="ds-md-service-icon ds-md-service-icon--meta">∞</div><div><h3>Meta Ads</h3><p>Creamos anuncios para Facebook e Instagram que captan atención y conectan con tu audiencia.</p></div></article>
-                                    <article class="ds-md-service-item"><div class="ds-md-service-icon ds-md-service-icon--analytics">▥</div><div><h3>Google Analytics</h3><p>Configuramos métricas, eventos y conversiones para saber qué funciona y qué mejorar.</p></div></article>
-                                    <article class="ds-md-service-item"><div class="ds-md-service-icon ds-md-service-icon--gtm">GTM</div><div><h3>Google Tag Manager</h3><p>Instalamos etiquetas y tracking ordenado para tener datos claros desde el inicio.</p></div></article>
+                                    <article class="ds-md-service-item"><div class="ds-md-service-logo"><img src="/website_dsolution/static/src/img/brands/google-ads.svg" alt="Google Ads" class="img img-fluid o_we_custom_image"/></div><div><h3>Google Ads</h3><p>Aparece justo cuando tus clientes buscan lo que ofreces, con campañas precisas que atraen contactos de calidad.</p></div></article>
+                                    <article class="ds-md-service-item"><div class="ds-md-service-logo"><img src="/website_dsolution/static/src/img/brands/meta.svg" alt="Meta Ads" class="img img-fluid o_we_custom_image"/></div><div><h3>Meta Ads</h3><p>Creamos anuncios para Facebook e Instagram que captan atención y conectan con tu audiencia.</p></div></article>
+                                    <article class="ds-md-service-item"><div class="ds-md-service-logo"><img src="/website_dsolution/static/src/img/brands/google-analytics.svg" alt="Google Analytics" class="img img-fluid o_we_custom_image"/></div><div><h3>Google Analytics</h3><p>Configuramos métricas, eventos y conversiones para saber qué funciona y qué mejorar.</p></div></article>
+                                    <article class="ds-md-service-item"><div class="ds-md-service-logo"><img src="/website_dsolution/static/src/img/brands/google-tag-manager.svg" alt="Google Tag Manager" class="img img-fluid o_we_custom_image"/></div><div><h3>Google Tag Manager</h3><p>Instalamos etiquetas y tracking ordenado para tener datos claros desde el inicio.</p></div></article>
                                 </div>
                             </div>
                         </section>

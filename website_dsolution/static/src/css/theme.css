@@ -1345,3 +1345,86 @@ body.editor_enable .ds-md-hero{display:block;min-height:0;padding-top:0}body.edi
 @media(max-width:1050px){.ds-md-hero{min-height:760px}.ds-md-services-grid{grid-template-columns:repeat(2,1fr)}.ds-md-service-item:nth-child(2){border-right:0}.ds-md-service-item:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.10)}.ds-md-includes-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:760px){.ds-intro-loader-logo{width:96px}.ds-intro-loader p{font-size:.62rem;letter-spacing:.18em}.ds-md-hero{min-height:0;padding:98px 0 30px}.ds-md-hero-shade{background:linear-gradient(180deg,rgba(2,9,18,.68),rgba(2,9,18,.92))}.ds-md-hero-content{min-height:480px}.ds-md-hero-copy{max-width:100%}.ds-md-hero-copy h1{font-size:clamp(3rem,15vw,5rem)}.ds-md-services-panel{margin-top:20px;padding:22px 16px}.ds-md-services-grid{grid-template-columns:1fr}.ds-md-service-item{grid-template-columns:50px 1fr;padding:16px 8px;border-right:0!important;border-bottom:1px solid rgba(255,255,255,.10)}.ds-md-service-item:last-child{border-bottom:0}.ds-md-includes{padding:60px 0 64px}.ds-md-includes-grid{grid-template-columns:1fr}.ds-md-include-card{min-height:0}.ds-md-audience{padding:60px 0 64px}.ds-md-audience-grid{grid-template-columns:1fr}.ds-md-audience-card{min-height:360px}}
 @media(prefers-reduced-motion:reduce){.ds-intro-loader-logo,.ds-intro-loader-line span{animation:none!important}}
+
+
+/* ==========================================================
+   v0.16 — Marketing hero photo + editable service brand marks
+   ========================================================== */
+
+.ds-md-hero-image {
+    object-position: center 48%;
+}
+
+/* Logo boxes */
+.ds-md-service-logo {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 56px;
+}
+.ds-md-service-logo img {
+    display: block;
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    border-radius: 16px;
+}
+
+/* Old text-icon classes are no longer used in v0.16. */
+.ds-md-service-icon {
+    display: none !important;
+}
+
+/* Editing: make hero and brand marks easy to replace using Odoo's image selector */
+body.editor_enable .ds-md-service-logo {
+    position: relative;
+    outline: 2px dashed rgba(212,175,55,.48);
+    outline-offset: 3px;
+    border-radius: 16px;
+}
+body.editor_enable .ds-md-service-logo::after {
+    content: "Logo editable";
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    padding: 3px 7px;
+    border-radius: 999px;
+    background: rgba(0,33,71,.88);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    pointer-events: none;
+}
+body.editor_enable .ds-md-service-logo img.o_we_custom_image {
+    cursor: pointer !important;
+}
+
+/* Hero: in editor, clearly expose the underlying image for replacement */
+body.editor_enable .ds-md-hero > img.o_we_custom_image.ds-md-hero-image {
+    outline: 3px dashed rgba(212,175,55,.55);
+    outline-offset: -5px;
+}
+
+/* Better logo/text alignment on the services panel */
+.ds-md-service-item {
+    align-items: center;
+}
+.ds-md-service-item > div:last-child {
+    align-self: center;
+}
+
+/* Tablet/mobile */
+@media (max-width: 760px) {
+    .ds-md-service-logo,
+    .ds-md-service-logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .ds-md-service-logo {
+        flex-basis: 50px;
+    }
+}

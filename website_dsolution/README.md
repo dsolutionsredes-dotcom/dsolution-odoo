@@ -192,3 +192,16 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - La imagen Hero y las 3 fotos de “¿Para quién es?” son reemplazables desde Website Builder.
 - Responsive específico para Marketing en tablet y móvil.
 - No añade campos Python ni modifica la base de datos: actualización normal.
+
+## v0.16
+- Marketing Digital: cambia el fondo Hero por una imagen local más fotográfica/orientada a laptop como base visual.
+- La imagen Hero sigue siendo **editable desde Website Builder**.
+- Sustituye los iconos de texto de “Servicios que ofrecemos” por marcas vectoriales reconocibles para:
+  - Google Ads
+  - Meta Ads
+  - Google Analytics
+  - Google Tag Manager
+- Los 4 logos son archivos SVG locales dentro del addon; no dependen de CDNs externos.
+- Cada logo usa `o_we_custom_image`, por lo que puede reemplazarse desde el editor de Odoo.
+- En modo edición, los logos muestran una guía “Logo editable”.
+- No añade Python ni modifica la base de datos: actualización normal.
