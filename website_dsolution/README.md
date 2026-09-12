@@ -156,3 +156,10 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Si el sitio solo tiene un idioma activo, se mantiene un fallback ES/EN visual; al activar English en Odoo aparece automáticamente el selector real.
 - Añade traducciones EN iniciales para los principales textos de Home/header/contact.
 - Mantiene todos los bloques editables y el formulario CRM.
+
+## v0.12.1 hotfix
+- Corrige el RPC_ERROR al actualizar el módulo en Odoo master/19.5.
+- Elimina temporalmente el `i18n/en_US.po` manual inválido para el importador actual de Odoo.
+- El selector ES/EN nativo sigue funcionando si English está activado en el sitio.
+- Las traducciones se gestionarán mediante el sistema nativo de Odoo y después se podrá exportar un PO válido.
+- No cambia el Hero de vídeo ni el diseño de la Home.
