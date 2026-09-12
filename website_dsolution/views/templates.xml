@@ -33,8 +33,14 @@
                 </div>
 
                 <div class="ds-nav-actions">
-                    <div class="ds-language" title="La traducción nativa de Odoo se activará en la siguiente fase">
-                        <span class="is-active">ES</span><span>EN</span>
+                    <div class="ds-language-wrap" aria-label="Idiomas">
+                        <t t-call="website.language_selector_inline">
+                            <t t-set="_div_classes" t-value="'ds-language-native'"/>
+                            <t t-set="_btn_class" t-value="'ds-language-native-btn'"/>
+                        </t>
+                        <div class="ds-language-fallback" title="Activa English en Idiomas del sitio web para habilitar el selector">
+                            <span class="is-active">ES</span><span>EN</span>
+                        </div>
                     </div>
                     <a class="ds-cta" href="/#contacto">Hablemos de tu proyecto</a>
                 </div>
@@ -56,8 +62,14 @@
                 <a href="/#portafolio">Portafolio</a>
                 <a href="/#proceso">Proceso</a>
                 <a href="/#contacto">Contacto</a>
-                <div class="ds-mobile-language" aria-label="Idiomas">
-                    <span class="is-active">ES</span><span>EN</span>
+                <div class="ds-mobile-language-wrap" aria-label="Idiomas">
+                    <t t-call="website.language_selector_inline">
+                        <t t-set="_div_classes" t-value="'ds-language-native ds-language-native--mobile'"/>
+                        <t t-set="_btn_class" t-value="'ds-language-native-btn'"/>
+                    </t>
+                    <div class="ds-mobile-language ds-language-fallback">
+                        <span class="is-active">ES</span><span>EN</span>
+                    </div>
                 </div>
                 <a class="ds-btn ds-btn--gold" href="/#contacto">Hablemos de tu proyecto <span aria-hidden="true">→</span></a>
             </div>

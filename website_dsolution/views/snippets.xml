@@ -3,18 +3,20 @@
 
     <!-- Bloques D-Solution disponibles en el Website Builder -->
     <template id="s_ds_hero" name="D-Solution Hero">
-        <section class="ds-hero ds-hero--builder" data-name="D-Solution Hero" data-snippet="s_ds_hero">
-            <div class="ds-hero-grid" aria-hidden="true"/>
-            <div class="ds-hero-glow ds-hero-glow--one" aria-hidden="true"/>
-            <div class="ds-hero-glow ds-hero-glow--two" aria-hidden="true"/>
+        <section class="ds-hero ds-hero--video ds-hero--builder" data-name="D-Solution Hero" data-snippet="s_ds_hero">
+            <video class="ds-hero-video"
+                   autoplay="autoplay"
+                   muted="muted"
+                   loop="loop"
+                   playsinline="playsinline"
+                   preload="metadata"
+                   poster="/website_dsolution/static/src/img/content/seo-image.jpg"
+                   aria-hidden="true">
+                <source src="/website_dsolution/static/src/video/hero-dsolution-loop.mp4" type="video/mp4"/>
+            </video>
+            <div class="ds-hero-video-overlay" aria-hidden="true"/>
             <div class="ds-hero-content">
-                <p class="ds-hero-eyebrow">D‑Solution · Barcelona</p>
                 <h1><strong>Transformamos ideas</strong><span>en experiencias digitales</span></h1>
-                <p class="ds-hero-kicker">Estrategia, creatividad, tecnología y ejecución conectadas para hacer crecer marcas y negocios.</p>
-                <div class="ds-hero-actions">
-                    <a class="ds-btn ds-btn--gold" href="#contacto">Hablemos de tu proyecto →</a>
-                    <a class="ds-btn ds-btn--outline" href="#servicios">Explorar servicios ↓</a>
-                </div>
             </div>
         </section>
     </template>

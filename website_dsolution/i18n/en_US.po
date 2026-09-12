@@ -1,0 +1,79 @@
+# Translation of D-Solution Website
+# Language: English (US)
+msgid ""
+msgstr ""
+"Project-Id-Version: website_dsolution 19.5.1.0.11\n"
+"Language: en_US\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Inicio"
+msgstr "Home"
+
+msgid "Servicios"
+msgstr "Services"
+
+msgid "Portafolio"
+msgstr "Portfolio"
+
+msgid "Proceso"
+msgstr "Process"
+
+msgid "Contacto"
+msgstr "Contact"
+
+msgid "Hablemos de tu proyecto"
+msgstr "Let's talk about your project"
+
+msgid "Transformamos ideas"
+msgstr "We transform ideas"
+
+msgid "en experiencias digitales"
+msgstr "into digital experiences"
+
+msgid "Soluciones creativas para impulsar tu negocio"
+msgstr "Creative solutions to move your business forward"
+
+msgid "Servicios independientes o integrados en una estrategia completa para tu marca."
+msgstr "Independent services or integrated into a complete strategy for your brand."
+
+msgid "Explorar servicio"
+msgstr "Explore service"
+
+msgid "Cómo trabajamos contigo"
+msgstr "How we work with you"
+
+msgid "Un proceso ágil y colaborativo para convertir ideas en resultados reales."
+msgstr "An agile and collaborative process to turn ideas into real results."
+
+msgid "¿Por qué elegirnos?"
+msgstr "Why choose us?"
+
+msgid "Resultados que hablan por nosotros"
+msgstr "Results that speak for us"
+
+msgid "Herramientas que usamos para crear, medir y optimizar proyectos."
+msgstr "Tools we use to create, measure, and optimize projects."
+
+msgid "Proyectos que inspiran nuevas ideas"
+msgstr "Projects that inspire new ideas"
+
+msgid "Una selección inicial de trabajos que combinan estrategia, creatividad y tecnología. Esta sección se conectará después con datos de Odoo."
+msgstr "An initial selection of work combining strategy, creativity and technology. This section will later be connected to Odoo data."
+
+msgid "Hablemos de tu próximo proyecto"
+msgstr "Let's talk about your next project"
+
+msgid "Nombre completo *"
+msgstr "Full name *"
+
+msgid "Teléfono / WhatsApp"
+msgstr "Phone / WhatsApp"
+
+msgid "Empresa / Proyecto"
+msgstr "Company / Project"
+
+msgid "Cuéntanos sobre tu proyecto *"
+msgstr "Tell us about your project *"
+
+msgid "Enviar mensaje"
+msgstr "Send message"

@@ -147,3 +147,12 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Mantiene formulario CRM y footer.
 - Añade meta title y meta description únicos por servicio usando `website.layout`.
 - Conserva las URLs actuales.
+
+## v0.12
+- Reconstruye el **Hero de la Home** según la web original: vídeo a pantalla completa, overlay oscuro y título de dos líneas.
+- El vídeo usado es `public/hero-dsolution-loop.mp4` del repositorio original `dsolution-web`; el script de sincronización lo copia automáticamente a Odoo.
+- Ya no hace falta subir manualmente ese MP4 al VPS.
+- Sustituye el selector ES/EN decorativo por el **selector de idioma nativo de Odoo** (`website.language_selector_inline`).
+- Si el sitio solo tiene un idioma activo, se mantiene un fallback ES/EN visual; al activar English en Odoo aparece automáticamente el selector real.
+- Añade traducciones EN iniciales para los principales textos de Home/header/contact.
+- Mantiene todos los bloques editables y el formulario CRM.

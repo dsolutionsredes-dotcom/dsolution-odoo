@@ -4,9 +4,10 @@ set -eu
 TMP="/tmp/dsolution-web-assets"
 MOD="/mnt/extra-addons/website_dsolution"
 IMG="$MOD/static/src/img/content"
+VID="$MOD/static/src/video"
 
 rm -rf "$TMP"
-mkdir -p "$TMP" "$IMG"
+mkdir -p "$TMP" "$IMG" "$VID"
 
 curl -fsSL https://github.com/dsolutionsredes-dotcom/dsolution-web/archive/refs/heads/main.tar.gz \
   | tar -xz -C "$TMP" --strip-components=1
@@ -25,6 +26,12 @@ for f in \
 do
   cp "$TMP/public/$f" "$IMG/$f"
 done
+
+# Vídeo Hero original del repositorio público de d-solution.org.
+# Se sirve localmente desde Odoo; la web Odoo no depende del dominio público en tiempo de ejecución.
+cp "$TMP/public/hero-dsolution-loop.mp4" "$VID/hero-dsolution-loop.mp4"
+echo "VIDEO HERO ORIGINAL COPIADO EN ODOO"
+
 
 
 
