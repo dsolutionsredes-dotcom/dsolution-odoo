@@ -138,3 +138,12 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Añade un nuevo bloque **D-Solution Galería** con 3 imágenes reemplazables desde Odoo.
 - El bloque **D-Solution Video** de v0.9 sigue disponible.
 - La imagen principal de la página general `/servicios` también queda preparada para el selector de medios.
+
+
+## v0.11
+- Reestructura las 6 páginas de servicios para que títulos, textos y puntos estén directamente en cada página y puedan editarse desde Website Builder.
+- Cada servicio tiene imagen Hero individual reemplazable desde Odoo.
+- Añade una galería de 3 imágenes editables por servicio.
+- Mantiene formulario CRM y footer.
+- Añade meta title y meta description únicos por servicio usando `website.layout`.
+- Conserva las URLs actuales.
