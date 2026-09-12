@@ -1080,3 +1080,256 @@ body.editor_enable .ds-hero--video {
     background: #002147;
     color: #fff !important;
 }
+
+
+/* ==========================================================
+   v0.14 — header, chevron y responsive final
+   ========================================================== */
+
+/* Servicios: chevron limpio y alineado como en la web original */
+.ds-services-wrap {
+    gap: 2px;
+}
+.ds-services-toggle {
+    width: 24px;
+    height: 28px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 999px;
+    transition: color .2s ease, background .2s ease;
+}
+.ds-services-toggle:hover,
+.ds-services-toggle:focus-visible {
+    background: rgba(255,255,255,.10);
+    outline: none;
+}
+.ds-header.is-scrolled .ds-services-toggle:hover,
+.ds-header.is-menu-open .ds-services-toggle:hover,
+.dsolution-service-page .ds-services-toggle:hover {
+    background: rgba(0,33,71,.07);
+}
+.ds-services-chevron {
+    display: block;
+    flex: 0 0 auto;
+    transition: transform .22s ease;
+}
+.ds-services-toggle[aria-expanded="true"] .ds-services-chevron {
+    transform: rotate(180deg);
+}
+
+/* Desktop grande */
+@media (min-width: 1181px) {
+    .ds-nav {
+        width: min(1240px, calc(100% - 48px));
+    }
+}
+
+/* Laptop / tablet horizontal: evitamos que el header quede apretado */
+@media (max-width: 1180px) and (min-width: 1101px) {
+    .ds-nav {
+        width: min(1120px, calc(100% - 28px));
+        gap: 14px;
+    }
+    .ds-nav-links {
+        gap: 15px;
+    }
+    .ds-nav-links > a,
+    .ds-services-wrap > a {
+        font-size: .84rem;
+    }
+    .ds-brand {
+        gap: 9px;
+    }
+    .ds-brand-logo {
+        width: 48px;
+        height: 48px;
+    }
+    .ds-brand-tagline {
+        max-width: 240px;
+        font-size: .47rem;
+        letter-spacing: .09em;
+    }
+    .ds-cta {
+        min-height: 46px;
+        padding-inline: 17px;
+        font-size: .81rem;
+    }
+}
+
+/* A partir de 1100 px usamos el menú móvil para no comprimir el header */
+@media (max-width: 1100px) {
+    .ds-nav-links,
+    .ds-nav-actions {
+        display: none !important;
+    }
+    .ds-mobile-toggle {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .ds-nav {
+        width: min(100% - 32px, 1080px);
+    }
+    .ds-mobile-menu {
+        max-height: calc(100svh - 78px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        box-shadow: 0 24px 50px rgba(0,33,71,.12);
+    }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .ds-section {
+        padding: 58px 0;
+    }
+    .ds-section--compact {
+        padding: 48px 0;
+    }
+    .ds-process-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .ds-process-intro {
+        max-width: 680px;
+    }
+    .ds-process-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .ds-portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .ds-contact {
+        grid-template-columns: 1fr;
+    }
+    .ds-footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .ds-footer-grid > :first-child {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Tablet vertical / móvil grande */
+@media (max-width: 760px) {
+    .ds-nav {
+        width: calc(100% - 24px);
+        min-height: 70px;
+    }
+    .ds-brand-logo {
+        width: 46px;
+        height: 46px;
+    }
+    .ds-mobile-toggle {
+        min-width: 44px;
+        min-height: 44px;
+        padding: 8px 11px;
+    }
+    .ds-mobile-menu {
+        padding: 16px 18px 22px;
+        gap: 13px;
+        max-height: calc(100svh - 70px);
+    }
+    .ds-mobile-menu > a {
+        min-height: 38px;
+        display: flex;
+        align-items: center;
+    }
+    .ds-mobile-submenu {
+        margin: 0 0 4px 4px;
+        padding: 6px 0 6px 14px;
+    }
+
+    /* Hero: vídeo a pantalla completa y texto dentro de zona segura */
+    .ds-hero--video,
+    .ds-hero--image,
+    .ds-hero--vector-mode {
+        min-height: 92svh;
+    }
+    .ds-hero--video .ds-hero-video,
+    .ds-hero--image .ds-hero-video {
+        object-position: 50% 50%;
+    }
+    .ds-hero--video .ds-hero-content,
+    .ds-hero--image .ds-hero-content,
+    .ds-hero--vector-mode .ds-hero-content {
+        width: min(calc(100% - 30px), 680px);
+        min-height: 92svh;
+        padding: 104px 0 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ds-hero h1,
+    .ds-hero--video h1 {
+        max-width: 100%;
+        font-size: clamp(2.25rem, 10.5vw, 3.7rem);
+        line-height: 1.03;
+    }
+
+    .ds-services-grid {
+        grid-template-columns: 1fr;
+    }
+    .ds-process-cards,
+    .ds-portfolio-grid,
+    .ds-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    .ds-contact {
+        padding: 26px 18px;
+    }
+    .ds-footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .ds-footer-grid > :first-child {
+        grid-column: auto;
+    }
+}
+
+/* Móvil estrecho */
+@media (max-width: 430px) {
+    .ds-nav {
+        width: calc(100% - 20px);
+        min-height: 66px;
+    }
+    .ds-brand-logo {
+        width: 43px;
+        height: 43px;
+    }
+    .ds-mobile-toggle {
+        min-width: 42px;
+        min-height: 42px;
+        font-size: 1.08rem;
+    }
+    .ds-hero--video,
+    .ds-hero--image,
+    .ds-hero--vector-mode,
+    .ds-hero--video .ds-hero-content,
+    .ds-hero--image .ds-hero-content,
+    .ds-hero--vector-mode .ds-hero-content {
+        min-height: 88svh;
+    }
+    .ds-hero h1,
+    .ds-hero--video h1 {
+        font-size: clamp(2.05rem, 10.8vw, 3.05rem);
+    }
+    .ds-service-card {
+        min-height: 200px;
+    }
+    .ds-process-card {
+        min-height: 300px;
+    }
+    .ds-whatsapp-float {
+        right: 14px;
+        bottom: 14px;
+        width: 54px;
+        height: 54px;
+    }
+    .ds-whatsapp-icon {
+        width: 54px;
+        height: 54px;
+    }
+}

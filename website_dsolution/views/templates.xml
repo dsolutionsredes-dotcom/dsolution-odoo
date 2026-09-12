@@ -17,7 +17,11 @@
                     <a href="/#inicio">Inicio</a>
                     <div class="ds-services-wrap">
                         <a href="/servicios">Servicios</a>
-                        <button class="ds-services-toggle js_ds_services_toggle" type="button" aria-label="Abrir servicios" aria-expanded="false"><span aria-hidden="true">⌄</span></button>
+                        <button class="ds-services-toggle js_ds_services_toggle" type="button" aria-label="Abrir servicios" aria-expanded="false">
+                            <svg class="ds-services-chevron" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
+                                <path d="M3.5 6 8 10.5 12.5 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
                         <div class="ds-services-menu">
                             <a href="/servicios/tecnologia-audiovisual">Audiovisual</a>
                             <a href="/servicios/marketing-digital">Marketing Digital</a>

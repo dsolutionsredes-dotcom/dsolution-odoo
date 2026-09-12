@@ -173,3 +173,12 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Las demás imágenes del sitio siguen siendo reemplazables desde Website Builder.
 - El selector ES/EN deja de ser decorativo: usa `frontend_languages` + `url_localized`, el mismo mecanismo de URL de idioma que usa el selector oficial de Odoo.
 - No incluye un `.po` manual. Las traducciones se harán con el flujo nativo de traducción de Odoo.
+
+## v0.14
+- Corrige el icono de **Servicios**: elimina el carácter `⌄` flotante y usa un chevron SVG limpio, alineado y con giro al abrir el menú.
+- Ajusta el header para portátiles y tablets; a partir de 1100 px hacia abajo usa el menú móvil para evitar elementos comprimidos.
+- Mejora el comportamiento responsive del Hero con vídeo en tablet y móvil.
+- Revisa grids de Proceso, Portfolio, estadísticas, formulario/contacto y footer en tablet/móvil.
+- Ajusta tamaños del logo, menú móvil y WhatsApp en pantallas estrechas.
+- Mantiene el sistema de vídeo Hero gestionado por Odoo y el selector ES/EN funcional.
+- No añade traducciones inglesas todavía; se harán cuando el diseño quede estable.

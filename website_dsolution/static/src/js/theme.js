@@ -70,7 +70,7 @@
         });
 
         window.addEventListener("resize", () => {
-            if (window.innerWidth > 1000) {
+            if (window.innerWidth > 1100) {
                 mobileMenu?.classList.remove("is-open");
                 header?.classList.remove("is-menu-open");
                 if (mobileToggle) {
