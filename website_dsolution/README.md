@@ -205,3 +205,29 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Cada logo usa `o_we_custom_image`, por lo que puede reemplazarse desde el editor de Odoo.
 - En modo edición, los logos muestran una guía “Logo editable”.
 - No añade Python ni modifica la base de datos: actualización normal.
+
+## v0.17 — Editor avanzado D-Solution
+- Añade opciones personalizadas al **Website Builder nativo de Odoo 19** usando `BaseOptionComponent`, `Plugin`, `registry("website-plugins")` y `website.website_builder_assets`.
+- No modifica el core de Odoo.
+- Para textos D-Solution:
+  - espaciado entre letras
+  - altura de línea
+  - peso
+  - mayúsculas/minúsculas
+  - alineación
+  - ancho máximo
+  - colores rápidos de marca
+  - opacidad
+- Para botones/tarjetas/paneles:
+  - radio de esquinas
+  - sombra
+  - opacidad
+- Para imágenes editables:
+  - radio de esquinas
+  - cover/contain
+  - posición
+  - sombra
+  - opacidad
+- Para logos de Marketing:
+  - tamaño 40 / 48 / 56 / 64 px
+- Es una actualización **normal**: no añade campos Python ni modifica la base de datos.

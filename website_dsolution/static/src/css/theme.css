@@ -1428,3 +1428,82 @@ body.editor_enable .ds-md-hero > img.o_we_custom_image.ds-md-hero-image {
         flex-basis: 50px;
     }
 }
+
+
+/* ==========================================================
+   v0.17 — Advanced D-Solution Website Builder options
+   Persisted classes applied by Odoo's native Builder options.
+   ========================================================== */
+
+/* Text tracking */
+.ds-track-tight { letter-spacing: -.03em !important; }
+.ds-track-normal { letter-spacing: 0 !important; }
+.ds-track-wide { letter-spacing: .04em !important; }
+.ds-track-wider { letter-spacing: .08em !important; }
+
+/* Line height */
+.ds-leading-tight { line-height: 1 !important; }
+.ds-leading-normal { line-height: 1.25 !important; }
+.ds-leading-relaxed { line-height: 1.55 !important; }
+.ds-leading-loose { line-height: 1.8 !important; }
+
+/* Font weight */
+.ds-weight-400 { font-weight: 400 !important; }
+.ds-weight-500 { font-weight: 500 !important; }
+.ds-weight-650 { font-weight: 650 !important; }
+.ds-weight-800 { font-weight: 800 !important; }
+
+/* Text transform */
+.ds-case-normal { text-transform: none !important; }
+.ds-case-upper { text-transform: uppercase !important; }
+.ds-case-lower { text-transform: lowercase !important; }
+.ds-case-capitalize { text-transform: capitalize !important; }
+
+/* Text width */
+.ds-text-w-480 { max-width: 480px !important; }
+.ds-text-w-680 { max-width: 680px !important; }
+.ds-text-w-900 { max-width: 900px !important; }
+.ds-text-w-full { max-width: 100% !important; width: 100% !important; }
+
+/* Brand quick colors */
+.ds-color-navy { color: #002147 !important; }
+.ds-color-gold { color: #D4AF37 !important; }
+.ds-color-white { color: #fff !important; }
+.ds-color-muted { color: rgba(16,24,40,.66) !important; }
+
+/* Opacity */
+.ds-opacity-60 { opacity: .60 !important; }
+.ds-opacity-80 { opacity: .80 !important; }
+.ds-opacity-90 { opacity: .90 !important; }
+.ds-opacity-100 { opacity: 1 !important; }
+
+/* Box radius */
+.ds-radius-none { border-radius: 0 !important; }
+.ds-radius-sm { border-radius: 10px !important; }
+.ds-radius-md { border-radius: 18px !important; }
+.ds-radius-lg { border-radius: 28px !important; }
+.ds-radius-pill { border-radius: 999px !important; }
+
+/* Shadows */
+.ds-shadow-none { box-shadow: none !important; }
+.ds-shadow-soft { box-shadow: 0 10px 28px rgba(0,33,71,.08) !important; }
+.ds-shadow-medium { box-shadow: 0 18px 46px rgba(0,33,71,.15) !important; }
+.ds-shadow-strong { box-shadow: 0 28px 70px rgba(0,33,71,.24) !important; }
+
+/* Images */
+.ds-img-radius-none { border-radius: 0 !important; }
+.ds-img-radius-sm { border-radius: 12px !important; }
+.ds-img-radius-lg { border-radius: 24px !important; }
+.ds-img-radius-round { border-radius: 999px !important; aspect-ratio: 1 / 1; object-fit: cover !important; }
+
+.ds-img-cover { object-fit: cover !important; }
+.ds-img-contain { object-fit: contain !important; }
+.ds-img-pos-top { object-position: center top !important; }
+.ds-img-pos-center { object-position: center center !important; }
+.ds-img-pos-bottom { object-position: center bottom !important; }
+
+/* Marketing service logo sizing */
+.ds-md-service-logo img.ds-logo-40 { width: 40px !important; height: 40px !important; }
+.ds-md-service-logo img.ds-logo-48 { width: 48px !important; height: 48px !important; }
+.ds-md-service-logo img.ds-logo-56 { width: 56px !important; height: 56px !important; }
+.ds-md-service-logo img.ds-logo-64 { width: 64px !important; height: 64px !important; }
