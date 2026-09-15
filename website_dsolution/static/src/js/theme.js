@@ -1,6 +1,56 @@
 (function () {
     "use strict";
 
+    document.documentElement.classList.add("ds-js");
+
+
+    // v0.18 — Hero video performance.
+    // The direct MP4 URL is attached only after the critical page load.
+    // This lets text, CSS, images and the poster render first.
+    function initDsolutionHeroVideo() {
+        const videos = document.querySelectorAll(".js_ds_hero_video[data-video-url]");
+        if (!videos.length) {
+            return;
+        }
+
+        const loadVideos = () => {
+            videos.forEach((video) => {
+                if (video.dataset.dsVideoLoaded === "1") {
+                    return;
+                }
+                const url = (video.dataset.videoUrl || "").trim();
+                if (!url) {
+                    return;
+                }
+
+                video.dataset.dsVideoLoaded = "1";
+                video.src = url;
+                video.load();
+
+                const playPromise = video.play();
+                if (playPromise && typeof playPromise.catch === "function") {
+                    playPromise.catch(() => {
+                        // The poster remains visible if autoplay is blocked.
+                    });
+                }
+            });
+        };
+
+        const schedule = () => {
+            if ("requestIdleCallback" in window) {
+                window.requestIdleCallback(loadVideos, { timeout: 1200 });
+            } else {
+                window.setTimeout(loadVideos, 350);
+            }
+        };
+
+        if (document.readyState === "complete") {
+            schedule();
+        } else {
+            window.addEventListener("load", schedule, { once: true });
+        }
+    }
+
     function initDsolutionTheme() {
         const page = document.querySelector(".dsolution-page");
         if (!page || page.dataset.dsReady === "1") {
@@ -104,6 +154,8 @@
     } else {
         initDsolutionTheme();
     }
+
+    initDsolutionHeroVideo();
 
   // v0.10: en modo edición dejamos que Odoo seleccione imágenes dentro de tarjetas
   // sin navegar accidentalmente a otra página.

@@ -12,6 +12,10 @@ class ResConfigSettings(models.TransientModel):
         related="website_id.dsolution_hero_video_filename",
         readonly=False,
     )
+    dsolution_hero_video_url = fields.Char(
+        related="website_id.dsolution_hero_video_url",
+        readonly=False,
+    )
     dsolution_hero_image = fields.Image(
         related="website_id.dsolution_hero_image",
         readonly=False,

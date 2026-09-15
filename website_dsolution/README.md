@@ -237,3 +237,13 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Usa el patrón oficial `selector` + `applyTo`.
 - Cuando la sección `Marketing Digital Hero` está seleccionada, el panel Estilo debe mostrar controles para el título, descripción, botón e imagen.
 - No modifica Python ni base de datos.
+
+## v0.18 — rendimiento del Hero
+- Corrige el cuello de botella detectado en producción: el MP4 del Hero ya no se sirve mediante `/web/content/...`.
+- Añade `Hero video URL` por sitio web para usar una URL HTTPS pública directa a un MP4 servido por CDN/object storage.
+- El antiguo campo Binary se conserva en el modelo únicamente por compatibilidad, pero deja de utilizarse en el Hero público.
+- El vídeo usa `preload="none"` y se solicita después de la carga crítica de la página mediante `requestIdleCallback`/fallback.
+- La imagen Hero funciona como `poster`, por lo que el visitante ve contenido inmediatamente mientras el vídeo comienza.
+- Si no hay URL de vídeo, se usa la imagen Hero; si tampoco hay imagen, se mantiene el fondo vectorial.
+- Añade un fallback para que las secciones `.ds-reveal` nunca queden invisibles si el JavaScript frontend no llega a ejecutarse.
+- Esta versión añade un nuevo campo Python (`dsolution_hero_video_url`) al modelo `website`, por lo que es una **actualización estructural**.

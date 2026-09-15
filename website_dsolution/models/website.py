@@ -14,6 +14,15 @@ class Website(models.Model):
         string="D-Solution Hero Video Filename",
         copy=False,
     )
+    dsolution_hero_video_url = fields.Char(
+        string="D-Solution Hero Video URL",
+        copy=False,
+        help=(
+            "Direct public MP4 URL used by the homepage Hero. "
+            "Prefer a CDN/object-storage URL instead of serving the video "
+            "through Odoo /web/content."
+        ),
+    )
     dsolution_hero_image = fields.Image(
         string="D-Solution Hero Image",
         max_width=1920,

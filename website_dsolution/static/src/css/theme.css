@@ -1507,3 +1507,19 @@ body.editor_enable .ds-md-hero > img.o_we_custom_image.ds-md-hero-image {
 .ds-md-service-logo img.ds-logo-48 { width: 48px !important; height: 48px !important; }
 .ds-md-service-logo img.ds-logo-56 { width: 56px !important; height: 56px !important; }
 .ds-md-service-logo img.ds-logo-64 { width: 64px !important; height: 64px !important; }
+
+
+/* ==========================================================
+   v0.18 — Performance / resilience
+   ========================================================== */
+
+/* If frontend JS is unavailable, content must never remain hidden. */
+html:not(.ds-js) .dsolution-page .ds-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* Poster is the immediate visual while the CDN video is loaded lazily. */
+video.js_ds_hero_video {
+    background: #00162f;
+}
