@@ -247,3 +247,12 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
 - Si no hay URL de vídeo, se usa la imagen Hero; si tampoco hay imagen, se mantiene el fondo vectorial.
 - Añade un fallback para que las secciones `.ds-reveal` nunca queden invisibles si el JavaScript frontend no llega a ejecutarse.
 - Esta versión añade un nuevo campo Python (`dsolution_hero_video_url`) al modelo `website`, por lo que es una **actualización estructural**.
+
+## v0.18.1 — hotfix de compatibilidad del editor
+- Desactiva temporalmente el bundle personalizado `website.website_builder_assets` de D-Solution.
+- Corrige el error de cliente `Class extends value undefined is not a constructor or null`
+  que aparece al abrir el Website Builder en la build Odoo 19.5a1-20260910.
+- Mantiene intactos el Hero optimizado, el campo `Hero video URL`, el diseño y el frontend público.
+- Las opciones avanzadas D-Solution (espaciado de letras, etc.) quedan temporalmente desactivadas
+  hasta adaptarlas a la API exacta de la build instalada.
+- No modifica modelos ni base de datos respecto a v0.18: actualización normal.
