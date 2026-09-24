@@ -51,12 +51,38 @@
         }
     }
 
+
+
+    // v0.19 — Ecosystem logo slots.
+    // Only the first copy is edited in Odoo. Public marquee clones mirror that source.
+    function initDsolutionToolLogos() {
+        const sources = document.querySelectorAll(".js_ds_tool_logo_source[data-tool-key]");
+        if (!sources.length) {
+            return;
+        }
+        const sync = (source) => {
+            const key = source.dataset.toolKey;
+            if (!key) return;
+            document.querySelectorAll(`.js_ds_tool_logo_clone[data-tool-key="${key}"]`).forEach((clone) => {
+                clone.src = source.src;
+                if (source.srcset) clone.srcset = source.srcset;
+                else clone.removeAttribute("srcset");
+            });
+        };
+        sources.forEach((source) => {
+            sync(source);
+            const observer = new MutationObserver(() => sync(source));
+            observer.observe(source, { attributes: true, attributeFilter: ["src", "srcset"] });
+        });
+    }
+
     function initDsolutionTheme() {
         const page = document.querySelector(".dsolution-page");
         if (!page || page.dataset.dsReady === "1") {
             return;
         }
         page.dataset.dsReady = "1";
+        initDsolutionToolLogos();
 
         const header = page.querySelector(".ds-header");
         const mobileToggle = page.querySelector(".js_ds_mobile_toggle");

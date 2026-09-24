@@ -3,17 +3,17 @@
 
     <!-- Bloques D-Solution disponibles en el Website Builder -->
     <template id="s_ds_hero" name="D-Solution Hero">
-        <section t-attf-class="ds-hero ds-hero--builder #{'ds-hero--video' if website.dsolution_hero_video_url else ('ds-hero--image' if website.dsolution_hero_image else 'ds-hero--vector-mode')}"
+        <section t-attf-class="ds-hero ds-hero--builder #{'ds-hero--video' if (website.dsolution_hero_video_url or website.dsolution_hero_video_filename) else ('ds-hero--image' if website.dsolution_hero_image else 'ds-hero--vector-mode')}"
                  data-name="D-Solution Hero"
                  data-snippet="s_ds_hero">
-            <t t-if="website.dsolution_hero_video_url">
+            <t t-if="website.dsolution_hero_video_url or website.dsolution_hero_video_filename">
                 <video class="ds-hero-video js_ds_hero_video"
                        autoplay="autoplay"
                        muted="muted"
                        loop="loop"
                        playsinline="playsinline"
                        preload="none"
-                       t-att-data-video-url="website.dsolution_hero_video_url"
+                       t-att-data-video-url="website.dsolution_hero_video_url or ('/web/content/website/%s/dsolution_hero_video' % website.id)"
                        t-att-poster="'/web/image/website/%s/dsolution_hero_image' % website.id if website.dsolution_hero_image else '/website_dsolution/static/src/img/content/seo-image.jpg'"
                        aria-hidden="true"/>
             </t>
