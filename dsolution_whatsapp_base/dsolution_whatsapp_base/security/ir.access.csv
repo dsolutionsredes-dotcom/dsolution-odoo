@@ -1,3 +1,0 @@
-id,name,model_id,group_id/id,operation,domain
-access_dsolution_whatsapp_template_send_user,dsolution.whatsapp.template.send user,dsolution.whatsapp.template.send,base.group_user,crud,
-access_dsolution_whatsapp_template_send_line_user,dsolution.whatsapp.template.send.line user,dsolution.whatsapp.template.send.line,base.group_user,crud,
