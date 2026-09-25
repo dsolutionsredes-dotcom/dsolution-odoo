@@ -1,3 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_dsolution_whatsapp_template_send_user,dsolution.whatsapp.template.send user,model_dsolution_whatsapp_template_send,base.group_user,1,1,1,1
-access_dsolution_whatsapp_template_send_line_user,dsolution.whatsapp.template.send.line user,model_dsolution_whatsapp_template_send_line,base.group_user,1,1,1,1
