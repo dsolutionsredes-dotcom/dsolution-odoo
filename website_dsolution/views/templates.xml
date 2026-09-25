@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <odoo>
 
     <template id="header" name="D-Solution Header">
@@ -48,12 +48,7 @@
                         <t t-if="len(frontend_languages) &gt; 1">
                             <t t-set="ds_active_lang" t-value="frontend_languages.get(lang)"/>
                             <div class="ds-language-native js_language_selector">
-                                <a t-foreach="frontend_languages.values()"
-                                   t-as="lg"
-                                   t-att-href="url_localized(lang_code=lg.code, prefetch_langs=True, force_default_lang=True)"
-                                   t-attf-class="js_change_lang #{'is-active' if ds_active_lang == lg else ''}"
-                                   t-att-data-url_code="lg.url_code"
-                                   t-att-title="lg.name">
+                                <a t-foreach="frontend_languages.values()" t-as="lg" t-att-href="url_localized(lang_code=lg.code, prefetch_langs=True, force_default_lang=True)" t-attf-class="js_change_lang #{'is-active' if ds_active_lang == lg else ''}" t-att-data-url_code="lg.url_code" t-att-title="lg.name">
                                     <t t-out="lg.url_code.upper()"/>
                                 </a>
                             </div>
@@ -83,12 +78,7 @@
                     <t t-if="len(frontend_languages) &gt; 1">
                         <t t-set="ds_active_lang_mobile" t-value="frontend_languages.get(lang)"/>
                         <div class="ds-language-native ds-language-native--mobile js_language_selector">
-                            <a t-foreach="frontend_languages.values()"
-                               t-as="lg"
-                               t-att-href="url_localized(lang_code=lg.code, prefetch_langs=True, force_default_lang=True)"
-                               t-attf-class="js_change_lang #{'is-active' if ds_active_lang_mobile == lg else ''}"
-                               t-att-data-url_code="lg.url_code"
-                               t-att-title="lg.name">
+                            <a t-foreach="frontend_languages.values()" t-as="lg" t-att-href="url_localized(lang_code=lg.code, prefetch_langs=True, force_default_lang=True)" t-attf-class="js_change_lang #{'is-active' if ds_active_lang_mobile == lg else ''}" t-att-data-url_code="lg.url_code" t-att-title="lg.name">
                                 <t t-out="lg.url_code.upper()"/>
                             </a>
                         </div>
@@ -102,27 +92,27 @@
     <template id="services_grid" name="D-Solution Services Grid">
         <div class="ds-services-grid ds-reveal">
             <a class="ds-service-card" href="/servicios/tecnologia-audiovisual">
-                <img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Audiovisual" class="img img-fluid o_we_custom_image"/>
+                <img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Audiovisual" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>
                 <div class="ds-service-content"><span class="ds-service-number">01</span><h3>Audiovisual</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/marketing-digital">
-                <img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Marketing Digital" class="img img-fluid o_we_custom_image"/>
+                <img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Marketing Digital" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>
                 <div class="ds-service-content"><span class="ds-service-number">02</span><h3>Marketing Digital</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/desarrollo-web">
-                <img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Desarrollo Web" class="img img-fluid o_we_custom_image"/>
+                <img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Desarrollo Web" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>
                 <div class="ds-service-content"><span class="ds-service-number">03</span><h3>Desarrollo Web</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/automatizacion-ia">
-                <img src="/website_dsolution/static/src/img/content/service-automation.jpg" alt="IA y Automatización" class="img img-fluid o_we_custom_image"/>
+                <img src="/website_dsolution/static/src/img/content/service-automation.jpg" alt="IA y Automatización" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>
                 <div class="ds-service-content"><span class="ds-service-number">04</span><h3>IA y Automatización</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/branding-diseno">
-                <img src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Branding y Diseño" class="img img-fluid o_we_custom_image"/>
+                <img src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Branding y Diseño" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>
                 <div class="ds-service-content"><span class="ds-service-number">05</span><h3>Branding y Diseño</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
             <a class="ds-service-card" href="/servicios/fotografia-profesional">
-                <img src="/website_dsolution/static/src/img/content/service-photography.jpg" alt="Fotografía Profesional" class="img img-fluid o_we_custom_image"/>
+                <img src="/website_dsolution/static/src/img/content/service-photography.jpg" alt="Fotografía Profesional" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>
                 <div class="ds-service-content"><span class="ds-service-number">06</span><h3>Fotografía Profesional</h3><span class="ds-service-link">Explorar servicio →</span></div>
             </a>
         </div>
@@ -143,9 +133,7 @@
                 </div>
 
                 <section class="s_website_form ds-contact-form" data-vcss="001" data-snippet="s_website_form">
-                    <form action="/website/form/" method="post" enctype="multipart/form-data"
-                          class="o_mark_required" data-mark="*" data-model_name="crm.lead"
-                          data-success-mode="redirect" data-success-page="/gracias" data-pre-fill="true">
+                    <form action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-model_name="crm.lead" data-success-mode="redirect" data-success-page="/gracias" data-pre-fill="true">
                         <input type="hidden" name="name" value="Solicitud desde d-solution.org"/>
                         <div class="s_website_form_rows row s_col_no_bgcolor">
                             <div class="ds-field col-lg-6 s_website_form_field s_website_form_required" data-type="char" data-name="Nombre">
@@ -185,7 +173,7 @@
                 <div class="ds-footer-grid">
                     <div>
                         <a class="ds-footer-brand" href="/">
-                            <img src="/website_dsolution/static/src/img/content/ds-logo-mark-light.png" alt="D-Solution"/>
+                            <img src="/website_dsolution/static/src/img/content/ds-logo-mark-light.png" alt="D-Solution" loading="lazy" decoding="async"/>
                             <strong>D-Solution</strong>
                         </a>
                         <p>Tecnología audiovisual, marketing digital, desarrollo web, automatización y creatividad para negocios que quieren crecer con una ejecución clara y profesional.</p>
@@ -211,13 +199,8 @@
                 <div class="ds-footer-bottom">© 2026 D-Solution. Todos los derechos reservados.</div>
             </div>
         </footer>
-        <a class="ds-whatsapp-float"
-           href="https://wa.me/34624571859?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios."
-           target="_blank" rel="noopener"
-           aria-label="Abrir WhatsApp">
-            <img src="/website_dsolution/static/src/img/content/whatsapp-icon.png"
-                 alt="WhatsApp"
-                 class="ds-whatsapp-icon"/>
+        <a class="ds-whatsapp-float" href="https://wa.me/34624571859?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+            <img src="/website_dsolution/static/src/img/content/whatsapp-icon.png" alt="WhatsApp" class="ds-whatsapp-icon" loading="lazy" decoding="async"/>
         </a>
     </template>
 
@@ -228,7 +211,7 @@
             <div id="wrap" class="oe_structure dsolution-page dsolution-service-page">
                 <t t-call="website_dsolution.header"/>
                 <section class="ds-service-hero">
-                    <img t-att-src="service_image" t-att-alt="service_title"/>
+                    <img t-att-src="service_image" t-att-alt="service_title" loading="lazy" decoding="async"/>
                     <div class="ds-service-hero-inner ds-reveal">
                         <span class="ds-service-hero-number"><t t-out="service_number"/></span>
                         <h1><t t-out="service_title"/></h1>

@@ -288,3 +288,21 @@ para que estén disponibles y funcionen mejor dentro del Website Builder.
 - No toca el core de Odoo.
 - No añade nuevos campos respecto a v0.19.1.
 - Preparada para el servidor detectado: Odoo 20.1a1.
+
+## v0.20 — migración técnica y rendimiento para Odoo 20.1
+
+- Mantiene el diseño visual aprobado.
+- Elimina el plugin experimental del Website Builder heredado de la transición 19.x.
+- Hero con URL/CDN usa el mecanismo oficial Odoo 20:
+  `o_background_video`, `data-bg-video-src`, `data-bg-video-is-file`.
+- Hero con MP4 subido directamente a Odoo queda como fallback diferido,
+  evitando competir con la carga inicial.
+- Poster inmediato mientras llega el vídeo.
+- Loader de entrada reducido de ~1.65 s a ~0.70 s y desactivado dentro del editor.
+- Las animaciones de aparición son fail-safe: si falla JavaScript, el contenido sigue visible.
+- Imágenes no críticas usan `loading="lazy"` y `decoding="async"`.
+- Las secciones inferiores reducen trabajo de renderizado inicial cuando el navegador lo soporta.
+- No modifica ningún archivo core de Odoo.
+- No añade campos nuevos a la base de datos.
+
+Compatibilidad objetivo: Odoo 20.1a1 / master.

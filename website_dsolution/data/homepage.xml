@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <odoo>
     <template id="homepage_dsolution" name="D-Solution Homepage" inherit_id="website.homepage">
         <xpath expr="//t[@t-call='website.layout']" position="before">
@@ -9,26 +9,10 @@
             <div id="wrap" class="oe_structure dsolution-page">
                 <t t-call="website_dsolution.header"/>
 
-                <section id="inicio"
-                         t-attf-class="ds-hero #{'ds-hero--video' if (website.dsolution_hero_video_url or website.dsolution_hero_video) else ('ds-hero--image' if website.dsolution_hero_image else 'ds-hero--vector-mode')}"
-                         data-name="D-Solution Hero"
-                         data-snippet="s_ds_hero">
-                    <t t-if="website.dsolution_hero_video_url or website.dsolution_hero_video">
-                        <video class="ds-hero-video js_ds_hero_video"
-                               autoplay="autoplay"
-                               muted="muted"
-                               loop="loop"
-                               playsinline="playsinline"
-                               preload="none"
-                               t-att-data-video-url="website.dsolution_hero_video_url or ('/web/content/website/%s/dsolution_hero_video' % website.id)"
-                               t-att-poster="'/web/image/website/%s/dsolution_hero_image' % website.id if website.dsolution_hero_image else '/website_dsolution/static/src/img/content/seo-image.jpg'"
-                               aria-hidden="true"/>
-                    </t>
-                    <img t-elif="website.dsolution_hero_image"
-                         class="ds-hero-video"
-                         t-att-src="'/web/image/website/%s/dsolution_hero_image' % website.id"
-                         alt=""
-                         aria-hidden="true"/>
+                <section id="inicio" t-attf-class="ds-hero #{'ds-hero--video o_background_video' if website.dsolution_hero_video_url else ('ds-hero--video' if website.dsolution_hero_video else ('ds-hero--image' if website.dsolution_hero_image else 'ds-hero--vector-mode'))}" data-name="D-Solution Hero" data-snippet="s_ds_hero" t-att-data-bg-video-src="website.dsolution_hero_video_url or None" t-att-data-bg-video-is-file="'true' if website.dsolution_hero_video_url else None">
+                    <t t-if="website.dsolution_hero_video_url"><img t-if="website.dsolution_hero_image" class="ds-hero-native-poster" t-att-src="'/web/image/website/%s/dsolution_hero_image' % website.id" alt="" aria-hidden="true" fetchpriority="high" decoding="async"/></t>
+                    <t t-elif="website.dsolution_hero_video"><video class="ds-hero-video js_ds_hero_video" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="none" t-att-data-video-url="'/web/content/website/%s/dsolution_hero_video' % website.id" t-att-poster="'/web/image/website/%s/dsolution_hero_image' % website.id if website.dsolution_hero_image else '/website_dsolution/static/src/img/content/seo-image.jpg'" aria-hidden="true"/></t>
+                    <img t-elif="website.dsolution_hero_image" class="ds-hero-video" t-att-src="'/web/image/website/%s/dsolution_hero_image' % website.id" alt="" aria-hidden="true"/>
 
                     <t t-else="">
                         <div class="ds-hero-grid" aria-hidden="true"/>
@@ -58,11 +42,7 @@
                                 <circle cx="280" cy="735" r="205"/>
                                 <circle cx="1015" cy="735" r="175"/>
                             </g>
-                            <path class="ds-vector-flow"
-                                  d="M-120 650 C 180 525, 380 735, 640 590 S 1050 420, 1320 575 S 1650 655, 1770 500"
-                                  fill="none"
-                                  stroke="url(#dsFlowGradient)"
-                                  stroke-width="2"/>
+                            <path class="ds-vector-flow" d="M-120 650 C 180 525, 380 735, 640 590 S 1050 420, 1320 575 S 1650 655, 1770 500" fill="none" stroke="url(#dsFlowGradient)" stroke-width="2"/>
                         </svg>
                     </t>
 
@@ -95,19 +75,19 @@
                         </div>
                         <div class="ds-process-cards">
                             <article class="ds-process-card ds-reveal">
-                                <img src="/website_dsolution/static/src/img/content/process-01-entendemos.jpg" alt="Entendemos" class="img img-fluid o_we_custom_image"/>
+                                <img src="/website_dsolution/static/src/img/content/process-01-entendemos.jpg" alt="Entendemos" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>
                                 <div class="ds-process-content"><strong>01</strong><h3>Entendemos</h3><p>Escuchamos tu idea, analizamos tu negocio y definimos objetivos claros.</p></div>
                             </article>
                             <article class="ds-process-card ds-reveal">
-                                <img src="/website_dsolution/static/src/img/content/process-02-estrategia.jpg" alt="Estrategia" class="img img-fluid o_we_custom_image"/>
+                                <img src="/website_dsolution/static/src/img/content/process-02-estrategia.jpg" alt="Estrategia" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>
                                 <div class="ds-process-content"><strong>02</strong><h3>Estrategia</h3><p>Diseñamos un plan digital con canales, contenido y acciones clave.</p></div>
                             </article>
                             <article class="ds-process-card ds-reveal">
-                                <img src="/website_dsolution/static/src/img/content/process-03-creamos.jpg" alt="Creamos y ejecutamos" class="img img-fluid o_we_custom_image"/>
+                                <img src="/website_dsolution/static/src/img/content/process-03-creamos.jpg" alt="Creamos y ejecutamos" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>
                                 <div class="ds-process-content"><strong>03</strong><h3>Creamos y ejecutamos</h3><p>Producimos contenido, lanzamos campañas, webs o automatizaciones.</p></div>
                             </article>
                             <article class="ds-process-card ds-reveal">
-                                <img src="/website_dsolution/static/src/img/content/process-04-medimos.jpg" alt="Medimos y optimizamos" class="img img-fluid o_we_custom_image"/>
+                                <img src="/website_dsolution/static/src/img/content/process-04-medimos.jpg" alt="Medimos y optimizamos" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>
                                 <div class="ds-process-content"><strong>04</strong><h3>Medimos y optimizamos</h3><p>Analizamos resultados y ajustamos para mejorar el impacto.</p></div>
                             </article>
                         </div>
@@ -161,9 +141,9 @@
                             <span class="ds-divider"/>
                         </div>
                         <div class="ds-portfolio-grid">
-                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Producción audiovisual" class="img img-fluid o_we_custom_image"/></div><div class="ds-project-body"><p class="ds-project-category">Audiovisual</p><h3>Producción audiovisual</h3><p>Contenido visual y soporte técnico para comunicar con más impacto.</p><a href="#contacto">Ver proyecto →</a></div></article>
-                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Campaña digital" class="img img-fluid o_we_custom_image"/></div><div class="ds-project-body"><p class="ds-project-category">Marketing</p><h3>Campaña digital</h3><p>Estrategia, medición y optimización para generar oportunidades reales.</p><a href="#contacto">Ver proyecto →</a></div></article>
-                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Sitio web corporativo" class="img img-fluid o_we_custom_image"/></div><div class="ds-project-body"><p class="ds-project-category">Web</p><h3>Sitio web corporativo</h3><p>Diseño y estructura para una presencia digital clara, rápida y premium.</p><a href="#contacto">Ver proyecto →</a></div></article>
+                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Producción audiovisual" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></div><div class="ds-project-body"><p class="ds-project-category">Audiovisual</p><h3>Producción audiovisual</h3><p>Contenido visual y soporte técnico para comunicar con más impacto.</p><a href="#contacto">Ver proyecto →</a></div></article>
+                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Campaña digital" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></div><div class="ds-project-body"><p class="ds-project-category">Marketing</p><h3>Campaña digital</h3><p>Estrategia, medición y optimización para generar oportunidades reales.</p><a href="#contacto">Ver proyecto →</a></div></article>
+                            <article class="ds-project ds-reveal"><div class="ds-project-media"><img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Sitio web corporativo" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></div><div class="ds-project-body"><p class="ds-project-category">Web</p><h3>Sitio web corporativo</h3><p>Diseño y estructura para una presencia digital clara, rápida y premium.</p><a href="#contacto">Ver proyecto →</a></div></article>
                         </div>
                     </div>
                 </section>

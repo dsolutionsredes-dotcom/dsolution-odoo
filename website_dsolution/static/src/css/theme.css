@@ -502,9 +502,15 @@ html { scroll-behavior: smooth; }
 .ds-service-point strong { display: block; color: var(--ds-navy); }
 .ds-service-point span { display: block; margin-top: 5px; color: rgba(0,33,71,.67); line-height: 1.6; }
 
-/* Scroll reveal */
-.ds-reveal { opacity: 0; transform: translateY(24px); transition: opacity .65s ease, transform .65s ease; }
-.ds-reveal.is-visible { opacity: 1; transform: none; }
+/* Scroll reveal — Odoo 20:
+   visible by default; JS activates the animation only when ready. */
+.ds-reveal { opacity: 1; transform: none; }
+html.ds-animate .ds-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .55s ease, transform .55s ease;
+}
+html.ds-animate .ds-reveal.is-visible { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
     .ds-reveal { opacity: 1; transform: none; transition: none; }
@@ -1513,12 +1519,6 @@ body.editor_enable .ds-md-hero > img.o_we_custom_image.ds-md-hero-image {
    v0.18 — Performance / resilience
    ========================================================== */
 
-/* If frontend JS is unavailable, content must never remain hidden. */
-html:not(.ds-js) .dsolution-page .ds-reveal {
-    opacity: 1 !important;
-    transform: none !important;
-}
-
 /* Poster is the immediate visual while the CDN video is loaded lazily. */
 video.js_ds_hero_video {
     background: #00162f;
@@ -1623,4 +1623,60 @@ video.js_ds_hero_video {
     .ds-tool-logo-slot { width: 30px; height: 30px; flex-basis: 30px; }
     .ds-tool-logo { width: 24px; height: 24px; }
     .ds-contact-icon { width: 23px; height: 23px; flex-basis: 23px; }
+}
+
+
+/* ==========================================================
+   v0.20 — Odoo 20.1 migration + performance
+   ========================================================== */
+
+/* Official Odoo 20 background-video layer for CDN/direct MP4 URL. */
+.ds-hero.o_background_video > .o_bg_video_container {
+    z-index: 1;
+}
+.ds-hero.o_background_video > .o_bg_video_container .o_bg_video_file {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ds-hero-native-poster {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.ds-hero.o_background_video .ds-hero-video-overlay {
+    z-index: 2;
+}
+.ds-hero.o_background_video .ds-hero-content {
+    z-index: 3;
+}
+
+/* Poster is the loading feedback; do not overlay an extra spinner. */
+.ds-hero.o_background_video > .o_bg_video_container .o_bg_video_loading {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Approved intro effect, but faster. */
+.ds-intro-loader { transition-duration: .26s; }
+.ds-intro-loader-logo { animation-duration: .48s; }
+.ds-intro-loader-line span { animation-duration: .58s; animation-delay: .05s; }
+body.editor_enable .ds-intro-loader { display: none !important; }
+
+/* Reduce work below the fold. Unsupported browsers simply ignore it. */
+@supports (content-visibility: auto) {
+    .dsolution-page > .ds-section {
+        content-visibility: auto;
+        contain-intrinsic-size: auto 720px;
+    }
+}
+
+/* JS failure must never leave page sections hidden. */
+html:not(.ds-animate) .dsolution-page .ds-reveal {
+    opacity: 1 !important;
+    transform: none !important;
 }

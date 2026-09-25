@@ -1,8 +1,6 @@
 (function () {
     "use strict";
 
-    document.documentElement.classList.add("ds-js");
-
 
     // v0.18 — Hero video performance.
     // The direct MP4 URL is attached only after the critical page load.
@@ -10,6 +8,13 @@
     function initDsolutionHeroVideo() {
         const videos = document.querySelectorAll(".js_ds_hero_video[data-video-url]");
         if (!videos.length) {
+            return;
+        }
+
+        const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+        const slowConnection = !!(connection && (connection.saveData || /(^|-)2g$/.test(connection.effectiveType || "")));
+        if (reduceMotion || slowConnection) {
             return;
         }
 
@@ -38,9 +43,9 @@
 
         const schedule = () => {
             if ("requestIdleCallback" in window) {
-                window.requestIdleCallback(loadVideos, { timeout: 1200 });
+                window.requestIdleCallback(loadVideos, { timeout: 2500 });
             } else {
-                window.setTimeout(loadVideos, 350);
+                window.setTimeout(loadVideos, 900);
             }
         };
 
@@ -156,7 +161,8 @@
         }, { passive: true });
 
         const revealItems = page.querySelectorAll(".ds-reveal");
-        if ("IntersectionObserver" in window) {
+        const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if ("IntersectionObserver" in window && !reduceMotion && revealItems.length) {
             const observer = new IntersectionObserver(
                 (entries) => {
                     entries.forEach((entry) => {
@@ -166,13 +172,18 @@
                         }
                     });
                 },
-                { threshold: 0.14, rootMargin: "0px 0px -40px 0px" }
+                { threshold: 0.10, rootMargin: "0px 0px -24px 0px" }
             );
             revealItems.forEach((item) => observer.observe(item));
+            document.documentElement.classList.add("ds-animate");
         } else {
             revealItems.forEach((item) => item.classList.add("is-visible"));
         }
     }
+
+    window.addEventListener("error", () => {
+        document.documentElement.classList.remove("ds-animate");
+    });
 
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", initDsolutionTheme);
@@ -195,6 +206,7 @@
   (function initDsolutionIntroLoader() {
     var loader = document.querySelector('.ds-intro-loader');
     if (!loader) return;
+    if (document.body.classList.contains('editor_enable')) { loader.remove(); return; }
     var key = 'dsolution-intro-seen';
     var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     try {
@@ -202,10 +214,10 @@
       window.sessionStorage.setItem(key, '1');
     } catch (e) {}
     loader.classList.add('is-visible');
-    var visibleFor = reduceMotion ? 350 : 1650;
+    var visibleFor = reduceMotion ? 180 : 700;
     window.setTimeout(function () {
       loader.classList.add('is-leaving');
-      window.setTimeout(function () { loader.remove(); }, reduceMotion ? 80 : 500);
+      window.setTimeout(function () { loader.remove(); }, reduceMotion ? 60 : 260);
     }, visibleFor);
   })();
 
