@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="dsolution_whatsapp_template_send_form" model="ir.ui.view">
+    <field name="name">dsolution.whatsapp.template.send.form</field>
+    <field name="model">dsolution.whatsapp.template.send</field>
+    <field name="arch" type="xml">
+      <form string="Enviar plantilla de WhatsApp">
+        <group>
+          <field name="channel_id"/>
+          <field name="gateway_id" invisible="1"/>
+          <field name="template_id" options="{'no_create': True, 'no_open': True}"/>
+        </group>
+        <group string="Variables manuales" invisible="not line_ids">
+          <field name="line_ids" nolabel="1">
+            <list editable="bottom" create="0" delete="0">
+              <field name="variable_id"/>
+              <field name="value"/>
+            </list>
+          </field>
+        </group>
+        <group string="Vista previa" invisible="not template_id">
+          <field name="preview" readonly="1" nolabel="1"/>
+        </group>
+        <footer>
+          <button name="action_send" type="object" string="Enviar plantilla" class="btn-primary"/>
+          <button string="Cancelar" special="cancel" class="btn-secondary"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+</odoo>

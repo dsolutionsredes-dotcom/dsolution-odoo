@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_mail_whatsapp_template_form_dsolution" model="ir.ui.view">
+    <field name="name">mail.whatsapp.template.form.dsolution.manual.variables</field>
+    <field name="model">mail.whatsapp.template</field>
+    <field name="inherit_id" ref="mail_gateway_whatsapp.view_mail_whatsapp_template_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//page[@name='variables']//field[@name='sample_value']" position="before">
+        <field name="value_mode"/>
+      </xpath>
+      <xpath expr="//page[@name='variables']//field[@name='field_name']" position="attributes">
+        <attribute name="required">value_mode == 'field'</attribute>
+        <attribute name="invisible">value_mode == 'manual'</attribute>
+      </xpath>
+    </field>
+  </record>
+</odoo>
