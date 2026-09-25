@@ -306,3 +306,16 @@ para que estén disponibles y funcionen mejor dentro del Website Builder.
 - No añade campos nuevos a la base de datos.
 
 Compatibilidad objetivo: Odoo 20.1a1 / master.
+
+## v0.20.1 — hotfix Odoo 20.1 `ir.attachment`
+
+Odoo 20 eliminó el campo legacy `datas` para contenido de adjuntos.
+Los medios del módulo ahora usan el formato actual del core de Odoo:
+
+    <field name="raw" type="bytes" file="..."/>
+
+Esto elimina los avisos:
+- `Since 20.0, use type=bytes instead of type=base64`
+- `Use raw, datas has been removed`
+
+No cambia el diseño ni añade campos de base de datos.
