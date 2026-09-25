@@ -2,12 +2,12 @@
     "name": "D-Solution Website",
     "summary": "Premium D-Solution website theme and CRM-ready lead capture",
     "description": """
-D-Solution website theme for Odoo Community master/19.5 alpha.
+D-Solution website theme for Odoo Community 20.1 alpha.
 Rebuilds the current D-Solution visual identity inside Odoo Website and
 connects the contact form directly to CRM opportunities.
 """,
     "category": "Website/Theme",
-    "version": "19.5.1.0.22",
+    "version": "20.1.1.0.0",
     "author": "D-Solution",
     "website": "https://d-solution.org",
     "license": "LGPL-3",

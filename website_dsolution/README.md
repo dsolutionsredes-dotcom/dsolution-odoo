@@ -274,3 +274,17 @@ Cambios verificables:
 
 La documentación oficial de Odoo recomienda registrar imágenes como `ir.attachment`
 para que estén disponibles y funcionen mejor dentro del Website Builder.
+
+## v0.19.2 — compatibilidad Odoo 20.1 alpha
+
+- Cambia la serie del manifest de `19.5` a `20.1`.
+- Mantiene todos los cambios funcionales de v0.19.1:
+  - iconos dorados de estadísticas;
+  - espacios editables para logos en Ecosistema;
+  - iconos editables de Contacto;
+  - espacio superior editable del bloque Contacto;
+  - Hero con subida MP4 directa y URL/CDN opcional;
+  - carga diferida del vídeo.
+- No toca el core de Odoo.
+- No añade nuevos campos respecto a v0.19.1.
+- Preparada para el servidor detectado: Odoo 20.1a1.
