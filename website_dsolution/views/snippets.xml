@@ -3,10 +3,10 @@
 
     <!-- Bloques D-Solution disponibles en el Website Builder -->
     <template id="s_ds_hero" name="D-Solution Hero">
-        <section t-attf-class="ds-hero ds-hero--builder #{'ds-hero--video' if (website.dsolution_hero_video_url or website.dsolution_hero_video_filename) else ('ds-hero--image' if website.dsolution_hero_image else 'ds-hero--vector-mode')}"
+        <section t-attf-class="ds-hero ds-hero--builder #{'ds-hero--video' if (website.dsolution_hero_video_url or website.dsolution_hero_video) else ('ds-hero--image' if website.dsolution_hero_image else 'ds-hero--vector-mode')}"
                  data-name="D-Solution Hero"
                  data-snippet="s_ds_hero">
-            <t t-if="website.dsolution_hero_video_url or website.dsolution_hero_video_filename">
+            <t t-if="website.dsolution_hero_video_url or website.dsolution_hero_video">
                 <video class="ds-hero-video js_ds_hero_video"
                        autoplay="autoplay"
                        muted="muted"

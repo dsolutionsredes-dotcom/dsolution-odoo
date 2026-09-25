@@ -129,16 +129,16 @@
     </template>
 
     <template id="contact" name="D-Solution Contact CRM Form">
-        <section id="contacto" class="ds-contact-wrap pt48 pb64" data-name="D-Solution Contacto">
+        <section id="contacto" class="ds-contact-wrap" data-name="D-Solution Contacto">
             <div class="ds-contact ds-reveal">
                 <div>
                     <p class="ds-eyebrow">Contacto</p>
                     <h2 class="ds-title">Hablemos de tu próximo proyecto</h2>
                     <span class="ds-divider"/>
                     <div class="ds-contact-info">
-                        <a href="mailto:dsolutions.redes@gmail.com"><img src="/website_dsolution/static/src/img/ui/contact/email.png" alt="Email" class="ds-contact-icon img img-fluid o_we_custom_image"/><span>dsolutions.redes@gmail.com</span></a>
-                        <a href="https://wa.me/34624571859" target="_blank" rel="noopener"><img src="/website_dsolution/static/src/img/ui/contact/whatsapp.png" alt="WhatsApp" class="ds-contact-icon img img-fluid o_we_custom_image"/><span>+34 624 57 18 59</span></a>
-                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener"><img src="/website_dsolution/static/src/img/ui/contact/location.png" alt="Ubicación" class="ds-contact-icon img img-fluid o_we_custom_image"/><span>Barcelona, España</span></a>
+                        <a href="mailto:dsolutions.redes@gmail.com">✉ dsolutions.redes@gmail.com</a>
+                        <a href="https://wa.me/34624571859" target="_blank" rel="noopener">◉ +34 624 57 18 59</a>
+                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener">⌖ Barcelona, España</a>
                     </div>
                 </div>
 

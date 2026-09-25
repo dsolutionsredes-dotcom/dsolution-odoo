@@ -52,14 +52,12 @@
     }
 
 
-
-    // v0.19 — Ecosystem logo slots.
-    // Only the first copy is edited in Odoo. Public marquee clones mirror that source.
+    // v0.19.1 — Ecosystem logo sync.
+    // Edit the first logo in Odoo; the moving duplicate mirrors it automatically.
     function initDsolutionToolLogos() {
         const sources = document.querySelectorAll(".js_ds_tool_logo_source[data-tool-key]");
-        if (!sources.length) {
-            return;
-        }
+        if (!sources.length) return;
+
         const sync = (source) => {
             const key = source.dataset.toolKey;
             if (!key) return;
@@ -69,6 +67,7 @@
                 else clone.removeAttribute("srcset");
             });
         };
+
         sources.forEach((source) => {
             sync(source);
             const observer = new MutationObserver(() => sync(source));

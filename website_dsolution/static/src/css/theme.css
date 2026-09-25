@@ -460,7 +460,7 @@ html { scroll-behavior: smooth; }
 .ds-project a:hover { color: var(--ds-gold-dark); }
 
 /* Contact */
-.ds-contact-wrap { background: var(--ds-cream); }
+.ds-contact-wrap { padding: 0 0 76px; background: var(--ds-cream); }
 .ds-contact { width: min(1160px, calc(100% - 40px)); margin-inline: auto; display: grid; grid-template-columns: .85fr 1.15fr; gap: 34px; padding: 40px; border-radius: 32px; background: var(--ds-navy); color: #fff; box-shadow: 0 30px 70px rgba(0,33,71,.22); }
 .ds-contact-info { margin-top: 30px; display: grid; gap: 14px; }
 .ds-contact-info a { color: rgba(255,255,255,.82); }
@@ -558,7 +558,7 @@ html { scroll-behavior: smooth; }
     .ds-stat:last-child { border-bottom: 0; }
     .ds-portfolio-grid { grid-template-columns: 1fr; }
     .ds-contact { padding: 28px 18px; border-radius: 22px; gap: 22px; }
-
+    .ds-contact-wrap { padding-bottom: 52px; }
     .ds-field { padding-inline: 0; }
     .ds-submit { padding-inline: 0; }
     .ds-footer { padding-top: 46px; }
@@ -1526,10 +1526,10 @@ video.js_ds_hero_video {
 
 
 /* ==========================================================
-   v0.19 — Odoo-native editable media, ecosystem logos, stats and contact
+   v0.19.1 — verified visible overrides
    ========================================================== */
 
-/* Stats: same visual language as the original D-Solution icons. */
+/* Stats */
 .ds-stat-head {
     display: flex;
     align-items: center;
@@ -1541,64 +1541,86 @@ video.js_ds_hero_video {
     flex: 0 0 42px;
     object-fit: contain;
 }
-body.editor_enable .ds-stat-icon.o_we_custom_image {
-    cursor: pointer !important;
-    outline: 1px dashed rgba(212,175,55,.45);
-    outline-offset: 4px;
-}
 
-/* Ecosystem: the text stays beside a true image slot for each brand logo. */
+/* Ecosystem: real logo slot, text remains beside it. */
+.ds-tool {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
 .ds-tool-logo-slot {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    flex: 0 0 30px;
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgba(255,255,255,.20);
+    border-radius: 9px;
+    background: rgba(255,255,255,.035);
 }
 .ds-tool-logo {
+    width: 26px;
+    height: 26px;
     display: block;
-    width: 30px;
-    height: 30px;
     object-fit: contain;
 }
-.ds-tool-label { white-space: nowrap; }
-
-/* Only the first sequence is editable; runtime JS mirrors it to the marquee clones. */
-body.editor_enable .ds-marquee-track { animation: none !important; transform: none !important; flex-wrap: wrap; width: 100%; }
-body.editor_enable .ds-tool-clone { display: none !important; }
-body.editor_enable .ds-tool-logo-slot:has(.js_ds_tool_logo_source) {
-    border: 1px dashed rgba(212,175,55,.75);
-    border-radius: 7px;
-    background: rgba(255,255,255,.04);
+.ds-tool-label {
+    white-space: nowrap;
 }
-body.editor_enable .js_ds_tool_logo_source { cursor: pointer !important; }
 
-/* Contact: PNG icons are normal Odoo editable images. */
+/* In editor: stop movement and expose only the editable source copies. */
+body.editor_enable .ds-marquee-track {
+    animation: none !important;
+    transform: none !important;
+    width: 100% !important;
+    flex-wrap: wrap;
+}
+body.editor_enable .ds-tool-clone {
+    display: none !important;
+}
+body.editor_enable .js_ds_tool_logo_source {
+    cursor: pointer !important;
+}
+body.editor_enable .ds-tool-logo-slot:has(.js_ds_tool_logo_source) {
+    border: 1px dashed #D9B22B;
+}
+
+/* Contact native spacer. It has no visible line; only space. */
+.ds-contact-top-spacer > hr {
+    display: none !important;
+}
+body:not(.editor_enable) .ds-contact-top-spacer {
+    min-height: 0;
+}
 .ds-contact-info a {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 .ds-contact-icon {
-    width: 24px;
-    height: 24px;
-    flex: 0 0 24px;
+    width: 25px;
+    height: 25px;
+    flex: 0 0 25px;
     object-fit: contain;
 }
+
+/* Make editable media obvious only while editing. */
+body.editor_enable .ds-stat-icon.o_we_custom_image,
 body.editor_enable .ds-contact-icon.o_we_custom_image {
     cursor: pointer !important;
-    outline: 1px dashed rgba(212,175,55,.55);
+    outline: 1px dashed rgba(217,178,43,.60);
     outline-offset: 3px;
 }
 
-/* Keep the Hero immediately usable while uploaded/CDN video loads lazily. */
-.ds-hero-video[poster] { background: #00162f center/cover no-repeat; }
+/* Hero: poster appears immediately. Video URL/Binary is attached later by JS. */
+video.js_ds_hero_video {
+    background: #00162f;
+}
 
 @media (max-width: 760px) {
-    .ds-stat-head { gap: 14px; }
     .ds-stat-icon { width: 36px; height: 36px; flex-basis: 36px; }
-    .ds-tool-logo-slot, .ds-tool-logo { width: 28px; height: 28px; }
-    .ds-tool-logo-slot { flex-basis: 28px; }
+    .ds-tool-logo-slot { width: 30px; height: 30px; flex-basis: 30px; }
+    .ds-tool-logo { width: 24px; height: 24px; }
+    .ds-contact-icon { width: 23px; height: 23px; flex-basis: 23px; }
 }

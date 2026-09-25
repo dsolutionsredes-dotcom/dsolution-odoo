@@ -9,7 +9,7 @@
                 <block title="D-Solution" id="dsolution_website_settings">
                     <setting id="dsolution_hero_video_upload_setting"
                              string="Hero video · subir MP4"
-                             help="Sube un MP4 directamente a Odoo. Se almacena como adjunto y se carga de forma diferida para no bloquear la carga inicial de la página.">
+                             help="Sube un MP4 directamente a Odoo. El poster y el contenido de la página se muestran primero; el vídeo se solicita después.">
                         <div class="content-group">
                             <field name="dsolution_hero_video_filename" invisible="1"/>
                             <field name="dsolution_hero_video"
@@ -17,13 +17,16 @@
                                    widget="binary"
                                    options="{'accepted_file_extensions': '.mp4'}"/>
                             <div class="text-muted mt-2">
-                                Recomendado: H.264, sin audio, faststart y preferiblemente 4-8 MB. La página muestra primero el poster y solicita el vídeo después de cargar el contenido principal.
+                                Recomendado: H.264, sin audio, faststart, 1080p y preferiblemente menos de 8 MB.
+                            </div>
+                            <div class="text-muted mt-1">
+                                Para máxima velocidad usa la URL/CDN de abajo; si existe una URL, tendrá prioridad.
                             </div>
                         </div>
                     </setting>
                     <setting id="dsolution_hero_video_url_setting"
                              string="Hero video URL"
-                             help="URL pública directa al MP4 del Hero. Si completas este campo, tiene prioridad sobre el MP4 subido y es la opción recomendada para máxima velocidad.">
+                             help="URL pública directa al MP4 del Hero. Recomendado: CDN u object storage; evita servir vídeos pesados mediante /web/content.">
                         <div class="content-group">
                             <field name="dsolution_hero_video_url"
                                    placeholder="https://cdn.ejemplo.com/hero-dsolution.mp4"
@@ -32,7 +35,7 @@
                                 Recomendado: MP4 H.264, 1920x1080, 24-30 fps, sin audio, faststart y una URL pública directa HTTPS.
                             </div>
                             <div class="text-muted mt-1">
-                                Opcional. Déjalo vacío si prefieres usar el MP4 subido directamente arriba.
+                                Desde v0.18 el MP4 subido anteriormente a Odoo no se usa en la web pública para evitar descargas lentas desde /web/content.
                             </div>
                         </div>
                     </setting>

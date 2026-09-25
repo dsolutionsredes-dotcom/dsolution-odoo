@@ -257,14 +257,20 @@ Esta versión fue construida contra la estructura documentada oficialmente para 
   hasta adaptarlas a la API exacta de la build instalada.
 - No modifica modelos ni base de datos respecto a v0.18: actualización normal.
 
+## v0.19.1 — corrección completa de los cambios visuales
 
-## v0.19 — medios editables y ajustes visuales
-- Estadísticas: sustituye los iconos genéricos por Rocket, Folder, Globe2 y BarChart3 en SVG local dorado, editables como imagen desde Odoo.
-- Ecosistema: sustituye los cuadrados con letras por espacios de imagen para logos reales; el texto permanece al lado. En el editor solo se muestra una copia editable por herramienta y el JS replica el logo a las copias del marquee público.
-- Contacto: añade PNG dorados editables para email, WhatsApp y ubicación.
-- Contacto: usa clases de espaciado nativas de Odoo (`pt48 pb64`) para que exista espacio editable arriba y abajo del bloque, sin padding fijo del tema.
-- Hero: vuelve a habilitar "subir MP4" directamente en Ajustes de Sitio Web. El campo ya usa `attachment=True`; el vídeo se solicita con `preload=none` y carga diferida después del contenido principal.
-- Hero: la URL CDN sigue disponible y, si se configura, tiene prioridad sobre el MP4 subido.
-- Hero: el poster/imagen sigue mostrándose antes del vídeo.
-- No reactiva el bundle experimental del editor que causó errores en Odoo 19.5a1; todo usa frontend normal y controles estándar de Odoo.
-- No añade nuevos campos Python respecto a v0.18.1: actualización normal.
+Esta versión rehace los cambios de v0.19 mediante vistas heredadas separadas para
+que se apliquen explícitamente sobre los templates actuales de D-Solution.
+
+Cambios verificables:
+- Estadísticas: Rocket, Folder, Globe y BarChart dorados como medios Odoo.
+- Ecosistema: los antiguos cuadrados con letras pasan a ser espacios reales para logos;
+  el texto sigue a la derecha. Los logos fuente son imágenes Odoo reemplazables.
+- Contacto: iconos PNG dorados para email, WhatsApp y ubicación, registrados como medios Odoo.
+- Contacto: nuevo bloque nativo `s_hr` sin línea, usado como espacio superior editable.
+- Hero: vuelve el campo para subir MP4 directamente; la URL/CDN sigue teniendo prioridad.
+  El vídeo no lleva `src` en el HTML inicial: el poster y el contenido cargan primero.
+- No se reactiva el editor JS experimental de v0.17 que causó errores de compatibilidad.
+
+La documentación oficial de Odoo recomienda registrar imágenes como `ir.attachment`
+para que estén disponibles y funcionen mejor dentro del Website Builder.
