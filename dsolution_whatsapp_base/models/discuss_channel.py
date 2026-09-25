@@ -1,5 +1,5 @@
 from datetime import timedelta
-from odoo import api, fields, models, _
+from odoo import fields, models, _
 from odoo.exceptions import UserError
 
 class DiscussChannel(models.Model):
@@ -98,7 +98,6 @@ class DiscussChannel(models.Model):
             ))
         return False
 
-    @api.returns("mail.message", lambda value: value.id)
     def message_post(self, *, message_type="notification", gateway_type=False, **kwargs):
         if (
             message_type != "notification"
