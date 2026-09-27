@@ -1,6 +1,6 @@
 /** @odoo-module **/
 
-import { BaseOptionComponent } from "@html_builder/core/utils";
+import { BaseOptionComponent } from "@html_builder/core/base_option_component";
 import { Plugin } from "@html_editor/plugin";
 import { registry } from "@web/core/registry";
 

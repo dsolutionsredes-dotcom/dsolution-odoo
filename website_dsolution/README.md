@@ -1,4 +1,16 @@
-# D-Solution Website for Odoo Community master (19.5 alpha / pre-20)
+# D-Solution Website for Odoo Community 20.1 alpha
+
+Módulo web personalizado de `d-solution.org`, sin modificar el core de Odoo.
+
+## v20.1.3.0.0 — auditoría y optimización 2026-09-27
+
+- Módulo autocontenido: logos, WhatsApp, imágenes, poster y vídeo fallback viven dentro de `website_dsolution/static/`.
+- Hero migrado al mecanismo nativo actual de Odoo `o_background_video` + `data-bg-video-src`.
+- Eliminada la espera artificial de vídeo que retrasaba su inicio hasta después de `window.load`.
+- Intro beige con logo se muestra en cada apertura, se oculta en Editor y tiene salida de seguridad si falla JavaScript.
+- El botón flotante de WhatsApp ya no usa lazy-load.
+- Assets críticos mantienen carga rápida; el contenido inferior usa optimización sin aplicarla dentro del Editor.
+- Se conservan los archivos de opciones avanzadas antiguos sin activarlos: su API pertenece a una etapa anterior del Website Builder y se adaptarán por separado antes de registrarlos en Odoo 20.1.
 
 Primera versión de migración de `d-solution.org` a Odoo Website.
 

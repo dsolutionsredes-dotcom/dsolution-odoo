@@ -1613,11 +1613,6 @@ body.editor_enable .ds-contact-icon.o_we_custom_image {
     outline-offset: 3px;
 }
 
-/* Hero: poster appears immediately. Video URL/Binary is attached later by JS. */
-video.js_ds_hero_video {
-    background: #00162f;
-}
-
 @media (max-width: 760px) {
     .ds-stat-icon { width: 36px; height: 36px; flex-basis: 36px; }
     .ds-tool-logo-slot { width: 30px; height: 30px; flex-basis: 30px; }
@@ -1667,9 +1662,17 @@ video.js_ds_hero_video {
 .ds-intro-loader-line span { animation-duration: .58s; animation-delay: .05s; }
 body.editor_enable .ds-intro-loader { display: none !important; }
 
+/* If frontend JS fails, the intro can never trap the visitor over the page. */
+.ds-intro-loader.is-visible {
+    animation: ds-intro-failsafe .25s ease 2.5s forwards;
+}
+@keyframes ds-intro-failsafe {
+    to { opacity: 0; visibility: hidden; pointer-events: none; }
+}
+
 /* Reduce work below the fold. Unsupported browsers simply ignore it. */
 @supports (content-visibility: auto) {
-    .dsolution-page > .ds-section {
+    body:not(.editor_enable) .dsolution-page > .ds-section {
         content-visibility: auto;
         contain-intrinsic-size: auto 720px;
     }
