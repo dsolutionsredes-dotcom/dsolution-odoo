@@ -146,17 +146,72 @@
   }, true);
 
 
-  // v0.21 — Intro Loader: visible en cada apertura de página.
+  // v0.22 — Intro Loader coordinated with the native Odoo background video.
+  // It stays visible briefly while the first video frame is decoded, then fades.
   (function initDsolutionIntroLoader() {
     var loader = document.querySelector('.ds-intro-loader');
     if (!loader) return;
     if (document.body.classList.contains('editor_enable')) { loader.remove(); return; }
+
     var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var visibleFor = reduceMotion ? 120 : 650;
-    window.setTimeout(function () {
+    var minVisible = reduceMotion ? 120 : 900;
+    var maxVisible = reduceMotion ? 300 : 1800;
+    var startedAt = performance.now();
+    var videoReady = false;
+    var leaving = false;
+    var hero = document.querySelector('.ds-hero.o_background_video');
+
+    function leave() {
+      if (leaving) return;
+      var elapsed = performance.now() - startedAt;
+      if (elapsed < minVisible) {
+        window.setTimeout(leave, minVisible - elapsed);
+        return;
+      }
+      if (!videoReady && elapsed < maxVisible) return;
+      leaving = true;
       loader.classList.add('is-leaving');
       window.setTimeout(function () { loader.remove(); }, reduceMotion ? 60 : 320);
-    }, visibleFor);
+    }
+
+    function watchVideo(video) {
+      if (!video || video.dataset.dsIntroWatched === '1') return;
+      video.dataset.dsIntroWatched = '1';
+      video.preload = 'auto';
+      if ('fetchPriority' in video) video.fetchPriority = 'high';
+      if (video.readyState >= 2) {
+        videoReady = true;
+        leave();
+        return;
+      }
+      var ready = function () {
+        videoReady = true;
+        leave();
+      };
+      video.addEventListener('loadeddata', ready, { once: true });
+      video.addEventListener('canplay', ready, { once: true });
+    }
+
+    if (!hero) {
+      videoReady = true;
+    } else {
+      watchVideo(hero.querySelector('.o_bg_video_file'));
+      var observer = new MutationObserver(function () {
+        var video = hero.querySelector('.o_bg_video_file');
+        if (video) {
+          watchVideo(video);
+          observer.disconnect();
+        }
+      });
+      observer.observe(hero, { childList: true, subtree: true });
+      window.setTimeout(function () { observer.disconnect(); }, maxVisible + 500);
+    }
+
+    window.setTimeout(leave, minVisible);
+    window.setTimeout(function () {
+      videoReady = true;
+      leave();
+    }, maxVisible);
   })();
 
 })();

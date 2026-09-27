@@ -2,6 +2,16 @@
 
 Módulo web personalizado de `d-solution.org`, sin modificar el core de Odoo.
 
+## v20.1.4.0.0 — vídeo, ecosistema, idioma y editabilidad 2026-09-27
+
+- Intro/splash coordinado con el vídeo: mínimo 0,9 s y máximo 1,8 s; se desvanece cuando el primer frame está decodificado.
+- Eliminado el poster/logo gigante de respaldo; si el vídeo tarda, se mantiene el fondo navy limpio.
+- Hero y snippet Hero usan el mecanismo nativo de Odoo `o_background_video`.
+- Ecosistema recupera logos reales de marca y mantiene una copia editable por herramienta en Website Builder.
+- Duplicados animados del marquee se sincronizan automáticamente con el logo editable.
+- Añadida traducción inicial en_US para Home, navegación, formulario y textos comunes.
+- Se conserva la edición nativa de textos, enlaces e imágenes sin convertir la estructura responsive en contenido frágil.
+
 ## v20.1.3.0.0 — auditoría y optimización 2026-09-27
 
 - Módulo autocontenido: logos, WhatsApp, imágenes, poster y vídeo fallback viven dentro de `website_dsolution/static/`.

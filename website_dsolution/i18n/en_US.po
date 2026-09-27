@@ -1,0 +1,234 @@
+# Translation of D-Solution Website.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.1\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: website_dsolution
+msgid "Inicio"
+msgstr "Home"
+
+#. module: website_dsolution
+msgid "Servicios"
+msgstr "Services"
+
+#. module: website_dsolution
+msgid "Portafolio"
+msgstr "Portfolio"
+
+#. module: website_dsolution
+msgid "Proceso"
+msgstr "Process"
+
+#. module: website_dsolution
+msgid "Contacto"
+msgstr "Contact"
+
+#. module: website_dsolution
+msgid "Hablemos de tu proyecto"
+msgstr "Let's talk about your project"
+
+#. module: website_dsolution
+msgid "Todos los servicios"
+msgstr "All services"
+
+#. module: website_dsolution
+msgid "Qué hacemos"
+msgstr "What we do"
+
+#. module: website_dsolution
+msgid "Marketing Digital"
+msgstr "Digital Marketing"
+
+#. module: website_dsolution
+msgid "Desarrollo Web"
+msgstr "Web Development"
+
+#. module: website_dsolution
+msgid "IA y Automatización"
+msgstr "AI & Automation"
+
+#. module: website_dsolution
+msgid "Branding y Diseño"
+msgstr "Branding & Design"
+
+#. module: website_dsolution
+msgid "Fotografía Profesional"
+msgstr "Professional Photography"
+
+#. module: website_dsolution
+msgid "Explorar servicio →"
+msgstr "Explore service →"
+
+#. module: website_dsolution
+msgid "Transformamos ideas"
+msgstr "We transform ideas"
+
+#. module: website_dsolution
+msgid "en experiencias digitales"
+msgstr "into digital experiences"
+
+#. module: website_dsolution
+msgid "Soluciones creativas para impulsar tu negocio"
+msgstr "Creative solutions to grow your business"
+
+#. module: website_dsolution
+msgid "Servicios independientes o integrados en una estrategia completa para tu marca."
+msgstr "Independent services or an integrated strategy for your brand."
+
+#. module: website_dsolution
+msgid "Cómo trabajamos contigo"
+msgstr "How we work with you"
+
+#. module: website_dsolution
+msgid "Un proceso ágil y colaborativo para convertir ideas en resultados reales."
+msgstr "An agile, collaborative process to turn ideas into real results."
+
+#. module: website_dsolution
+msgid "Entendemos"
+msgstr "Understand"
+
+#. module: website_dsolution
+msgid "Escuchamos tu idea, analizamos tu negocio y definimos objetivos claros."
+msgstr "We listen to your idea, analyse your business and define clear goals."
+
+#. module: website_dsolution
+msgid "Estrategia"
+msgstr "Strategy"
+
+#. module: website_dsolution
+msgid "Diseñamos un plan digital con canales, contenido y acciones clave."
+msgstr "We design a digital plan with the right channels, content and key actions."
+
+#. module: website_dsolution
+msgid "Creamos y ejecutamos"
+msgstr "Create & execute"
+
+#. module: website_dsolution
+msgid "Producimos contenido, lanzamos campañas, webs o automatizaciones."
+msgstr "We produce content and launch campaigns, websites or automations."
+
+#. module: website_dsolution
+msgid "Medimos y optimizamos"
+msgstr "Measure & optimise"
+
+#. module: website_dsolution
+msgid "Analizamos resultados y ajustamos para mejorar el impacto."
+msgstr "We analyse results and adjust to improve impact."
+
+#. module: website_dsolution
+msgid "¿Por qué elegirnos?"
+msgstr "Why choose us?"
+
+#. module: website_dsolution
+msgid "Resultados que hablan por nosotros"
+msgstr "Results that speak for us"
+
+#. module: website_dsolution
+msgid "años de experiencia"
+msgstr "years of experience"
+
+#. module: website_dsolution
+msgid "proyectos gestionados"
+msgstr "projects managed"
+
+#. module: website_dsolution
+msgid "tipos de servicios que dominamos"
+msgstr "service areas we master"
+
+#. module: website_dsolution
+msgid "plataformas utilizadas a nivel avanzado"
+msgstr "platforms used at an advanced level"
+
+#. module: website_dsolution
+msgid "Ecosistema"
+msgstr "Ecosystem"
+
+#. module: website_dsolution
+msgid "Herramientas que usamos para crear, medir y optimizar proyectos."
+msgstr "Tools we use to create, measure and optimise projects."
+
+#. module: website_dsolution
+msgid "Proyectos que inspiran nuevas ideas"
+msgstr "Projects that inspire new ideas"
+
+#. module: website_dsolution
+msgid "Una selección inicial de trabajos que combinan estrategia, creatividad y tecnología. Esta sección se conectará después con datos de Odoo."
+msgstr "A selection of projects combining strategy, creativity and technology. This section will later connect to Odoo data."
+
+#. module: website_dsolution
+msgid "Producción audiovisual"
+msgstr "Audiovisual production"
+
+#. module: website_dsolution
+msgid "Campaña digital"
+msgstr "Digital campaign"
+
+#. module: website_dsolution
+msgid "Sitio web corporativo"
+msgstr "Corporate website"
+
+#. module: website_dsolution
+msgid "Contenido visual y soporte técnico para comunicar con más impacto."
+msgstr "Visual content and technical support for more impactful communication."
+
+#. module: website_dsolution
+msgid "Estrategia, medición y optimización para generar oportunidades reales."
+msgstr "Strategy, measurement and optimisation to generate real opportunities."
+
+#. module: website_dsolution
+msgid "Diseño y estructura para una presencia digital clara, rápida y premium."
+msgstr "Design and structure for a clear, fast and premium digital presence."
+
+#. module: website_dsolution
+msgid "Ver proyecto →"
+msgstr "View project →"
+
+#. module: website_dsolution
+msgid "Hablemos de tu próximo proyecto"
+msgstr "Let's talk about your next project"
+
+#. module: website_dsolution
+msgid "Nombre completo *"
+msgstr "Full name *"
+
+#. module: website_dsolution
+msgid "Teléfono / WhatsApp"
+msgstr "Phone / WhatsApp"
+
+#. module: website_dsolution
+msgid "Empresa / Proyecto"
+msgstr "Company / Project"
+
+#. module: website_dsolution
+msgid "Cuéntanos sobre tu proyecto *"
+msgstr "Tell us about your project *"
+
+#. module: website_dsolution
+msgid "Enviar mensaje"
+msgstr "Send message"
+
+#. module: website_dsolution
+msgid "Navegación"
+msgstr "Navigation"
+
+#. module: website_dsolution
+msgid "Tecnología audiovisual, marketing digital, desarrollo web, automatización y creatividad para negocios que quieren crecer con una ejecución clara y profesional."
+msgstr "Audiovisual technology, digital marketing, web development, automation and creativity for businesses that want to grow with clear, professional execution."
+
+#. module: website_dsolution
+msgid "© 2026 D-Solution. Todos los derechos reservados."
+msgstr "© 2026 D-Solution. All rights reserved."
+
+#. module: website_dsolution
+msgid "Abrir WhatsApp"
+msgstr "Open WhatsApp"
+
+#. module: website_dsolution
+msgid "Barcelona, España"
+msgstr "Barcelona, Spain"
+
