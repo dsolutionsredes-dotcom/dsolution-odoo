@@ -2,6 +2,14 @@
 
 Módulo web personalizado de `d-solution.org`, sin modificar el core de Odoo.
 
+## v20.1.5.0.0 — traducción, color de marca y optimización 2026-09-27
+
+- Traducción inglesa corregida con referencias nativas de `ir.ui.view` para que Odoo aplique los textos en `/en`.
+- Logos del Ecosistema mantienen las formas oficiales y usan sus colores de marca; siguen siendo reemplazables desde Website Builder.
+- El vídeo Hero conserva el cache HTTP nativo de Odoo (7 días) y el splash sigue coordinado con `loadeddata/canplay` para no desaparecer antes de que el vídeo esté listo.
+- Se mantiene el sistema nativo `o_background_video`, evitando una segunda implementación de vídeo.
+- Textos, enlaces e imágenes de contenido siguen editables con el editor; estructura responsive y lógica crítica permanecen protegidas.
+
 ## v20.1.4.0.0 — vídeo, ecosistema, idioma y editabilidad 2026-09-27
 
 - Intro/splash coordinado con el vídeo: mínimo 0,9 s y máximo 1,8 s; se desvanece cuando el primer frame está decodificado.
