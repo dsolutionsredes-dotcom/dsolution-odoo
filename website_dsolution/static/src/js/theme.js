@@ -1,56 +1,6 @@
 (function () {
     "use strict";
 
-    document.documentElement.classList.add("ds-js");
-
-
-    // v0.18 — Hero video performance.
-    // The direct MP4 URL is attached only after the critical page load.
-    // This lets text, CSS, images and the poster render first.
-    function initDsolutionHeroVideo() {
-        const videos = document.querySelectorAll(".js_ds_hero_video[data-video-url]");
-        if (!videos.length) {
-            return;
-        }
-
-        const loadVideos = () => {
-            videos.forEach((video) => {
-                if (video.dataset.dsVideoLoaded === "1") {
-                    return;
-                }
-                const url = (video.dataset.videoUrl || "").trim();
-                if (!url) {
-                    return;
-                }
-
-                video.dataset.dsVideoLoaded = "1";
-                video.src = url;
-                video.load();
-
-                const playPromise = video.play();
-                if (playPromise && typeof playPromise.catch === "function") {
-                    playPromise.catch(() => {
-                        // The poster remains visible if autoplay is blocked.
-                    });
-                }
-            });
-        };
-
-        const schedule = () => {
-            if ("requestIdleCallback" in window) {
-                window.requestIdleCallback(loadVideos, { timeout: 1200 });
-            } else {
-                window.setTimeout(loadVideos, 350);
-            }
-        };
-
-        if (document.readyState === "complete") {
-            schedule();
-        } else {
-            window.addEventListener("load", schedule, { once: true });
-        }
-    }
-
 
     // v0.19.1 — Ecosystem logo sync.
     // Edit the first logo in Odoo; the moving duplicate mirrors it automatically.
@@ -156,7 +106,8 @@
         }, { passive: true });
 
         const revealItems = page.querySelectorAll(".ds-reveal");
-        if ("IntersectionObserver" in window) {
+        const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if ("IntersectionObserver" in window && !reduceMotion && revealItems.length) {
             const observer = new IntersectionObserver(
                 (entries) => {
                     entries.forEach((entry) => {
@@ -166,13 +117,18 @@
                         }
                     });
                 },
-                { threshold: 0.14, rootMargin: "0px 0px -40px 0px" }
+                { threshold: 0.10, rootMargin: "0px 0px -24px 0px" }
             );
             revealItems.forEach((item) => observer.observe(item));
+            document.documentElement.classList.add("ds-animate");
         } else {
             revealItems.forEach((item) => item.classList.add("is-visible"));
         }
     }
+
+    window.addEventListener("error", () => {
+        document.documentElement.classList.remove("ds-animate");
+    });
 
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", initDsolutionTheme);
@@ -180,7 +136,6 @@
         initDsolutionTheme();
     }
 
-    initDsolutionHeroVideo();
 
   // v0.10: en modo edición dejamos que Odoo seleccione imágenes dentro de tarjetas
   // sin navegar accidentalmente a otra página.
@@ -191,21 +146,16 @@
   }, true);
 
 
-  // v0.15 — Intro Loader original: una vez por sesión del navegador.
+  // v0.21 — Intro Loader: visible en cada apertura de página.
   (function initDsolutionIntroLoader() {
     var loader = document.querySelector('.ds-intro-loader');
     if (!loader) return;
-    var key = 'dsolution-intro-seen';
+    if (document.body.classList.contains('editor_enable')) { loader.remove(); return; }
     var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    try {
-      if (window.sessionStorage.getItem(key)) { loader.remove(); return; }
-      window.sessionStorage.setItem(key, '1');
-    } catch (e) {}
-    loader.classList.add('is-visible');
-    var visibleFor = reduceMotion ? 350 : 1650;
+    var visibleFor = reduceMotion ? 120 : 650;
     window.setTimeout(function () {
       loader.classList.add('is-leaving');
-      window.setTimeout(function () { loader.remove(); }, reduceMotion ? 80 : 500);
+      window.setTimeout(function () { loader.remove(); }, reduceMotion ? 60 : 320);
     }, visibleFor);
   })();
 

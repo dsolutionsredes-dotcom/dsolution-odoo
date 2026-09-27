@@ -2,28 +2,28 @@
 <odoo>
     <record id="img_stat_rocket" model="ir.attachment">
         <field name="name">D-Solution - Rocket</field>
-        <field name="datas" type="base64" file="website_dsolution/static/src/img/ui/stats/rocket.svg"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/stats/rocket.svg"/>
         <field name="mimetype">image/svg+xml</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
     <record id="img_stat_folder" model="ir.attachment">
         <field name="name">D-Solution - Folder</field>
-        <field name="datas" type="base64" file="website_dsolution/static/src/img/ui/stats/folder.svg"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/stats/folder.svg"/>
         <field name="mimetype">image/svg+xml</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
     <record id="img_stat_globe" model="ir.attachment">
         <field name="name">D-Solution - Globe</field>
-        <field name="datas" type="base64" file="website_dsolution/static/src/img/ui/stats/globe2.svg"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/stats/globe2.svg"/>
         <field name="mimetype">image/svg+xml</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
     <record id="img_stat_barchart" model="ir.attachment">
         <field name="name">D-Solution - Bar Chart</field>
-        <field name="datas" type="base64" file="website_dsolution/static/src/img/ui/stats/barchart3.svg"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/stats/barchart3.svg"/>
         <field name="mimetype">image/svg+xml</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
@@ -31,7 +31,7 @@
 
     <record id="img_tool_logo_placeholder" model="ir.attachment">
         <field name="name">D-Solution - Tool logo placeholder</field>
-        <field name="datas" type="base64" file="website_dsolution/static/src/img/ui/tool-logo-placeholder.svg"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/tool-logo-placeholder.svg"/>
         <field name="mimetype">image/svg+xml</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
@@ -39,21 +39,21 @@
 
     <record id="img_contact_email" model="ir.attachment">
         <field name="name">D-Solution - Contact Email</field>
-        <field name="datas" type="base64" file="website_dsolution/static/src/img/ui/contact/email.png"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/contact/email.png"/>
         <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
     <record id="img_contact_whatsapp" model="ir.attachment">
         <field name="name">D-Solution - Contact WhatsApp</field>
-        <field name="datas" type="base64" file="website_dsolution/static/src/img/ui/contact/whatsapp.png"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/contact/whatsapp.png"/>
         <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
     <record id="img_contact_location" model="ir.attachment">
         <field name="name">D-Solution - Contact Location</field>
-        <field name="datas" type="base64" file="website_dsolution/static/src/img/ui/contact/location.png"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/contact/location.png"/>
         <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>

@@ -1,4 +1,16 @@
-# D-Solution Website for Odoo Community master (19.5 alpha / pre-20)
+# D-Solution Website for Odoo Community 20.1 alpha
+
+Módulo web personalizado de `d-solution.org`, sin modificar el core de Odoo.
+
+## v20.1.3.0.0 — auditoría y optimización 2026-09-27
+
+- Módulo autocontenido: logos, WhatsApp, imágenes, poster y vídeo fallback viven dentro de `website_dsolution/static/`.
+- Hero migrado al mecanismo nativo actual de Odoo `o_background_video` + `data-bg-video-src`.
+- Eliminada la espera artificial de vídeo que retrasaba su inicio hasta después de `window.load`.
+- Intro beige con logo se muestra en cada apertura, se oculta en Editor y tiene salida de seguridad si falla JavaScript.
+- El botón flotante de WhatsApp ya no usa lazy-load.
+- Assets críticos mantienen carga rápida; el contenido inferior usa optimización sin aplicarla dentro del Editor.
+- Se conservan los archivos de opciones avanzadas antiguos sin activarlos: su API pertenece a una etapa anterior del Website Builder y se adaptarán por separado antes de registrarlos en Odoo 20.1.
 
 Primera versión de migración de `d-solution.org` a Odoo Website.
 
@@ -288,3 +300,34 @@ para que estén disponibles y funcionen mejor dentro del Website Builder.
 - No toca el core de Odoo.
 - No añade nuevos campos respecto a v0.19.1.
 - Preparada para el servidor detectado: Odoo 20.1a1.
+
+## v0.20 — migración técnica y rendimiento para Odoo 20.1
+
+- Mantiene el diseño visual aprobado.
+- Elimina el plugin experimental del Website Builder heredado de la transición 19.x.
+- Hero con URL/CDN usa el mecanismo oficial Odoo 20:
+  `o_background_video`, `data-bg-video-src`, `data-bg-video-is-file`.
+- Hero con MP4 subido directamente a Odoo queda como fallback diferido,
+  evitando competir con la carga inicial.
+- Poster inmediato mientras llega el vídeo.
+- Loader de entrada reducido de ~1.65 s a ~0.70 s y desactivado dentro del editor.
+- Las animaciones de aparición son fail-safe: si falla JavaScript, el contenido sigue visible.
+- Imágenes no críticas usan `loading="lazy"` y `decoding="async"`.
+- Las secciones inferiores reducen trabajo de renderizado inicial cuando el navegador lo soporta.
+- No modifica ningún archivo core de Odoo.
+- No añade campos nuevos a la base de datos.
+
+Compatibilidad objetivo: Odoo 20.1a1 / master.
+
+## v0.20.1 — hotfix Odoo 20.1 `ir.attachment`
+
+Odoo 20 eliminó el campo legacy `datas` para contenido de adjuntos.
+Los medios del módulo ahora usan el formato actual del core de Odoo:
+
+    <field name="raw" type="bytes" file="..."/>
+
+Esto elimina los avisos:
+- `Since 20.0, use type=bytes instead of type=base64`
+- `Use raw, datas has been removed`
+
+No cambia el diseño ni añade campos de base de datos.

@@ -35,7 +35,7 @@
                                 Recomendado: MP4 H.264, 1920x1080, 24-30 fps, sin audio, faststart y una URL pública directa HTTPS.
                             </div>
                             <div class="text-muted mt-1">
-                                Desde v0.18 el MP4 subido anteriormente a Odoo no se usa en la web pública para evitar descargas lentas desde /web/content.
+                                Si existe una URL/CDN se usa primero. Si no existe, el MP4 subido a Odoo se carga después del contenido principal para no bloquear la primera visualización.
                             </div>
                         </div>
                     </setting>
