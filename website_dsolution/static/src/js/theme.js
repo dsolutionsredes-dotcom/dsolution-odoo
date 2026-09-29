@@ -2,27 +2,58 @@
     "use strict";
 
 
-    // v0.19.1 — Ecosystem logo sync.
-    // Edit the first logo in Odoo; the moving duplicate mirrors it automatically.
+    // v20.1.6 — Ecosystem master logos -> runtime marquee clones.
+    // XML stores one editable master per tool. Public copies are created only in the browser,
+    // so changing one logo/text updates every repetition without duplicating editable content.
     function initDsolutionToolLogos() {
-        const sources = document.querySelectorAll(".js_ds_tool_logo_source[data-tool-key]");
-        if (!sources.length) return;
+        const tracks = document.querySelectorAll(".ds-marquee-track");
+        if (!tracks.length) return;
 
-        const sync = (source) => {
-            const key = source.dataset.toolKey;
-            if (!key) return;
-            document.querySelectorAll(`.js_ds_tool_logo_clone[data-tool-key="${key}"]`).forEach((clone) => {
-                clone.src = source.src;
-                if (source.srcset) clone.srcset = source.srcset;
-                else clone.removeAttribute("srcset");
+        const isEditing = () => document.body.classList.contains("editor_enable");
+
+        const prepareClone = (source) => {
+            const clone = source.cloneNode(true);
+            clone.classList.add("ds-tool-clone");
+            clone.setAttribute("aria-hidden", "true");
+            clone.querySelectorAll(".o_we_custom_image").forEach((img) => {
+                img.classList.remove("o_we_custom_image", "js_ds_tool_logo_source");
+                img.classList.add("js_ds_tool_logo_clone");
             });
+            clone.querySelectorAll("[contenteditable]").forEach((node) => node.removeAttribute("contenteditable"));
+            return clone;
         };
 
-        sources.forEach((source) => {
-            sync(source);
-            const observer = new MutationObserver(() => sync(source));
-            observer.observe(source, { attributes: true, attributeFilter: ["src", "srcset"] });
+        const rebuildTrack = (track) => {
+            track.querySelectorAll(":scope > .ds-tool-clone").forEach((clone) => clone.remove());
+            track.classList.remove("is-runtime-cloned");
+            if (isEditing()) return;
+
+            const masters = Array.from(track.querySelectorAll(":scope > .ds-tool:not(.ds-tool-clone)"));
+            if (!masters.length) return;
+
+            // Three equal groups (master + 2 copies) preserve the existing 33.333% marquee loop.
+            for (let repeat = 0; repeat < 2; repeat += 1) {
+                masters.forEach((master) => track.appendChild(prepareClone(master)));
+            }
+            track.classList.add("is-runtime-cloned");
+        };
+
+        tracks.forEach((track) => {
+            rebuildTrack(track);
+            Array.from(track.querySelectorAll(":scope > .ds-tool:not(.ds-tool-clone)")).forEach((master) => {
+                const observer = new MutationObserver(() => rebuildTrack(track));
+                observer.observe(master, {
+                    subtree: true,
+                    childList: true,
+                    characterData: true,
+                    attributes: true,
+                    attributeFilter: ["src", "srcset", "alt", "class"],
+                });
+            });
         });
+
+        const bodyObserver = new MutationObserver(() => tracks.forEach(rebuildTrack));
+        bodyObserver.observe(document.body, { attributes: true, attributeFilter: ["class"] });
     }
 
     function initDsolutionTheme() {

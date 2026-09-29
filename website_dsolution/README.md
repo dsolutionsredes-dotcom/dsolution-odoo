@@ -1,5 +1,15 @@
 # D-Solution Website for Odoo Community 20.1 alpha
 
+## v20.1.6.0.0 — Audiovisual, Marketing y Ecosistema 2026-09-29
+
+- Reconstruye `/servicios/tecnologia-audiovisual` siguiendo la página original: Hero, confianza, 6 servicios, streaming, capacitación, tecnología/equipo, proceso, proyectos, contacto y footer.
+- Reutiliza el contenido real de `AudiovisualSolutionsPageClient.tsx`; las fotografías principales y de proyectos se mantienen reemplazables desde Website Builder.
+- Marketing Digital: baja el panel “Servicios que ofrecemos” para que no tape el CTA amarillo.
+- Marketing Digital: convierte los 5 iconos de “Qué incluye…” y los 3 iconos de “¿Para quién es?” en imágenes SVG editables registradas como `ir.attachment` usando `raw/type=bytes` para Odoo 20.1.
+- Ecosistema: el XML guarda una sola copia maestra editable por herramienta; JavaScript genera automáticamente dos repeticiones públicas del marquee. En modo Editar no se muestran clones.
+- Mantiene el módulo sin modificaciones al core y conserva los assets en `web.assets_frontend`.
+
+
 Módulo web personalizado de `d-solution.org`, sin modificar el core de Odoo.
 
 ## v20.1.5.0.0 — traducción, color de marca y optimización 2026-09-27

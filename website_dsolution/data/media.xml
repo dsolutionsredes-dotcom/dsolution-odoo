@@ -49,4 +49,78 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
+    <!-- Marketing Digital editable UI icons -->
+    <record id="img_md_campaign" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Campaign</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/campaign.svg"/>
+        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+    </record>
+    <record id="img_md_creative" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Creative</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/creative.svg"/>
+        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+    </record>
+    <record id="img_md_tracking" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Tracking</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/tracking.svg"/>
+        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+    </record>
+    <record id="img_md_optimize" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Optimize</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/optimize.svg"/>
+        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+    </record>
+    <record id="img_md_report" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Report</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/report.svg"/>
+        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+    </record>
+    <record id="img_md_local" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Local Business</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/local.svg"/>
+        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+    </record>
+    <record id="img_md_growth" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Growth</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/growth.svg"/>
+        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+    </record>
+    <record id="img_md_ecommerce" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Ecommerce</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/ecommerce.svg"/>
+        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+    </record>
+
+    <!-- Audiovisual editable service icons -->
+    <record id="img_av_streaming" model="ir.attachment">
+        <field name="name">D-Solution - Audiovisual Streaming</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/streaming.svg"/>
+        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+    </record>
+    <record id="img_av_tv" model="ir.attachment">
+        <field name="name">D-Solution - Audiovisual TV</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/tv.svg"/>
+        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+    </record>
+    <record id="img_av_podcast" model="ir.attachment">
+        <field name="name">D-Solution - Audiovisual Podcast</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/podcast.svg"/>
+        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+    </record>
+    <record id="img_av_install" model="ir.attachment">
+        <field name="name">D-Solution - Audiovisual Installation</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/install.svg"/>
+        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+    </record>
+    <record id="img_av_post" model="ir.attachment">
+        <field name="name">D-Solution - Audiovisual Postproduction</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/post.svg"/>
+        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+    </record>
+    <record id="img_av_training" model="ir.attachment">
+        <field name="name">D-Solution - Audiovisual Training</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/training.svg"/>
+        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+    </record>
+
 </odoo>
