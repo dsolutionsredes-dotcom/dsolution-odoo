@@ -71,10 +71,10 @@
                             </div>
                             <div class="ds-av-trustbar">
                                 <div class="ds-container ds-av-trust-grid">
-                                    <div class="ds-av-trust"><span><img src="/website_dsolution/static/src/img/ui/audiovisual/trust-production.svg" alt=""/></span><div><strong>Producción profesional</strong><small>De la preproducción a la entrega final</small></div></div>
-                                    <div class="ds-av-trust"><span><img src="/website_dsolution/static/src/img/ui/audiovisual/trust-events.svg" alt=""/></span><div><strong>Eventos presenciales</strong><small>Barcelona y proyectos en España</small></div></div>
-                                    <div class="ds-av-trust"><span><img src="/website_dsolution/static/src/img/ui/audiovisual/trust-stream.svg" alt=""/></span><div><strong>Transmisión estable</strong><small>Full HD como base y 4K bajo requerimiento</small></div></div>
-                                    <div class="ds-av-trust"><span><img src="/website_dsolution/static/src/img/ui/audiovisual/trust-camera.svg" alt=""/></span><div><strong>Equipo técnico</strong><small>Cámaras, audio, luces, switcher e intercom</small></div></div>
+                                    <div class="ds-av-trust"><span><img src="/web/image/website_dsolution.img_av_trust_production" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><div><strong>Producción profesional</strong><small>De la preproducción a la entrega final</small></div></div>
+                                    <div class="ds-av-trust"><span><img src="/web/image/website_dsolution.img_av_trust_events" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><div><strong>Eventos presenciales</strong><small>Barcelona y proyectos en España</small></div></div>
+                                    <div class="ds-av-trust"><span><img src="/web/image/website_dsolution.img_av_trust_stream" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><div><strong>Transmisión estable</strong><small>Full HD como base y 4K bajo requerimiento</small></div></div>
+                                    <div class="ds-av-trust"><span><img src="/web/image/website_dsolution.img_av_trust_camera" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><div><strong>Equipo técnico</strong><small>Cámaras, audio, luces, switcher e intercom</small></div></div>
                                 </div>
                             </div>
                         </section>
@@ -147,39 +147,39 @@
                                     <p class="ds-av-eyebrow">Tecnología y software</p>
                                     <h2>Herramientas que dominamos</h2>
                                     <div class="ds-av-list-grid ds-av-tools-list">
-                                        <span><img src="/website_dsolution/static/src/img/brands/obs.svg" alt="OBS"/>OBS</span>
-                                        <span><img src="/website_dsolution/static/src/img/brands/vmix.png" alt="vMix"/>vMix</span>
-                                        <span><img src="/website_dsolution/static/src/img/brands/mimolive.svg" alt="MimoLive"/>MimoLive</span>
-                                        <span><img src="/website_dsolution/static/src/img/brands/atem.svg" alt="ATEM Software Control"/>ATEM Software Control</span>
-                                        <span><img src="/website_dsolution/static/src/img/brands/blackmagic.svg" alt="Blackmagic Design"/>Blackmagic Design</span>
-                                        <span><img src="/website_dsolution/static/src/img/brands/davinci-resolve.svg" alt="DaVinci Resolve"/>DaVinci Resolve</span>
-                                        <span><img src="/website_dsolution/static/src/img/brands/premiere-pro.svg" alt="Premiere Pro"/>Premiere Pro</span>
-                                        <span><img src="/website_dsolution/static/src/img/brands/final-cut-pro.svg" alt="Final Cut Pro"/>Final Cut Pro</span>
-                                        <span><img src="/website_dsolution/static/src/img/brands/after-effects.svg" alt="After Effects"/>After Effects</span>
-                                        <span><img src="/website_dsolution/static/src/img/brands/audition.svg" alt="Audition"/>Audition</span>
-                                        <span><img src="/website_dsolution/static/src/img/brands/logic-pro.svg" alt="Logic Pro"/>Logic Pro</span>
-                                        <span><img src="/website_dsolution/static/src/img/brands/fl-studio.svg" alt="FL Studio"/>FL Studio</span>
-                                        <span><img src="/website_dsolution/static/src/img/brands/photoshop.svg" alt="Photoshop"/>Photoshop</span>
-                                        <span><img src="/website_dsolution/static/src/img/brands/canva.svg" alt="Canva"/>Canva</span>
-                                        <span><img src="/website_dsolution/static/src/img/brands/capcut.svg" alt="CapCut"/>CapCut</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_obs" alt="OBS" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>OBS</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_vmix" alt="vMix" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>vMix</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_mimolive" alt="MimoLive" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>MimoLive</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_atem" alt="ATEM Software Control" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>ATEM Software Control</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_blackmagic" alt="Blackmagic Design" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Blackmagic Design</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_davinci" alt="DaVinci Resolve" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>DaVinci Resolve</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_premiere" alt="Premiere Pro" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Premiere Pro</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_finalcut" alt="Final Cut Pro" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Final Cut Pro</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_aftereffects" alt="After Effects" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>After Effects</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_audition" alt="Audition" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Audition</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_logic" alt="Logic Pro" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Logic Pro</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_flstudio" alt="FL Studio" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>FL Studio</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_photoshop" alt="Photoshop" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Photoshop</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_canva" alt="Canva" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Canva</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_tool_capcut" alt="CapCut" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>CapCut</span>
                                     </div>
                                 </div>
                                 <div class="ds-av-tech-divider" aria-hidden="true"/>
                                 <div class="ds-reveal">
                                     <h2>Equipo profesional</h2>
                                     <div class="ds-av-list-grid ds-av-equipment-list">
-                                        <span><img src="/website_dsolution/static/src/img/ui/audiovisual/equipment-camera.svg" alt=""/>Cámaras DSLR / Mirrorless</span>
-                                        <span><img src="/website_dsolution/static/src/img/ui/audiovisual/equipment-studio-camera.svg" alt=""/>Cámaras de estudio con CCU</span>
-                                        <span><img src="/website_dsolution/static/src/img/ui/audiovisual/equipment-ptz.svg" alt=""/>Cámaras PTZ</span>
-                                        <span><img src="/website_dsolution/static/src/img/ui/audiovisual/equipment-switcher.svg" alt=""/>Switcher ATEM</span>
-                                        <span><img src="/website_dsolution/static/src/img/ui/audiovisual/equipment-console.svg" alt=""/>Consolas Yamaha / DiGiCo</span>
-                                        <span><img src="/website_dsolution/static/src/img/ui/audiovisual/equipment-mic.svg" alt=""/>Micrófonos inalámbricos UHF</span>
-                                        <span><img src="/website_dsolution/static/src/img/ui/audiovisual/equipment-intercom.svg" alt=""/>Intercom</span>
-                                        <span><img src="/website_dsolution/static/src/img/ui/audiovisual/equipment-lights.svg" alt=""/>Luces LED</span>
-                                        <span><img src="/website_dsolution/static/src/img/ui/audiovisual/equipment-screen.svg" alt=""/>Pantallas LED</span>
-                                        <span><img src="/website_dsolution/static/src/img/ui/audiovisual/equipment-projector.svg" alt=""/>Proyectores</span>
-                                        <span><img src="/website_dsolution/static/src/img/ui/audiovisual/equipment-capture.svg" alt=""/>Capturadoras HDMI / SDI</span>
-                                        <span><img src="/website_dsolution/static/src/img/ui/audiovisual/equipment-mixer.svg" alt=""/>Mezcladores de video</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_equipment_camera" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Cámaras DSLR / Mirrorless</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_equipment_studio_camera" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Cámaras de estudio con CCU</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_equipment_ptz" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Cámaras PTZ</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_equipment_switcher" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Switcher ATEM</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_equipment_console" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Consolas Yamaha / DiGiCo</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_equipment_mic" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Micrófonos inalámbricos UHF</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_equipment_intercom" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Intercom</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_equipment_lights" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Luces LED</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_equipment_screen" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Pantallas LED</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_equipment_projector" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Proyectores</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_equipment_capture" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Capturadoras HDMI / SDI</span>
+                                        <span><img src="/web/image/website_dsolution.img_av_equipment_mixer" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>Mezcladores de video</span>
                                     </div>
                                 </div>
                             </div>
@@ -189,11 +189,11 @@
                             <div class="ds-container">
                                 <div class="ds-av-heading ds-reveal"><p>Nuestro proceso</p><h2>Así trabajamos en tu proyecto</h2></div>
                                 <div class="ds-av-process-grid">
-                                    <article><span><img src="/website_dsolution/static/src/img/ui/audiovisual/process-analysis.svg" alt=""/></span><h3>1. Análisis y reunión</h3><p>Conocemos tu evento, objetivos y requerimientos técnicos.</p></article>
-                                    <article><span><img src="/website_dsolution/static/src/img/ui/audiovisual/process-design.svg" alt=""/></span><h3>2. Diseño y propuesta</h3><p>Creamos la propuesta técnica, equipo y plan de producción.</p></article>
-                                    <article><span><img src="/website_dsolution/static/src/img/ui/audiovisual/process-setup.svg" alt=""/></span><h3>3. Montaje y pruebas</h3><p>Instalamos, configuramos y realizamos pruebas técnicas.</p></article>
-                                    <article><span><img src="/website_dsolution/static/src/img/ui/audiovisual/process-live.svg" alt=""/></span><h3>4. Producción en vivo</h3><p>Operamos y dirigimos tu evento con máxima calidad.</p></article>
-                                    <article><span><img src="/website_dsolution/static/src/img/ui/audiovisual/process-delivery.svg" alt=""/></span><h3>5. Entrega final</h3><p>Entregamos streaming, grabación y material final editado.</p></article>
+                                    <article><span><img src="/web/image/website_dsolution.img_av_process_analysis" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>1. Análisis y reunión</h3><p>Conocemos tu evento, objetivos y requerimientos técnicos.</p></article>
+                                    <article><span><img src="/web/image/website_dsolution.img_av_process_design" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>2. Diseño y propuesta</h3><p>Creamos la propuesta técnica, equipo y plan de producción.</p></article>
+                                    <article><span><img src="/web/image/website_dsolution.img_av_process_setup" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>3. Montaje y pruebas</h3><p>Instalamos, configuramos y realizamos pruebas técnicas.</p></article>
+                                    <article><span><img src="/web/image/website_dsolution.img_av_process_live" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>4. Producción en vivo</h3><p>Operamos y dirigimos tu evento con máxima calidad.</p></article>
+                                    <article><span><img src="/web/image/website_dsolution.img_av_process_delivery" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>5. Entrega final</h3><p>Entregamos streaming, grabación y material final editado.</p></article>
                                 </div>
                             </div>
                         </section>
@@ -286,9 +286,15 @@
     </record>
 
     <record id="page_service_web" model="website.page">
-        <field name="name">Desarrollo Web</field><field name="is_published" eval="True"/><field name="key">website_dsolution.page_service_web</field><field name="url">/servicios/desarrollo-web</field><field name="type">qweb</field>
+        <field name="name">Desarrollo Web</field>
+        <field name="is_published" eval="True"/>
+        <field name="key">website_dsolution.page_service_web</field>
+        <field name="url">/servicios/desarrollo-web</field>
+        <field name="type">qweb</field>
         <field name="arch" type="xml">
-            <t t-name="website_dsolution.page_service_web"><t t-set="no_header" t-value="True"/><t t-set="no_footer" t-value="True"/>
+            <t t-name="website_dsolution.page_service_web">
+                <t t-set="no_header" t-value="True"/>
+                <t t-set="no_footer" t-value="True"/>
                 <t t-call="website.layout" additional_title.translate="Desarrollo Web en Barcelona | D-Solution" meta_description.translate="Web corporativa, landing pages, tiendas online, catálogos, reservas y plataformas web conectadas con tu negocio.">
                     <div id="wrap" class="oe_structure dsolution-page dsolution-web-page">
                         <t t-call="website_dsolution.header"/>
@@ -296,54 +302,63 @@
                             <div class="ds-web-glow ds-web-glow--one"/><div class="ds-web-glow ds-web-glow--two"/>
                             <div class="ds-container ds-web-hero-inner">
                                 <div class="ds-web-heading ds-reveal">
-                                    <span class="ds-web-heading-icon">▣</span>
+                                    <div class="ds-web-heading-ornament"><i/><span><img src="/web/image/website_dsolution.img_web_heading_icon" alt="Desarrollo web" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><i/></div>
                                     <p>Desarrollo web</p>
                                     <h1>Elige el <em>tipo de web</em> que necesitas</h1>
-                                    <small>Explora ejemplos visuales y descubre qué estructura se adapta mejor a tu negocio.</small>
+                                    <small>Explora estructuras y elige la que mejor se adapta a tu negocio.</small>
                                 </div>
                                 <div class="ds-web-showcase">
                                     <nav class="ds-web-types" aria-label="Tipos de web">
-                                        <button type="button" class="is-active" data-web-target="corporativa"><span>▣</span><b>Web corporativa</b><small>Presencia profesional</small><i>✓</i></button>
-                                        <button type="button" data-web-target="landing"><span>↗</span><b>Landing page</b><small>Campañas y leads</small><i>›</i></button>
-                                        <button type="button" data-web-target="tienda"><span>⌑</span><b>Tienda online</b><small>Venta digital</small><i>›</i></button>
-                                        <button type="button" data-web-target="catalogo"><span>▤</span><b>Catálogo online</b><small>Productos y consultas</small><i>›</i></button>
-                                        <button type="button" data-web-target="reservas"><span>□</span><b>Web con reservas</b><small>Agenda y citas</small><i>›</i></button>
-                                        <button type="button" data-web-target="plataforma"><span>◇</span><b>Plataforma web</b><small>Sistema a medida</small><i>›</i></button>
+                                        <button type="button" class="is-active" data-web-target="corporativa"><span class="ds-web-type-icon"><img src="/web/image/website_dsolution.img_web_type_corporativa" alt="Web corporativa" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>Web corporativa</b><small>Presencia profesional</small><i>✓</i></button>
+                                        <button type="button" data-web-target="landing"><span class="ds-web-type-icon"><img src="/web/image/website_dsolution.img_web_type_landing" alt="Landing page" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>Landing page</b><small>Campañas y leads</small><i>›</i></button>
+                                        <button type="button" data-web-target="tienda"><span class="ds-web-type-icon"><img src="/web/image/website_dsolution.img_web_type_tienda" alt="Tienda online" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>Tienda online</b><small>Venta digital</small><i>›</i></button>
+                                        <button type="button" data-web-target="catalogo"><span class="ds-web-type-icon"><img src="/web/image/website_dsolution.img_web_type_catalogo" alt="Catálogo online" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>Catálogo online</b><small>Productos y consultas</small><i>›</i></button>
+                                        <button type="button" data-web-target="reservas"><span class="ds-web-type-icon"><img src="/web/image/website_dsolution.img_web_type_reservas" alt="Web con reservas" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>Web con reservas</b><small>Agenda y citas</small><i>›</i></button>
+                                        <button type="button" data-web-target="plataforma"><span class="ds-web-type-icon"><img src="/web/image/website_dsolution.img_web_type_plataforma" alt="Plataforma web" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>Plataforma web</b><small>Sistema a medida</small><i>›</i></button>
                                     </nav>
+
                                     <div class="ds-web-device-stage">
-                                        <div class="ds-web-device ds-web-device--desktop"><div class="ds-web-browserbar"><i/><i/><i/></div><div class="ds-web-galleries">
-                                            <div class="ds-web-gallery is-active" data-web-gallery="corporativa"><div class="ds-web-slides"><img src="/website_dsolution/static/src/img/content/web-examples/corporativa-1.svg" alt="Ejemplo web corporativa 1" class="img img-fluid o_we_custom_image"/><img src="/website_dsolution/static/src/img/content/web-examples/corporativa-2.svg" alt="Ejemplo web corporativa 2" class="img img-fluid o_we_custom_image"/><img src="/website_dsolution/static/src/img/content/web-examples/corporativa-3.svg" alt="Ejemplo web corporativa 3" class="img img-fluid o_we_custom_image"/></div></div>
-                                            <div class="ds-web-gallery" data-web-gallery="landing"><div class="ds-web-slides"><img src="/website_dsolution/static/src/img/content/web-examples/landing-1.svg" alt="Ejemplo landing page 1" class="img img-fluid o_we_custom_image"/><img src="/website_dsolution/static/src/img/content/web-examples/landing-2.svg" alt="Ejemplo landing page 2" class="img img-fluid o_we_custom_image"/><img src="/website_dsolution/static/src/img/content/web-examples/landing-3.svg" alt="Ejemplo landing page 3" class="img img-fluid o_we_custom_image"/></div></div>
-                                            <div class="ds-web-gallery" data-web-gallery="tienda"><div class="ds-web-slides"><img src="/website_dsolution/static/src/img/content/web-examples/tienda-1.svg" alt="Ejemplo tienda online 1" class="img img-fluid o_we_custom_image"/><img src="/website_dsolution/static/src/img/content/web-examples/tienda-2.svg" alt="Ejemplo tienda online 2" class="img img-fluid o_we_custom_image"/><img src="/website_dsolution/static/src/img/content/web-examples/tienda-3.svg" alt="Ejemplo tienda online 3" class="img img-fluid o_we_custom_image"/></div></div>
-                                            <div class="ds-web-gallery" data-web-gallery="catalogo"><div class="ds-web-slides"><img src="/website_dsolution/static/src/img/content/web-examples/catalogo-1.svg" alt="Ejemplo catálogo online 1" class="img img-fluid o_we_custom_image"/><img src="/website_dsolution/static/src/img/content/web-examples/catalogo-2.svg" alt="Ejemplo catálogo online 2" class="img img-fluid o_we_custom_image"/><img src="/website_dsolution/static/src/img/content/web-examples/catalogo-3.svg" alt="Ejemplo catálogo online 3" class="img img-fluid o_we_custom_image"/></div></div>
-                                            <div class="ds-web-gallery" data-web-gallery="reservas"><div class="ds-web-slides"><img src="/website_dsolution/static/src/img/content/web-examples/reservas-1.svg" alt="Ejemplo web con reservas 1" class="img img-fluid o_we_custom_image"/><img src="/website_dsolution/static/src/img/content/web-examples/reservas-2.svg" alt="Ejemplo web con reservas 2" class="img img-fluid o_we_custom_image"/><img src="/website_dsolution/static/src/img/content/web-examples/reservas-3.svg" alt="Ejemplo web con reservas 3" class="img img-fluid o_we_custom_image"/></div></div>
-                                            <div class="ds-web-gallery" data-web-gallery="plataforma"><div class="ds-web-slides"><img src="/website_dsolution/static/src/img/content/web-examples/plataforma-1.svg" alt="Ejemplo plataforma web 1" class="img img-fluid o_we_custom_image"/><img src="/website_dsolution/static/src/img/content/web-examples/plataforma-2.svg" alt="Ejemplo plataforma web 2" class="img img-fluid o_we_custom_image"/><img src="/website_dsolution/static/src/img/content/web-examples/plataforma-3.svg" alt="Ejemplo plataforma web 3" class="img img-fluid o_we_custom_image"/></div></div>
-                                        </div></div>
-                                        <div class="ds-web-device ds-web-device--tablet"><img src="/website_dsolution/static/src/img/content/web-examples/corporativa-2.svg" alt="Vista tablet" class="js_ds_web_tablet"/></div>
-                                        <div class="ds-web-device ds-web-device--phone"><img src="/website_dsolution/static/src/img/content/web-examples/corporativa-3.svg" alt="Vista móvil" class="js_ds_web_phone"/></div>
+                                        <div class="ds-web-device ds-web-device--desktop">
+                                            <div class="ds-web-browserbar"><i/><i/><i/></div>
+                                            <div class="ds-web-preview-window"><img src="/web/image/website_dsolution.img_web_long_corporativa" alt="Captura larga de web" class="js_ds_web_preview"/></div>
+                                        </div>
+                                        <div class="ds-web-device ds-web-device--tablet"><div class="ds-web-preview-window"><img src="/web/image/website_dsolution.img_web_long_corporativa" alt="Vista tablet" class="js_ds_web_preview"/></div></div>
+                                        <div class="ds-web-device ds-web-device--phone"><div class="ds-web-preview-window"><img src="/web/image/website_dsolution.img_web_long_corporativa" alt="Vista móvil" class="js_ds_web_preview"/></div></div>
                                     </div>
                                 </div>
+
+                                <div class="ds-web-upload-bank" aria-label="Capturas largas editables">
+                                    <figure data-web-master="corporativa"><figcaption>Web corporativa · captura larga editable</figcaption><img src="/web/image/website_dsolution.img_web_long_corporativa" alt="Captura larga web corporativa" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></figure>
+                                    <figure data-web-master="landing"><figcaption>Landing page · captura larga editable</figcaption><img src="/web/image/website_dsolution.img_web_long_landing" alt="Captura larga landing page" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></figure>
+                                    <figure data-web-master="tienda"><figcaption>Tienda online · captura larga editable</figcaption><img src="/web/image/website_dsolution.img_web_long_tienda" alt="Captura larga tienda online" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></figure>
+                                    <figure data-web-master="catalogo"><figcaption>Catálogo online · captura larga editable</figcaption><img src="/web/image/website_dsolution.img_web_long_catalogo" alt="Captura larga catálogo online" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></figure>
+                                    <figure data-web-master="reservas"><figcaption>Web con reservas · captura larga editable</figcaption><img src="/web/image/website_dsolution.img_web_long_reservas" alt="Captura larga web con reservas" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></figure>
+                                    <figure data-web-master="plataforma"><figcaption>Plataforma web · captura larga editable</figcaption><img src="/web/image/website_dsolution.img_web_long_plataforma" alt="Captura larga plataforma web" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></figure>
+                                </div>
+
                                 <div class="ds-web-details">
-                                    <article class="is-active" data-web-detail="corporativa"><div><span>▣</span><h2>Web corporativa</h2><p>Proyecta una imagen profesional y genera confianza con un sitio que comunica quién eres, qué haces y por qué deberían elegirte.</p><ul><li>Refuerza tu marca y credibilidad</li><li>Presenta tus servicios con claridad</li><li>Diseñada para atraer, informar y convertir</li></ul></div><a href="#contacto">Quiero una web <b>→</b></a></article>
-                                    <article data-web-detail="landing"><div><span>↗</span><h2>Landing page</h2><p>Una página enfocada en una campaña, producto o servicio con una sola acción clara para convertir visitas en contactos.</p><ul><li>Mensaje directo y orientado a conversión</li><li>Formulario conectado</li><li>Medición de campañas</li></ul></div><a href="#contacto">Quiero una landing <b>→</b></a></article>
-                                    <article data-web-detail="tienda"><div><span>⌑</span><h2>Tienda online</h2><p>Catálogo, carrito y pagos preparados para vender productos desde una experiencia rápida y sencilla.</p><ul><li>Productos y categorías</li><li>Pagos y pedidos</li><li>Integración con procesos comerciales</li></ul></div><a href="#contacto">Quiero vender online <b>→</b></a></article>
-                                    <article data-web-detail="catalogo"><div><span>▤</span><h2>Catálogo online</h2><p>Muestra productos o servicios de forma organizada y facilita solicitudes de información o presupuesto.</p><ul><li>Filtros y categorías</li><li>Fichas claras</li><li>Consultas conectadas a tu equipo</li></ul></div><a href="#contacto">Quiero mi catálogo <b>→</b></a></article>
-                                    <article data-web-detail="reservas"><div><span>□</span><h2>Web con reservas</h2><p>Permite que tus clientes consulten disponibilidad y soliciten citas o reservas desde la propia web.</p><ul><li>Agenda y disponibilidad</li><li>Confirmaciones</li><li>Recordatorios y seguimiento</li></ul></div><a href="#contacto">Quiero reservas online <b>→</b></a></article>
-                                    <article data-web-detail="plataforma"><div><span>◇</span><h2>Plataforma web</h2><p>Una solución a medida para procesos, portales privados, operaciones internas o servicios digitales específicos.</p><ul><li>Flujos personalizados</li><li>Usuarios y permisos</li><li>Integraciones con otros sistemas</li></ul></div><a href="#contacto">Quiero una plataforma <b>→</b></a></article>
+                                    <article class="is-active" data-web-detail="corporativa"><div><span class="ds-web-detail-icon"><img src="/web/image/website_dsolution.img_web_type_corporativa" alt="" class="js_ds_web_detail_icon"/></span><h2>Web corporativa</h2><p>Proyecta una imagen profesional y genera confianza con un sitio que comunica quién eres, qué haces y por qué deberían elegirte.</p><ul><li>Refuerza tu marca y credibilidad</li><li>Presenta tus servicios con claridad</li><li>Diseñada para atraer, informar y convertir</li></ul></div><a href="#contacto">Quiero una web <b>→</b></a></article>
+                                    <article data-web-detail="landing"><div><span class="ds-web-detail-icon"><img src="/web/image/website_dsolution.img_web_type_landing" alt="" class="js_ds_web_detail_icon"/></span><h2>Landing page</h2><p>Una página enfocada en una campaña, producto o servicio con una sola acción clara para convertir visitas en contactos.</p><ul><li>Mensaje directo y orientado a conversión</li><li>Formulario conectado</li><li>Medición de campañas</li></ul></div><a href="#contacto">Quiero una landing <b>→</b></a></article>
+                                    <article data-web-detail="tienda"><div><span class="ds-web-detail-icon"><img src="/web/image/website_dsolution.img_web_type_tienda" alt="" class="js_ds_web_detail_icon"/></span><h2>Tienda online</h2><p>Catálogo, carrito y pagos preparados para vender productos desde una experiencia rápida y sencilla.</p><ul><li>Productos y categorías</li><li>Pagos y pedidos</li><li>Integración con procesos comerciales</li></ul></div><a href="#contacto">Quiero vender online <b>→</b></a></article>
+                                    <article data-web-detail="catalogo"><div><span class="ds-web-detail-icon"><img src="/web/image/website_dsolution.img_web_type_catalogo" alt="" class="js_ds_web_detail_icon"/></span><h2>Catálogo online</h2><p>Muestra productos o servicios de forma organizada y facilita solicitudes de información o presupuesto.</p><ul><li>Filtros y categorías</li><li>Fichas claras</li><li>Consultas conectadas a tu equipo</li></ul></div><a href="#contacto">Quiero mi catálogo <b>→</b></a></article>
+                                    <article data-web-detail="reservas"><div><span class="ds-web-detail-icon"><img src="/web/image/website_dsolution.img_web_type_reservas" alt="" class="js_ds_web_detail_icon"/></span><h2>Web con reservas</h2><p>Permite que tus clientes consulten disponibilidad y soliciten citas o reservas desde la propia web.</p><ul><li>Agenda y disponibilidad</li><li>Confirmaciones</li><li>Recordatorios y seguimiento</li></ul></div><a href="#contacto">Quiero reservas online <b>→</b></a></article>
+                                    <article data-web-detail="plataforma"><div><span class="ds-web-detail-icon"><img src="/web/image/website_dsolution.img_web_type_plataforma" alt="" class="js_ds_web_detail_icon"/></span><h2>Plataforma web</h2><p>Una solución a medida para procesos, portales privados, operaciones internas o servicios digitales específicos.</p><ul><li>Flujos personalizados</li><li>Usuarios y permisos</li><li>Integraciones con otros sistemas</li></ul></div><a href="#contacto">Quiero una plataforma <b>→</b></a></article>
                                 </div>
                             </div>
                         </section>
+
                         <section class="ds-web-extras" data-name="Desarrollo Web Funciones Extra">
-                            <div class="ds-container"><div class="ds-web-section-heading"><p>Funciones extra</p><h2>También podemos <em>integrar</em></h2><small>Funciones para que tu web venda más, automatice más y mida mejor.</small></div>
+                            <div class="ds-container">
+                                <div class="ds-web-section-heading"><p>Funciones extra</p><h2>También podemos <em>integrar</em></h2><small>Funciones para que tu web venda más, automatice más y mida mejor.</small></div>
                                 <div class="ds-web-extras-grid">
-                                    <article><span>01</span><i>CRM</i><h3>Conexión con CRM</h3><p>Envía tus leads automáticamente a tu CRM y ordena mejor su seguimiento.</p></article>
-                                    <article><span>02</span><i>WA</i><h3>WhatsApp integrado</h3><p>Capta consultas rápidas y conecta al cliente con tu equipo.</p></article>
-                                    <article><span>03</span><i>IA</i><h3>Chatbot web</h3><p>Responde preguntas frecuentes y genera contactos incluso fuera de horario.</p></article>
-                                    <article><span>04</span><i>€</i><h3>Pagos online</h3><p>Facilita compras y cobros desde la web con métodos de pago integrados.</p></article>
-                                    <article><span>05</span><i>↗</i><h3>Automatizaciones con n8n</h3><p>Conecta tu web con procesos, avisos y tareas automáticas.</p></article>
-                                    <article><span>06</span><i>↥</i><h3>Analytics y conversiones</h3><p>Mide visitas, formularios y acciones clave para tomar mejores decisiones.</p></article>
-                                    <article><span>07</span><i>□</i><h3>Reservas y citas</h3><p>Permite agendar reuniones o servicios desde tu propia web.</p></article>
-                                    <article><span>08</span><i>✓</i><h3>Formularios inteligentes</h3><p>Recoge datos útiles y clasifica mejor cada oportunidad.</p></article>
+                                    <article><div class="ds-web-extra-top"><span class="ds-web-extra-icon"><img src="/web/image/website_dsolution.img_web_extra_crm" alt="CRM" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>01</b></div><h3>Conexión con CRM</h3><p>Envía tus leads automáticamente a tu CRM y ordena mejor su seguimiento.</p></article>
+                                    <article><div class="ds-web-extra-top"><span class="ds-web-extra-icon"><img src="/web/image/website_dsolution.img_web_extra_whatsapp" alt="WhatsApp" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>02</b></div><h3>WhatsApp integrado</h3><p>Capta consultas rápidas y conecta al cliente con tu equipo.</p></article>
+                                    <article><div class="ds-web-extra-top"><span class="ds-web-extra-icon"><img src="/web/image/website_dsolution.img_web_extra_chatbot" alt="Chatbot" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>03</b></div><h3>Chatbot web</h3><p>Responde preguntas frecuentes y genera contactos incluso fuera de horario.</p></article>
+                                    <article><div class="ds-web-extra-top"><span class="ds-web-extra-icon"><img src="/web/image/website_dsolution.img_web_extra_payments" alt="Pagos online" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>04</b></div><h3>Pagos online</h3><p>Facilita compras y cobros desde la web con métodos de pago integrados.</p></article>
+                                    <article><div class="ds-web-extra-top"><span class="ds-web-extra-icon"><img src="/web/image/website_dsolution.img_web_extra_n8n" alt="n8n" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>05</b></div><h3>Automatizaciones con n8n</h3><p>Conecta tu web con procesos, avisos y tareas automáticas.</p></article>
+                                    <article><div class="ds-web-extra-top"><span class="ds-web-extra-icon"><img src="/web/image/website_dsolution.img_web_extra_analytics" alt="Analytics" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>06</b></div><h3>Analytics y conversiones</h3><p>Mide visitas, formularios y acciones clave para tomar mejores decisiones.</p></article>
+                                    <article><div class="ds-web-extra-top"><span class="ds-web-extra-icon"><img src="/web/image/website_dsolution.img_web_extra_bookings" alt="Reservas y citas" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>07</b></div><h3>Reservas y citas</h3><p>Permite agendar reuniones o servicios desde tu propia web.</p></article>
+                                    <article><div class="ds-web-extra-top"><span class="ds-web-extra-icon"><img src="/web/image/website_dsolution.img_web_extra_forms" alt="Formularios inteligentes" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>08</b></div><h3>Formularios inteligentes</h3><p>Recoge datos útiles y clasifica mejor cada oportunidad.</p></article>
                                 </div>
                             </div>
                         </section>
@@ -355,46 +370,57 @@
     </record>
 
     <record id="page_service_automation" model="website.page">
-        <field name="name">IA y Automatización</field><field name="is_published" eval="True"/><field name="key">website_dsolution.page_service_automation</field><field name="url">/servicios/automatizacion-ia</field><field name="type">qweb</field>
+        <field name="name">IA y Automatización</field>
+        <field name="is_published" eval="True"/>
+        <field name="key">website_dsolution.page_service_automation</field>
+        <field name="url">/servicios/automatizacion-ia</field>
+        <field name="type">qweb</field>
         <field name="arch" type="xml">
-            <t t-name="website_dsolution.page_service_automation"><t t-set="no_header" t-value="True"/><t t-set="no_footer" t-value="True"/>
+            <t t-name="website_dsolution.page_service_automation">
+                <t t-set="no_header" t-value="True"/>
+                <t t-set="no_footer" t-value="True"/>
                 <t t-call="website.layout" additional_title.translate="Automatización e IA para Empresas | D-Solution" meta_description.translate="Automatizamos tareas y procesos para pequeñas y medianas empresas con agentes IA, WhatsApp, email, CRM, documentos, integraciones y n8n.">
                     <div id="wrap" class="oe_structure dsolution-page dsolution-ai-page">
                         <t t-call="website_dsolution.header"/>
                         <section class="ds-ai-hero" data-name="Automatización e IA Hero">
                             <div class="ds-ai-grid-bg" aria-hidden="true"/>
                             <div class="ds-container ds-ai-hero-grid">
-                                <div class="ds-ai-copy ds-reveal"><p>Automatización e IA</p><h1>Automatiza<br/>tu negocio <em>con IA</em></h1><span>Conectamos tus herramientas, automatizamos tareas y creamos agentes de IA que trabajan contigo.</span><div class="ds-ai-actions"><a class="ds-btn ds-btn--gold" href="#contacto">Solicitar automatización <b>→</b></a><a class="ds-btn ds-ai-btn-outline" href="#como-funciona">Ver cómo funciona</a></div><div class="ds-ai-benefits"><small>◉ <b>Más eficiencia</b><br/>menos tareas manuales</small><small>◎ <b>Mejor atención</b><br/>a tus clientes</small><small>◌ <b>Procesos conectados</b><br/>en un solo flujo</small></div></div>
-                                <div class="ds-ai-flow ds-reveal" aria-label="Ejemplo de flujo automatizado">
-                                    <div class="ds-ai-inputs"><span>Cliente</span><span>Formulario</span><span>Email</span></div>
-                                    <div class="ds-ai-line ds-ai-line--left"/><div class="ds-ai-core"><i>✦</i><strong>IA</strong><small>Automatización</small></div><div class="ds-ai-line ds-ai-line--right"/>
-                                    <div class="ds-ai-outputs"><span><b>CRM</b><small>Contactos y oportunidades</small></span><span><b>Documentos</b><small>Propuestas automáticas</small></span><span><b>Email</b><small>Respuestas y seguimiento</small></span></div>
+                                <div class="ds-ai-copy ds-reveal">
+                                    <p>Automatización e IA</p>
+                                    <h1>Automatiza<br/>tu negocio <em>con IA</em></h1>
+                                    <span>Conectamos tus herramientas, automatizamos tareas y creamos agentes de IA que trabajan contigo.</span>
+                                    <div class="ds-ai-actions"><a class="ds-btn ds-btn--gold" href="#contacto">Solicitar automatización <b>→</b></a><a class="ds-btn ds-ai-btn-outline" href="#como-funciona">Ver cómo funciona</a></div>
+                                    <div class="ds-ai-benefits">
+                                        <small><span><img src="/web/image/website_dsolution.img_ai_benefit_efficiency" alt="Más eficiencia" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><i><b>Más eficiencia</b><br/>menos tareas manuales</i></small>
+                                        <small><span><img src="/web/image/website_dsolution.img_ai_benefit_attention" alt="Mejor atención" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><i><b>Mejor atención</b><br/>a tus clientes</i></small>
+                                        <small><span><img src="/web/image/website_dsolution.img_ai_benefit_connected" alt="Procesos conectados" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><i><b>Procesos conectados</b><br/>en un solo flujo</i></small>
+                                    </div>
                                 </div>
+                                <div class="ds-ai-hero-visual ds-reveal"><img src="/web/image/website_dsolution.img_ai_hero_flow" alt="Ejemplo visual de automatización" class="img img-fluid o_we_custom_image" loading="eager" decoding="async"/></div>
                             </div>
                         </section>
+
                         <section class="ds-ai-services" data-name="Automatizaciones para empresas">
-                            <div class="ds-container"><div class="ds-ai-heading"><p>Nuestros servicios</p><h2>Automatizaciones diseñadas para tu empresa</h2><span>Soluciones prácticas para ahorrar tiempo y conectar mejor tus procesos.</span></div>
-                                <div class="ds-ai-map">
-                                    <article><i>01</i><h3>Agentes IA</h3><p>Atención al cliente y asistentes especializados.</p></article>
-                                    <article><i>02</i><h3>WhatsApp</h3><p>Respuestas, captación y seguimiento automático.</p></article>
-                                    <article><i>03</i><h3>Email</h3><p>Clasificación, respuestas y avisos automáticos.</p></article>
-                                    <article><i>04</i><h3>CRM</h3><p>Leads, tareas y seguimiento comercial.</p></article>
-                                    <div class="ds-ai-map-core"><span>✦</span><strong>Automatización</strong><small>Procesos conectados</small></div>
-                                    <article><i>05</i><h3>Tareas internas</h3><p>Menos trabajo repetitivo para tu equipo.</p></article>
-                                    <article><i>06</i><h3>Documentos</h3><p>Generación de contenido y documentos.</p></article>
-                                    <article><i>07</i><h3>Integraciones</h3><p>Conexión entre aplicaciones y datos.</p></article>
-                                    <article><i>08</i><h3>Flujos con n8n</h3><p>Orquestación visual y control de procesos.</p></article>
-                                </div>
+                            <div class="ds-container">
+                                <div class="ds-ai-heading"><p>Nuestros servicios</p><h2>Automatizaciones diseñadas para tu empresa</h2><span>Soluciones prácticas, visuales y fáciles de entender.</span></div>
+                                <div class="ds-ai-service-grid"><article class="ds-ai-service-card"><div class="ds-ai-service-head"><span><img src="/web/image/website_dsolution.img_ai_service_icon_agents" alt="Agentes IA" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>Agentes IA</h3></div><img src="/web/image/website_dsolution.img_ai_service_photo_agents" alt="Agentes IA" class="ds-ai-service-photo img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></article><article class="ds-ai-service-card"><div class="ds-ai-service-head"><span><img src="/web/image/website_dsolution.img_ai_service_icon_whatsapp" alt="Automatización de WhatsApp" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>Automatización de WhatsApp</h3></div><img src="/web/image/website_dsolution.img_ai_service_photo_whatsapp" alt="Automatización de WhatsApp" class="ds-ai-service-photo img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></article><article class="ds-ai-service-card"><div class="ds-ai-service-head"><span><img src="/web/image/website_dsolution.img_ai_service_icon_email" alt="Automatización de email" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>Automatización de email</h3></div><img src="/web/image/website_dsolution.img_ai_service_photo_email" alt="Automatización de email" class="ds-ai-service-photo img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></article><article class="ds-ai-service-card"><div class="ds-ai-service-head"><span><img src="/web/image/website_dsolution.img_ai_service_icon_crm" alt="CRM y seguimiento automático" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>CRM y seguimiento automático</h3></div><img src="/web/image/website_dsolution.img_ai_service_photo_crm" alt="CRM y seguimiento automático" class="ds-ai-service-photo img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></article><article class="ds-ai-service-card"><div class="ds-ai-service-head"><span><img src="/web/image/website_dsolution.img_ai_service_icon_tasks" alt="Automatización de tareas internas" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>Automatización de tareas internas</h3></div><img src="/web/image/website_dsolution.img_ai_service_photo_tasks" alt="Automatización de tareas internas" class="ds-ai-service-photo img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></article><article class="ds-ai-service-card"><div class="ds-ai-service-head"><span><img src="/web/image/website_dsolution.img_ai_service_icon_documents" alt="Generación de documentos y contenido" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>Generación de documentos y contenido</h3></div><img src="/web/image/website_dsolution.img_ai_service_photo_documents" alt="Generación de documentos y contenido" class="ds-ai-service-photo img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></article><article class="ds-ai-service-card"><div class="ds-ai-service-head"><span><img src="/web/image/website_dsolution.img_ai_service_icon_integrations" alt="Integraciones entre aplicaciones" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>Integraciones entre aplicaciones</h3></div><img src="/web/image/website_dsolution.img_ai_service_photo_integrations" alt="Integraciones entre aplicaciones" class="ds-ai-service-photo img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></article><article class="ds-ai-service-card"><div class="ds-ai-service-head"><span><img src="/web/image/website_dsolution.img_ai_service_icon_n8n" alt="Flujos con n8n" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>Flujos con n8n</h3></div><img src="/web/image/website_dsolution.img_ai_service_photo_n8n" alt="Flujos con n8n" class="ds-ai-service-photo img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></article></div>
                             </div>
                         </section>
+
                         <section class="ds-ai-before-after" data-name="Automatización Antes y Después">
                             <div class="ds-container"><div class="ds-ai-heading ds-ai-heading--dark"><p>Antes y después</p><h2>De tareas manuales a procesos inteligentes</h2></div>
                                 <div class="ds-ai-compare"><div class="ds-ai-before"><h3>Antes</h3><ul><li>Responder mensajes uno por uno</li><li>Copiar datos entre aplicaciones</li><li>Perder seguimiento de clientes</li><li>Tareas repetitivas que consumen tiempo</li><li>Información desorganizada</li></ul></div><span class="ds-ai-compare-arrow">→</span><div class="ds-ai-after"><h3>Después</h3><ul><li>La IA atiende consultas automáticamente</li><li>Datos guardados y organizados en el CRM</li><li>Seguimiento automático de oportunidades</li><li>Tareas ejecutadas sin intervención manual</li><li>Procesos conectados en un solo lugar</li></ul></div></div>
                             </div>
                         </section>
+
                         <section id="como-funciona" class="ds-ai-how" data-name="Cómo implementamos automatización">
-                            <div class="ds-container"><div class="ds-ai-heading"><p>Cómo lo implementamos</p><h2>De una tarea manual a un proceso automatizado</h2><span>Sin complicar tu operación: analizamos, conectamos y dejamos un flujo claro.</span></div>
-                                <div class="ds-ai-how-grid"><article><span>1</span><div class="ds-ai-how-visual">⌕</div><h3>Analizamos tu proceso</h3><p>Detectamos tareas repetitivas, puntos lentos y oportunidades claras de automatización.</p></article><article><span>2</span><div class="ds-ai-how-visual">◇</div><h3>Diseñamos la automatización</h3><p>Conectamos los sistemas necesarios y usamos IA solo donde realmente aporta valor.</p></article><article><span>3</span><div class="ds-ai-how-visual">✓</div><h3>Tu equipo trabaja mejor</h3><p>La información fluye sola y tu equipo interviene únicamente cuando hace falta.</p></article></div>
+                            <div class="ds-container">
+                                <div class="ds-ai-heading"><p>Cómo lo implementamos</p><h2>De una tarea manual a un proceso automatizado</h2><span>Tres pasos claros, sin complicar tu operación.</span></div>
+                                <div class="ds-ai-how-grid">
+                                    <article><figure><img src="/web/image/website_dsolution.img_ai_how_photo_analysis" alt="Analizamos tu proceso" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></figure><div class="ds-ai-how-body"><span class="ds-ai-how-icon"><img src="/web/image/website_dsolution.img_ai_how_icon_analysis" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>1</b><h3>Analizamos tu proceso</h3><p>Detectamos tareas repetitivas y oportunidades claras de automatización.</p></div></article>
+                                    <article><figure><img src="/web/image/website_dsolution.img_ai_how_photo_design" alt="Diseñamos la automatización" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></figure><div class="ds-ai-how-body"><span class="ds-ai-how-icon"><img src="/web/image/website_dsolution.img_ai_how_icon_design" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>2</b><h3>Diseñamos la automatización</h3><p>Conectamos los sistemas necesarios y usamos IA donde aporta valor.</p></div></article>
+                                    <article><figure><img src="/web/image/website_dsolution.img_ai_how_photo_team" alt="Tu equipo trabaja mejor" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></figure><div class="ds-ai-how-body"><span class="ds-ai-how-icon"><img src="/web/image/website_dsolution.img_ai_how_icon_team" alt="" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><b>3</b><h3>Tu equipo trabaja mejor</h3><p>La información fluye sola y el equipo interviene cuando hace falta.</p></div></article>
+                                </div>
                             </div>
                         </section>
                         <t t-call="website_dsolution.contact"/><t t-call="website_dsolution.footer"/>
@@ -405,26 +431,81 @@
     </record>
 
     <record id="page_service_branding" model="website.page">
-        <field name="name">Branding y Diseño</field><field name="is_published" eval="True"/><field name="key">website_dsolution.page_service_branding</field><field name="url">/servicios/branding-diseno</field><field name="type">qweb</field>
-        <field name="arch" type="xml"><t t-name="website_dsolution.page_service_branding"><t t-set="no_header" t-value="True"/><t t-set="no_footer" t-value="True"/>
-            <t t-call="website.layout" additional_title.translate="Branding y Diseño Gráfico | D-Solution" meta_description.translate="Identidad visual, diseño digital, sistemas de marca y dirección creativa para empresas y proyectos.">
-                <div id="wrap" class="oe_structure dsolution-page dsolution-service-page">
-                    <t t-call="website_dsolution.header"/>
-                    <section class="ds-service-hero ds-service-hero--editable" data-name="Branding y Diseño Hero">
-                        <img src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Branding y Diseño" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>
-                        <div class="ds-service-hero-inner ds-reveal"><span class="ds-service-hero-number">05 · BRANDING Y DISEÑO</span><h1>Una identidad visual coherente en todos tus canales</h1><p>Branding, piezas creativas y sistemas visuales que ayudan a tu marca a ser reconocible y profesional.</p><div class="ds-hero-actions" style="justify-content:flex-start"><a class="ds-btn ds-btn--gold" href="#contacto">Hablemos de tu proyecto</a><a class="ds-btn ds-btn--outline" href="/servicios">Todos los servicios</a></div></div>
-                    </section>
-                    <section class="ds-section" data-name="Branding y Diseño Contenido"><div class="ds-container ds-service-content-grid"><div class="ds-reveal"><p class="ds-eyebrow">Qué hacemos</p><h2 class="ds-title">Diseño que comunica antes de que empiece el texto</h2><span class="ds-divider"/><p class="ds-subtitle">Desarrollamos una dirección visual coherente y adaptable para web, campañas, redes y materiales comerciales.</p></div><div class="ds-service-points ds-reveal"><div class="ds-service-point"><strong>Identidad visual</strong><span>Logo, color, tipografía y reglas de uso.</span></div>
-<div class="ds-service-point"><strong>Diseño digital</strong><span>Piezas para publicidad, web y comunicación.</span></div>
-<div class="ds-service-point"><strong>Sistemas de marca</strong><span>Consistencia entre formatos y canales.</span></div>
-<div class="ds-service-point"><strong>Dirección creativa</strong><span>Criterios visuales para mantener una marca reconocible.</span></div></div></div></section>
-                    <section class="ds-section ds-service-gallery-section" data-name="Branding y Diseño Galería"><div class="ds-container"><div class="ds-service-gallery-heading"><p class="ds-eyebrow">Galería</p><h2 class="ds-title">Imágenes del servicio</h2><p class="ds-subtitle">Puedes sustituir estas imágenes directamente desde el editor de Odoo.</p><span class="ds-divider"/></div><div class="ds-service-gallery-grid"><figure class="ds-service-gallery-item"><img src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Branding y Diseño" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></figure>
-<figure class="ds-service-gallery-item"><img src="/website_dsolution/static/src/img/content/service-photography.jpg" alt="Branding y Diseño" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></figure>
-<figure class="ds-service-gallery-item"><img src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Branding y Diseño" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></figure></div></div></section>
-                    <t t-call="website_dsolution.contact"/><t t-call="website_dsolution.footer"/>
-                </div>
+        <field name="name">Branding y Diseño</field>
+        <field name="is_published" eval="True"/>
+        <field name="key">website_dsolution.page_service_branding</field>
+        <field name="url">/servicios/branding-diseno</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <t t-name="website_dsolution.page_service_branding">
+                <t t-set="no_header" t-value="True"/>
+                <t t-set="no_footer" t-value="True"/>
+                <t t-call="website.layout" additional_title.translate="Branding y Diseño Gráfico | D-Solution" meta_description.translate="Diseño de logotipos, identidad visual, banners, redes sociales y piezas publicitarias para pequeñas y medianas empresas.">
+                    <div id="wrap" class="oe_structure dsolution-page dsolution-branding-page">
+                        <t t-call="website_dsolution.header"/>
+
+                        <section class="ds-brand-hero" data-name="Branding y Diseño Hero">
+                            <img src="/web/image/website_dsolution.img_brand_hero" alt="Diseño y branding" class="ds-brand-cover img img-fluid o_we_custom_image" loading="eager" decoding="async" fetchpriority="high"/>
+                            <div class="ds-brand-hero-shade" aria-hidden="true"/>
+                            <div class="ds-container ds-brand-hero-content">
+                                <div class="ds-brand-hero-copy ds-reveal">
+                                    <p>Diseño y branding</p>
+                                    <h1>Diseño que impulsa <em>tu marca</em></h1>
+                                    <span>Creamos logos, identidades visuales y piezas digitales para que tu negocio comunique con una imagen clara y profesional.</span>
+                                    <div class="ds-brand-actions"><a class="ds-btn ds-btn--gold" href="#contacto">Solicitar diseño <b>→</b></a><a class="ds-btn ds-brand-btn-outline" href="#servicios-branding">Ver servicios</a></div>
+                                </div>
+                            </div>
+                            <div class="ds-brand-benefits">
+                                <div class="ds-container ds-brand-benefit-grid">
+                                    <div><span><img src="/web/image/website_dsolution.img_brand_benefit_professional" alt="Imagen profesional" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><p><b>Imagen profesional</b><small>para generar confianza</small></p></div>
+                                    <div><span><img src="/web/image/website_dsolution.img_brand_benefit_results" alt="Diseño orientado a resultados" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><p><b>Diseño útil</b><small>para comunicar y vender</small></p></div>
+                                    <div><span><img src="/web/image/website_dsolution.img_brand_benefit_business" alt="Diseño para empresas" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><p><b>Para empresas</b><small>pequeñas y medianas</small></p></div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="servicios-branding" class="ds-brand-services" data-name="Branding Servicios">
+                            <div class="ds-container">
+                                <div class="ds-brand-heading"><p>Nuestros servicios</p><h2>Soluciones de diseño para tu negocio</h2><span>Solo lo que necesitas para construir y comunicar una imagen consistente.</span></div>
+                                <div class="ds-brand-services-grid"><article class="ds-brand-service-card"><div class="ds-brand-service-copy"><span><img src="/web/image/website_dsolution.img_brand_service_icon_naming" alt="Naming y concepto de marca" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>Naming y concepto de marca</h3><p>Definimos una base clara para que tu marca tenga una dirección visual coherente.</p></div><img src="/web/image/website_dsolution.img_brand_service_photo_naming" alt="Naming y concepto de marca" class="ds-brand-service-photo img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></article><article class="ds-brand-service-card"><div class="ds-brand-service-copy"><span><img src="/web/image/website_dsolution.img_brand_service_icon_logo" alt="Diseño de logotipo" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>Diseño de logotipo</h3><p>Creamos un logotipo profesional y adaptable a tus canales digitales.</p></div><img src="/web/image/website_dsolution.img_brand_service_photo_logo" alt="Diseño de logotipo" class="ds-brand-service-photo img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></article><article class="ds-brand-service-card"><div class="ds-brand-service-copy"><span><img src="/web/image/website_dsolution.img_brand_service_icon_identity" alt="Identidad visual" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>Identidad visual</h3><p>Definimos colores y recursos gráficos para que tu negocio sea reconocible.</p></div><img src="/web/image/website_dsolution.img_brand_service_photo_identity" alt="Identidad visual" class="ds-brand-service-photo img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></article><article class="ds-brand-service-card"><div class="ds-brand-service-copy"><span><img src="/web/image/website_dsolution.img_brand_service_icon_guide" alt="Guía básica de uso del logo y colores" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>Guía básica de uso del logo y colores</h3><p>Entregamos pautas simples para usar correctamente el logo y la paleta.</p></div><img src="/web/image/website_dsolution.img_brand_service_photo_guide" alt="Guía básica de uso del logo y colores" class="ds-brand-service-photo img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></article><article class="ds-brand-service-card"><div class="ds-brand-service-copy"><span><img src="/web/image/website_dsolution.img_brand_service_icon_social" alt="Diseño para redes sociales" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>Diseño para redes sociales</h3><p>Banners, posts y piezas visuales para comunicar con una imagen consistente.</p></div><img src="/web/image/website_dsolution.img_brand_service_photo_social" alt="Diseño para redes sociales" class="ds-brand-service-photo img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></article><article class="ds-brand-service-card"><div class="ds-brand-service-copy"><span><img src="/web/image/website_dsolution.img_brand_service_icon_presentation" alt="Presentaciones y piezas publicitarias" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>Presentaciones y piezas publicitarias</h3><p>Diseños para presentar servicios, campañas y propuestas comerciales.</p></div><img src="/web/image/website_dsolution.img_brand_service_photo_presentation" alt="Presentaciones y piezas publicitarias" class="ds-brand-service-photo img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></article></div>
+                            </div>
+                        </section>
+
+                        <section class="ds-brand-visual" data-name="Branding Ejemplo Visual">
+                            <div class="ds-container">
+                                <div class="ds-brand-heading"><p>Ejemplo visual</p><h2>Una marca, múltiples aplicaciones</h2><span>Todos estos espacios son imágenes editables desde Odoo.</span></div>
+                                <div class="ds-brand-visual-grid">
+                                    <figure class="ds-brand-visual-main"><img src="/web/image/website_dsolution.img_brand_visual_logo" alt="Logo principal" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/><figcaption>Logo principal</figcaption></figure>
+                                    <figure><img src="/web/image/website_dsolution.img_brand_visual_palette" alt="Paleta de colores" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/><figcaption>Paleta de colores</figcaption></figure>
+                                    <figure><img src="/web/image/website_dsolution.img_brand_visual_variations" alt="Variaciones del logo" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/><figcaption>Variaciones del logo</figcaption></figure>
+                                    <figure><img src="/web/image/website_dsolution.img_brand_visual_social" alt="Diseño para redes sociales" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/><figcaption>Diseño para redes</figcaption></figure>
+                                    <figure><img src="/web/image/website_dsolution.img_brand_visual_advertising" alt="Banner y publicidad" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/><figcaption>Banner / publicidad</figcaption></figure>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="ds-brand-process" data-name="Branding Proceso">
+                            <div class="ds-container">
+                                <div class="ds-brand-heading"><p>Nuestro proceso</p><h2>Así trabajamos contigo</h2><span>Un proceso simple para llegar a un diseño útil y coherente.</span></div>
+                                <div class="ds-brand-process-grid">
+                                    <article><span><img src="/web/image/website_dsolution.img_brand_process_brief" alt="Brief" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>1. Brief</h3><p>Entendemos tu negocio, público y necesidades.</p></article>
+                                    <article><span><img src="/web/image/website_dsolution.img_brand_process_concept" alt="Concepto" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>2. Concepto</h3><p>Definimos la dirección visual y las ideas principales.</p></article>
+                                    <article><span><img src="/web/image/website_dsolution.img_brand_process_design" alt="Diseño" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>3. Diseño</h3><p>Desarrollamos las propuestas y las refinamos contigo.</p></article>
+                                    <article><span><img src="/web/image/website_dsolution.img_brand_process_applications" alt="Aplicaciones" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>4. Aplicaciones</h3><p>Adaptamos el diseño a los canales digitales necesarios.</p></article>
+                                    <article><span><img src="/web/image/website_dsolution.img_brand_process_delivery" alt="Entrega" class="img img-fluid o_we_custom_image" loading="lazy" decoding="async"/></span><h3>5. Entrega</h3><p>Recibes los archivos finales y una guía básica de uso.</p></article>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="ds-brand-cta" data-name="Branding CTA">
+                            <div class="ds-container"><div><h2>¿Listo para darle una imagen profesional a tu negocio?</h2><p>Cuéntanos qué necesitas y prepararemos una propuesta clara.</p></div><a class="ds-btn ds-btn--gold" href="#contacto">Solicitar diseño <b>→</b></a></div>
+                        </section>
+
+                        <t t-call="website_dsolution.contact"/><t t-call="website_dsolution.footer"/>
+                    </div>
+                </t>
             </t>
-        </t></field>
+        </field>
     </record>
 
     <record id="page_service_photography" model="website.page">

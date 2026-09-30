@@ -247,75 +247,127 @@
 
 })();
 
-// v20.1.7 — Desarrollo Web interactive examples.
+// v20.1.8 — Desarrollo Web: one editable long screenshot per type + slow vertical scroll.
 (function () {
     "use strict";
 
     function initDsolutionWebShowcase() {
         const page = document.querySelector(".dsolution-web-page");
-        if (!page || page.dataset.dsWebReady === "1") return;
-        page.dataset.dsWebReady = "1";
+        if (!page || page.dataset.dsWebReady === "2") return;
+        page.dataset.dsWebReady = "2";
 
         const buttons = Array.from(page.querySelectorAll("[data-web-target]"));
-        const galleries = Array.from(page.querySelectorAll("[data-web-gallery]"));
         const details = Array.from(page.querySelectorAll("[data-web-detail]"));
-        const tablet = page.querySelector(".js_ds_web_tablet");
-        const phone = page.querySelector(".js_ds_web_phone");
+        const masters = Array.from(page.querySelectorAll("[data-web-master]"));
+        const previews = Array.from(page.querySelectorAll(".js_ds_web_preview"));
         const editing = document.body.classList.contains("editor_enable");
+        const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         let activeType = "corporativa";
-        let slideIndex = 0;
-        let timer = null;
 
-        function galleryFor(type) {
-            return galleries.find((node) => node.dataset.webGallery === type);
+        function masterFor(type) {
+            return masters.find((node) => node.dataset.webMaster === type);
         }
 
-        function updateDevicePreviews(gallery) {
-            if (!gallery) return;
-            const imgs = Array.from(gallery.querySelectorAll("img"));
-            if (tablet && imgs.length) tablet.src = imgs[(slideIndex + 1) % imgs.length].src;
-            if (phone && imgs.length) phone.src = imgs[(slideIndex + 2) % imgs.length].src;
+        function buttonFor(type) {
+            return buttons.find((node) => node.dataset.webTarget === type);
         }
 
-        function moveSlider() {
-            const gallery = galleryFor(activeType);
-            if (!gallery) return;
-            const track = gallery.querySelector(".ds-web-slides");
-            const imgs = Array.from(gallery.querySelectorAll("img"));
-            if (!track || !imgs.length) return;
-            slideIndex = slideIndex % imgs.length;
-            track.style.transform = `translateX(-${slideIndex * 100}%)`;
-            updateDevicePreviews(gallery);
+        function detailFor(type) {
+            return details.find((node) => node.dataset.webDetail === type);
         }
 
-        function startTimer() {
-            if (timer) window.clearInterval(timer);
-            if (editing || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-            timer = window.setInterval(() => {
-                const gallery = galleryFor(activeType);
-                const count = gallery ? gallery.querySelectorAll("img").length : 0;
-                if (!count) return;
-                slideIndex = (slideIndex + 1) % count;
-                moveSlider();
-            }, 5500);
+        function sourceFor(type) {
+            return masterFor(type)?.querySelector("img")?.src || "";
+        }
+
+        function iconFor(type) {
+            return buttonFor(type)?.querySelector(".ds-web-type-icon img")?.src || "";
+        }
+
+        function configurePreview(img) {
+            const frame = img.closest(".ds-web-preview-window");
+            if (!frame) return;
+            img.classList.remove("is-scrolling");
+            img.style.removeProperty("--ds-scroll-distance");
+            img.style.removeProperty("--ds-scroll-duration");
+
+            const apply = () => {
+                const distance = Math.max(0, img.getBoundingClientRect().height - frame.clientHeight);
+                img.style.setProperty("--ds-scroll-distance", `${Math.round(distance)}px`);
+                const duration = Math.max(20, Math.min(42, 20 + distance / 85));
+                img.style.setProperty("--ds-scroll-duration", `${duration.toFixed(1)}s`);
+                if (!editing && !reduceMotion && distance > 12) {
+                    void img.offsetWidth;
+                    img.classList.add("is-scrolling");
+                }
+            };
+
+            if (img.complete) {
+                requestAnimationFrame(apply);
+            } else {
+                img.addEventListener("load", () => requestAnimationFrame(apply), { once: true });
+            }
+        }
+
+        function syncDetailIcon(type) {
+            const src = iconFor(type);
+            const detail = detailFor(type);
+            const img = detail?.querySelector(".js_ds_web_detail_icon");
+            if (src && img && img.src !== src) img.src = src;
+        }
+
+        function syncPreviews(type) {
+            const src = sourceFor(type);
+            if (!src) return;
+            previews.forEach((img) => {
+                img.classList.remove("is-scrolling");
+                if (img.src !== src) {
+                    img.src = src;
+                }
+                configurePreview(img);
+            });
         }
 
         function activate(type) {
             activeType = type;
-            slideIndex = 0;
             buttons.forEach((button) => button.classList.toggle("is-active", button.dataset.webTarget === type));
-            galleries.forEach((gallery) => {
-                const active = gallery.dataset.webGallery === type;
-                gallery.classList.toggle("is-active", active);
-                const track = gallery.querySelector(".ds-web-slides");
-                if (track) track.style.transform = "translateX(0)";
-            });
             details.forEach((detail) => detail.classList.toggle("is-active", detail.dataset.webDetail === type));
-            moveSlider();
-            startTimer();
+            syncDetailIcon(type);
+            syncPreviews(type);
         }
 
-        buttons.forEach((button) => button.addEventListener("click", () => activate(button.dataset.webTarget)));
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => activate(button.dataset.webTarget));
+        });
+
+        const mediaObserver = new MutationObserver((mutations) => {
+            let shouldSync = false;
+            mutations.forEach((mutation) => {
+                if (mutation.type === "attributes" && ["src", "srcset"].includes(mutation.attributeName)) {
+                    shouldSync = true;
+                }
+            });
+            if (shouldSync) {
+                syncDetailIcon(activeType);
+                syncPreviews(activeType);
+            }
+        });
+
+        masters.forEach((master) => {
+            const img = master.querySelector("img");
+            if (img) mediaObserver.observe(img, { attributes: true, attributeFilter: ["src", "srcset"] });
+        });
+        buttons.forEach((button) => {
+            const img = button.querySelector(".ds-web-type-icon img");
+            if (img) mediaObserver.observe(img, { attributes: true, attributeFilter: ["src", "srcset"] });
+        });
+
+        let resizeTimer = null;
+        window.addEventListener("resize", () => {
+            if (resizeTimer) window.clearTimeout(resizeTimer);
+            resizeTimer = window.setTimeout(() => previews.forEach(configurePreview), 160);
+        }, { passive: true });
+
         activate(activeType);
     }
 

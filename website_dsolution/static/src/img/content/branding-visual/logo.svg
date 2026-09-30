@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+<rect width="900" height="700" rx="32" fill="#071522"/>
+<rect x="70" y="70" width="760" height="560" rx="30" fill="#fff" opacity=".96"/>
+<circle cx="170" cy="180" r="70" fill="#D4AF37" opacity=".14"/>
+<rect x="280" y="125" width="390" height="30" rx="15" fill="#D4AF37" opacity=".82"/>
+<rect x="280" y="185" width="260" height="16" rx="8" fill="#cbd5e1"/>
+<rect x="120" y="310" width="250" height="210" rx="24" fill="#D4AF37" opacity=".83"/>
+<rect x="410" y="310" width="300" height="28" rx="14" fill="#D4AF37" opacity=".62"/>
+<rect x="410" y="370" width="250" height="14" rx="7" fill="#cbd5e1"/>
+<rect x="410" y="410" width="280" height="14" rx="7" fill="#cbd5e1"/>
+<text x="120" y="580" font-family="Arial" font-size="26" font-weight="700" fill="#071522">LOGO PRINCIPAL</text>
+</svg>

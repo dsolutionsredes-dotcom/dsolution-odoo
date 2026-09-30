@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#0b2943"/><stop offset="1" stop-color="#071827"/></linearGradient></defs>
+<rect width="1200" height="760" rx="38" fill="url(#bg)"/>
+<g stroke="#D4AF37" stroke-width="3" fill="none" opacity=".9">
+<path d="M370 180H510Q550 180 550 220V330"/><path d="M370 380H510Q550 380 550 380"/><path d="M370 580H510Q550 580 550 540V430"/>
+<path d="M650 330V220Q650 180 690 180H830"/><path d="M650 380H830"/><path d="M650 430V540Q650 580 690 580H830"/></g>
+<g font-family="Arial" fill="#fff">
+<rect x="90" y="110" width="280" height="140" rx="24" fill="#113a5f" stroke="#2b6694"/><text x="130" y="175" font-size="28" font-weight="700">Cliente</text><text x="130" y="210" font-size="18" fill="#cbd5e1">Consulta / formulario</text>
+<rect x="90" y="310" width="280" height="140" rx="24" fill="#113a5f" stroke="#2b6694"/><text x="130" y="375" font-size="28" font-weight="700">Email</text><text x="130" y="410" font-size="18" fill="#cbd5e1">Mensajes entrantes</text>
+<rect x="90" y="510" width="280" height="140" rx="24" fill="#113a5f" stroke="#2b6694"/><text x="130" y="575" font-size="28" font-weight="700">Documentos</text><text x="130" y="610" font-size="18" fill="#cbd5e1">Datos y archivos</text>
+<rect x="510" y="280" width="140" height="200" rx="34" fill="#173f61" stroke="#D4AF37"/><text x="580" y="355" text-anchor="middle" font-size="48" fill="#D4AF37">✦</text><text x="580" y="405" text-anchor="middle" font-size="31" font-weight="700">IA</text><text x="580" y="438" text-anchor="middle" font-size="16" fill="#cbd5e1">Automatización</text>
+<rect x="830" y="110" width="280" height="140" rx="24" fill="#113a5f" stroke="#2b6694"/><text x="870" y="175" font-size="28" font-weight="700">CRM</text><text x="870" y="210" font-size="18" fill="#cbd5e1">Leads y seguimiento</text>
+<rect x="830" y="310" width="280" height="140" rx="24" fill="#113a5f" stroke="#2b6694"/><text x="870" y="375" font-size="28" font-weight="700">Respuestas</text><text x="870" y="410" font-size="18" fill="#cbd5e1">Acciones automáticas</text>
+<rect x="830" y="510" width="280" height="140" rx="24" fill="#113a5f" stroke="#2b6694"/><text x="870" y="575" font-size="28" font-weight="700">Tareas</text><text x="870" y="610" font-size="18" fill="#cbd5e1">Equipo avisado</text>
+</g></svg>

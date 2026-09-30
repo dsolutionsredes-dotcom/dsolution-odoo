@@ -1,5 +1,18 @@
 # D-Solution Website for Odoo Community 20.1 alpha
 
+## v20.1.8.0.0 — iconos editables, capturas web verticales, Automatización visual y Branding 2026-09-30
+
+- Audiovisual: los 4 iconos de confianza, 15 logos de herramientas, 12 iconos de equipo y 5 iconos de proceso quedan como imágenes reemplazables desde Odoo.
+- Audiovisual: herramientas/equipo quedan ordenados en columnas limpias y el proceso usa flechas sólidas entre pasos.
+- Marketing Digital: agranda los 5 iconos de “Qué incluye…” y adapta las 3 tarjetas “¿Para quién es?” al diseño de referencia, con icono editable, sombra lateral y número inferior.
+- Desarrollo Web: icono central de cabecera, 6 iconos de tipo de web y 8 iconos de funciones extra pasan a imágenes editables.
+- Desarrollo Web: cada tipo usa una sola captura larga editable; escritorio/tablet/móvil reutilizan esa imagen y la desplazan verticalmente de forma automática y lenta.
+- Desarrollo Web: el icono del selector se replica automáticamente en el bloque descriptivo inferior para mantener consistencia.
+- Automatización IA: Hero a primera pantalla completa; el esquema HTML se sustituye por una imagen grande editable y los 3 beneficios usan iconos editables.
+- Automatización IA: 8 servicios en dos filas visuales con icono + título + imagen editable; el proceso de 3 pasos pasa a tarjetas con foto, icono y texto.
+- Branding y Diseño: página completamente reconstruida con Hero fotográfico full-screen, 3 beneficios, 6 servicios, bloque visual de marca, proceso de 5 pasos y CTA “Solicitar diseño”.
+- Todos los nuevos medios clave se registran como `ir.attachment` con `raw/type=bytes`, compatible con Odoo 20.1.
+
 ## v20.1.7.0.0 — Audiovisual refinado, Desarrollo Web interactivo y Automatización IA 2026-09-30
 
 - Audiovisual: Hero ocupa la primera pantalla completa en escritorio y la franja de confianza queda al pie del Hero.
