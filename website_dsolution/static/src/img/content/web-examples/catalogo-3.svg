@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+<rect width="1200" height="750" fill="#F0F9FF"/>
+<rect x="0" y="0" width="1200" height="82" fill="#fff"/><circle cx="54" cy="41" r="18" fill="#0369A1"/><text x="84" y="49" font-family="Arial" font-size="24" font-weight="700" fill="#172033">MUESTRA</text>
+<g font-family="Arial" font-size="15" fill="#667085"><text x="760" y="48">Inicio</text><text x="830" y="48">Servicios</text><text x="920" y="48">Nosotros</text><text x="1015" y="48">Contacto</text></g>
+<rect x="1060" y="24" width="100" height="36" rx="18" fill="#0369A1"/>
+<text x="70" y="165" font-family="Arial" font-size="18" font-weight="700" fill="#0369A1">EJEMPLO 3</text>
+<text x="70" y="215" font-family="Arial" font-size="46" font-weight="800" fill="#101828">MUESTRA: web catalogo</text>
+<rect x="70" y="236" width="460" height="14" rx="7" fill="#98A2B3" opacity=".5"/>
+<rect x="70" y="340" width="150" height="205" rx="12" fill="#fff" stroke="#DDE3EA"/><circle cx="145" cy="405" r="48" fill="#0369A1" opacity=".15"/><rect x="96" y="0" width="0" height="0"/><rect x="250" y="340" width="150" height="205" rx="12" fill="#fff" stroke="#DDE3EA"/><circle cx="325" cy="405" r="48" fill="#0369A1" opacity=".15"/><rect x="96" y="0" width="0" height="0"/><rect x="430" y="340" width="150" height="205" rx="12" fill="#fff" stroke="#DDE3EA"/><circle cx="505" cy="405" r="48" fill="#0369A1" opacity=".15"/><rect x="96" y="0" width="0" height="0"/><rect x="610" y="340" width="150" height="205" rx="12" fill="#fff" stroke="#DDE3EA"/><circle cx="685" cy="405" r="48" fill="#0369A1" opacity=".15"/><rect x="96" y="0" width="0" height="0"/><rect x="790" y="340" width="150" height="205" rx="12" fill="#fff" stroke="#DDE3EA"/><circle cx="865" cy="405" r="48" fill="#0369A1" opacity=".15"/><rect x="96" y="0" width="0" height="0"/><rect x="970" y="340" width="150" height="205" rx="12" fill="#fff" stroke="#DDE3EA"/><circle cx="1045" cy="405" r="48" fill="#0369A1" opacity=".15"/><rect x="96" y="0" width="0" height="0"/>
+<rect x="0" y="690" width="1200" height="60" fill="#071522"/><text x="70" y="727" font-family="Arial" font-size="14" fill="#fff" opacity=".8">Diseño demostrativo D-Solution · ejemplo editable</text>
+</svg>

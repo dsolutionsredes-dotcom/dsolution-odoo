@@ -61,7 +61,7 @@
                 </a>
                 <a href="https://www.google.com/maps/search/?api=1&amp;query=Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener">
                     <img src="/web/image/website_dsolution.img_contact_location" alt="Ubicación" class="ds-contact-icon img img-fluid o_we_custom_image" loading="lazy" decoding="async"/>
-                    <span>Barcelona, España</span>
+                    <span><t t-out="'Barcelona, Spain' if ds_is_en else 'Barcelona, España'"/></span>
                 </a>
             </div>
         </xpath>

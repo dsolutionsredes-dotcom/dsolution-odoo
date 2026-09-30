@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+<rect width="1200" height="750" fill="#EFF6FF"/>
+<rect x="0" y="0" width="1200" height="82" fill="#fff"/><circle cx="54" cy="41" r="18" fill="#1D4ED8"/><text x="84" y="49" font-family="Arial" font-size="24" font-weight="700" fill="#172033">ALTO</text>
+<g font-family="Arial" font-size="15" fill="#667085"><text x="760" y="48">Inicio</text><text x="830" y="48">Servicios</text><text x="920" y="48">Nosotros</text><text x="1015" y="48">Contacto</text></g>
+<rect x="1060" y="24" width="100" height="36" rx="18" fill="#1D4ED8"/>
+<text x="70" y="165" font-family="Arial" font-size="18" font-weight="700" fill="#1D4ED8">EJEMPLO 2</text>
+<text x="70" y="215" font-family="Arial" font-size="46" font-weight="800" fill="#101828">ALTO: web corporativa</text>
+<rect x="70" y="236" width="460" height="14" rx="7" fill="#98A2B3" opacity=".5"/>
+<rect x="65" y="390" width="190" height="150" rx="16" fill="#ffffff" stroke="#DDE3EA"/><rect x="85" y="415" width="110" height="12" rx="6" fill="#1D4ED8" opacity=".85"/><rect x="85" y="0" width="0" height="0"/><rect x="295" y="390" width="190" height="150" rx="16" fill="#ffffff" stroke="#DDE3EA"/><rect x="315" y="415" width="110" height="12" rx="6" fill="#1D4ED8" opacity=".85"/><rect x="85" y="0" width="0" height="0"/><rect x="525" y="390" width="190" height="150" rx="16" fill="#ffffff" stroke="#DDE3EA"/><rect x="545" y="415" width="110" height="12" rx="6" fill="#1D4ED8" opacity=".85"/><rect x="85" y="0" width="0" height="0"/><rect x="755" y="390" width="190" height="150" rx="16" fill="#ffffff" stroke="#DDE3EA"/><rect x="775" y="415" width="110" height="12" rx="6" fill="#1D4ED8" opacity=".85"/><rect x="85" y="0" width="0" height="0"/>
+<rect x="0" y="690" width="1200" height="60" fill="#071522"/><text x="70" y="727" font-family="Arial" font-size="14" fill="#fff" opacity=".8">Diseño demostrativo D-Solution · ejemplo editable</text>
+</svg>

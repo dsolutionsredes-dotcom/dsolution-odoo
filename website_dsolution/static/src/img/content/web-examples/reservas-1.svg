@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+<rect width="1200" height="750" fill="#F0FDFA"/>
+<rect x="0" y="0" width="1200" height="82" fill="#fff"/><circle cx="54" cy="41" r="18" fill="#0F766E"/><text x="84" y="49" font-family="Arial" font-size="24" font-weight="700" fill="#172033">RESERVA</text>
+<g font-family="Arial" font-size="15" fill="#667085"><text x="760" y="48">Inicio</text><text x="830" y="48">Servicios</text><text x="920" y="48">Nosotros</text><text x="1015" y="48">Contacto</text></g>
+<rect x="1060" y="24" width="100" height="36" rx="18" fill="#0F766E"/>
+<text x="70" y="165" font-family="Arial" font-size="18" font-weight="700" fill="#0F766E">EJEMPLO 1</text>
+<text x="70" y="215" font-family="Arial" font-size="46" font-weight="800" fill="#101828">RESERVA: web reservas</text>
+<rect x="70" y="236" width="460" height="14" rx="7" fill="#98A2B3" opacity=".5"/>
+<rect x="720" y="215" width="380" height="320" rx="20" fill="#fff" stroke="#DDE3EA"/><g fill="#0F766E" opacity=".15"><rect x="748" y="255" width="64" height="38" rx="8"/><rect x="830" y="255" width="64" height="38" rx="8"/><rect x="912" y="255" width="64" height="38" rx="8"/><rect x="994" y="255" width="64" height="38" rx="8"/><rect x="748" y="313" width="64" height="38" rx="8"/><rect x="830" y="313" width="64" height="38" rx="8"/><rect x="912" y="313" width="64" height="38" rx="8"/><rect x="994" y="313" width="64" height="38" rx="8"/><rect x="748" y="371" width="64" height="38" rx="8"/><rect x="830" y="371" width="64" height="38" rx="8"/><rect x="912" y="371" width="64" height="38" rx="8"/><rect x="994" y="371" width="64" height="38" rx="8"/><rect x="748" y="429" width="64" height="38" rx="8"/><rect x="830" y="429" width="64" height="38" rx="8"/><rect x="912" y="429" width="64" height="38" rx="8"/><rect x="994" y="429" width="64" height="38" rx="8"/></g>
+<rect x="0" y="690" width="1200" height="60" fill="#071522"/><text x="70" y="727" font-family="Arial" font-size="14" fill="#fff" opacity=".8">Diseño demostrativo D-Solution · ejemplo editable</text>
+</svg>

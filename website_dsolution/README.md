@@ -1,5 +1,18 @@
 # D-Solution Website for Odoo Community 20.1 alpha
 
+## v20.1.7.0.0 — Audiovisual refinado, Desarrollo Web interactivo y Automatización IA 2026-09-30
+
+- Audiovisual: Hero ocupa la primera pantalla completa en escritorio y la franja de confianza queda al pie del Hero.
+- Audiovisual: iconos de confianza, proceso y equipo profesional adaptados al diseño de referencia.
+- Audiovisual: herramientas reorganizadas en 3 columnas con logotipos visuales a la izquierda; proceso conectado con flechas.
+- Desarrollo Web: nueva página interactiva con 6 tipos de web, ejemplos visuales por tipo y carrusel automático lento dentro de mockups de escritorio/tablet/móvil.
+- Desarrollo Web: cada tipo cambia ejemplos, descripción, características y CTA sin recargar la página.
+- Desarrollo Web: sección “También podemos integrar” con 8 funciones extra.
+- Automatización e IA: nueva página premium enfocada a pymes, con Hero tipo dashboard, mapa visual de 8 servicios, Antes/Después y proceso de implementación en 3 pasos.
+- Se elimina la sección repetitiva de tecnologías/herramientas en Automatización IA.
+- Contacto y Footer: idioma fijado explícitamente por el contexto de Odoo para evitar que una página ES muestre esos bloques en inglés.
+- Mantiene el módulo sin cambios al core y conserva los assets en `web.assets_frontend`.
+
 ## v20.1.6.0.0 — Audiovisual, Marketing y Ecosistema 2026-09-29
 
 - Reconstruye `/servicios/tecnologia-audiovisual` siguiendo la página original: Hero, confianza, 6 servicios, streaming, capacitación, tecnología/equipo, proceso, proyectos, contacto y footer.

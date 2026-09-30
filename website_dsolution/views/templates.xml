@@ -119,47 +119,36 @@
     </template>
 
     <template id="contact" name="D-Solution Contact CRM Form">
+        <t t-set="ds_is_en" t-value="lang == 'en_US' or lang == 'en'"/>
+        <t t-set="ds_contact_eyebrow" t-value="'Contact' if ds_is_en else 'Contacto'"/>
+        <t t-set="ds_contact_title" t-value="&quot;Let's talk about your next project&quot; if ds_is_en else 'Hablemos de tu próximo proyecto'"/>
+        <t t-set="ds_name_label" t-value="'Full name *' if ds_is_en else 'Nombre completo *'"/>
+        <t t-set="ds_phone_label" t-value="'Phone / WhatsApp' if ds_is_en else 'Teléfono / WhatsApp'"/>
+        <t t-set="ds_company_label" t-value="'Company / Project' if ds_is_en else 'Empresa / Proyecto'"/>
+        <t t-set="ds_message_label" t-value="'Tell us about your project *' if ds_is_en else 'Cuéntanos sobre tu proyecto *'"/>
+        <t t-set="ds_send_label" t-value="'Send message' if ds_is_en else 'Enviar mensaje'"/>
         <section id="contacto" class="ds-contact-wrap" data-name="D-Solution Contacto">
             <div class="ds-contact ds-reveal">
                 <div>
-                    <p class="ds-eyebrow">Contacto</p>
-                    <h2 class="ds-title">Hablemos de tu próximo proyecto</h2>
+                    <p class="ds-eyebrow"><t t-out="ds_contact_eyebrow"/></p>
+                    <h2 class="ds-title"><t t-out="ds_contact_title"/></h2>
                     <span class="ds-divider"/>
                     <div class="ds-contact-info">
                         <a href="mailto:dsolutions.redes@gmail.com">✉ dsolutions.redes@gmail.com</a>
                         <a href="https://wa.me/34624571859" target="_blank" rel="noopener">◉ +34 624 57 18 59</a>
-                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener">⌖ Barcelona, España</a>
+                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Barcelona%2C%20Espa%C3%B1a" target="_blank" rel="noopener">⌖ <t t-out="'Barcelona, Spain' if ds_is_en else 'Barcelona, España'"/></a>
                     </div>
                 </div>
-
                 <section class="s_website_form ds-contact-form" data-vcss="001" data-snippet="s_website_form">
                     <form action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-model_name="crm.lead" data-success-mode="redirect" data-success-page="/gracias" data-pre-fill="true">
                         <input type="hidden" name="name" value="Solicitud desde d-solution.org"/>
                         <div class="s_website_form_rows row s_col_no_bgcolor">
-                            <div class="ds-field col-lg-6 s_website_form_field s_website_form_required" data-type="char" data-name="Nombre">
-                                <label for="ds_contact_name">Nombre completo *</label>
-                                <input id="ds_contact_name" class="form-control s_website_form_input" type="text" name="contact_name" required="1"/>
-                            </div>
-                            <div class="ds-field col-lg-6 s_website_form_field s_website_form_required" data-type="email" data-name="Email">
-                                <label for="ds_email">Email *</label>
-                                <input id="ds_email" class="form-control s_website_form_input" type="email" name="email_from" required="1"/>
-                            </div>
-                            <div class="ds-field col-lg-6 s_website_form_field" data-type="tel" data-name="Teléfono">
-                                <label for="ds_phone">Teléfono / WhatsApp</label>
-                                <input id="ds_phone" class="form-control s_website_form_input" type="tel" name="phone"/>
-                            </div>
-                            <div class="ds-field col-lg-6 s_website_form_field" data-type="char" data-name="Empresa">
-                                <label for="ds_company">Empresa / Proyecto</label>
-                                <input id="ds_company" class="form-control s_website_form_input" type="text" name="partner_name"/>
-                            </div>
-                            <div class="ds-field col-12 s_website_form_field s_website_form_required" data-type="text" data-name="Mensaje">
-                                <label for="ds_description">Cuéntanos sobre tu proyecto *</label>
-                                <textarea id="ds_description" class="form-control s_website_form_input" name="description" required="1"/>
-                            </div>
-                            <div class="ds-submit col-12 s_website_form_submit">
-                                <a href="#" role="button" class="btn s_website_form_send">Enviar mensaje</a>
-                                <span id="s_website_form_result"/>
-                            </div>
+                            <div class="ds-field col-lg-6 s_website_form_field s_website_form_required" data-type="char" data-name="Nombre"><label for="ds_contact_name"><t t-out="ds_name_label"/></label><input id="ds_contact_name" class="form-control s_website_form_input" type="text" name="contact_name" required="1"/></div>
+                            <div class="ds-field col-lg-6 s_website_form_field s_website_form_required" data-type="email" data-name="Email"><label for="ds_email">Email *</label><input id="ds_email" class="form-control s_website_form_input" type="email" name="email_from" required="1"/></div>
+                            <div class="ds-field col-lg-6 s_website_form_field" data-type="tel" data-name="Teléfono"><label for="ds_phone"><t t-out="ds_phone_label"/></label><input id="ds_phone" class="form-control s_website_form_input" type="tel" name="phone"/></div>
+                            <div class="ds-field col-lg-6 s_website_form_field" data-type="char" data-name="Empresa"><label for="ds_company"><t t-out="ds_company_label"/></label><input id="ds_company" class="form-control s_website_form_input" type="text" name="partner_name"/></div>
+                            <div class="ds-field col-12 s_website_form_field s_website_form_required" data-type="text" data-name="Mensaje"><label for="ds_description"><t t-out="ds_message_label"/></label><textarea id="ds_description" class="form-control s_website_form_input" name="description" required="1"/></div>
+                            <div class="ds-submit col-12 s_website_form_submit"><a href="#" role="button" class="btn s_website_form_send"><t t-out="ds_send_label"/></a><span id="s_website_form_result"/></div>
                         </div>
                     </form>
                 </section>
@@ -168,40 +157,18 @@
     </template>
 
     <template id="footer" name="D-Solution Footer">
+        <t t-set="ds_is_en" t-value="lang == 'en_US' or lang == 'en'"/>
         <footer class="ds-footer">
             <div class="ds-container">
                 <div class="ds-footer-grid">
-                    <div>
-                        <a class="ds-footer-brand" href="/">
-                            <img src="/website_dsolution/static/src/img/content/ds-logo-mark-light.png" alt="D-Solution" loading="lazy" decoding="async"/>
-                            <strong>D-Solution</strong>
-                        </a>
-                        <p>Tecnología audiovisual, marketing digital, desarrollo web, automatización y creatividad para negocios que quieren crecer con una ejecución clara y profesional.</p>
-                    </div>
-                    <div>
-                        <h4>Navegación</h4>
-                        <div class="ds-footer-links">
-                            <a href="/">Inicio</a><a href="/servicios">Servicios</a><a href="/#portafolio">Portafolio</a><a href="/#proceso">Proceso</a><a href="/#contacto">Contacto</a>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Servicios</h4>
-                        <div class="ds-footer-links">
-                            <a href="/servicios/tecnologia-audiovisual">Audiovisual</a>
-                            <a href="/servicios/marketing-digital">Marketing Digital</a>
-                            <a href="/servicios/desarrollo-web">Desarrollo Web</a>
-                            <a href="/servicios/automatizacion-ia">IA y Automatización</a>
-                            <a href="/servicios/branding-diseno">Branding y Diseño</a>
-                            <a href="/servicios/fotografia-profesional">Fotografía Profesional</a>
-                        </div>
-                    </div>
+                    <div><a class="ds-footer-brand" href="/"><img src="/website_dsolution/static/src/img/content/ds-logo-mark-light.png" alt="D-Solution" loading="lazy" decoding="async"/><strong>D-Solution</strong></a><p><t t-out="'Audiovisual technology, digital marketing, web development, automation and creativity for businesses that want to grow with clear, professional execution.' if ds_is_en else 'Tecnología audiovisual, marketing digital, desarrollo web, automatización y creatividad para negocios que quieren crecer con una ejecución clara y profesional.'"/></p></div>
+                    <div><h4><t t-out="'Navigation' if ds_is_en else 'Navegación'"/></h4><div class="ds-footer-links"><a href="/"><t t-out="'Home' if ds_is_en else 'Inicio'"/></a><a href="/servicios"><t t-out="'Services' if ds_is_en else 'Servicios'"/></a><a href="/#portafolio"><t t-out="'Portfolio' if ds_is_en else 'Portafolio'"/></a><a href="/#proceso"><t t-out="'Process' if ds_is_en else 'Proceso'"/></a><a href="/#contacto"><t t-out="'Contact' if ds_is_en else 'Contacto'"/></a></div></div>
+                    <div><h4><t t-out="'Services' if ds_is_en else 'Servicios'"/></h4><div class="ds-footer-links"><a href="/servicios/tecnologia-audiovisual">Audiovisual</a><a href="/servicios/marketing-digital"><t t-out="'Digital Marketing' if ds_is_en else 'Marketing Digital'"/></a><a href="/servicios/desarrollo-web"><t t-out="'Web Development' if ds_is_en else 'Desarrollo Web'"/></a><a href="/servicios/automatizacion-ia"><t t-out="'AI &amp; Automation' if ds_is_en else 'IA y Automatización'"/></a><a href="/servicios/branding-diseno"><t t-out="'Branding &amp; Design' if ds_is_en else 'Branding y Diseño'"/></a><a href="/servicios/fotografia-profesional"><t t-out="'Professional Photography' if ds_is_en else 'Fotografía Profesional'"/></a></div></div>
                 </div>
-                <div class="ds-footer-bottom">© 2026 D-Solution. Todos los derechos reservados.</div>
+                <div class="ds-footer-bottom"><t t-out="'© 2026 D-Solution. All rights reserved.' if ds_is_en else '© 2026 D-Solution. Todos los derechos reservados.'"/></div>
             </div>
         </footer>
-        <a class="ds-whatsapp-float" href="https://wa.me/34624571859?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
-            <img src="/website_dsolution/static/src/img/content/whatsapp-icon.png" alt="WhatsApp" class="ds-whatsapp-icon" decoding="async"/>
-        </a>
+        <a class="ds-whatsapp-float" href="https://wa.me/34624571859?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" t-att-aria-label="'Open WhatsApp' if ds_is_en else 'Abrir WhatsApp'"><img src="/website_dsolution/static/src/img/content/whatsapp-icon.png" alt="WhatsApp" class="ds-whatsapp-icon" decoding="async"/></a>
     </template>
 
     <template id="service_page_shell" name="D-Solution Service Page Shell">
