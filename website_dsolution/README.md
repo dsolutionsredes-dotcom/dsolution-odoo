@@ -396,3 +396,6 @@ Esto elimina los avisos:
 - `Use raw, datas has been removed`
 
 No cambia el diseño ni añade campos de base de datos.
+
+
+- 20.1.10.0.0: force-refresh de attachments de medios editables con IDs nuevos (_v10) para evitar que Odoo siga mostrando iconos/imagenes antiguos en cache/DB.
