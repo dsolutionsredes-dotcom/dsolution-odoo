@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none"><rect x="2" y="2" width="44" height="44" rx="10" fill="#16004B"/><text x="24" y="29" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#9A8CFF">PR</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <rect x="2" y="2" width="44" height="44" rx="10" fill="#2B174F"/>
+  <rect x="10" y="11" width="28" height="26" rx="4" stroke="#C9A7FF" stroke-width="2.2"/>
+  <path d="M20 17l10 7-10 7V17Z" fill="#C9A7FF"/>
+</svg>

@@ -337,7 +337,10 @@
         }
 
         buttons.forEach((button) => {
-            button.addEventListener("click", () => activate(button.dataset.webTarget));
+            button.addEventListener("click", () => {
+                if (editing) return;
+                activate(button.dataset.webTarget);
+            });
         });
 
         const mediaObserver = new MutationObserver((mutations) => {

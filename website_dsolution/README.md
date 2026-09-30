@@ -1,5 +1,16 @@
 # D-Solution Website for Odoo Community 20.1 alpha
 
+## v20.1.9.0.0 — medios realmente reemplazables desde Website Builder 2026-09-30
+
+- Auditoría completa de las peticiones realizadas después de v20.1.7 para Audiovisual, Marketing Digital, Desarrollo Web, Automatización IA y Branding.
+- Todos los iconos pequeños solicitados permanecen como elementos `<img>` reales; no se usan letras/símbolos como sustituto de iconos en esas zonas.
+- Los iconos y fotos editables usan `ir.attachment` + `/web/image/...` y `o_we_custom_image`, siguiendo la guía oficial de medios de Odoo 20.
+- Se registran también como adjuntos las fotos principales de Audiovisual y Marketing, sus proyectos/audiencias y los cuatro logos del panel de Marketing, evitando rutas relativas para medios que deben reemplazarse.
+- En modo Editar los iconos reciben un área de selección más clara y un contorno visible para poder escogerlos desde Website Builder incluso cuando son pequeños.
+- Desarrollo Web mantiene una sola imagen maestra editable por icono/tipo y sincroniza la copia inferior; las capturas largas siguen siendo maestras editables y se desplazan lentamente en la vista pública.
+- Se elimina el último icono de texto restante de la capacitación Audiovisual y se sustituye por una imagen editable.
+- Se mantienen: flechas sólidas del proceso Audiovisual, Hero full-screen, tarjetas visuales de Marketing/IA, Hero y medios editables de Branding y la corrección ES/EN de Contacto/Footer.
+
 ## v20.1.8.0.0 — iconos editables, capturas web verticales, Automatización visual y Branding 2026-09-30
 
 - Audiovisual: los 4 iconos de confianza, 15 logos de herramientas, 12 iconos de equipo y 5 iconos de proceso quedan como imágenes reemplazables desde Odoo.

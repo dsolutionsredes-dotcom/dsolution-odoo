@@ -2666,3 +2666,67 @@ body.editor_enable .dsolution-branding-page img.o_we_custom_image {
     .ds-brand-process-grid { grid-template-columns:1fr; gap:30px; }
     .ds-brand-cta .ds-container { align-items:flex-start; flex-direction:column; }
 }
+
+/* ==========================================================
+   v20.1.9 — Website Builder media selection hardening
+   Every requested icon/photo is a real <img> element. In edit mode we make
+   even tiny icons visually obvious and easy to click without changing public layout.
+   ========================================================== */
+body.editor_enable img.ds-editable-media {
+    outline:2px dashed rgba(212,175,55,.92)!important;
+    outline-offset:3px!important;
+    cursor:pointer!important;
+    position:relative;
+    z-index:4;
+}
+body.editor_enable img.ds-editable-media:hover {
+    outline-style:solid!important;
+    box-shadow:0 0 0 5px rgba(212,175,55,.14)!important;
+}
+/* Small icon zones: temporarily enlarge only in Website Builder for easier selection. */
+body.editor_enable .ds-av-trust img.ds-editable-media,
+body.editor_enable .ds-av-tools-list img.ds-editable-media,
+body.editor_enable .ds-av-equipment-list img.ds-editable-media,
+body.editor_enable .ds-av-process-grid img.ds-editable-media,
+body.editor_enable .ds-av-training-icon img.ds-editable-media,
+body.editor_enable .ds-md-mini-icon img.ds-editable-media,
+body.editor_enable .ds-md-audience-icon img.ds-editable-media,
+body.editor_enable .ds-web-heading-ornament img.ds-editable-media,
+body.editor_enable .ds-web-type-icon img.ds-editable-media,
+body.editor_enable .ds-web-extra-icon img.ds-editable-media,
+body.editor_enable .ds-ai-benefits img.ds-editable-media,
+body.editor_enable .ds-ai-service-head img.ds-editable-media,
+body.editor_enable .ds-ai-how-icon img.ds-editable-media,
+body.editor_enable .ds-brand-benefit-grid img.ds-editable-media,
+body.editor_enable .ds-brand-service-copy img.ds-editable-media,
+body.editor_enable .ds-brand-process-grid img.ds-editable-media {
+    min-width:42px!important;
+    min-height:42px!important;
+    width:42px!important;
+    height:42px!important;
+    padding:5px!important;
+    border-radius:9px!important;
+    background:#fff!important;
+    object-fit:contain!important;
+}
+.ds-av-training-icon {
+    display:flex;
+    width:52px;
+    height:52px;
+    margin:0 auto 14px;
+    align-items:center;
+    justify-content:center;
+    border:1px solid rgba(212,175,55,.32);
+    border-radius:999px;
+    background:#f7f3ea;
+}
+.ds-av-training-icon img { width:30px; height:30px; object-fit:contain; }
+/* Make the edit-master screenshot bank unmistakable and clickable. */
+body.editor_enable .ds-web-upload-bank::before {
+    content:"Capturas largas editables: haz clic sobre cada imagen para reemplazarla";
+    grid-column:1/-1;
+    color:#fff;
+    font-size:.78rem;
+    font-weight:800;
+    letter-spacing:.02em;
+}
