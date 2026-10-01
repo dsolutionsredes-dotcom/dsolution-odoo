@@ -1,5 +1,11 @@
 # D-Solution Website for Odoo Community 20.1 alpha
 
+## v20.1.14.0.0 — Marketing: 5 espacios PNG editables
+
+- En “Qué incluye nuestro servicio”, los cinco cuadrados quedan vacíos y preparados para subir un icono PNG.
+- Cada cuadrado contiene un `<img class="o_we_custom_image">` independiente y seleccionable.
+- No se cambian los textos, números ni la estructura de las tarjetas.
+
 ## v20.1.12.0.0 — iconos PNG visibles + editables sin depender de /web/image inicial
 
 - Corrección determinista después de verificar que Odoo y el dominio sirven correctamente los PNG v11.
