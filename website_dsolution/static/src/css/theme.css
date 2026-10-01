@@ -2967,3 +2967,34 @@ body.editor_enable .ds-md-icon-cassette::after {
     pointer-events:none;
     z-index:8;
 }
+
+
+/* ==========================================================
+   v20.1.16 — Marketing: slots de imagen NATIVOS de Odoo
+   Se reutiliza exactamente el patrón .ds-md-service-logo que ya funciona
+   para Google Ads / Meta / Analytics / GTM.
+   ========================================================== */
+.ds-md-include-logo-slot {
+    width:64px !important;
+    height:64px !important;
+    flex:0 0 64px !important;
+    padding:7px;
+    border:1px solid rgba(0,33,71,.10);
+    border-radius:16px;
+    background:#F7F3EA;
+}
+.ds-md-include-logo-slot > img.o_we_custom_image {
+    display:block !important;
+    width:48px !important;
+    height:48px !important;
+    min-width:48px !important;
+    min-height:48px !important;
+    max-width:48px !important;
+    max-height:48px !important;
+    object-fit:contain !important;
+    background:transparent !important;
+    cursor:pointer !important;
+}
+body.editor_enable .ds-md-include-logo-slot::after {
+    content:"Icono editable" !important;
+}

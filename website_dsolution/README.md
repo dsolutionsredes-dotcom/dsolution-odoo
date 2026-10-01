@@ -1,5 +1,13 @@
 # D-Solution Website for Odoo Community 20.1 alpha
 
+## v20.1.16.0.0 — Marketing: slots de imagen usando el patrón que YA funciona
+
+- Se elimina por completo la implementación propia `ds-md-mini-icon / ds-md-icon-cassette` de las cinco tarjetas de “Qué incluye nuestro servicio”.
+- Cada espacio usa ahora exactamente el mismo patrón HTML/CSS de los logos editables de Google Ads, Meta Ads, Google Analytics y Google Tag Manager: `ds-md-service-logo` + `<img class="o_we_custom_image">`.
+- Los cinco placeholders son PNG transparentes reales registrados como `ir.attachment`.
+- En modo Editar cada slot muestra borde discontinuo y “Icono editable”; el `<img>` es seleccionable por el Website Builder.
+- No se añade ningún símbolo, letra o icono predeterminado dentro del espacio.
+
 ## v20.1.15.0.0 — Marketing: cassettes pequeñas para subir iconos PNG
 
 - Los cinco cuadrados de “Qué incluye nuestro servicio” usan ahora el mismo patrón de cassette editable que los logos del panel superior.

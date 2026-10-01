@@ -911,4 +911,44 @@
     <record id="img_md_audience_growth_photo_v10" model="ir.attachment"><field name="name">D-Solution - Marketing Growth photo editable</field><field name="raw" type="bytes" file="website_dsolution/static/src/img/content/service-marketing.jpg"/><field name="mimetype">image/jpeg</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/></record>
     <record id="img_md_audience_ecommerce_photo_v10" model="ir.attachment"><field name="name">D-Solution - Marketing Ecommerce photo editable</field><field name="raw" type="bytes" file="website_dsolution/static/src/img/content/service-web.jpg"/><field name="mimetype">image/jpeg</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/></record>
 
+
+    <record id="img_md_include_slot_01_v16" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Include Editable Slot 01</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/include-editable-slot-01-v16.png"/>
+        <field name="mimetype">image/png</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_md_include_slot_02_v16" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Include Editable Slot 02</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/include-editable-slot-02-v16.png"/>
+        <field name="mimetype">image/png</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_md_include_slot_03_v16" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Include Editable Slot 03</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/include-editable-slot-03-v16.png"/>
+        <field name="mimetype">image/png</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_md_include_slot_04_v16" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Include Editable Slot 04</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/include-editable-slot-04-v16.png"/>
+        <field name="mimetype">image/png</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_md_include_slot_05_v16" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Include Editable Slot 05</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/include-editable-slot-05-v16.png"/>
+        <field name="mimetype">image/png</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
 </odoo>
