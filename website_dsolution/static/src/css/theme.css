@@ -2820,3 +2820,39 @@ body.editor_enable img.ds-editable-media[src*="_v11"] {
     outline:2px dashed rgba(212,175,55,.92)!important;
     outline-offset:3px!important;
 }
+
+
+/* ==========================================================
+   v20.1.12 — deterministic initial icon rendering
+   Initial icon pixels are served from module static PNG files, while the
+   same PNGs remain registered as ir.attachment media in media.xml so they
+   stay available in Odoo's media library. Website Builder can still replace
+   each <img class="o_we_custom_image">; once replaced Odoo stores the chosen
+   media normally.
+   ========================================================== */
+.ds-md-mini-icon > img.o_we_custom_image,
+.ds-md-audience-icon > img.o_we_custom_image,
+.ds-av-trust img.o_we_custom_image,
+.ds-av-tools-list img.o_we_custom_image,
+.ds-av-equipment-list img.o_we_custom_image,
+.ds-av-process-grid img.o_we_custom_image,
+.ds-web-heading-ornament img.o_we_custom_image,
+.ds-web-type-icon img.o_we_custom_image,
+.ds-web-extra-icon img.o_we_custom_image,
+.ds-ai-benefits img.o_we_custom_image,
+.ds-ai-service-head img.o_we_custom_image,
+.ds-ai-how-icon img.o_we_custom_image,
+.ds-brand-benefit-grid img.o_we_custom_image,
+.ds-brand-service-copy img.o_we_custom_image,
+.ds-brand-process-grid img.o_we_custom_image {
+    display:block !important;
+    opacity:1 !important;
+    visibility:visible !important;
+    filter:none !important;
+    transform:none !important;
+    object-fit:contain !important;
+}
+.ds-md-mini-icon > img.o_we_custom_image {
+    width:48px !important;
+    height:48px !important;
+}

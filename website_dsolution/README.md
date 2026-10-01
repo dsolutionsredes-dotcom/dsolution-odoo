@@ -1,5 +1,13 @@
 # D-Solution Website for Odoo Community 20.1 alpha
 
+## v20.1.12.0.0 — iconos PNG visibles + editables sin depender de /web/image inicial
+
+- Corrección determinista después de verificar que Odoo y el dominio sirven correctamente los PNG v11.
+- Los iconos pequeños solicitados en Marketing, Audiovisual, Desarrollo Web, Automatización IA y Branding cargan inicialmente desde sus PNG estáticos del módulo, evitando cualquier sustitución visual/caché de `/web/image/<xmlid>`.
+- Los mismos PNG siguen registrados en `media.xml` como `ir.attachment`, por lo que continúan disponibles en la biblioteca de medios de Odoo.
+- Todos los elementos conservan `o_we_custom_image`, para que el Website Builder pueda seleccionarlos y reemplazarlos como imágenes.
+- Se añade versionado `?v=20112` a las rutas iniciales para evitar caché antigua del navegador/proxy.
+
 ## v20.1.11.0.0 — iconos raster editables y renderizado determinista 2026-09-30
 
 - Convierte 86 iconos SVG solicitados a PNG reales de 256×256 y mantiene vMix como raster.
