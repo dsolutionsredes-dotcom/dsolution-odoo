@@ -3035,3 +3035,26 @@ body.editor_enable .ds-md-include-logo-slot {
 body.editor_enable .ds-md-include-logo-slot::after {
     content:"Icono editable" !important;
 }
+
+
+/* ==========================================================
+   v20.1.18 — Home performance: poster-first / deferred video
+   ========================================================== */
+.ds-hero-deferred-video {
+    position:absolute;
+    inset:0;
+    z-index:1;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    opacity:0;
+    transition:opacity .45s ease;
+}
+.ds-hero-deferred-video.is-ready { opacity:1; }
+.js_ds_lazy_hero_video .ds-hero-native-poster { z-index:0; }
+.js_ds_lazy_hero_video .ds-hero-video-overlay { z-index:2; }
+.js_ds_lazy_hero_video .ds-hero-content { z-index:3; }
+@media(max-width:760px), (prefers-reduced-motion:reduce) {
+    .ds-intro-loader { display:none !important; }
+}

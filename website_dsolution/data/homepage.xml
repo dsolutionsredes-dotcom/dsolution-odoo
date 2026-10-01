@@ -9,12 +9,11 @@
             <div id="wrap" class="oe_structure dsolution-page">
                 <t t-call="website_dsolution.header"/>
 
-                <section id="inicio" class="ds-hero ds-hero--video o_background_video" data-name="D-Solution Hero" data-snippet="s_ds_hero"
-                         t-att-data-bg-video-src="website.dsolution_hero_video_url or ('/web/content/website/%s/dsolution_hero_video' % website.id if website.dsolution_hero_video else '/website_dsolution/static/src/video/hero-dsolution-loop.mp4')"
-                         data-bg-video-is-file="true">
-                    <img t-if="website.dsolution_hero_image" class="ds-hero-native-poster"
-                         t-att-src="'/web/image/website/%s/dsolution_hero_image' % website.id"
-                         alt="" aria-hidden="true" fetchpriority="high" decoding="async"/>
+                <section id="inicio" class="ds-hero ds-hero--video js_ds_lazy_hero_video" data-name="D-Solution Hero" data-snippet="s_ds_hero"
+                         t-att-data-ds-video-src="website.dsolution_hero_video_url or ('/web/content/website/%s/dsolution_hero_video' % website.id if website.dsolution_hero_video else '/website_dsolution/static/src/video/hero-dsolution-loop.mp4')">
+                    <img class="ds-hero-native-poster"
+                         t-att-src="'/web/image/website/%s/dsolution_hero_image' % website.id if website.dsolution_hero_image else '/website_dsolution/static/src/img/content/hero-poster.webp?v=20118'"
+                         alt="" aria-hidden="true" width="1280" height="720" loading="eager" fetchpriority="high" decoding="async"/>
 
                     <div class="ds-hero-video-overlay" aria-hidden="true"/>
                     <div class="ds-hero-content ds-reveal">

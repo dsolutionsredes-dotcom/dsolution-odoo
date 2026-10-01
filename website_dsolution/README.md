@@ -1,5 +1,15 @@
 # D-Solution Website for Odoo Community 20.1 alpha
 
+## v20.1.18.0.0 — rendimiento Home: Hero, loader y CSS crítico
+
+- Hero **poster-first**: se añade `hero-poster.webp` (≈9 KB) como primer contenido visual, con `loading="eager"` y `fetchpriority="high"`.
+- El vídeo del Hero ya no bloquea el primer render: se inserta después de `load`/`requestIdleCallback`, con `preload="metadata"` y prioridad baja.
+- En conexiones con `Save-Data`, 2G o `prefers-reduced-motion`, se conserva solo el poster y no se descarga el vídeo.
+- Loader desacoplado del vídeo: en móvil se elimina; en escritorio aparece solo una vez por sesión y sale en ~120–420 ms.
+- Nuevo `critical.css` pequeño en `web.assets_frontend`; `theme.css` completo deja de formar parte del bundle bloqueante público y se carga de forma no bloqueante.
+- En Website Builder, `theme.css` se mantiene en `website.assets_wysiwyg` para conservar el diseño completo durante la edición.
+
+
 ## v20.1.17.0.0 — Marketing: slots de imagen con metadatos nativos de Odoo 20
 
 - Los cinco slots de “Qué incluye nuestro servicio” usan imágenes PNG visibles, no texto ni símbolos.

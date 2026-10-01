@@ -1,6 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <odoo>
 
+    <template id="layout_performance_assets" name="D-Solution Performance Assets" inherit_id="website.layout">
+        <xpath expr="//head" position="inside">
+            <link rel="preload" href="/website_dsolution/static/src/css/theme.css?v=20118" as="style"/>
+            <link rel="stylesheet" href="/website_dsolution/static/src/css/theme.css?v=20118" media="print" onload="this.onload=null;this.media='all'"/>
+            <noscript><link rel="stylesheet" href="/website_dsolution/static/src/css/theme.css?v=20118"/></noscript>
+        </xpath>
+    </template>
+
+
     <template id="header" name="D-Solution Header">
         <div class="ds-intro-loader is-visible" aria-hidden="true">
             <div class="ds-intro-loader-inner">

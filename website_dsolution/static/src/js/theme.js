@@ -177,72 +177,92 @@
   }, true);
 
 
-  // v0.22 — Intro Loader coordinated with the native Odoo background video.
-  // It stays visible briefly while the first video frame is decoded, then fades.
+  // v20.1.18 — Home LCP: show the poster first, fetch video only after first paint/load.
+  (function initDsolutionDeferredHeroVideo() {
+    var hero = document.querySelector('.js_ds_lazy_hero_video');
+    if (!hero || document.body.classList.contains('editor_enable')) return;
+
+    var src = hero.getAttribute('data-ds-video-src');
+    if (!src) return;
+
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    if (reduceMotion || (connection && (connection.saveData || /(^|-)2g$/.test(connection.effectiveType || '')))) return;
+
+    var started = false;
+    function startVideo() {
+      if (started || !document.documentElement.contains(hero)) return;
+      started = true;
+
+      var video = document.createElement('video');
+      video.className = 'ds-hero-deferred-video';
+      video.muted = true;
+      video.defaultMuted = true;
+      video.loop = true;
+      video.autoplay = true;
+      video.playsInline = true;
+      video.setAttribute('muted', '');
+      video.setAttribute('playsinline', '');
+      video.preload = 'metadata';
+      if ('fetchPriority' in video) video.fetchPriority = 'low';
+      video.src = src;
+
+      var poster = hero.querySelector('.ds-hero-native-poster');
+      if (poster && poster.currentSrc) video.poster = poster.currentSrc;
+
+      var overlay = hero.querySelector('.ds-hero-video-overlay');
+      hero.insertBefore(video, overlay || hero.firstChild);
+
+      var reveal = function () {
+        video.classList.add('is-ready');
+        var playPromise = video.play();
+        if (playPromise && typeof playPromise.catch === 'function') playPromise.catch(function () {});
+      };
+      video.addEventListener('loadeddata', reveal, { once: true });
+      video.addEventListener('canplay', reveal, { once: true });
+    }
+
+    function schedule() {
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(startVideo, { timeout: 1400 });
+      } else {
+        window.setTimeout(startVideo, 500);
+      }
+    }
+
+    if (document.readyState === 'complete') schedule();
+    else window.addEventListener('load', schedule, { once: true });
+  })();
+
+  // v20.1.18 — Intro never waits for video. Mobile skips it entirely.
   (function initDsolutionIntroLoader() {
     var loader = document.querySelector('.ds-intro-loader');
     if (!loader) return;
     if (document.body.classList.contains('editor_enable')) { loader.remove(); return; }
 
+    var isMobile = window.matchMedia && window.matchMedia('(max-width: 760px)').matches;
     var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var minVisible = reduceMotion ? 120 : 900;
-    var maxVisible = reduceMotion ? 300 : 1800;
-    var startedAt = performance.now();
-    var videoReady = false;
-    var leaving = false;
-    var hero = document.querySelector('.ds-hero.o_background_video');
+    var seen = false;
+    try { seen = sessionStorage.getItem('ds_intro_seen') === '1'; } catch (e) {}
 
-    function leave() {
-      if (leaving) return;
-      var elapsed = performance.now() - startedAt;
-      if (elapsed < minVisible) {
-        window.setTimeout(leave, minVisible - elapsed);
-        return;
-      }
-      if (!videoReady && elapsed < maxVisible) return;
-      leaving = true;
+    if (isMobile || reduceMotion || seen) {
+      loader.remove();
+      return;
+    }
+
+    try { sessionStorage.setItem('ds_intro_seen', '1'); } catch (e) {}
+
+    var leave = function () {
+      if (!loader || !loader.parentNode) return;
       loader.classList.add('is-leaving');
-      window.setTimeout(function () { loader.remove(); }, reduceMotion ? 60 : 320);
-    }
+      window.setTimeout(function () { if (loader.parentNode) loader.remove(); }, 180);
+    };
 
-    function watchVideo(video) {
-      if (!video || video.dataset.dsIntroWatched === '1') return;
-      video.dataset.dsIntroWatched = '1';
-      video.preload = 'auto';
-      if ('fetchPriority' in video) video.fetchPriority = 'high';
-      if (video.readyState >= 2) {
-        videoReady = true;
-        leave();
-        return;
-      }
-      var ready = function () {
-        videoReady = true;
-        leave();
-      };
-      video.addEventListener('loadeddata', ready, { once: true });
-      video.addEventListener('canplay', ready, { once: true });
-    }
-
-    if (!hero) {
-      videoReady = true;
-    } else {
-      watchVideo(hero.querySelector('.o_bg_video_file'));
-      var observer = new MutationObserver(function () {
-        var video = hero.querySelector('.o_bg_video_file');
-        if (video) {
-          watchVideo(video);
-          observer.disconnect();
-        }
-      });
-      observer.observe(hero, { childList: true, subtree: true });
-      window.setTimeout(function () { observer.disconnect(); }, maxVisible + 500);
-    }
-
-    window.setTimeout(leave, minVisible);
-    window.setTimeout(function () {
-      videoReady = true;
-      leave();
-    }, maxVisible);
+    // Two frames guarantee that the page/poster can paint behind the intro.
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () { window.setTimeout(leave, 120); });
+    });
+    window.setTimeout(leave, 420);
   })();
 
 })();
