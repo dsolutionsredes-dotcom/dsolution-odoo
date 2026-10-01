@@ -1,5 +1,13 @@
 # D-Solution Website for Odoo Community 20.1 alpha
 
+## v20.1.17.0.0 — Marketing: slots de imagen con metadatos nativos de Odoo 20
+
+- Los cinco slots de “Qué incluye nuestro servicio” usan imágenes PNG visibles, no texto ni símbolos.
+- Cada imagen se registra como `ir.attachment` nuevo y usa `/web/image/...`.
+- Se añaden los metadatos que el editor de imágenes de Odoo 20 utiliza: `data-attachment-id`, `data-original-id`, `data-original-src`, `data-mimetype` y `data-file-name`.
+- Los IDs numéricos se resuelven dinámicamente con QWeb mediante `request.env.ref(...)`, evitando hardcodear IDs de base de datos.
+- Se mantiene `o_we_custom_image`, igual que en los logos editables que ya funcionan.
+
 ## v20.1.16.0.0 — Marketing: slots de imagen usando el patrón que YA funciona
 
 - Se elimina por completo la implementación propia `ds-md-mini-icon / ds-md-icon-cassette` de las cinco tarjetas de “Qué incluye nuestro servicio”.

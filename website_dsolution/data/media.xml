@@ -951,4 +951,44 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
+
+    <record id="img_md_include_slot_01_v17" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Native Editable Slot 01</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/include-native-slot-01-v17.png"/>
+        <field name="mimetype">image/png</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_md_include_slot_02_v17" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Native Editable Slot 02</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/include-native-slot-02-v17.png"/>
+        <field name="mimetype">image/png</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_md_include_slot_03_v17" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Native Editable Slot 03</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/include-native-slot-03-v17.png"/>
+        <field name="mimetype">image/png</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_md_include_slot_04_v17" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Native Editable Slot 04</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/include-native-slot-04-v17.png"/>
+        <field name="mimetype">image/png</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_md_include_slot_05_v17" model="ir.attachment">
+        <field name="name">D-Solution - Marketing Native Editable Slot 05</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/include-native-slot-05-v17.png"/>
+        <field name="mimetype">image/png</field>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
 </odoo>
