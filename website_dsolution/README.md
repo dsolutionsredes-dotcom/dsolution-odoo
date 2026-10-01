@@ -1,5 +1,12 @@
 # D-Solution Website for Odoo Community 20.1 alpha
 
+## v20.1.15.0.0 — Marketing: cassettes pequeñas para subir iconos PNG
+
+- Los cinco cuadrados de “Qué incluye nuestro servicio” usan ahora el mismo patrón de cassette editable que los logos del panel superior.
+- Cada cassette contiene una imagen PNG real, independiente y seleccionable (`o_we_custom_image`).
+- En modo edición se muestra el borde discontinuo y la etiqueta “Icono editable”.
+- No se modifica el texto, numeración ni estructura restante de las tarjetas.
+
 ## v20.1.14.0.0 — Marketing: 5 espacios PNG editables
 
 - En “Qué incluye nuestro servicio”, los cinco cuadrados quedan vacíos y preparados para subir un icono PNG.

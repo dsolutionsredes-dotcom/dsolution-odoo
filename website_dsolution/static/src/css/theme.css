@@ -2910,3 +2910,60 @@ body.editor_enable .ds-md-mini-icon > img.ds-md-png-slot {
     background:transparent !important;
     outline:none !important;
 }
+
+
+/* ==========================================================
+   v20.1.15 — Marketing: cassettes editables para iconos PNG
+   Mismo patrón visual/editorial que los logos editables del panel superior.
+   ========================================================== */
+.ds-md-icon-cassette {
+    position:relative;
+    width:64px !important;
+    height:64px !important;
+    flex:0 0 64px;
+    display:flex !important;
+    align-items:center;
+    justify-content:center;
+    padding:7px !important;
+    overflow:visible !important;
+    border:1px solid rgba(0,33,71,.10) !important;
+    border-radius:16px !important;
+    background:#F7F3EA !important;
+}
+.ds-md-icon-cassette > img.o_we_custom_image {
+    display:block !important;
+    width:48px !important;
+    height:48px !important;
+    min-width:48px !important;
+    min-height:48px !important;
+    max-width:48px !important;
+    max-height:48px !important;
+    padding:0 !important;
+    margin:0 !important;
+    object-fit:contain !important;
+    opacity:1 !important;
+    visibility:visible !important;
+    background:transparent !important;
+    cursor:pointer !important;
+}
+body.editor_enable .ds-md-icon-cassette {
+    outline:2px dashed rgba(212,175,55,.75) !important;
+    outline-offset:3px !important;
+}
+body.editor_enable .ds-md-icon-cassette::after {
+    content:"Icono editable";
+    position:absolute;
+    left:50%;
+    top:-25px;
+    transform:translateX(-50%);
+    white-space:nowrap;
+    padding:3px 7px;
+    border-radius:999px;
+    background:rgba(0,33,71,.88);
+    color:#fff;
+    font-size:9px;
+    font-weight:800;
+    line-height:1.2;
+    pointer-events:none;
+    z-index:8;
+}
