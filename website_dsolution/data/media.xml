@@ -50,45 +50,45 @@
         <field name="public" eval="True"/>
     </record>
     <!-- Marketing Digital editable UI icons -->
-    <record id="img_md_campaign_v10" model="ir.attachment">
+    <record id="img_md_campaign_v11" model="ir.attachment">
         <field name="name">D-Solution - Marketing Campaign</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/campaign.svg"/>
-        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/campaign-v11.png"/>
+        <field name="mimetype">image/png</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
     </record>
-    <record id="img_md_creative_v10" model="ir.attachment">
+    <record id="img_md_creative_v11" model="ir.attachment">
         <field name="name">D-Solution - Marketing Creative</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/creative.svg"/>
-        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/creative-v11.png"/>
+        <field name="mimetype">image/png</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
     </record>
-    <record id="img_md_tracking_v10" model="ir.attachment">
+    <record id="img_md_tracking_v11" model="ir.attachment">
         <field name="name">D-Solution - Marketing Tracking</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/tracking.svg"/>
-        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/tracking-v11.png"/>
+        <field name="mimetype">image/png</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
     </record>
-    <record id="img_md_optimize_v10" model="ir.attachment">
+    <record id="img_md_optimize_v11" model="ir.attachment">
         <field name="name">D-Solution - Marketing Optimize</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/optimize.svg"/>
-        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/optimize-v11.png"/>
+        <field name="mimetype">image/png</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
     </record>
-    <record id="img_md_report_v10" model="ir.attachment">
+    <record id="img_md_report_v11" model="ir.attachment">
         <field name="name">D-Solution - Marketing Report</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/report.svg"/>
-        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/report-v11.png"/>
+        <field name="mimetype">image/png</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
     </record>
-    <record id="img_md_local_v10" model="ir.attachment">
+    <record id="img_md_local_v11" model="ir.attachment">
         <field name="name">D-Solution - Marketing Local Business</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/local.svg"/>
-        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/local-v11.png"/>
+        <field name="mimetype">image/png</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
     </record>
-    <record id="img_md_growth_v10" model="ir.attachment">
+    <record id="img_md_growth_v11" model="ir.attachment">
         <field name="name">D-Solution - Marketing Growth</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/growth.svg"/>
-        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/growth-v11.png"/>
+        <field name="mimetype">image/png</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
     </record>
-    <record id="img_md_ecommerce_v10" model="ir.attachment">
+    <record id="img_md_ecommerce_v11" model="ir.attachment">
         <field name="name">D-Solution - Marketing Ecommerce</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/ecommerce.svg"/>
-        <field name="mimetype">image/svg+xml</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/marketing/ecommerce-v11.png"/>
+        <field name="mimetype">image/png</field><field name="res_model">ir.ui.view</field><field name="public" eval="True"/>
     </record>
 
     <!-- Audiovisual editable service icons -->
@@ -126,283 +126,283 @@
 
 
     <!-- v20.1.8 editable media for Audiovisual, Web, Automation and Branding -->
-    <record id="img_av_trust_production_v10" model="ir.attachment">
+    <record id="img_av_trust_production_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Trust Producción profesional</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/trust-production.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/trust-production-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_trust_events_v10" model="ir.attachment">
+    <record id="img_av_trust_events_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Trust Eventos presenciales</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/trust-events.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/trust-events-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_trust_stream_v10" model="ir.attachment">
+    <record id="img_av_trust_stream_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Trust Transmisión estable</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/trust-stream.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/trust-stream-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_trust_camera_v10" model="ir.attachment">
+    <record id="img_av_trust_camera_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Trust Equipo técnico</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/trust-camera.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/trust-camera-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_obs_v10" model="ir.attachment">
+    <record id="img_av_tool_obs_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool OBS</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/obs.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/obs-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_vmix_v10" model="ir.attachment">
+    <record id="img_av_tool_vmix_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool vMix</field>
         <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/vmix.png"/>
         <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_mimolive_v10" model="ir.attachment">
+    <record id="img_av_tool_mimolive_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool MimoLive</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/mimolive.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/mimolive-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_atem_v10" model="ir.attachment">
+    <record id="img_av_tool_atem_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool ATEM Software Control</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/atem.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/atem-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_blackmagic_v10" model="ir.attachment">
+    <record id="img_av_tool_blackmagic_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool Blackmagic Design</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/blackmagic.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/blackmagic-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_davinci_v10" model="ir.attachment">
+    <record id="img_av_tool_davinci_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool DaVinci Resolve</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/davinci-resolve.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/davinci-resolve-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_premiere_v10" model="ir.attachment">
+    <record id="img_av_tool_premiere_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool Premiere Pro</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/premiere-pro.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/premiere-pro-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_finalcut_v10" model="ir.attachment">
+    <record id="img_av_tool_finalcut_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool Final Cut Pro</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/final-cut-pro.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/final-cut-pro-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_aftereffects_v10" model="ir.attachment">
+    <record id="img_av_tool_aftereffects_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool After Effects</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/after-effects.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/after-effects-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_audition_v10" model="ir.attachment">
+    <record id="img_av_tool_audition_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool Audition</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/audition.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/audition-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_logic_v10" model="ir.attachment">
+    <record id="img_av_tool_logic_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool Logic Pro</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/logic-pro.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/logic-pro-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_flstudio_v10" model="ir.attachment">
+    <record id="img_av_tool_flstudio_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool FL Studio</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/fl-studio.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/fl-studio-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_photoshop_v10" model="ir.attachment">
+    <record id="img_av_tool_photoshop_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool Photoshop</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/photoshop.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/photoshop-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_canva_v10" model="ir.attachment">
+    <record id="img_av_tool_canva_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool Canva</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/canva.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/canva-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_tool_capcut_v10" model="ir.attachment">
+    <record id="img_av_tool_capcut_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Tool CapCut</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/capcut.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/brands/capcut-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_equipment_camera_v10" model="ir.attachment">
+    <record id="img_av_equipment_camera_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Equipment Cámaras DSLR Mirrorless</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-camera.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-camera-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_equipment_studio_camera_v10" model="ir.attachment">
+    <record id="img_av_equipment_studio_camera_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Equipment Cámaras de estudio con CCU</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-studio-camera.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-studio-camera-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_equipment_ptz_v10" model="ir.attachment">
+    <record id="img_av_equipment_ptz_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Equipment Cámaras PTZ</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-ptz.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-ptz-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_equipment_switcher_v10" model="ir.attachment">
+    <record id="img_av_equipment_switcher_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Equipment Switcher ATEM</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-switcher.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-switcher-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_equipment_console_v10" model="ir.attachment">
+    <record id="img_av_equipment_console_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Equipment Consolas Yamaha DiGiCo</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-console.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-console-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_equipment_mic_v10" model="ir.attachment">
+    <record id="img_av_equipment_mic_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Equipment Micrófonos UHF</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-mic.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-mic-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_equipment_intercom_v10" model="ir.attachment">
+    <record id="img_av_equipment_intercom_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Equipment Intercom</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-intercom.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-intercom-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_equipment_lights_v10" model="ir.attachment">
+    <record id="img_av_equipment_lights_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Equipment Luces LED</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-lights.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-lights-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_equipment_screen_v10" model="ir.attachment">
+    <record id="img_av_equipment_screen_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Equipment Pantallas LED</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-screen.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-screen-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_equipment_projector_v10" model="ir.attachment">
+    <record id="img_av_equipment_projector_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Equipment Proyectores</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-projector.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-projector-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_equipment_capture_v10" model="ir.attachment">
+    <record id="img_av_equipment_capture_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Equipment Capturadoras HDMI SDI</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-capture.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-capture-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_equipment_mixer_v10" model="ir.attachment">
+    <record id="img_av_equipment_mixer_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Equipment Mezcladores de video</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-mixer.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/equipment-mixer-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_process_analysis_v10" model="ir.attachment">
+    <record id="img_av_process_analysis_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Process Análisis</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/process-analysis.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/process-analysis-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_process_design_v10" model="ir.attachment">
+    <record id="img_av_process_design_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Process Diseño</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/process-design.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/process-design-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_process_setup_v10" model="ir.attachment">
+    <record id="img_av_process_setup_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Process Montaje</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/process-setup.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/process-setup-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_process_live_v10" model="ir.attachment">
+    <record id="img_av_process_live_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Process Producción</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/process-live.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/process-live-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_av_process_delivery_v10" model="ir.attachment">
+    <record id="img_av_process_delivery_v11" model="ir.attachment">
         <field name="name">D-Solution - Audiovisual Process Entrega</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/process-delivery.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/audiovisual/process-delivery-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_heading_icon_v10" model="ir.attachment">
+    <record id="img_web_heading_icon_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Header Icon</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/web-heading.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/web-heading-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_type_corporativa_v10" model="ir.attachment">
+    <record id="img_web_type_corporativa_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Web corporativa</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/corporativa.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/corporativa-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
     <record id="img_web_long_corporativa_v10" model="ir.attachment">
         <field name="name">D-Solution - Captura larga Web corporativa</field>
         <field name="raw" type="bytes" file="website_dsolution/static/src/img/content/web-long/corporativa.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_type_landing_v10" model="ir.attachment">
+    <record id="img_web_type_landing_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Landing page</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/landing.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/landing-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -413,10 +413,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_type_tienda_v10" model="ir.attachment">
+    <record id="img_web_type_tienda_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Tienda online</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/tienda.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/tienda-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -427,10 +427,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_type_catalogo_v10" model="ir.attachment">
+    <record id="img_web_type_catalogo_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Catálogo online</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/catalogo.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/catalogo-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -441,10 +441,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_type_reservas_v10" model="ir.attachment">
+    <record id="img_web_type_reservas_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Web con reservas</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/reservas.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/reservas-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -455,10 +455,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_type_plataforma_v10" model="ir.attachment">
+    <record id="img_web_type_plataforma_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Plataforma web</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/plataforma.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/plataforma-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -469,59 +469,59 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_extra_crm_v10" model="ir.attachment">
+    <record id="img_web_extra_crm_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Extra Conexión con CRM</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/crm.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/crm-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_extra_whatsapp_v10" model="ir.attachment">
+    <record id="img_web_extra_whatsapp_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Extra WhatsApp integrado</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/whatsapp.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/whatsapp-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_extra_chatbot_v10" model="ir.attachment">
+    <record id="img_web_extra_chatbot_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Extra Chatbot web</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/chatbot.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/chatbot-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_extra_payments_v10" model="ir.attachment">
+    <record id="img_web_extra_payments_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Extra Pagos online</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/payments.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/payments-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_extra_n8n_v10" model="ir.attachment">
+    <record id="img_web_extra_n8n_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Extra Automatizaciones con n8n</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/n8n.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/n8n-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_extra_analytics_v10" model="ir.attachment">
+    <record id="img_web_extra_analytics_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Extra Analytics y conversiones</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/analytics.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/analytics-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_extra_bookings_v10" model="ir.attachment">
+    <record id="img_web_extra_bookings_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Extra Reservas y citas</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/bookings.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/bookings-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_web_extra_forms_v10" model="ir.attachment">
+    <record id="img_web_extra_forms_v11" model="ir.attachment">
         <field name="name">D-Solution - Desarrollo Web Extra Formularios inteligentes</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/forms.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/web/forms-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -532,31 +532,31 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_ai_benefit_efficiency_v10" model="ir.attachment">
+    <record id="img_ai_benefit_efficiency_v11" model="ir.attachment">
         <field name="name">D-Solution - Automatización Beneficio Más eficiencia</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/efficiency.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/efficiency-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_ai_benefit_attention_v10" model="ir.attachment">
+    <record id="img_ai_benefit_attention_v11" model="ir.attachment">
         <field name="name">D-Solution - Automatización Beneficio Mejor atención</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/attention.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/attention-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_ai_benefit_connected_v10" model="ir.attachment">
+    <record id="img_ai_benefit_connected_v11" model="ir.attachment">
         <field name="name">D-Solution - Automatización Beneficio Procesos conectados</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/connected.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/connected-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_ai_service_icon_agents_v10" model="ir.attachment">
+    <record id="img_ai_service_icon_agents_v11" model="ir.attachment">
         <field name="name">D-Solution - Automatización Icono Agentes IA</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/agents.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/agents-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -567,10 +567,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_ai_service_icon_whatsapp_v10" model="ir.attachment">
+    <record id="img_ai_service_icon_whatsapp_v11" model="ir.attachment">
         <field name="name">D-Solution - Automatización Icono WhatsApp</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/whatsapp.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/whatsapp-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -581,10 +581,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_ai_service_icon_email_v10" model="ir.attachment">
+    <record id="img_ai_service_icon_email_v11" model="ir.attachment">
         <field name="name">D-Solution - Automatización Icono Email</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/email.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/email-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -595,10 +595,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_ai_service_icon_crm_v10" model="ir.attachment">
+    <record id="img_ai_service_icon_crm_v11" model="ir.attachment">
         <field name="name">D-Solution - Automatización Icono CRM</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/crm.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/crm-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -609,10 +609,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_ai_service_icon_tasks_v10" model="ir.attachment">
+    <record id="img_ai_service_icon_tasks_v11" model="ir.attachment">
         <field name="name">D-Solution - Automatización Icono Tareas internas</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/tasks.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/tasks-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -623,10 +623,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_ai_service_icon_documents_v10" model="ir.attachment">
+    <record id="img_ai_service_icon_documents_v11" model="ir.attachment">
         <field name="name">D-Solution - Automatización Icono Documentos</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/documents.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/documents-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -637,10 +637,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_ai_service_icon_integrations_v10" model="ir.attachment">
+    <record id="img_ai_service_icon_integrations_v11" model="ir.attachment">
         <field name="name">D-Solution - Automatización Icono Integraciones</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/integrations.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/integrations-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -651,10 +651,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_ai_service_icon_n8n_v10" model="ir.attachment">
+    <record id="img_ai_service_icon_n8n_v11" model="ir.attachment">
         <field name="name">D-Solution - Automatización Icono Flujos con n8n</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/n8n.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/n8n-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -665,24 +665,24 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_ai_how_icon_analysis_v10" model="ir.attachment">
+    <record id="img_ai_how_icon_analysis_v11" model="ir.attachment">
         <field name="name">D-Solution - Automatización Proceso Icono Analizamos tu proceso</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/analysis.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/analysis-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_ai_how_icon_design_v10" model="ir.attachment">
+    <record id="img_ai_how_icon_design_v11" model="ir.attachment">
         <field name="name">D-Solution - Automatización Proceso Icono Diseñamos la automatización</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/design.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/design-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_ai_how_icon_team_v10" model="ir.attachment">
+    <record id="img_ai_how_icon_team_v11" model="ir.attachment">
         <field name="name">D-Solution - Automatización Proceso Icono Tu equipo trabaja mejor</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/team.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/automation/team-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -714,31 +714,31 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_brand_benefit_professional_v10" model="ir.attachment">
+    <record id="img_brand_benefit_professional_v11" model="ir.attachment">
         <field name="name">D-Solution - Branding Beneficio Imagen profesional</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/brand-professional.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/brand-professional-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_brand_benefit_results_v10" model="ir.attachment">
+    <record id="img_brand_benefit_results_v11" model="ir.attachment">
         <field name="name">D-Solution - Branding Beneficio Diseño orientado a resultados</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/brand-results.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/brand-results-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_brand_benefit_business_v10" model="ir.attachment">
+    <record id="img_brand_benefit_business_v11" model="ir.attachment">
         <field name="name">D-Solution - Branding Beneficio Para empresas</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/brand-business.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/brand-business-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_brand_service_icon_naming_v10" model="ir.attachment">
+    <record id="img_brand_service_icon_naming_v11" model="ir.attachment">
         <field name="name">D-Solution - Branding Icono Naming y concepto de marca</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/naming.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/naming-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -749,10 +749,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_brand_service_icon_logo_v10" model="ir.attachment">
+    <record id="img_brand_service_icon_logo_v11" model="ir.attachment">
         <field name="name">D-Solution - Branding Icono Diseño de logotipo</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/logo.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/logo-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -763,10 +763,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_brand_service_icon_identity_v10" model="ir.attachment">
+    <record id="img_brand_service_icon_identity_v11" model="ir.attachment">
         <field name="name">D-Solution - Branding Icono Identidad visual</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/identity.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/identity-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -777,10 +777,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_brand_service_icon_guide_v10" model="ir.attachment">
+    <record id="img_brand_service_icon_guide_v11" model="ir.attachment">
         <field name="name">D-Solution - Branding Icono Guía básica de uso</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/guide.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/guide-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -791,10 +791,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_brand_service_icon_social_v10" model="ir.attachment">
+    <record id="img_brand_service_icon_social_v11" model="ir.attachment">
         <field name="name">D-Solution - Branding Icono Diseño para redes sociales</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/social.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/social-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -805,10 +805,10 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_brand_service_icon_presentation_v10" model="ir.attachment">
+    <record id="img_brand_service_icon_presentation_v11" model="ir.attachment">
         <field name="name">D-Solution - Branding Icono Presentaciones y publicidad</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/presentation.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/presentation-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
@@ -854,38 +854,38 @@
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_brand_process_brief_v10" model="ir.attachment">
+    <record id="img_brand_process_brief_v11" model="ir.attachment">
         <field name="name">D-Solution - Branding Proceso Brief</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/brief.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/brief-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_brand_process_concept_v10" model="ir.attachment">
+    <record id="img_brand_process_concept_v11" model="ir.attachment">
         <field name="name">D-Solution - Branding Proceso Concepto</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/concept.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/concept-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_brand_process_design_v10" model="ir.attachment">
+    <record id="img_brand_process_design_v11" model="ir.attachment">
         <field name="name">D-Solution - Branding Proceso Diseño</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/design.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/design-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_brand_process_applications_v10" model="ir.attachment">
+    <record id="img_brand_process_applications_v11" model="ir.attachment">
         <field name="name">D-Solution - Branding Proceso Aplicaciones</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/applications.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/applications-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>
-    <record id="img_brand_process_delivery_v10" model="ir.attachment">
+    <record id="img_brand_process_delivery_v11" model="ir.attachment">
         <field name="name">D-Solution - Branding Proceso Entrega</field>
-        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/delivery.svg"/>
-        <field name="mimetype">image/svg+xml</field>
+        <field name="raw" type="bytes" file="website_dsolution/static/src/img/ui/branding/delivery-v11.png"/>
+        <field name="mimetype">image/png</field>
         <field name="res_model">ir.ui.view</field>
         <field name="public" eval="True"/>
     </record>

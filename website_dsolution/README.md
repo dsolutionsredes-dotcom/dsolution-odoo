@@ -1,5 +1,17 @@
 # D-Solution Website for Odoo Community 20.1 alpha
 
+## v20.1.11.0.0 — iconos raster editables y renderizado determinista 2026-09-30
+
+- Convierte 86 iconos SVG solicitados a PNG reales de 256×256 y mantiene vMix como raster.
+- Crea IDs nuevos `_v11` para 87 iconos editables, evitando cualquier caché/attachment anterior de Odoo o navegador.
+- Marketing: 5 iconos de “Qué incluye” y 3 de “¿Para quién es?” se renderizan como mini-imágenes claras.
+- Audiovisual: confianza, 15 herramientas, 12 equipos y 5 pasos del proceso usan imágenes raster visibles junto al texto.
+- Desarrollo Web: icono de cabecera, 6 tipos y 8 integraciones usan imágenes raster editables.
+- Automatización IA: 3 beneficios, 8 servicios y 3 pasos usan imágenes raster editables.
+- Branding: 3 beneficios, 6 servicios y 5 pasos usan imágenes raster editables.
+- CSS público fuerza display/tamaño/opacity/filter para impedir que estilos del tema hagan que los iconos parezcan glifos o líneas diminutas.
+
+
 ## v20.1.9.0.0 — medios realmente reemplazables desde Website Builder 2026-09-30
 
 - Auditoría completa de las peticiones realizadas después de v20.1.7 para Audiovisual, Marketing Digital, Desarrollo Web, Automatización IA y Branding.

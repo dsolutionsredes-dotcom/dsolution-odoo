@@ -2730,3 +2730,93 @@ body.editor_enable .ds-web-upload-bank::before {
     font-weight:800;
     letter-spacing:.02em;
 }
+
+
+/* ==========================================================
+   v20.1.11 — raster icon slots + deterministic rendering
+   Small editable icons are real PNG <img> elements. These rules prevent
+   theme/editor glyph styles from shrinking or visually replacing them.
+   ========================================================== */
+.ds-md-mini-icon,
+.ds-md-audience-icon,
+.ds-web-heading-ornament > span,
+.ds-web-type-icon,
+.ds-web-extra-icon,
+.ds-ai-benefits small > span,
+.ds-ai-service-head > span,
+.ds-ai-how-icon,
+.ds-brand-benefit-grid > div > span,
+.ds-brand-service-copy > span,
+.ds-brand-process-grid article > span {
+    overflow:hidden;
+    font-size:0!important;
+    line-height:0!important;
+}
+
+.ds-md-mini-icon > img.ds-editable-media {
+    display:block!important;width:48px!important;height:48px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+.ds-md-audience-icon > img.ds-editable-media {
+    display:block!important;width:38px!important;height:38px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+.ds-av-trust > span img.ds-editable-media {
+    display:block!important;width:28px!important;height:28px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+.ds-av-tools-list img.ds-editable-media {
+    display:block!important;width:40px!important;height:40px!important;flex:0 0 40px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+.ds-av-equipment-list img.ds-editable-media {
+    display:block!important;width:38px!important;height:38px!important;flex:0 0 38px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+.ds-av-process-grid article > span img.ds-editable-media {
+    display:block!important;width:36px!important;height:36px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+.ds-web-heading-ornament img.ds-editable-media {
+    display:block!important;width:36px!important;height:36px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+.ds-web-type-icon img.ds-editable-media {
+    display:block!important;width:34px!important;height:34px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+.ds-web-extra-icon img.ds-editable-media {
+    display:block!important;width:42px!important;height:42px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+.ds-ai-benefits small > span img.ds-editable-media {
+    display:block!important;width:24px!important;height:24px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+.ds-ai-service-head > span img.ds-editable-media {
+    display:block!important;width:30px!important;height:30px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+.ds-ai-how-icon img.ds-editable-media {
+    display:block!important;width:30px!important;height:30px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+.ds-brand-benefit-grid img.ds-editable-media {
+    display:block!important;width:24px!important;height:24px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+.ds-brand-service-copy > span img.ds-editable-media {
+    display:block!important;width:32px!important;height:32px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+.ds-brand-process-grid article > span img.ds-editable-media {
+    display:block!important;width:34px!important;height:34px!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important;
+}
+
+/* Website Builder: keep each small image easy to select/repaint without changing public layout. */
+body.editor_enable img.ds-editable-media[src*="_v11"] {
+    cursor:pointer!important;
+    outline:2px dashed rgba(212,175,55,.92)!important;
+    outline-offset:3px!important;
+}
