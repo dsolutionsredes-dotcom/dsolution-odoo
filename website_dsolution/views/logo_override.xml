@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="header_logo_user_override"
+              name="D-Solution Header User Logo Override"
+              inherit_id="website_dsolution.header"
+              priority="99">
+        <xpath expr="//img[contains(concat(' ', normalize-space(@class), ' '), ' ds-intro-loader-logo ')]"
+               position="attributes">
+            <attribute name="src">/website_dsolution/static/src/img/content/ds-logo-mark-dark-user.png</attribute>
+        </xpath>
+        <xpath expr="//img[contains(concat(' ', normalize-space(@class), ' '), ' ds-brand-logo--dark ')]"
+               position="attributes">
+            <attribute name="src">/website_dsolution/static/src/img/content/ds-logo-mark-dark-user.png</attribute>
+        </xpath>
+    </template>
+</odoo>
