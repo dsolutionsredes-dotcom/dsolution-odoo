@@ -12,5 +12,8 @@
                position="attributes">
             <attribute name="src">/website_dsolution/static/src/img/content/ds-logo-mark-dark-user.png</attribute>
         </xpath>
+        <xpath expr="//img[contains(concat(' ', normalize-space(@class), ' '), ' ds-brand-logo--light ')]" position="attributes">
+            <attribute name="src">/website_dsolution/static/src/img/content/ds-logo-mark-light-user.png</attribute>
+        </xpath>
     </template>
 </odoo>
