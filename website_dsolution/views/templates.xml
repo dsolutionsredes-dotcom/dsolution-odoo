@@ -3,9 +3,9 @@
 
     <template id="layout_performance_assets" name="D-Solution Performance Assets" inherit_id="website.layout">
         <xpath expr="//head" position="inside">
-            <link rel="preload" href="/website_dsolution/static/src/css/theme.css?v=20118" as="style"/>
-            <link rel="stylesheet" href="/website_dsolution/static/src/css/theme.css?v=20118" media="print" onload="this.onload=null;this.media='all'"/>
-            <noscript><link rel="stylesheet" href="/website_dsolution/static/src/css/theme.css?v=20118"/></noscript>
+            <link rel="preload" href="/website_dsolution/static/src/css/theme.css?v=20127" as="style"/>
+            <link rel="stylesheet" href="/website_dsolution/static/src/css/theme.css?v=20127" media="print" onload="this.onload=null;this.media='all'"/>
+            <noscript><link rel="stylesheet" href="/website_dsolution/static/src/css/theme.css?v=20127"/></noscript>
         </xpath>
     </template>
 
@@ -13,7 +13,7 @@
     <template id="header" name="D-Solution Header">
         <div class="ds-intro-loader is-visible" aria-hidden="true">
             <div class="ds-intro-loader-inner">
-                <img src="/website_dsolution/static/src/img/content/ds-logo-mark-dark.png" alt="D-Solution" class="ds-intro-loader-logo"/>
+                <img t-att-src="'/web/image/website/%s/dsolution_logo_dark' % request.env['website'].browse(request.env.context.get('website_id') or request.env['website'].search([], limit=1).id).id if request.env['website'].browse(request.env.context.get('website_id') or request.env['website'].search([], limit=1).id).dsolution_logo_dark else '/website_dsolution/static/src/img/content/ds-logo-mark-dark-user.png'" alt="D-Solution" class="ds-intro-loader-logo"/>
                 <div class="ds-intro-loader-line"><span/></div>
                 <p>Audiovisual · Marketing Digital · Desarrollo Web</p>
             </div>
@@ -21,8 +21,8 @@
         <header class="ds-header">
             <nav class="ds-nav" aria-label="Navegación principal">
                 <a class="ds-brand" href="/" aria-label="D-Solution Inicio">
-                    <img class="ds-brand-logo ds-brand-logo--light" src="/website_dsolution/static/src/img/content/ds-logo-mark-light.png" alt="D-Solution"/>
-                    <img class="ds-brand-logo ds-brand-logo--dark" src="/website_dsolution/static/src/img/content/ds-logo-mark-dark.png" alt="D-Solution"/>
+                    <img class="ds-brand-logo ds-brand-logo--light" t-att-src="'/web/image/website/%s/dsolution_logo_light' % request.env['website'].browse(request.env.context.get('website_id') or request.env['website'].search([], limit=1).id).id if request.env['website'].browse(request.env.context.get('website_id') or request.env['website'].search([], limit=1).id).dsolution_logo_light else '/website_dsolution/static/src/img/content/ds-logo-mark-light-v2.svg'" alt="D-Solution"/>
+                    <img class="ds-brand-logo ds-brand-logo--dark" t-att-src="'/web/image/website/%s/dsolution_logo_dark' % request.env['website'].browse(request.env.context.get('website_id') or request.env['website'].search([], limit=1).id).id if request.env['website'].browse(request.env.context.get('website_id') or request.env['website'].search([], limit=1).id).dsolution_logo_dark else '/website_dsolution/static/src/img/content/ds-logo-mark-dark-user.png'" alt="D-Solution"/>
                     <span class="ds-brand-copy">
                         <span class="ds-brand-name">D-Solution</span>
                         <span class="ds-brand-tagline">Audiovisual · Marketing Digital · Desarrollo Web</span>
@@ -47,7 +47,7 @@
                             <a href="/servicios/fotografia-profesional">Fotografía Profesional</a>
                         </div>
                     </div>
-                    <a href="/#portafolio">Portafolio</a>
+                    
                     <a href="/#proceso">Proceso</a>
                     <a href="/#contacto">Contacto</a>
                 </div>
@@ -80,7 +80,7 @@
                     <a href="/servicios/branding-diseno">Branding y Diseño</a>
                     <a href="/servicios/fotografia-profesional">Fotografía Profesional</a>
                 </div>
-                <a href="/#portafolio">Portafolio</a>
+                
                 <a href="/#proceso">Proceso</a>
                 <a href="/#contacto">Contacto</a>
                 <div class="ds-mobile-language-wrap" aria-label="Idiomas">
@@ -170,8 +170,8 @@
         <footer class="ds-footer">
             <div class="ds-container">
                 <div class="ds-footer-grid">
-                    <div><a class="ds-footer-brand" href="/"><img src="/website_dsolution/static/src/img/content/ds-logo-mark-light.png" alt="D-Solution" loading="lazy" decoding="async"/><strong>D-Solution</strong></a><p><t t-out="'Audiovisual technology, digital marketing, web development, automation and creativity for businesses that want to grow with clear, professional execution.' if ds_is_en else 'Tecnología audiovisual, marketing digital, desarrollo web, automatización y creatividad para negocios que quieren crecer con una ejecución clara y profesional.'"/></p></div>
-                    <div><h4><t t-out="'Navigation' if ds_is_en else 'Navegación'"/></h4><div class="ds-footer-links"><a href="/"><t t-out="'Home' if ds_is_en else 'Inicio'"/></a><a href="/servicios"><t t-out="'Services' if ds_is_en else 'Servicios'"/></a><a href="/#portafolio"><t t-out="'Portfolio' if ds_is_en else 'Portafolio'"/></a><a href="/#proceso"><t t-out="'Process' if ds_is_en else 'Proceso'"/></a><a href="/#contacto"><t t-out="'Contact' if ds_is_en else 'Contacto'"/></a></div></div>
+                    <div><a class="ds-footer-brand" href="/"><img t-att-src="'/web/image/website/%s/dsolution_logo_light' % request.env['website'].browse(request.env.context.get('website_id') or request.env['website'].search([], limit=1).id).id if request.env['website'].browse(request.env.context.get('website_id') or request.env['website'].search([], limit=1).id).dsolution_logo_light else '/website_dsolution/static/src/img/content/ds-logo-mark-light-v2.svg'" alt="D-Solution" loading="lazy" decoding="async"/><strong>D-Solution</strong></a><p><t t-out="'Audiovisual technology, digital marketing, web development, automation and creativity for businesses that want to grow with clear, professional execution.' if ds_is_en else 'Tecnología audiovisual, marketing digital, desarrollo web, automatización y creatividad para negocios que quieren crecer con una ejecución clara y profesional.'"/></p></div>
+                    <div><h4><t t-out="'Navigation' if ds_is_en else 'Navegación'"/></h4><div class="ds-footer-links"><a href="/"><t t-out="'Home' if ds_is_en else 'Inicio'"/></a><a href="/servicios"><t t-out="'Services' if ds_is_en else 'Servicios'"/></a><a href="/#proceso"><t t-out="'Process' if ds_is_en else 'Proceso'"/></a><a href="/#contacto"><t t-out="'Contact' if ds_is_en else 'Contacto'"/></a></div></div>
                     <div><h4><t t-out="'Services' if ds_is_en else 'Servicios'"/></h4><div class="ds-footer-links"><a href="/servicios/tecnologia-audiovisual">Audiovisual</a><a href="/servicios/marketing-digital"><t t-out="'Digital Marketing' if ds_is_en else 'Marketing Digital'"/></a><a href="/servicios/desarrollo-web"><t t-out="'Web Development' if ds_is_en else 'Desarrollo Web'"/></a><a href="/servicios/automatizacion-ia"><t t-out="'AI &amp; Automation' if ds_is_en else 'IA y Automatización'"/></a><a href="/servicios/branding-diseno"><t t-out="'Branding &amp; Design' if ds_is_en else 'Branding y Diseño'"/></a><a href="/servicios/fotografia-profesional"><t t-out="'Professional Photography' if ds_is_en else 'Fotografía Profesional'"/></a></div></div>
                 </div>
                 <div class="ds-footer-bottom"><t t-out="'© 2026 D-Solution. All rights reserved.' if ds_is_en else '© 2026 D-Solution. Todos los derechos reservados.'"/></div>
