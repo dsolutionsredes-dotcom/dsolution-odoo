@@ -3200,3 +3200,15 @@ body.editor_enable .ds-md-include-logo-slot::after {
 @media(max-width:1024px){.ds-web-heading h1{white-space:normal}}
 
 .js_ds_web_preview.is-scrolling{animation-delay:1s!important;animation-fill-mode:both!important}
+
+/* Only Desarrollo Web device-stage correction (Oct 2026). */
+.dsolution-web-page .ds-web-device-stage{position:relative;isolation:isolate;min-height:370px!important;max-height:none!important;align-self:center}
+.dsolution-web-page .ds-web-device--desktop{left:1%!important;top:0!important;bottom:auto!important;width:76%!important;z-index:1!important}
+.dsolution-web-page .ds-web-device--tablet{right:6%!important;top:auto!important;bottom:5%!important;width:27%!important;z-index:3!important}
+.dsolution-web-page .ds-web-device--phone{right:0!important;top:auto!important;bottom:2%!important;width:15%!important;z-index:4!important}
+.dsolution-web-page .ds-web-device .ds-web-preview-window{overflow:hidden!important}
+.dsolution-web-page .ds-web-device .js_ds_web_preview{position:absolute!important;top:0!important;left:0!important;display:block!important;width:100%!important;height:auto!important;max-height:none!important;max-width:none!important;min-height:0!important;object-fit:fill!important;transform:translate3d(0,0,0)}
+.dsolution-web-page .ds-web-device .js_ds_web_preview.is-scrolling{animation:ds-web-long-scroll var(--ds-scroll-duration,24s) ease-in-out .35s both!important}
+@keyframes ds-web-long-scroll{from{transform:translate3d(0,0,0)}to{transform:translate3d(0,calc(-1 * var(--ds-scroll-distance,0px)),0)}}
+@media (max-width:1024px){.dsolution-web-page .ds-web-device-stage{min-height:320px!important}}
+@media (max-width:600px){.dsolution-web-page .ds-web-device-stage{min-height:260px!important}}

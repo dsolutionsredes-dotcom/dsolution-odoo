@@ -267,14 +267,14 @@
                                     <div class="ds-web-device-stage">
                                         <div class="ds-web-device ds-web-device--desktop">
                                             <div class="ds-web-browserbar"><i/><i/><i/></div>
-                                            <div class="ds-web-preview-window"><img src="/website_dsolution/static/src/img/previews/corporativa.svg" alt="Captura larga de web" class="js_ds_web_preview"/></div>
+                                            <div class="ds-web-preview-window"><img src="/website_dsolution/static/src/img/previews/corporativa.svg" alt="Captura larga de web" class="js_ds_web_preview" loading="eager" decoding="async"/></div>
                                         </div>
-                                        <div class="ds-web-device ds-web-device--tablet"><div class="ds-web-preview-window"><img src="/website_dsolution/static/src/img/previews/corporativa.svg" alt="Vista tablet" class="js_ds_web_preview"/></div></div>
-                                        <div class="ds-web-device ds-web-device--phone"><div class="ds-web-preview-window"><img src="/website_dsolution/static/src/img/previews/corporativa.svg" alt="Vista móvil" class="js_ds_web_preview"/></div></div>
+                                        <div class="ds-web-device ds-web-device--tablet"><div class="ds-web-preview-window"><img src="/website_dsolution/static/src/img/previews/corporativa.svg" alt="Vista tablet" class="js_ds_web_preview" loading="eager" decoding="async"/></div></div>
+                                        <div class="ds-web-device ds-web-device--phone"><div class="ds-web-preview-window"><img src="/website_dsolution/static/src/img/previews/corporativa.svg" alt="Vista móvil" class="js_ds_web_preview" loading="eager" decoding="async"/></div></div>
                                     </div>
                                 </div>
 
-                                <div class="ds-web-upload-bank" aria-label="Capturas largas editables">
+                                <div class="ds-web-upload-bank" aria-label="Capturas largas editables desde Odoo Website Builder">
                                     <figure data-web-master="corporativa"><figcaption>Web corporativa · captura larga editable</figcaption><img src="/website_dsolution/static/src/img/previews/corporativa.svg" alt="Captura larga web corporativa" class="img img-fluid o_we_custom_image ds-editable-media" loading="lazy" decoding="async"/></figure>
                                     <figure data-web-master="landing"><figcaption>Landing page · captura larga editable</figcaption><img src="/website_dsolution/static/src/img/previews/landing.svg" alt="Captura larga landing page" class="img img-fluid o_we_custom_image ds-editable-media" loading="lazy" decoding="async"/></figure>
                                     <figure data-web-master="tienda"><figcaption>Tienda online · captura larga editable</figcaption><img src="/website_dsolution/static/src/img/previews/tienda.svg" alt="Captura larga tienda online" class="img img-fluid o_we_custom_image ds-editable-media" loading="lazy" decoding="async"/></figure>

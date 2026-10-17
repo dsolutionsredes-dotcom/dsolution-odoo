@@ -376,7 +376,7 @@
             const apply = () => {
                 const distance = Math.max(0, img.getBoundingClientRect().height - frame.clientHeight);
                 img.style.setProperty("--ds-scroll-distance", `${Math.round(distance)}px`);
-                const duration = Math.max(30, Math.min(65, 30 + distance / 65));
+                const duration = Math.max(12, Math.min(30, 12 + distance / 160));
                 img.style.setProperty("--ds-scroll-duration", `${duration.toFixed(1)}s`);
                 if (!editing && !reduceMotion && distance > 12) {
                     void img.offsetWidth;
