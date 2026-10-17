@@ -345,9 +345,10 @@
         const editing = document.body.classList.contains("editor_enable");
         const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         let activeType = "corporativa";
+        let hasClicked = false;
 
         function masterFor(type) {
-            return masters.find((node) => node.dataset.webMaster === type);
+            return masters.find((node) => node.dataset.webMaster === type && (node.dataset.webDevice || "desktop") === "desktop");
         }
 
         function buttonFor(type) {
@@ -358,8 +359,9 @@
             return details.find((node) => node.dataset.webDetail === type);
         }
 
-        function sourceFor(type) {
-            return masterFor(type)?.querySelector("img")?.src || "";
+        function sourceFor(type, device) {
+            const master = masters.find((node) => node.dataset.webMaster === type && (node.dataset.webDevice || "desktop") === device);
+            return master?.querySelector("img")?.src || masterFor(type)?.querySelector("img")?.src || "";
         }
 
         function iconFor(type) {
@@ -399,9 +401,10 @@
         }
 
         function syncPreviews(type) {
-            const src = sourceFor(type);
-            if (!src) return;
             previews.forEach((img) => {
+                const device = img.dataset.devicePreview || "desktop";
+                const src = sourceFor(type, device);
+                if (!src) return;
                 img.classList.remove("is-scrolling");
                 img.style.animation = "none"; void img.offsetHeight; img.style.removeProperty("animation");
                 if (img.src !== src) {
@@ -413,7 +416,7 @@
 
         function activate(type) {
             activeType = type;
-            buttons.forEach((button) => { const selected = button.dataset.webTarget === type; button.classList.toggle("is-active", selected); const indicator = button.querySelector("i"); if (indicator) indicator.textContent = selected ? "✓" : "›"; });
+            buttons.forEach((button) => { const selected = hasClicked && button.dataset.webTarget === type; button.classList.toggle("is-active", selected); const indicator = button.querySelector("i"); if (indicator) indicator.textContent = selected ? "✓" : "›"; });
             details.forEach((detail) => detail.classList.toggle("is-active", detail.dataset.webDetail === type));
             syncDetailIcon(type);
             syncPreviews(type);
@@ -422,6 +425,7 @@
         buttons.forEach((button) => {
             button.addEventListener("click", () => {
                 if (editing) return;
+                hasClicked = true;
                 activate(button.dataset.webTarget);
             });
         });

@@ -3212,3 +3212,27 @@ body.editor_enable .ds-md-include-logo-slot::after {
 @keyframes ds-web-long-scroll{from{transform:translate3d(0,0,0)}to{transform:translate3d(0,calc(-1 * var(--ds-scroll-distance,0px)),0)}}
 @media (max-width:1024px){.dsolution-web-page .ds-web-device-stage{min-height:320px!important}}
 @media (max-width:600px){.dsolution-web-page .ds-web-device-stage{min-height:260px!important}}
+
+/* Oct 2026 - compact complete first section / Desarrollo Web */
+@media(min-width:1100px) and (min-height:720px){
+ .dsolution-web-page .ds-web-hero{padding:calc(8px + 1vh) 0 10px!important;min-height:calc(100svh - 88px)!important}
+ .dsolution-web-page .ds-web-heading{margin:0 auto 8px!important;max-width:none!important}
+ .dsolution-web-page .ds-web-heading-ornament{display:none!important}
+ .dsolution-web-page .ds-web-heading h1{font-size:clamp(30px,3.4vw,52px)!important;white-space:nowrap!important;line-height:1.1!important;margin:1px auto 5px!important}
+ .dsolution-web-page .ds-web-showcase{align-items:center!important}
+ .dsolution-web-page .ds-web-types button{min-height:clamp(49px,7vh,66px)!important;padding:5px 12px!important}
+ .dsolution-web-page .ds-web-types{gap:6px!important}
+ .dsolution-web-page .ds-web-device-stage{min-height:min(43vh,390px)!important;height:min(43vh,390px)!important}
+ .dsolution-web-page .ds-web-details{margin-top:8px!important}
+ .dsolution-web-page .ds-web-details article{padding:10px 18px!important;min-height:90px!important}
+ .dsolution-web-page .ds-web-details h2{font-size:1.2rem!important}
+ .dsolution-web-page .ds-web-details p{font-size:.75rem!important;margin-top:2px!important}
+ .dsolution-web-page .ds-web-details ul{margin-top:4px!important}
+}
+.dsolution-web-page .ds-web-types button{text-align:left!important;grid-template-columns:42px minmax(0,1fr) 34px!important;align-items:center!important}
+.dsolution-web-page .ds-web-types button b,.dsolution-web-page .ds-web-types button small{text-align:left!important;justify-self:start!important}
+.dsolution-web-page .ds-web-types button .ds-web-type-icon{grid-row:1/3!important}
+.dsolution-web-page .ds-web-types button i{grid-row:1/3!important}
+.dsolution-web-page .ds-web-device .js_ds_web_preview{max-height:none!important}
+
+@media(min-width:1100px){.ds-header .ds-container,.ds-header-inner{max-width:1440px!important;width:calc(100% - 64px)!important;margin-inline:auto!important}.ds-header nav,.ds-nav{gap:clamp(12px,1.6vw,25px)!important}}
