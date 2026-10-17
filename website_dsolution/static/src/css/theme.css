@@ -3302,3 +3302,303 @@ body.editor_enable .ds-md-include-logo-slot::after {
 .dsolution-web-page .ds-web-types button b{grid-column:2!important;grid-row:1!important;align-self:end!important;justify-self:start!important}
 .dsolution-web-page .ds-web-types button small{grid-column:2!important;grid-row:2!important;align-self:start!important;justify-self:start!important}
 .dsolution-web-page .ds-web-types button i{grid-column:3!important;grid-row:1/3!important;align-self:center!important}
+
+
+/* 2026-10-17: align header exactly with the shared .ds-container (1160px). */
+@media (min-width:1100px){
+  .ds-header .ds-nav{
+    width:min(1160px,calc(100% - 40px))!important;
+    max-width:1160px!important;
+    margin-inline:auto!important;
+    justify-content:space-between!important;
+    gap:14px!important;
+  }
+  .ds-header .ds-nav-links{gap:clamp(10px,1vw,18px)!important}
+  .ds-header .ds-nav-actions{gap:8px!important}
+  .ds-header .ds-brand{flex-shrink:0!important}
+}
+/* Desarrollo Web: reserve the full device stage BEFORE the details, never overlap. */
+@media (min-width:1100px){
+  .dsolution-web-page .ds-web-hero{
+    padding-top:95px!important;
+    padding-bottom:24px!important;
+    min-height:0!important;
+    height:auto!important;
+  }
+  .dsolution-web-page .ds-web-heading{
+    margin:0 auto 20px!important;
+  }
+  .dsolution-web-page .ds-web-heading h1{
+    font-size:clamp(31px,3vw,47px)!important;
+    white-space:nowrap!important;
+  }
+  .dsolution-web-page .ds-web-showcase{
+    display:grid!important;
+    grid-template-columns:minmax(225px,290px) minmax(0,1fr)!important;
+    gap:28px!important;
+    align-items:center!important;
+  }
+  .dsolution-web-page .ds-web-device-stage{
+    height:330px!important;
+    min-height:330px!important;
+    max-height:none!important;
+    position:relative!important;
+  }
+  .dsolution-web-page .ds-web-device--desktop{
+    left:0!important;top:0!important;bottom:auto!important;
+    width:67%!important;
+  }
+  .dsolution-web-page .ds-web-device--tablet{
+    right:8%!important;bottom:15px!important;top:auto!important;width:24%!important;
+  }
+  .dsolution-web-page .ds-web-device--phone{
+    right:0!important;bottom:8px!important;top:auto!important;width:13%!important;
+  }
+  .dsolution-web-page .ds-web-details{
+    position:relative!important;
+    z-index:5!important;
+    clear:both!important;
+    margin-top:20px!important;
+  }
+  .dsolution-web-page .ds-web-details article{
+    grid-template-columns:minmax(0,1fr) 200px!important;
+    padding:14px 18px!important;
+    gap:20px!important;
+    min-height:0!important;
+  }
+  .dsolution-web-page .ds-web-types{gap:8px!important}
+  .dsolution-web-page .ds-web-types button{
+    height:60px!important;min-height:60px!important;
+    padding:7px 12px!important;
+    grid-template-rows:1fr 1fr!important;
+  }
+  .dsolution-web-page .ds-web-types button b{
+    align-self:end!important;justify-self:start!important;text-align:left!important;
+  }
+  .dsolution-web-page .ds-web-types button small{
+    display:block!important;visibility:visible!important;opacity:1!important;
+    align-self:start!important;justify-self:start!important;text-align:left!important;
+  }
+}
+
+/* D-Solution web first-screen adjustment: 2026-10-17 */
+@media (min-width:1100px){
+ .dsolution-web-page .ds-web-heading-ornament{display:none!important}
+ .dsolution-web-page .ds-web-heading{margin-top:0!important;margin-bottom:9px!important}
+ .dsolution-web-page .ds-web-hero{padding-top:78px!important;padding-bottom:10px!important}
+ .dsolution-web-page .ds-web-device-stage{height:320px!important;min-height:320px!important}
+ .dsolution-web-page .ds-web-device--desktop{width:67%!important}
+ .dsolution-web-page .ds-web-device--tablet{right:11%!important;bottom:13px!important}
+ .dsolution-web-page .ds-web-device--phone{right:3%!important;bottom:7px!important}
+ .dsolution-web-page .ds-web-details{margin-top:10px!important}
+}
+
+/* Final balanced vertical spacing, desktop first viewport only */
+@media (min-width:1100px) and (min-height:750px){
+ .dsolution-web-page .ds-web-heading{margin-bottom:17px!important}
+ .dsolution-web-page .ds-web-types{gap:10px!important}
+ .dsolution-web-page .ds-web-device-stage{height:336px!important;min-height:336px!important}
+ .dsolution-web-page .ds-web-details{margin-top:18px!important}
+ .dsolution-web-page .ds-web-hero{padding-bottom:18px!important}
+}
+
+/* Desarrollo Web - centered text and more visible arrows, Oct 2026 */
+.dsolution-web-page .ds-web-types button{display:grid!important;grid-template-columns:42px minmax(0,1fr) 32px!important;grid-template-rows:1fr auto auto 1fr!important;column-gap:12px!important;row-gap:0!important;align-items:center!important;text-align:left!important}
+.dsolution-web-page .ds-web-types button .ds-web-type-icon{grid-column:1!important;grid-row:1/5!important;align-self:center!important}
+.dsolution-web-page .ds-web-types button b{grid-column:2!important;grid-row:2!important;align-self:end!important;justify-self:start!important;text-align:left!important;margin:0!important;line-height:1.22!important}
+.dsolution-web-page .ds-web-types button small{grid-column:2!important;grid-row:3!important;align-self:start!important;justify-self:start!important;text-align:left!important;margin:2px 0 0!important;line-height:1.25!important}
+.dsolution-web-page .ds-web-types button i{grid-column:3!important;grid-row:1/5!important;align-self:center!important;justify-self:center!important;font-style:normal!important;font-size:1.55rem!important;font-weight:900!important;line-height:1!important}
+.dsolution-web-page .ds-web-details article > a b{font-size:1.35em!important;font-weight:900!important;display:inline-block!important;line-height:1!important}
+
+/* Desarrollo Web: CTA label stays on one line (all six types) */
+@media(min-width:1100px){
+ .dsolution-web-page .ds-web-details article{grid-template-columns:minmax(0,1fr) 280px!important}
+ .dsolution-web-page .ds-web-details article > a{width:100%!important;min-width:0!important;white-space:nowrap!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:12px!important}
+ .dsolution-web-page .ds-web-details article > a span,.dsolution-web-page .ds-web-details article > a strong{white-space:nowrap!important}
+}
+
+/* Selector type: center visible titles vertically, preserve left alignment. */
+.dsolution-web-page .ds-web-types button{grid-template-rows:1fr!important;align-items:center!important}
+.dsolution-web-page .ds-web-types button .ds-web-type-icon{grid-column:1!important;grid-row:1!important;align-self:center!important}
+.dsolution-web-page .ds-web-types button b{grid-column:2!important;grid-row:1!important;align-self:center!important;justify-self:start!important;line-height:1.25!important;margin:0!important;text-align:left!important}
+.dsolution-web-page .ds-web-types button small{display:none!important}
+.dsolution-web-page .ds-web-types button i{grid-column:3!important;grid-row:1!important;align-self:center!important;justify-self:center!important}
+
+/* Marketing Digital desktop: keep hero and four services inside first viewport */
+@media (min-width:1200px) and (min-height:680px){
+ .dsolution-marketing-page .ds-md-hero{box-sizing:border-box!important;min-height:calc(100svh - 92px)!important;padding:93px 0 14px!important;display:flex!important;flex-direction:column!important;justify-content:space-between!important}
+ .dsolution-marketing-page .ds-md-hero-content{min-height:0!important;flex:1 1 auto!important;padding:6px 0 22px!important;align-items:center!important}
+ .dsolution-marketing-page .ds-md-hero-copy h1{font-size:clamp(3.5rem,5vw,5.8rem)!important;margin-top:6px!important;line-height:.9!important}
+ .dsolution-marketing-page .ds-md-gold-line{margin-top:16px!important}
+ .dsolution-marketing-page .ds-md-lead{margin-top:14px!important;font-size:clamp(1rem,1.25vw,1.12rem)!important;line-height:1.48!important}
+ .dsolution-marketing-page .ds-md-hero-cta{margin-top:18px!important;min-height:48px!important}
+ .dsolution-marketing-page .ds-md-services-panel{flex:0 0 auto!important;margin-top:0!important;padding:14px 19px!important}
+ .dsolution-marketing-page .ds-md-panel-title{margin-bottom:8px!important}
+ .dsolution-marketing-page .ds-md-service-item{padding:7px 12px!important;gap:11px!important}
+ .dsolution-marketing-page .ds-md-service-item p{font-size:.77rem!important;line-height:1.4!important;margin-top:5px!important}
+}
+
+/* Marketing Digital: first section fills desktop viewport while keeping the panel inside */
+@media (min-width:1200px) and (min-height:680px){
+ .dsolution-marketing-page .ds-md-hero{min-height:100svh!important;height:auto!important;box-sizing:border-box!important;padding-bottom:22px!important}
+ .dsolution-marketing-page .ds-md-hero-content{min-height:0!important;flex:1 1 auto!important}
+ .dsolution-marketing-page .ds-md-services-panel{margin-top:0!important}
+}
+
+/* Desarrollo Web - eight extras visible in a desktop viewport */
+@media(min-width:1100px) and (min-height:700px){
+ .dsolution-web-page .ds-web-extras{box-sizing:border-box!important;min-height:calc(100svh - 85px)!important;padding:24px 0 22px!important;display:flex!important;align-items:center!important}
+ .dsolution-web-page .ds-web-extras>.ds-container{width:min(1160px,calc(100% - 40px))!important}
+ .dsolution-web-page .ds-web-extras h2{font-size:clamp(2rem,3.25vw,3.4rem)!important;line-height:1.1!important;margin:8px 0!important}
+ .dsolution-web-page .ds-web-extras-grid{margin-top:20px!important;gap:12px!important}
+ .dsolution-web-page .ds-web-extras-grid article{min-height:0!important;height:clamp(180px,25vh,215px)!important;padding:16px 18px!important}
+ .dsolution-web-page .ds-web-extra-icon{height:52px!important;width:52px!important}
+ .dsolution-web-page .ds-web-extras-grid h3{margin-top:12px!important;font-size:.94rem!important}
+ .dsolution-web-page .ds-web-extras-grid p{margin-top:6px!important;line-height:1.4!important;font-size:.74rem!important}
+}
+
+/* Functions Extra: two complete rows within a normal desktop screen */
+@media (min-width:1100px) and (min-height:700px){
+ section.ds-web-extras{display:block!important;min-height:0!important;height:auto!important;padding:18px 0 20px!important;box-sizing:border-box!important}
+ section.ds-web-extras .ds-web-section-heading{margin:0 auto 12px!important;padding:0!important}
+ section.ds-web-extras .ds-web-section-heading > p{margin:0!important;font-size:.72rem!important}
+ section.ds-web-extras .ds-web-section-heading > h2{margin:4px 0 5px!important;font-size:clamp(30px,3.15vw,48px)!important;line-height:1.12!important}
+ section.ds-web-extras .ds-web-section-heading > small{margin:0!important}
+ section.ds-web-extras .ds-web-extras-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important;margin:12px 0 0!important}
+ section.ds-web-extras .ds-web-extras-grid > article{box-sizing:border-box!important;min-height:0!important;height:clamp(180px,24vh,206px)!important;padding:15px 18px!important;overflow:hidden!important}
+ section.ds-web-extras .ds-web-extra-icon{width:50px!important;height:50px!important}
+ section.ds-web-extras .ds-web-extras-grid h3{margin:9px 0 0!important;font-size:.91rem!important}
+ section.ds-web-extras .ds-web-extras-grid p{margin:6px 0 0!important;font-size:.74rem!important;line-height:1.36!important}
+}
+
+/* Shorter extra integration cards: no text clipping */
+@media(min-width:1100px) and (min-height:700px){
+ section.ds-web-extras .ds-web-extras-grid > article{height:auto!important;min-height:170px!important;max-height:none!important;padding:12px 16px!important;overflow:visible!important}
+ section.ds-web-extras .ds-web-extra-icon{width:44px!important;height:44px!important}
+ section.ds-web-extras .ds-web-extra-icon img{max-width:35px!important;max-height:35px!important}
+ section.ds-web-extras .ds-web-extras-grid h3{margin-top:7px!important;line-height:1.2!important}
+ section.ds-web-extras .ds-web-extras-grid p{margin-top:5px!important;line-height:1.35!important}
+ section.ds-web-extras .ds-web-extras-grid{gap:10px!important}
+}
+
+/* Fixed compact layout of the eight extra-function cards */
+@media (min-width:1100px) and (min-height:700px){
+ section.ds-web-extras{min-height:0!important;height:auto!important;padding:12px 0 15px!important}
+ section.ds-web-extras .ds-web-section-heading{margin-bottom:8px!important}
+ section.ds-web-extras .ds-web-section-heading h2{font-size:clamp(29px,3vw,46px)!important;margin:2px 0!important}
+ section.ds-web-extras .ds-web-extras-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;grid-auto-rows:170px!important;gap:9px!important;margin-top:10px!important}
+ section.ds-web-extras .ds-web-extras-grid article{box-sizing:border-box!important;height:170px!important;min-height:0!important;max-height:170px!important;padding:10px 14px!important;overflow:visible!important}
+ section.ds-web-extras .ds-web-extra-top{gap:9px!important}
+ section.ds-web-extras .ds-web-extra-icon{width:39px!important;height:39px!important;flex:0 0 39px!important}
+ section.ds-web-extras .ds-web-extra-icon img{width:30px!important;height:30px!important}
+ section.ds-web-extras .ds-web-extras-grid h3{margin:8px 0 0!important;font-size:.86rem!important;line-height:1.16!important}
+ section.ds-web-extras .ds-web-extras-grid p{margin:5px 0 0!important;font-size:.7rem!important;line-height:1.3!important}
+}
+
+/* Extras compact final - fixed two rows and constrained heading, Oct 17 */
+@media (min-width:1100px) and (min-height:680px){
+ body .dsolution-web-page section.ds-web-extras{display:block!important;padding:10px 0 14px!important;min-height:0!important;height:auto!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-section-heading{margin:0 auto 8px!important;padding:0!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-section-heading>p{margin:0!important;line-height:1.2!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-section-heading>h2{margin:4px 0!important;font-size:clamp(28px,2.8vw,44px)!important;line-height:1.07!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-section-heading>small{margin:0!important;line-height:1.3!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-extras-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;grid-template-rows:repeat(2,150px)!important;grid-auto-rows:150px!important;gap:10px!important;margin-top:14px!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-extras-grid>article{display:block!important;box-sizing:border-box!important;height:150px!important;min-height:150px!important;max-height:150px!important;padding:10px 13px!important;overflow:visible!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-extra-top{gap:8px!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-extra-icon{width:38px!important;height:38px!important;flex:0 0 38px!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-extra-icon img{width:30px!important;height:30px!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-extras-grid h3{font-size:.86rem!important;margin:6px 0 0!important;line-height:1.18!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-extras-grid p{font-size:.7rem!important;line-height:1.3!important;margin:5px 0 0!important}
+}
+
+/* Extras: fill available viewport space with legible cards (desktop) */
+@media (min-width:1100px) and (min-height:680px){
+ body .dsolution-web-page section.ds-web-extras{padding:22px 0 24px!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-extras-grid{grid-template-rows:repeat(2,clamp(192px,25vh,230px))!important;grid-auto-rows:auto!important;gap:14px!important;margin-top:19px!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-extras-grid>article{height:clamp(192px,25vh,230px)!important;min-height:0!important;max-height:none!important;padding:18px 20px!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-extra-icon{width:54px!important;height:54px!important;flex-basis:54px!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-extra-icon img{width:39px!important;height:39px!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-extras-grid h3{font-size:.99rem!important;margin-top:13px!important}
+ body .dsolution-web-page section.ds-web-extras .ds-web-extras-grid p{font-size:.78rem!important;line-height:1.48!important;margin-top:9px!important}
+}
+
+/* IA hero: three benefits evenly spaced and fully legible in three lines */
+@media(min-width:1100px){
+ .dsolution-ai-page .ds-ai-benefits{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important;width:100%!important;margin-top:24px!important;padding-top:20px!important;padding-bottom:12px!important}
+ .dsolution-ai-page .ds-ai-benefits small{min-width:0!important;align-items:center!important;gap:9px!important;line-height:1.35!important}
+ .dsolution-ai-page .ds-ai-benefits small > span{width:38px!important;height:38px!important;flex:0 0 38px!important}
+ .dsolution-ai-page .ds-ai-benefits small > i{display:block!important;min-width:0!important;font-size:.83rem!important;line-height:1.35!important}
+}
+
+/* IA services: all eight cards, photographs included, inside desktop viewport */
+@media (min-width:1100px) and (min-height:700px){
+ .dsolution-ai-page section.ds-ai-services{padding:16px 0 18px!important;min-height:0!important;height:auto!important}
+ .dsolution-ai-page section.ds-ai-services .ds-web-section-heading,.dsolution-ai-page section.ds-ai-services .ds-ai-section-heading{margin:0 auto 10px!important}
+ .dsolution-ai-page section.ds-ai-services h2{font-size:clamp(30px,3vw,48px)!important;line-height:1.08!important;margin:4px 0!important}
+ .dsolution-ai-page section.ds-ai-services .ds-ai-service-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:10px!important;margin-top:12px!important}
+ .dsolution-ai-page section.ds-ai-services .ds-ai-service-card{height:clamp(185px,25vh,215px)!important;min-height:0!important}
+ .dsolution-ai-page section.ds-ai-services .ds-ai-service-head{min-height:0!important;height:86px!important;padding:10px 13px 6px!important}
+ .dsolution-ai-page section.ds-ai-services .ds-ai-service-head>span{width:36px!important;height:36px!important}
+ .dsolution-ai-page section.ds-ai-services .ds-ai-service-head h3{margin-top:7px!important;font-size:.88rem!important;line-height:1.15!important}
+ .dsolution-ai-page section.ds-ai-services .ds-ai-service-photo{width:100%!important;height:calc(100% - 86px)!important;aspect-ratio:auto!important;object-fit:cover!important}
+}
+
+/* IA services: compact two rows for standard desktop viewport */
+@media(min-width:1100px) and (min-height:700px){
+ .dsolution-ai-page section.ds-ai-services{padding:10px 0 12px!important}
+ .dsolution-ai-page section.ds-ai-services .ds-ai-service-grid{margin-top:9px!important;gap:8px!important}
+ .dsolution-ai-page section.ds-ai-services .ds-ai-service-card{height:clamp(154px,20vh,175px)!important}
+ .dsolution-ai-page section.ds-ai-services .ds-ai-service-head{height:68px!important;padding:8px 12px 4px!important}
+ .dsolution-ai-page section.ds-ai-services .ds-ai-service-head>span{width:30px!important;height:30px!important}
+ .dsolution-ai-page section.ds-ai-services .ds-ai-service-head>span img{max-width:24px!important;max-height:24px!important}
+ .dsolution-ai-page section.ds-ai-services .ds-ai-service-head h3{font-size:.81rem!important;line-height:1.14!important;margin:4px 0 0!important}
+ .dsolution-ai-page section.ds-ai-services .ds-ai-service-photo{height:calc(100% - 68px)!important;object-fit:cover!important}
+ .dsolution-ai-page section.ds-ai-services h2{font-size:clamp(28px,2.8vw,42px)!important;line-height:1.07!important;margin:3px 0!important}
+}
+
+/* IA services title: single desktop line only */
+@media(min-width:1100px){
+ .dsolution-ai-page section.ds-ai-services h2{font-size:clamp(22px,2.15vw,35px)!important;white-space:nowrap!important;line-height:1.2!important;letter-spacing:-.035em!important;margin:4px auto!important;max-width:none!important}
+}
+
+/* Center one-line IA services heading within its own full-width column */
+@media(min-width:1100px){
+ .dsolution-ai-page section.ds-ai-services .ds-ai-section-heading,.dsolution-ai-page section.ds-ai-services .ds-web-section-heading{width:100%!important;max-width:none!important;text-align:center!important}
+ .dsolution-ai-page section.ds-ai-services h2{display:block!important;width:100%!important;max-width:100%!important;box-sizing:border-box!important;margin:4px 0!important;text-align:center!important;font-size:clamp(22px,2.05vw,34px)!important;white-space:nowrap!important;letter-spacing:-.035em!important}
+}
+
+/* IA heading optical centering: shift text to the left, desktop only */
+@media(min-width:1100px){
+ .dsolution-ai-page section.ds-ai-services h2{position:relative!important;left:35px!important;transform:none!important}
+}
+
+/* Center IA services headline to the same axis as the card grid; cancel old offsets */
+@media(min-width:1100px){
+ .dsolution-ai-page section.ds-ai-services .ds-ai-section-heading,
+ .dsolution-ai-page section.ds-ai-services .ds-web-section-heading{display:block!important;width:100%!important;max-width:100%!important;margin-left:auto!important;margin-right:auto!important;text-align:center!important}
+ .dsolution-ai-page section.ds-ai-services h2{position:static!important;left:auto!important;right:auto!important;transform:none!important;width:100%!important;max-width:100%!important;margin:4px auto!important;text-align:center!important;white-space:nowrap!important;font-size:clamp(22px,2.05vw,34px)!important}
+}
+
+/* Optical correction: move IA services headline LEFT relative to its prior centered axis */
+@media(min-width:1100px){
+ .dsolution-ai-page section.ds-ai-services h2{position:relative!important;left:-85px!important;right:auto!important;transform:none!important}
+}
+
+/* IA service cards - text left, photo right, soft fading white veil */
+@media(min-width:1100px){
+ .dsolution-ai-page .ds-ai-service-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+ .dsolution-ai-page .ds-ai-service-card{position:relative!important;isolation:isolate!important;overflow:hidden!important;display:block!important}
+ .dsolution-ai-page .ds-ai-service-card .ds-ai-service-photo{position:absolute!important;top:0!important;right:0!important;bottom:0!important;left:auto!important;width:76%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:center!important;z-index:0!important}
+ .dsolution-ai-page .ds-ai-service-card::after{content:"";position:absolute;z-index:1;inset:0;pointer-events:none;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.98) 24%,rgba(255,255,255,.85) 43%,rgba(255,255,255,.33) 67%,rgba(255,255,255,0) 83%)}
+ .dsolution-ai-page .ds-ai-service-card .ds-ai-service-head{position:relative!important;z-index:2!important;background:transparent!important;width:67%!important;height:100%!important;min-height:0!important;box-sizing:border-box!important;padding:17px 9px 13px 15px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:9px!important}
+ .dsolution-ai-page .ds-ai-service-card .ds-ai-service-head>span{flex:0 0 auto!important;width:36px!important;height:36px!important}
+ .dsolution-ai-page .ds-ai-service-card .ds-ai-service-head h3{font-size:clamp(.73rem,.87vw,.94rem)!important;line-height:1.25!important;margin:0!important;color:#061523!important;overflow-wrap:normal!important}
+}
+@media(min-width:700px) and (max-width:1099px){
+ .dsolution-ai-page .ds-ai-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .dsolution-ai-page .ds-ai-service-card{position:relative!important;isolation:isolate!important;min-height:215px!important;overflow:hidden!important}
+ .dsolution-ai-page .ds-ai-service-card .ds-ai-service-photo{position:absolute!important;right:0!important;top:0!important;width:75%!important;height:100%!important;object-fit:cover!important}
+ .dsolution-ai-page .ds-ai-service-card::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#fff 5%,rgba(255,255,255,.95) 35%,rgba(255,255,255,0) 85%)}
+ .dsolution-ai-page .ds-ai-service-card .ds-ai-service-head{position:relative!important;z-index:2!important;background:transparent!important;width:62%!important;height:100%!important;min-height:215px!important;display:flex!important;flex-direction:column!important;justify-content:center!important;gap:10px!important}
+}
+/* On narrow phones retain readable stacked image cards */
