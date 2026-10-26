@@ -456,26 +456,78 @@
     </record>
 
     <record id="page_service_photography" model="website.page">
-        <field name="name">Fotografía Profesional</field><field name="is_published" eval="True"/><field name="key">website_dsolution.page_service_photography</field><field name="url">/servicios/fotografia-profesional</field><field name="type">qweb</field>
-        <field name="arch" type="xml"><t t-name="website_dsolution.page_service_photography"><t t-set="no_header" t-value="True"/><t t-set="no_footer" t-value="True"/>
-            <t t-call="website.layout" additional_title.translate="Fotografía Profesional en Barcelona | D-Solution" meta_description.translate="Fotografía comercial, de producto, retrato corporativo y eventos para web, campañas y comunicación profesional.">
-                <div id="wrap" class="oe_structure dsolution-page dsolution-service-page">
-                    <t t-call="website_dsolution.header"/>
-                    <section class="ds-service-hero ds-service-hero--editable" data-name="Fotografía Profesional Hero">
-                        <img src="/website_dsolution/static/src/img/content/service-photography.jpg" alt="Fotografía Profesional" class="img img-fluid o_we_custom_image ds-editable-media" loading="lazy" decoding="async"/>
-                        <div class="ds-service-hero-inner ds-reveal"><span class="ds-service-hero-number">06 · FOTOGRAFÍA PROFESIONAL</span><h1>Fotografía que refuerza el valor de tu marca</h1><p>Fotografía comercial, producto, retrato y eventos preparada para web, publicidad y comunicación profesional.</p><div class="ds-hero-actions" style="justify-content:flex-start"><a class="ds-btn ds-btn--gold" href="#contacto">Hablemos de tu proyecto</a><a class="ds-btn ds-btn--outline" href="/servicios">Todos los servicios</a></div></div>
-                    </section>
-                    <section class="ds-section" data-name="Fotografía Profesional Contenido"><div class="ds-container ds-service-content-grid"><div class="ds-reveal"><p class="ds-eyebrow">Qué hacemos</p><h2 class="ds-title">Contenido visual preparado para vender y comunicar</h2><span class="ds-divider"/><p class="ds-subtitle">Planificamos cada sesión según el uso final de las imágenes para obtener material consistente, útil y adaptable a diferentes campañas y formatos.</p></div><div class="ds-service-points ds-reveal"><div class="ds-service-point"><strong>Producto</strong><span>Imágenes claras y consistentes para catálogo y campañas.</span></div>
-<div class="ds-service-point"><strong>Corporativo</strong><span>Retrato, equipos, espacios y actividad profesional.</span></div>
-<div class="ds-service-point"><strong>Eventos</strong><span>Cobertura visual pensada para comunicación posterior.</span></div>
-<div class="ds-service-point"><strong>Postproducción</strong><span>Selección, color y entrega optimizada para cada canal.</span></div></div></div></section>
-                    <section class="ds-section ds-service-gallery-section" data-name="Fotografía Profesional Galería"><div class="ds-container"><div class="ds-service-gallery-heading"><p class="ds-eyebrow">Galería</p><h2 class="ds-title">Imágenes del servicio</h2><p class="ds-subtitle">Puedes sustituir estas imágenes directamente desde el editor de Odoo.</p><span class="ds-divider"/></div><div class="ds-service-gallery-grid"><figure class="ds-service-gallery-item"><img src="/website_dsolution/static/src/img/content/service-photography.jpg" alt="Fotografía Profesional" class="img img-fluid o_we_custom_image ds-editable-media" loading="lazy" decoding="async"/></figure>
-<figure class="ds-service-gallery-item"><img src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Fotografía Profesional" class="img img-fluid o_we_custom_image ds-editable-media" loading="lazy" decoding="async"/></figure>
-<figure class="ds-service-gallery-item"><img src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Fotografía Profesional" class="img img-fluid o_we_custom_image ds-editable-media" loading="lazy" decoding="async"/></figure></div></div></section>
-                    <t t-call="website_dsolution.contact"/><t t-call="website_dsolution.footer"/>
+      <field name="name">Fotografía Profesional</field>
+      <field name="is_published" eval="True"/>
+      <field name="key">website_dsolution.page_service_photography</field>
+      <field name="url">/servicios/fotografia-profesional</field>
+      <field name="type">qweb</field>
+      <field name="arch" type="xml">
+        <t t-name="website_dsolution.page_service_photography">
+          <t t-set="no_header" t-value="True"/>
+          <t t-set="no_footer" t-value="True"/>
+          <t t-call="website.layout" additional_title.translate="Fotografía Profesional en Barcelona | D-Solution" meta_description.translate="Fotografía profesional de producto, retratos, eventos y contenido para redes sociales en Barcelona. Solicita tu sesión.">
+            <link rel="stylesheet" href="/website_dsolution/static/src/css/fotografia_profesional.css?v=20261026"/>
+            <div id="wrap" class="oe_structure dsolution-page dsolution-photo-page">
+              <t t-call="website_dsolution.header"/>
+              <section class="ds-photo-hero" data-name="Fotografía hero">
+                <div class="ds-photo-container ds-photo-hero-layout">
+                  <div class="ds-photo-hero-copy">
+                    <p class="ds-photo-eyebrow">FOTOGRAFÍA PROFESIONAL</p>
+                    <h1>Fotografía <em>profesional</em></h1>
+                    <p class="ds-photo-lead">Imágenes que inspiran, conectan y dan vida a tus ideas.</p>
+                    <div class="ds-photo-actions"><a class="ds-btn ds-btn--gold" href="#contacto">Solicitar sesión fotográfica <span aria-hidden="true">→</span></a><a class="ds-photo-outline" href="#portfolio-fotografia">Ver portfolio</a></div>
+                  </div>
+                  <div class="ds-photo-collage" data-name="Collage editable">
+                    <div class="ds-photo-collage-main"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-photography.jpg" alt="Fotografía profesional: imagen destacada" loading="eager"/></div>
+                    <div class="ds-photo-collage-product"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Ejemplo de producto, sustituir desde Odoo" loading="eager"/></div>
+                    <div class="ds-photo-collage-portrait"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Ejemplo de retrato, sustituir desde Odoo" loading="eager"/></div>
+                    <div class="ds-photo-collage-event"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Ejemplo de evento, sustituir desde Odoo" loading="lazy"/></div>
+                    <div class="ds-photo-collage-social"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Ejemplo de fotografía social, sustituir desde Odoo" loading="lazy"/></div>
+                  </div>
                 </div>
-            </t>
-        </t></field>
+                <div class="ds-photo-container ds-photo-features">
+                  <div><span class="ds-photo-feature-icon">✧</span><p><strong>Resultados</strong><small>Fotografías que aportan valor</small></p></div>
+                  <div><span class="ds-photo-feature-icon">◎</span><p><strong>Para cada necesidad</strong><small>Marcas, eventos y personas</small></p></div>
+                  <div><span class="ds-photo-feature-icon">☆</span><p><strong>Calidad profesional</strong><small>Imagen y edición cuidadas</small></p></div>
+                </div>
+              </section>
+              <section class="ds-photo-services" id="servicios-fotografia" data-name="Servicios fotográficos">
+                <div class="ds-photo-container"><p class="ds-photo-eyebrow">NUESTROS SERVICIOS</p><h2>Soluciones fotográficas para cada necesidad</h2>
+                  <div class="ds-photo-service-grid">
+                    <article class="ds-photo-service-card"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Fotografía de producto" loading="lazy"/><div><h3>Producto y publicidad</h3><p>Imágenes que destacan tus productos y tu marca.</p><a href="#contacto" aria-label="Consultar fotografía de producto">↗</a></div></article>
+                    <article class="ds-photo-service-card"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-photography.jpg" alt="Retratos corporativos" loading="lazy"/><div><h3>Retratos corporativos</h3><p>Una imagen profesional y auténtica de tu equipo.</p><a href="#contacto" aria-label="Consultar retratos corporativos">↗</a></div></article>
+                    <article class="ds-photo-service-card"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Eventos y conferencias" loading="lazy"/><div><h3>Eventos y conferencias</h3><p>Capturamos los momentos clave de tu evento.</p><a href="#contacto" aria-label="Consultar cobertura de eventos">↗</a></div></article>
+                    <article class="ds-photo-service-card"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Contenido para redes sociales" loading="lazy"/><div><h3>Contenido para redes</h3><p>Fotografías pensadas para comunicar mejor.</p><a href="#contacto" aria-label="Consultar fotografía para redes">↗</a></div></article>
+                    <article class="ds-photo-service-card"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Sesiones personales" loading="lazy"/><div><h3>Sesiones personales</h3><p>Retratos, familias y parejas con estilo propio.</p><a href="#contacto" aria-label="Consultar sesiones personales">↗</a></div></article>
+                  </div>
+                </div>
+              </section>
+              <section class="ds-photo-portfolio" id="portfolio-fotografia" data-name="Galería de fotografía editable">
+                <div class="ds-photo-container"><div class="ds-photo-portfolio-head"><div><p class="ds-photo-eyebrow">NUESTRO TRABAJO</p><h2>Trabajos que hablan por sí solos</h2></div><div class="ds-photo-filters" aria-label="Filtrar fotografías"><button type="button" class="is-active" data-photo-filter="all">Todos</button><button type="button" data-photo-filter="producto">Producto</button><button type="button" data-photo-filter="retrato">Retratos</button><button type="button" data-photo-filter="evento">Eventos</button><button type="button" data-photo-filter="personal">Personales</button></div></div>
+                  <div class="ds-photo-masonry">
+                    <figure class="ds-photo-tile ds-photo-tile-tall" data-photo-category="personal"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-photography.jpg" alt="Sesión personal de fotografía" loading="lazy"/></figure>
+                    <figure class="ds-photo-tile" data-photo-category="producto"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Fotografía de producto" loading="lazy"/></figure>
+                    <figure class="ds-photo-tile" data-photo-category="producto"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-marketing.jpg" alt="Campaña de producto" loading="lazy"/></figure>
+                    <figure class="ds-photo-tile" data-photo-category="retrato"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-photography.jpg" alt="Retrato profesional" loading="lazy"/></figure>
+                    <figure class="ds-photo-tile ds-photo-tile-wide" data-photo-category="personal"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Sesión de fotografía personal" loading="lazy"/></figure>
+                    <figure class="ds-photo-tile" data-photo-category="producto"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-branding.jpg" alt="Contenido creativo" loading="lazy"/></figure>
+                    <figure class="ds-photo-tile" data-photo-category="evento"><img class="img img-fluid o_we_custom_image ds-editable-media" src="/website_dsolution/static/src/img/content/service-audiovisual.jpg" alt="Fotografía de evento" loading="lazy"/></figure>
+                  </div>
+                </div>
+              </section>
+              <section class="ds-photo-process" data-name="Proceso de fotografía"><div class="ds-photo-container"><p class="ds-photo-eyebrow">NUESTRO PROCESO</p><h2>Así trabajamos contigo</h2><div class="ds-photo-steps">
+                <div><span class="ds-photo-step-icon">01</span><h3>Brief</h3><p>Hablamos de tu idea y objetivos.</p></div>
+                <div><span class="ds-photo-step-icon">02</span><h3>Planificación</h3><p>Definimos el estilo y los detalles.</p></div>
+                <div><span class="ds-photo-step-icon">03</span><h3>Sesión</h3><p>Realizamos la sesión fotográfica.</p></div>
+                <div><span class="ds-photo-step-icon">04</span><h3>Entrega</h3><p>Recibes tus fotografías editadas.</p></div>
+              </div></div></section>
+              <t t-call="website_dsolution.contact"/>
+              <t t-call="website_dsolution.footer"/>
+            </div>
+            <script src="/website_dsolution/static/src/js/fotografia_profesional.js?v=20261026" defer="defer"/>
+          </t>
+        </t>
+      </field>
     </record>
     <record id="page_thanks" model="website.page">
         <field name="name">Gracias</field><field name="is_published" eval="True"/><field name="key">website_dsolution.page_thanks</field><field name="url">/gracias</field><field name="type">qweb</field>

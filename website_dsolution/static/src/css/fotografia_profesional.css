@@ -1,0 +1,64 @@
+/* D-Solution | Fotografía Profesional | 2026-10-26. Scoped to this page only. */
+.dsolution-photo-page{--photo-navy:#031626;--photo-navy2:#061f34;--photo-gold:#e2b92f;--photo-cream:#f8f5ee;color:#fff}
+.dsolution-photo-page .ds-photo-container{width:min(1320px,calc(100% - 72px));margin-inline:auto}
+.dsolution-photo-page .ds-photo-hero{background:radial-gradient(ellipse at 75% 18%,#12334c 0%,transparent 48%),linear-gradient(135deg,#061c2e 0%,#001321 100%);padding:85px 0 0;position:relative;overflow:hidden}
+.dsolution-photo-page .ds-photo-hero:before{content:"";position:absolute;left:-140px;top:-110px;width:540px;height:540px;border:1px solid rgba(226,185,47,.16);border-radius:50%;pointer-events:none}
+.dsolution-photo-page .ds-photo-hero-layout{display:grid;grid-template-columns:44% 56%;align-items:center;min-height:490px;gap:30px}
+.dsolution-photo-page .ds-photo-eyebrow{margin:0 0 12px;color:#bc8e10;font-weight:800;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+.dsolution-photo-page .ds-photo-hero .ds-photo-eyebrow{color:var(--photo-gold)}
+.dsolution-photo-page h1,.dsolution-photo-page h2,.dsolution-photo-page h3{letter-spacing:-.035em;margin-top:0}
+.dsolution-photo-page .ds-photo-hero h1{font-size:clamp(52px,6vw,96px);font-weight:850;line-height:1.02;color:white;max-width:660px;margin:0 0 16px}
+.dsolution-photo-page .ds-photo-hero h1 em{display:block;font-style:normal;color:var(--photo-gold)}
+.dsolution-photo-page .ds-photo-lead{font-size:clamp(17px,1.6vw,22px);line-height:1.5;max-width:440px;color:#e0e7ed;margin:0 0 25px}
+.dsolution-photo-page .ds-photo-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.dsolution-photo-page .ds-photo-actions .ds-btn{white-space:normal;text-align:center}
+.dsolution-photo-page .ds-photo-outline{display:inline-flex;align-items:center;justify-content:center;padding:14px 23px;border:1px solid #6a7986;border-radius:99px;color:#fff;text-decoration:none;font-weight:700;min-height:48px;transition:.2s}
+.dsolution-photo-page .ds-photo-outline:hover{border-color:white;color:white;background:rgba(255,255,255,.08)}
+.dsolution-photo-page .ds-photo-collage{height:460px;position:relative;width:100%;margin:0 auto}
+.dsolution-photo-page .ds-photo-collage>div{position:absolute;overflow:hidden;border:2px solid #8b979e;border-radius:10px;background:#193146;box-shadow:0 12px 28px rgba(0,0,0,.2)}
+.dsolution-photo-page .ds-photo-collage img{width:100%;height:100%;display:block;object-fit:cover}
+.dsolution-photo-page .ds-photo-collage-main{left:2%;top:4%;width:44%;height:66%}
+.dsolution-photo-page .ds-photo-collage-product{left:49%;top:0;width:40%;height:31%}
+.dsolution-photo-page .ds-photo-collage-portrait{left:32%;top:42%;width:37%;height:54%;z-index:2}
+.dsolution-photo-page .ds-photo-collage-event{left:73%;top:35%;width:26%;height:29%}
+.dsolution-photo-page .ds-photo-collage-social{left:73%;top:67%;width:26%;height:29%}
+.dsolution-photo-page .ds-photo-features{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.16);margin-top:55px;padding:26px 0;gap:24px}
+.dsolution-photo-page .ds-photo-features>div{display:flex;align-items:center;gap:15px;border-right:1px solid rgba(255,255,255,.16)}
+.dsolution-photo-page .ds-photo-features>div:last-child{border-right:0}
+.dsolution-photo-page .ds-photo-feature-icon{display:grid;place-items:center;border:1px solid var(--photo-gold);border-radius:50%;color:var(--photo-gold);width:55px;height:55px;font-size:28px;flex-shrink:0}
+.dsolution-photo-page .ds-photo-features p{margin:0}.dsolution-photo-page .ds-photo-features strong{display:block;font-size:15px;color:#fff}.dsolution-photo-page .ds-photo-features small{display:block;font-size:13px;color:#bfcbd3;margin-top:3px}
+.dsolution-photo-page .ds-photo-services{background:var(--photo-cream);color:#071b2d;padding:78px 0 92px}
+.dsolution-photo-page .ds-photo-services h2,.dsolution-photo-page .ds-photo-portfolio h2,.dsolution-photo-page .ds-photo-process h2{font-size:clamp(30px,3.6vw,51px);font-weight:850;line-height:1.12;margin-bottom:28px}
+.dsolution-photo-page .ds-photo-service-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:15px}
+.dsolution-photo-page .ds-photo-service-card{background:#fff;border:1px solid #e8e3db;border-radius:9px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.dsolution-photo-page .ds-photo-service-card>img{width:100%;height:235px;object-fit:cover;background:#d8d8d2}
+.dsolution-photo-page .ds-photo-service-card>div{padding:17px 16px 16px;display:flex;flex-direction:column;flex:1;align-items:flex-start}
+.dsolution-photo-page .ds-photo-service-card h3{font-size:17px;line-height:1.2;font-weight:800;color:#071b2d;margin:0 0 7px}
+.dsolution-photo-page .ds-photo-service-card p{font-size:14px;line-height:1.5;color:#48545b;margin:0 0 20px}
+.dsolution-photo-page .ds-photo-service-card a{margin-top:auto;display:grid;place-items:center;border:1px solid #d3a425;width:34px;height:34px;border-radius:50%;color:#9b7510;text-decoration:none;font-size:20px}
+.dsolution-photo-page .ds-photo-service-card a:hover{color:#051827;background:var(--photo-gold)}
+.dsolution-photo-page .ds-photo-portfolio{padding:82px 0 88px;background:linear-gradient(125deg,#061e32,#001522 77%);color:#fff}
+.dsolution-photo-page .ds-photo-portfolio .ds-photo-eyebrow{color:var(--photo-gold)}
+.dsolution-photo-page .ds-photo-portfolio-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:18px}
+.dsolution-photo-page .ds-photo-portfolio h2{margin-bottom:0;color:#fff}
+.dsolution-photo-page .ds-photo-filters{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.dsolution-photo-page .ds-photo-filters button{font-size:13px;background:transparent;border:1px solid #71808b;color:#fff;border-radius:99px;padding:9px 13px;cursor:pointer}
+.dsolution-photo-page .ds-photo-filters button.is-active{background:var(--photo-gold);border-color:var(--photo-gold);color:#091722;font-weight:750}
+.dsolution-photo-page .ds-photo-masonry{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:170px;gap:12px}
+.dsolution-photo-page .ds-photo-tile{min-width:0;margin:0;border-radius:8px;overflow:hidden;background:#14334b}
+.dsolution-photo-page .ds-photo-tile-tall{grid-row:span 2}.dsolution-photo-page .ds-photo-tile-wide{grid-column:span 2}
+.dsolution-photo-page .ds-photo-tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.dsolution-photo-page .ds-photo-tile:hover img{transform:scale(1.035)}
+.dsolution-photo-page .ds-photo-tile[hidden]{display:none!important}
+.dsolution-photo-page .ds-photo-process{background:var(--photo-cream);padding:80px 0 86px;color:#081b2d}
+.dsolution-photo-page .ds-photo-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:34px;text-align:center}
+.dsolution-photo-page .ds-photo-steps>div{position:relative}
+.dsolution-photo-page .ds-photo-steps>div:not(:last-child):after{content:"";position:absolute;top:35px;left:70%;width:65%;border-top:2px dotted #dcb951}
+.dsolution-photo-page .ds-photo-step-icon{width:70px;height:70px;margin:0 auto 14px;border-radius:50%;background:#f0e8d6;display:grid;place-items:center;color:#b38b18;font-size:24px;font-weight:800}
+.dsolution-photo-page .ds-photo-steps h3{font-size:18px;font-weight:800;margin:0 0 5px;color:#081b2d}
+.dsolution-photo-page .ds-photo-steps p{font-size:14px;line-height:1.5;color:#53565a;margin:0 auto;max-width:200px}
+@media(max-width:1050px){.dsolution-photo-page .ds-photo-service-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.dsolution-photo-page .ds-photo-hero-layout{grid-template-columns:47% 53%}.dsolution-photo-page .ds-photo-collage{height:390px}}
+@media(max-width:700px){.dsolution-photo-page .ds-photo-container{width:min(100% - 32px,520px)}.dsolution-photo-page .ds-photo-hero{padding:64px 0 0}.dsolution-photo-page .ds-photo-hero-layout{display:flex;flex-direction:column;min-height:0;gap:28px}.dsolution-photo-page .ds-photo-hero h1{font-size:clamp(45px,12vw,69px)}.dsolution-photo-page .ds-photo-hero-copy{width:100%}.dsolution-photo-page .ds-photo-collage{height:300px}.dsolution-photo-page .ds-photo-features{grid-template-columns:1fr;gap:14px;margin-top:30px}.dsolution-photo-page .ds-photo-features>div{border-right:none}.dsolution-photo-page .ds-photo-services,.dsolution-photo-page .ds-photo-process,.dsolution-photo-page .ds-photo-portfolio{padding:55px 0}.dsolution-photo-page .ds-photo-service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.dsolution-photo-page .ds-photo-service-card>img{height:165px}.dsolution-photo-page .ds-photo-service-card>div{padding:13px}.dsolution-photo-page .ds-photo-service-card h3{font-size:15px}.dsolution-photo-page .ds-photo-portfolio-head{align-items:start;flex-direction:column}.dsolution-photo-page .ds-photo-filters{justify-content:flex-start}.dsolution-photo-page .ds-photo-masonry{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:150px;gap:8px}.dsolution-photo-page .ds-photo-steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:32px}.dsolution-photo-page .ds-photo-steps>div:after{display:none}}
+@media(max-width:380px){.dsolution-photo-page .ds-photo-service-grid{grid-template-columns:1fr}.dsolution-photo-page .ds-photo-service-card>img{height:200px}.dsolution-photo-page .ds-photo-masonry{grid-auto-rows:135px}}
+/* Website editor: retain visible, editable image widgets and gallery while editing. */
+body.editor_enable .dsolution-photo-page .ds-photo-tile[hidden],body.o_is_editing .dsolution-photo-page .ds-photo-tile[hidden]{display:block!important}
