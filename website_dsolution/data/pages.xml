@@ -11,23 +11,19 @@
             <t t-name="website_dsolution.page_services">
                 <t t-set="no_header" t-value="True"/>
                 <t t-set="no_footer" t-value="True"/>
-                <t t-call="website.layout">
-                    <div id="wrap" class="oe_structure dsolution-page dsolution-service-page">
+                <t t-call="website.layout" additional_title.translate="Servicios | D-Solution" meta_description.translate="Elige entre nuestras seis soluciones: audiovisual, marketing digital, desarrollo web, IA, branding y fotografía profesional en Barcelona.">
+                    <link rel="stylesheet" href="/website_dsolution/static/src/css/servicios_landing.css?v=20261026a"/>
+                    <div id="wrap" class="oe_structure dsolution-page dsolution-service-page ds-services-only">
                         <t t-call="website_dsolution.header"/>
-                        <section class="ds-service-hero">
-                            <img src="/website_dsolution/static/src/img/content/service-web.jpg" alt="Servicios D-Solution" class="img img-fluid o_we_custom_image ds-editable-media" loading="lazy" decoding="async"/>
-                            <div class="ds-service-hero-inner ds-reveal">
-                                <span class="ds-service-hero-number">SERVICIOS</span>
-                                <h1>Soluciones conectadas para hacer crecer tu negocio</h1>
-                                <p>Combina creatividad, tecnología, marketing y automatización en una misma estrategia, o contrata cada servicio de forma independiente.</p>
+                        <section class="ds-services-only-hero" data-name="Servicios - título">
+                            <div class="ds-container">
+                                <p class="ds-services-only-eyebrow">NUESTROS SERVICIOS</p>
+                                <h1>Elige una solución <em>para tu proyecto</em></h1>
+                                <span class="ds-services-only-rule"/>
                             </div>
                         </section>
-                        <section class="ds-section">
+                        <section class="ds-services-only-options" data-name="Servicios - seis soluciones">
                             <div class="ds-container">
-                                <p class="ds-eyebrow">Qué hacemos</p>
-                                <h2 class="ds-title">Seis áreas, una ejecución coordinada</h2>
-                                <p class="ds-subtitle">El objetivo no es acumular herramientas, sino conectar lo necesario para generar resultados medibles.</p>
-                                <span class="ds-divider"/>
                                 <t t-call="website_dsolution.services_grid"/>
                             </div>
                         </section>

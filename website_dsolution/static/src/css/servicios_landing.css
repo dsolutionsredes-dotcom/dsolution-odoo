@@ -1,0 +1,48 @@
+/* D-Solution /servicios only — 2026-10-26. Preserves original six-card grid and shared contact form. */
+.dsolution-page.ds-services-only {background:#f8f5ee;}
+.ds-services-only .ds-services-only-hero {
+  padding:clamp(38px,5.5vw,70px) 0 clamp(35px,4.5vw,62px);
+  background:radial-gradient(ellipse at 55% 0,rgba(28,69,99,.23),transparent 63%),#041a2b;
+  color:#fff;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.ds-services-only .ds-services-only-hero:before,
+.ds-services-only .ds-services-only-hero:after {
+  content:"";position:absolute;width:420px;height:420px;top:-280px;left:-130px;
+  border:1px solid rgba(228,185,52,.17);border-radius:50%;pointer-events:none;
+}
+.ds-services-only .ds-services-only-hero:after {left:auto;right:-110px;top:-300px;width:500px;height:500px;}
+.ds-services-only .ds-services-only-hero>.ds-container {position:relative;z-index:1;}
+.ds-services-only .ds-services-only-eyebrow {margin:0 0 12px;color:#efbd2c;font-size:12px;font-weight:800;letter-spacing:.22em;}
+.ds-services-only .ds-services-only-hero h1 {margin:0 auto;color:white;max-width:900px;font-size:clamp(38px,5.2vw,72px);line-height:1.08;font-weight:850;letter-spacing:-.045em;}
+.ds-services-only .ds-services-only-hero h1 em {display:block;color:#e8bd33;font-style:normal;}
+.ds-services-only .ds-services-only-rule {display:block;width:68px;height:2px;background:#ddb42a;margin:24px auto 0;}
+.ds-services-only .ds-services-only-options {background:#f8f5ee;padding:28px 0 32px;}
+.ds-services-only .ds-services-only-options .ds-services-grid {
+  margin-top:0;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  overflow:hidden;
+  border:0;
+  border-radius:23px;
+  box-shadow:0 22px 58px rgba(0,24,43,.13);
+}
+.ds-services-only .ds-services-only-options .ds-service-card {min-height:205px;}
+.ds-services-only .ds-services-only-options .ds-service-card img {filter:none;}
+.ds-services-only .ds-services-only-options .ds-service-card:after {background:linear-gradient(to top,rgba(0,8,17,.81),rgba(0,12,25,.03) 82%);}
+.ds-services-only .ds-services-only-options .ds-service-card:hover:after {background:linear-gradient(to top,rgba(0,8,17,.83),rgba(0,12,25,.12) 82%);}
+.ds-services-only .ds-services-only-options .ds-service-card .ds-service-content {z-index:1;}
+.ds-services-only .ds-contact-wrap {padding-top:0;padding-bottom:44px;background:#f8f5ee;}
+@media(max-width:760px) {
+  .ds-services-only .ds-services-only-hero {padding:38px 0 42px;}
+  .ds-services-only .ds-services-only-options .ds-services-grid {grid-template-columns:repeat(2,minmax(0,1fr));border-radius:17px;}
+  .ds-services-only .ds-services-only-options .ds-service-card {min-height:190px;}
+}
+@media(max-width:460px) {
+  .ds-services-only .ds-services-only-hero h1 {font-size:clamp(35px,10.5vw,49px)}
+  .ds-services-only .ds-services-only-options {padding:20px 0 28px;}
+  .ds-services-only .ds-services-only-options .ds-services-grid {grid-template-columns:1fr;}
+  .ds-services-only .ds-services-only-options .ds-service-card {min-height:195px;border-right:0;}
+}
